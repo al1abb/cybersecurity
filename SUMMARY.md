@@ -1,8 +1,12 @@
 # Table of contents
 
+## WELCOME
+
+* [Home](README.md)
+
 ## Linux
 
-* [Initial Tasks](README.md)
+* [Initial Tasks](<README (1).md>)
 
 ## MS
 
