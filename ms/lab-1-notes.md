@@ -73,3 +73,5 @@ services -  Was not working
 $env:Path - ENV variables and their path.
 
 secpol - Local Security Policy
+
+eventvwr - Opens Event Viewer (Windows logs is here)
