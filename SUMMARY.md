@@ -7,6 +7,7 @@
 ## Linux
 
 * [Initial Tasks](<README (1).md>)
+* [Intro to Linux](linux/intro-to-linux.md)
 
 ## MS
 
