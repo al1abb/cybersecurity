@@ -10,6 +10,10 @@ Motherboard: Manufacturer = Intel Corporation, Product=440BX Desktop Reference P
 
 
 
+You can use Get-ComputerInfo directly from PowerShell  to get system info
+
+
+
 4\) System information binary and its path
 
 msinfo32.exe
