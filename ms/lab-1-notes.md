@@ -71,3 +71,5 @@ mmc - Opens Microsot Management Console
 services -  Was not working
 
 $env:Path - ENV variables and their path.
+
+secpol - Local Security Policy
