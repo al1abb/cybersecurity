@@ -50,4 +50,6 @@ Microsoft Management Console (mmc.exe)
 
 9\)
 
-Through Advanced Audit Policy Configuration, you find detailed tracking and then go to audit process creation. Double click and apply it for both success and failure
+Through Advanced Audit Policy Configuration, you find detailed tracking and then go to audit process creation. Double click and apply it for both success and failure.
+
+You can check using the Audit Events bar in detailed tracking&#x20;
