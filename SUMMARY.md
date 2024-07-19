@@ -6,13 +6,14 @@
 
 ## Linux
 
-* [Initial Tasks](<README (1).md>)
+* [Initial Tasks](linux/initial-tasks.md)
 * [Intro to Linux](linux/intro-to-linux.md)
 
 ## MS
 
 * [Powershell commands to remember](ms/powershell-commands-to-remember.md)
 * [Port forwarding](ms/port-forwarding.md)
+* [Lab 1 Notes](ms/lab-1-notes.md)
 
 ## Networking
 
