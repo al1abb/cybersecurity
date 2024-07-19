@@ -20,3 +20,4 @@ Linux Architecture
 
 <figure><img src="../.gitbook/assets/image.png" alt="" width="339"><figcaption></figcaption></figure>
 
+Red hat is the most stable linux distro. It might also be SuSE
