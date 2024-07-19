@@ -57,3 +57,17 @@ Microsoft Management Console (mmc.exe)
 Through Advanced Audit Policy Configuration, you find detailed tracking and then go to audit process creation. Double click and apply it for both success and failure.
 
 You can check using the Audit Events bar in detailed tracking&#x20;
+
+
+
+Powershell notes:
+
+cmd - Opens cmd
+
+regedit - Opens registry editor
+
+mmc - Opens Microsot Management Console
+
+services -  Was not working
+
+$env:Path - ENV variables and their path.
