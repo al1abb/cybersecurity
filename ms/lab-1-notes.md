@@ -89,3 +89,7 @@ $env:Path - ENV variables and their path.
 secpol - Local Security Policy
 
 eventvwr - Opens Event Viewer (Windows logs is here)
+
+
+
+Processes that are fundamental for windows and have updated, they will require reboot
