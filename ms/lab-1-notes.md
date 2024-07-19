@@ -48,7 +48,9 @@ b) ItemName binary is responsible for running .txt files
 
 8\)
 
-Microsoft Management Console (mmc.exe)
+a) Microsoft Management Console (mmc.exe)
+
+b) Maximum password age is 42 days
 
 
 
@@ -59,6 +61,18 @@ Through Advanced Audit Policy Configuration, you find detailed tracking and then
 You can check using the Audit Events bar in detailed tracking&#x20;
 
 
+
+10\)
+
+a) Process creation event id is 4688
+
+b) Logoff Event ID is 4634
+
+c) PID is 652, lsass.exe in task manager
+
+d)&#x20;
+
+LAB END -------
 
 Powershell notes:
 
