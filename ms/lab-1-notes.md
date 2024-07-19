@@ -92,4 +92,4 @@ eventvwr - Opens Event Viewer (Windows logs is here)
 
 
 
-Processes that are fundamental for windows and have updated, they will require reboot
+Processes that are fundamental for windows and have updated, will require reboot
