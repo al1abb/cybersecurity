@@ -19,6 +19,8 @@
 ## Networking
 
 * [Introduction to Networking](networking/introduction-to-networking.md)
+* [Lab Notes](networking/lab-notes/README.md)
+  * [Lab 01-01](networking/lab-notes/lab-01-01.md)
 
 ## Python
 
