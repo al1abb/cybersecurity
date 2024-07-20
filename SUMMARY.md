@@ -13,7 +13,8 @@
 
 * [Powershell commands to remember](ms/powershell-commands-to-remember.md)
 * [Port forwarding](ms/port-forwarding.md)
-* [Lab 1 Notes](ms/lab-1-notes.md)
+* [Lab Notes](ms/lab-notes/README.md)
+  * [Lab 1 Notes](ms/lab-notes/lab-1-notes.md)
 
 ## Networking
 
