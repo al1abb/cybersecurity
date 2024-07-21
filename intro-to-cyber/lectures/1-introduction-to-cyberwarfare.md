@@ -154,22 +154,22 @@
 
 #### **Trojan Horse:** A trojan horse is designed to appear as a legitimate program in order to gain access to a system and execute malicious code
 
-**Worm:** A worm can self-replicate without a host program, typically spreads without human interaction or directives
+#### **Worm:** A worm can self-replicate without a host program, typically spreads without human interaction or directives
 
-**Virus:** A virus the most common type of malware which can execute itself and spread by infecting other programs or files
+#### **Virus:** A virus the most common type of malware which can execute itself and spread by infecting other programs or files
 
-**Spyware:** Spyware is made to collect information and data on the device user and observe their activity without their knowledge
+#### **Spyware:** Spyware is made to collect information and data on the device user and observe their activity without their knowledge
 
-**Backdoor virus:** A backdoor virus or Remote Access Trojan (RAT) secretly creates a backdoor to remotely access it without alerting
+#### **Backdoor virus:** A backdoor virus or Remote Access Trojan (RAT) secretly creates a backdoor to remotely access it without alerting
 
-**Ransomware:** Ransomware is designed to infect a user's system and encrypt the data and demand a ransom payment in exchange
+#### **Ransomware:** Ransomware is designed to infect a user's system and encrypt the data and demand a ransom payment in exchange
 
-**Logic bomb:** A logic bomb is code intentionally inserted into a program to remain dormant until triggered
+#### **Logic bomb:** A logic bomb is code intentionally inserted into a program to remain dormant until triggered
 
-**Rootkit:** A rootkit is created to obtain administrator-level access to the victim's system
+#### **Rootkit:** A rootkit is created to obtain administrator-level access to the victim's system
 
-**Keyloggers:** Keyloggers are used to see nearly everything one does on the computer, like emails, programs and keystrokes
+#### **Keyloggers:** Keyloggers are used to see nearly everything one does on the computer, like emails, programs and keystrokes
 
-**Adware:** Adware is used to track a user’s browser and download history to display pop-up or banner advertisements
+#### **Adware:** Adware is used to track a user’s browser and download history to display pop-up or banner advertisements
 
-**Bootkit:** Bootkit accesses and modifies a systems boot record. Can change how the system functions and loading other malware
+#### **Bootkit:** Bootkit accesses and modifies a systems boot record. Can change how the system functions and loading other malware
