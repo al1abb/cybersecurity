@@ -69,3 +69,61 @@
 • **Industroyer (2016)** - This targeted power facilities. It’s credited with causing a power outage in the Ukraine in December 2016.&#x20;
 
 • **Triton (2017)** - This targeted the safety systems of a petrochemical plant in the Middle East, raising concerns about the malware maker’s intent to cause physical injury to workers.
+
+## Threat actors and threat communities
+
+• A threat actor, is any person or organization that intentionally causes harm.&#x20;
+
+• There are different threat communities:&#x20;
+
+– Advanced Persistent Threat (APT) – Nation States (\~10%)&#x20;
+
+– Cyber Criminals (>50%)&#x20;
+
+– Hacktivists (<20%)&#x20;
+
+– Insiders&#x20;
+
+– Script kiddies
+
+### Blackhats - Threat communities
+
+• Nation states: State-sponsored professional groups that are engaged in espionage and either clandestine or overt action.&#x20;
+
+– Advanced persistent threat (APT)&#x20;
+
+– High capability (Tcap)&#x20;
+
+• Cyber criminals: A generic term for any group of criminal enterprises or loosely organized criminals. They are reasonably well-funded but not as well as a nation-state.&#x20;
+
+– Financially motivated&#x20;
+
+– It is well-organized and has advanced technically&#x20;
+
+– Threat intelligence is key!!
+
+• Hacktivist: Disrupting operations of hacking for politically or socially motivated purposes&#x20;
+
+– Capability low&#x20;
+
+– Can be predicted by OSINT research&#x20;
+
+• Disgruntled insider: People inside of the organization that wants to do harm for personal or financial reasons&#x20;
+
+– Privileged/unprivileged&#x20;
+
+– Capability depends on the privileges&#x20;
+
+– Behavioral analysis
+
+• Script kiddies “Uses existing and frequently well known and easy-to-find techniques and programs or scripts to search for and exploit weaknesses in other computers on the Internet—often randomly and with little regard or perhaps even understanding of the potentially harmful consequences” (US Department of Defense)&#x20;
+
+– Low – medium capability&#x20;
+
+– Their pitfall is vanity&#x20;
+
+– The main issue is that they add ‘noise’ to detection and monitoring systems
+
+### Whitehats
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Types of whitehats</p></figcaption></figure>
