@@ -70,6 +70,12 @@
 
 • **Triton (2017)** - This targeted the safety systems of a petrochemical plant in the Middle East, raising concerns about the malware maker’s intent to cause physical injury to workers.
 
+## The Cyber Space
+
+• **Cyberspace** refers to the virtual computer world, and more specifically, is an electronic medium of a global computer network facilitating online communications.&#x20;
+
+• It is a large computer network made up of countless computer networks that employ COMMUNICATION protocols to aid in data exchange activities.
+
 ## Threat actors and threat communities
 
 • A threat actor, is any person or organization that intentionally causes harm.&#x20;
