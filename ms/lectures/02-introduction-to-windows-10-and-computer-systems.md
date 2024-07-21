@@ -1,4 +1,4 @@
-# 02 - Intro to Windows 10 and Computer Systems
+# 02 - Introduction to Windows 10 and Computer Systems
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 

@@ -17,7 +17,7 @@
   * [Lab 1 Notes](ms/lab-notes/lab-1-notes.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
-  * [02 - Intro to Windows 10 and Computer Systems](ms/lectures/02-intro-to-windows-10-and-computer-systems.md)
+  * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
 
 ## Networking
 
