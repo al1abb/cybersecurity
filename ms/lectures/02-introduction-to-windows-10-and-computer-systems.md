@@ -1,8 +1,6 @@
 # 02 - Introduction to Windows 10 and Computer Systems
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
-
-## Computer System
+Computer System
 
 Includes hardware and software
 
@@ -94,4 +92,15 @@ BIOS is a firmware. Firmware is combination of hardware and software
 
 An operating system (OS) is software that controls a computer
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>4 main functions of an OS</p></figcaption></figure>
+### 4 main functions of an OS
+
+• Managing hardware – UEFI/BIOS, managing memory, drivers&#x20;
+
+• Managing files and folders – creating, storing, retrieving, deleting and moving files&#x20;
+
+• Managing applications – installing/uninstalling and running apps&#x20;
+
+• Providing a user interface – providing a way for the user to manage the desktop, hardware, apps and data
+
+## User Interface
+
