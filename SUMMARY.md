@@ -6,8 +6,9 @@
 
 ## Linux
 
-* [Initial Tasks](linux/initial-tasks.md)
-* [Intro to Linux](linux/intro-to-linux.md)
+* [Notes](linux/notes.md)
+* [Lectures](linux/intro-to-linux.md)
+* [1.1 - Introduction to Linux](linux/1.1-introduction-to-linux.md)
 
 ## MS
 
