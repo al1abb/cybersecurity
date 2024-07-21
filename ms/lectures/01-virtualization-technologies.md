@@ -13,7 +13,7 @@ What is it:
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Traditional and virtual architecture</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Traditional and virtual architecture</p></figcaption></figure>
 
 ### How is it done?
 
@@ -42,3 +42,33 @@ Type 2 - VMware workstation/player, VMware server, Microsoft Virtual PC, Oracle 
 ### Advantages and Benefits
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Advantages and Benefits of virtualization</p></figcaption></figure>
+
+### Network Adapters Comparison
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Network Adapters Comparison</p></figcaption></figure>
+
+#### NAT Adapter
+
+This is enabled by default
+
+A guest operating system on a VM can access hosts in a physical local area network (LAN) by using a virtual NAT (Network Address Translation) device
+
+#### NAT Network
+
+This mode is similar to the NAT mode that you use for configuring a router.&#x20;
+
+If you use the NAT Network mode for multiple virtual machines, they can communicate with each other via the network.
+
+#### Bridged Adapter
+
+Used for connecting Guest OS in VM to your physical LAN (real network)
+
+#### Internal Network Adapter
+
+Virtual machines whose adapters are configured to work in the VirtualBox Internal Network mode are connected to an isolated virtual network.
+
+#### Host Only
+
+A VM can communicate with other VMs connected to the host-only network, and with the host machine.
+
+Host machine can access all VMs connected to the host-only network.
