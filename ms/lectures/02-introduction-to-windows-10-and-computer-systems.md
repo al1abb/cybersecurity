@@ -104,3 +104,18 @@ An operating system (OS) is software that controls a computer
 
 ## User Interface
 
+There are 2 types of UI: CLI and GUI
+
+## Microsoft WIndows
+
+Windows 10 Editions:
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+| Edition               | Description                                                                       | Consumer                                             | Availability                                     |
+| --------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------ |
+| Windows 10 Home       | Consumer oriented desktop edition Windows 10 Home                                 | Individual/home users                                | Everybody                                        |
+| Windows 10 Pro        | Supports The needs of a smallmedium business                                      | Organizations, advanced users                        | Everybody                                        |
+| Windows 10 Enterprise | Similar to Windows 10 Pro, but it adds few business-based features                | Large enterprises                                    | Only available to Volume Licensing customers     |
+| Windows 10 Education  | Offers the same features as Windows 10 Enterprise                                 | School staff, administrators, teachers, and students | Only available through academic Volume Licensing |
+| Windows 10 Mobile     | For smaller, mobile, touch-centric devices, such as smartphones and small tablets | Individual users with small devices                  | Everybody                                        |
