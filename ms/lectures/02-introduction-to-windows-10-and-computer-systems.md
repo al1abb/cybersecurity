@@ -106,9 +106,9 @@ An operating system (OS) is software that controls a computer
 
 There are 2 types of UI: CLI and GUI
 
-## Microsoft WIndows
+## Microsoft Windows
 
-Windows 10 Editions:
+### Windows 10 Editions
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -119,3 +119,47 @@ Windows 10 Editions:
 | Windows 10 Enterprise | Similar to Windows 10 Pro, but it adds few business-based features                | Large enterprises                                    | Only available to Volume Licensing customers     |
 | Windows 10 Education  | Offers the same features as Windows 10 Enterprise                                 | School staff, administrators, teachers, and students | Only available through academic Volume Licensing |
 | Windows 10 Mobile     | For smaller, mobile, touch-centric devices, such as smartphones and small tablets | Individual users with small devices                  | Everybody                                        |
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+### Hardware requirements
+
+• Processor: 1 GHz or faster&#x20;
+
+• RAM: 1 GB for 32-bit or 2 GB for 64-bit&#x20;
+
+• Hard disk: 16 GB for 32-bit or 20 GB for 64-bit&#x20;
+
+• Graphics card: Microsoft DirectX 9 graphics device with WDDM 1.0 driver&#x20;
+
+• Display: 800x600
+
+• Windows Hello - requires biometric hardware&#x20;
+
+• Secure boot - requires firmware that supports UEFI&#x20;
+
+• BitLocker - requires TPM or a USB flash drive&#x20;
+
+• Client Hyper-V - requires a 64- bit system with second-level address translation capabilities and an additional 4 GB of RAM and CPU support for VM Monitor Mode Extension
+
+### Configuration Tools
+
+#### GUI tools
+
+Settings App or Control Panel
+
+#### CLI Tools
+
+CMD - Command Prompt
+
+PowerShell
+
+PowerShell is more powerful than CMD
+
+#### Advanced Tools
+
+• Registry&#x20;
+
+• Group policy&#x20;
+
+• Administrative tools
