@@ -126,7 +126,7 @@
 
 ### Whitehats
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Types of whitehats</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Types of whitehats</p></figcaption></figure>
 
 ## Malware and Cyber Attacks
 
@@ -195,3 +195,10 @@ Adware is used to track a user’s browser and download history to display pop-u
 #### **Bootkit:**&#x20;
 
 Bootkit accesses and modifies a systems boot record. Can change how the system functions and loading other malware
+
+## Types of cyber attacks
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Types of cyber attacks 1</p></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Types of cyber attacks 2 (ENISA)</p></figcaption></figure>
+
