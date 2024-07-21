@@ -15,6 +15,8 @@
 * [Port forwarding](ms/port-forwarding.md)
 * [Lab Notes](ms/lab-notes/README.md)
   * [Lab 1 Notes](ms/lab-notes/lab-1-notes.md)
+* [Lectures](ms/lectures/README.md)
+  * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
 
 ## Networking
 
