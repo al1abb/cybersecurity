@@ -120,6 +120,8 @@ There are 2 types of UI: CLI and GUI
 | Windows 10 Education  | Offers the same features as Windows 10 Enterprise                                 | School staff, administrators, teachers, and students | Only available through academic Volume Licensing |
 | Windows 10 Mobile     | For smaller, mobile, touch-centric devices, such as smartphones and small tablets | Individual users with small devices                  | Everybody                                        |
 
+### 32-bit vs 64-bit
+
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ### Hardware requirements
