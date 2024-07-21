@@ -31,4 +31,6 @@
 
 ## Intro to cyber
 
-* [Introduction](intro-to-cyber/introduction.md)
+* [Notes](intro-to-cyber/introduction.md)
+* [Lectures](intro-to-cyber/lectures/README.md)
+  * [1 -  Introduction to Cyberwarfare](intro-to-cyber/lectures/1-introduction-to-cyberwarfare.md)
