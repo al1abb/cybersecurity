@@ -88,13 +88,13 @@
 
 ### Blackhats - Threat communities
 
-• Nation states: State-sponsored professional groups that are engaged in espionage and either clandestine or overt action.&#x20;
+• **Nation states**: State-sponsored professional groups that are engaged in espionage and either clandestine or overt action.&#x20;
 
 – Advanced persistent threat (APT)&#x20;
 
 – High capability (Tcap)&#x20;
 
-• Cyber criminals: A generic term for any group of criminal enterprises or loosely organized criminals. They are reasonably well-funded but not as well as a nation-state.&#x20;
+• **Cyber criminals**: A generic term for any group of criminal enterprises or loosely organized criminals. They are reasonably well-funded but not as well as a nation-state.&#x20;
 
 – Financially motivated&#x20;
 
@@ -102,13 +102,13 @@
 
 – Threat intelligence is key!!
 
-• Hacktivist: Disrupting operations of hacking for politically or socially motivated purposes&#x20;
+• **Hacktivist**: Disrupting operations of hacking for politically or socially motivated purposes&#x20;
 
 – Capability low&#x20;
 
 – Can be predicted by OSINT research&#x20;
 
-• Disgruntled insider: People inside of the organization that wants to do harm for personal or financial reasons&#x20;
+• **Disgruntled insider**: People inside of the organization that wants to do harm for personal or financial reasons&#x20;
 
 – Privileged/unprivileged&#x20;
 
@@ -116,7 +116,7 @@
 
 – Behavioral analysis
 
-• Script kiddies “Uses existing and frequently well known and easy-to-find techniques and programs or scripts to search for and exploit weaknesses in other computers on the Internet—often randomly and with little regard or perhaps even understanding of the potentially harmful consequences” (US Department of Defense)&#x20;
+• **Script kiddies:** “Uses existing and frequently well known and easy-to-find techniques and programs or scripts to search for and exploit weaknesses in other computers on the Internet—often randomly and with little regard or perhaps even understanding of the potentially harmful consequences” (US Department of Defense)&#x20;
 
 – Low – medium capability&#x20;
 
