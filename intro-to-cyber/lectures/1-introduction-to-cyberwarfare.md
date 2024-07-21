@@ -152,24 +152,46 @@
 
 ### Types of malware
 
-#### **Trojan Horse:** A trojan horse is designed to appear as a legitimate program in order to gain access to a system and execute malicious code
+#### **Trojan Horse:**&#x20;
 
-#### **Worm:** A worm can self-replicate without a host program, typically spreads without human interaction or directives
+A trojan horse is designed to appear as a legitimate program in order to gain access to a system and execute malicious code
 
-#### **Virus:** A virus the most common type of malware which can execute itself and spread by infecting other programs or files
+#### **Worm:**&#x20;
 
-#### **Spyware:** Spyware is made to collect information and data on the device user and observe their activity without their knowledge
+A worm can self-replicate without a host program, typically spreads without human interaction or directives
 
-#### **Backdoor virus:** A backdoor virus or Remote Access Trojan (RAT) secretly creates a backdoor to remotely access it without alerting
+#### **Virus:**&#x20;
 
-#### **Ransomware:** Ransomware is designed to infect a user's system and encrypt the data and demand a ransom payment in exchange
+A virus the most common type of malware which can execute itself and spread by infecting other programs or files
 
-#### **Logic bomb:** A logic bomb is code intentionally inserted into a program to remain dormant until triggered
+#### **Spyware:**&#x20;
 
-#### **Rootkit:** A rootkit is created to obtain administrator-level access to the victim's system
+Spyware is made to collect information and data on the device user and observe their activity without their knowledge
 
-#### **Keyloggers:** Keyloggers are used to see nearly everything one does on the computer, like emails, programs and keystrokes
+#### **Backdoor virus:**&#x20;
 
-#### **Adware:** Adware is used to track a user’s browser and download history to display pop-up or banner advertisements
+A backdoor virus or Remote Access Trojan (RAT) secretly creates a backdoor to remotely access it without alerting
 
-#### **Bootkit:** Bootkit accesses and modifies a systems boot record. Can change how the system functions and loading other malware
+#### **Ransomware:**&#x20;
+
+Ransomware is designed to infect a user's system and encrypt the data and demand a ransom payment in exchange
+
+#### **Logic bomb:**&#x20;
+
+A logic bomb is code intentionally inserted into a program to remain dormant until triggered
+
+#### **Rootkit:**&#x20;
+
+A rootkit is created to obtain administrator-level access to the victim's system
+
+#### **Keyloggers:**&#x20;
+
+Keyloggers are used to see nearly everything one does on the computer, like emails, programs and keystrokes
+
+#### **Adware:**&#x20;
+
+Adware is used to track a user’s browser and download history to display pop-up or banner advertisements
+
+#### **Bootkit:**&#x20;
+
+Bootkit accesses and modifies a systems boot record. Can change how the system functions and loading other malware
