@@ -127,3 +127,49 @@
 ### Whitehats
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Types of whitehats</p></figcaption></figure>
+
+## Malware and Cyber Attacks
+
+## Vulnerability VS Exploit
+
+**Vulnerability** – A weakness that can be attacked&#x20;
+
+**Exploit** – A tool, code, or set of tools used to exploit a vulnerability
+
+## Malware
+
+• Threat agents use malware to perform their attacks on organizations.&#x20;
+
+• Malware can be defined as Software intentionally designed to cause harm&#x20;
+
+• In most cases there must be some user active interaction:&#x20;
+
+\- Clicking a link&#x20;
+
+\- Downloading an attachment&#x20;
+
+\- Enabling macro execution in a document
+
+### Types of malware
+
+**Trojan Horse:** A trojan horse is designed to appear as a legitimate program in order to gain access to a system and execute malicious code
+
+**Worm:** A worm can self-replicate without a host program, typically spreads without human interaction or directives
+
+**Virus:** A virus the most common type of malware which can execute itself and spread by infecting other programs or files
+
+**Spyware:** Spyware is made to collect information and data on the device user and observe their activity without their knowledge
+
+**Backdoor virus:** A backdoor virus or Remote Access Trojan (RAT) secretly creates a backdoor to remotely access it without alerting
+
+**Ransomware:** Ransomware is designed to infect a user's system and encrypt the data and demand a ransom payment in exchange
+
+**Logic bomb:** A logic bomb is code intentionally inserted into a program to remain dormant until triggered
+
+**Rootkit:** A rootkit is created to obtain administrator-level access to the victim's system
+
+**Keyloggers:** Keyloggers are used to see nearly everything one does on the computer, like emails, programs and keystrokes
+
+**Adware:** Adware is used to track a user’s browser and download history to display pop-up or banner advertisements
+
+**Bootkit:** Bootkit accesses and modifies a systems boot record. Can change how the system functions and loading other malware
