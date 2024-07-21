@@ -4,7 +4,7 @@
 
 ### What is Cybersecurity?
 
-• One main purpose: To identify cyber threats in an organization, calculate the risk related to those threats, and handle those threats accordingly.&#x20;
+• **One main purpose:** To identify cyber threats in an organization, calculate the risk related to those threats, and handle those threats accordingly.&#x20;
 
 • Every type of organization such as medical, financial, or education institutions, uses a network to operate effectively.&#x20;
 
