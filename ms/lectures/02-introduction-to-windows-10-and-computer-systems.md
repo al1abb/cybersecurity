@@ -79,3 +79,19 @@ BIOS is a firmware. Firmware is combination of hardware and software
 • The settings are retained by CMOS using a lithium battery&#x20;
 
 • If the battery dies, all BIOS setup configuration data is lost
+
+### UEFI
+
+• Unified Extensive Firmware Interface&#x20;
+
+• UEFI is an upgraded BIOS - it performs the same tasks performed by the BIOS and more&#x20;
+
+• UEFI is designed to eventually make BIOS obsolete
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>BIOS vs UEFI</p></figcaption></figure>
+
+## Operating Systems
+
+An operating system (OS) is software that controls a computer
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>4 main functions of an OS</p></figcaption></figure>
