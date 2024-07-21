@@ -152,7 +152,7 @@
 
 ### Types of malware
 
-**Trojan Horse:** A trojan horse is designed to appear as a legitimate program in order to gain access to a system and execute malicious code
+#### **Trojan Horse:** A trojan horse is designed to appear as a legitimate program in order to gain access to a system and execute malicious code
 
 **Worm:** A worm can self-replicate without a host program, typically spreads without human interaction or directives
 
