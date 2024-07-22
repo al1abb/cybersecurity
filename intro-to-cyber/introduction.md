@@ -2,4 +2,4 @@
 
 Do a research on polymorphic code
 
-Research Dwell time, Airgapped network
+Research these: Dwell time, Airgapped network, rsa secure id&#x20;
