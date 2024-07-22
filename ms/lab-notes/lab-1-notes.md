@@ -4,13 +4,15 @@
 
 Version: 10.0.19045 Build 19045
 
+Processor: Processor 12th Gen Intel(R) Core(TM) i7-12700T, 1382 Mhz, 1 Core(s), 1 Logical Processor(s)
+
 System Directory: C:\Windows\system32
 
 Motherboard: Manufacturer = Intel Corporation, Product=440BX Desktop Reference Platform
 
 
 
-You can use Get-ComputerInfo directly from PowerShell  to get system info
+You can use `Get-ComputerInfo` directly from PowerShell  to get system info
 
 
 
@@ -50,9 +52,7 @@ b) ItemName binary is responsible for running .txt files
 
 a) Microsoft Management Console (mmc.exe)
 
-b) Maximum password age is 42 days
-
-
+b) Maximum password age is 42 days. Account Policies > Password Policy
 
 9\)
 
