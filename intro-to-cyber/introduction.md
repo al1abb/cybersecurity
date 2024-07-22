@@ -2,4 +2,4 @@
 
 Do a research on polymorphic code
 
-Research Dwell time
+Research Dwell time, Airgapped network
