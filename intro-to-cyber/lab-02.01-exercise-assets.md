@@ -29,3 +29,6 @@ For your account credentials in a company, you can use strong passwords and enab
 
 
 
+For military infrastructure, you can conduct security audits and military drills
+
+For bank software, you can regularly patch the software
