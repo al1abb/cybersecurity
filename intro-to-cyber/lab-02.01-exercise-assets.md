@@ -16,3 +16,16 @@ Assets of Azerbaijan:
 * intangible: Bank software, trade secrets, research and development
 
 How can these assets be protected? -&#x20;
+
+With laptops you can use strong passwords and encryption
+
+With websites you can try fixing bugs
+
+
+
+For security card, you can store it in a safe place, possibly with you or close to you all the time
+
+For your account credentials in a company, you can use strong passwords and enable 2FA or MFA
+
+
+
