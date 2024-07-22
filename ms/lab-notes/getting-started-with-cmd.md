@@ -21,6 +21,8 @@
 
 Use this to search for all files with jpg extension. Do this from C: Drive
 
+Choose a random image and copy it to FunWithCMD folder
+
 ## Part 2
 
 1. `ipconfig /all`
@@ -44,3 +46,11 @@ DNS Suffix: localdomain
 5. `sc query | findstr Defender`
 
 4 services are assigned to defender
+
+6. `sc query "wsearch"`
+
+State is RUNNING
+
+7. `tasklist | findstr Registry`
+
+Registry PID is 92
