@@ -6,7 +6,8 @@
 
 ## Linux
 
-* [Notes](linux/initial-tasks.md)
+* [Lecture Notes](linux/lecture-notes/README.md)
+  * [23/07 Lecture](linux/lecture-notes/23-07-lecture.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
