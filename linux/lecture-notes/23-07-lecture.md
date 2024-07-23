@@ -7,3 +7,11 @@ VMware does not have NAT from the image. It has NAT but it does the job of NAT N
 Virtual Box has all from the above image. We will mostly use NAT Network and Bridged
 
 Telnet = unsecure SSH (Running on port 23)
+
+SSH uses RSA key fingerprinting for auth. For the first time authentications. SSH has a list of known hosts
+
+* If you answer yes at the prompt (asking to verify the machine’s identity), the RSA key fingerprint of the remote machine will be stored on your local system
+
+This secures you against ARP Spoofing.
+
+On a bridged network, first randomize MAC or problems regarding ARP table will be there and IP address from DHCP will be same
