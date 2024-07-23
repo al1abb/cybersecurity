@@ -15,3 +15,9 @@ SSH uses RSA key fingerprinting for auth. For the first time authentications. SS
 This secures you against ARP Spoofing.
 
 On a bridged network, first randomize MAC or problems regarding ARP table will be there and IP address from DHCP will be same
+
+Normal Start - with GUI
+
+Headless - CMD only
+
+Detachable - Hybrid
