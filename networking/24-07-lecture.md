@@ -42,7 +42,7 @@ Coaxial Cable: The best. Thick copper in the middle + insulation
 
 
 
-Faraday cage. Cancels out all interference. Used in forensics
+Faraday cage. Cancels out all interference. Used in forensics. It even cancels WIFI signals
 
 
 
