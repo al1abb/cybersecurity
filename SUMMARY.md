@@ -26,10 +26,12 @@
 ## Networking
 
 * [Introduction to Networking](networking/introduction-to-networking.md)
-* [Labs](networking/labs/README.md)
-  * [Lab 01-01](networking/labs/lab-01-01.md)
-  * [Lab 01-02](networking/labs/lab-01-02.md)
-  * [Lab 01-03](networking/labs/lab-01-03.md)
+* [24/07 lecture](networking/24-07-lecture.md)
+* [Labs](networking/lab-notes/README.md)
+  * [Lab 01-01](networking/lab-notes/lab-01-01.md)
+  * [Lab 01-02](networking/lab-notes/lab-01-02.md)
+  * [Lab 01-03](networking/lab-notes/lab-01-03.md)
+  * [02-01](networking/labs/02-01.md)
 
 ## Python
 
