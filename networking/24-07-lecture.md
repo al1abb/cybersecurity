@@ -50,3 +50,15 @@ For twisted pair cables that need to go over 100m you can use repeaters, otherwi
 
 
 
+WiMAX might be used for mobile network towers
+
+The AP in the class is L3 so it has arp table.
+
+LTE is interceptable but its harder than WiFi
+
+
+
+Microwave can interfere with WiFi signals
+
+
+
