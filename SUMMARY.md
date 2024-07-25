@@ -28,7 +28,6 @@
 * [Introduction to Networking](networking/introduction-to-networking.md)
 * [Lecture Notes](networking/lecture-notes/README.md)
   * [24/07 lecture](networking/lecture-notes/24-07-lecture.md)
-  * [25/07 lecture](networking/lecture-notes/25-07-lecture.md)
 * [Labs](networking/lab-notes/README.md)
   * [Lab 01-01](networking/lab-notes/lab-01-01.md)
   * [Lab 01-02](networking/lab-notes/lab-01-02.md)
