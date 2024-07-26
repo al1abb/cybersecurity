@@ -8,6 +8,7 @@
 
 * [Lecture Notes](linux/initial-tasks.md)
   * [23/07 Lecture](linux/lecture-notes/23-07-lecture.md)
+  * [26/07. 1.3 Linux - a first glance](linux/lecture-notes/26-07.-1.3-linux-a-first-glance.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
