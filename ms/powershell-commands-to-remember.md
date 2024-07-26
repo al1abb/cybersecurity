@@ -2,7 +2,7 @@
 
 2 main commands to remember:&#x20;
 
-`Get-Command` and `Get-Help`
+`Get-Command (gcm)` and `Get-Help` (can use `help` too)
 
 `Get-Command *dns*` - prints every command with dns in middle of name&#x20;
 

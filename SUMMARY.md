@@ -23,6 +23,7 @@
   * [Lab 1 Notes. 02.04 PowerShell Basics](ms/lab-notes/lab-1-notes.-02.04-powershell-basics.md)
   * [02.03 Getting started with CMD](ms/lab-notes/02.03-getting-started-with-cmd.md)
 * [Notes during the lecture](ms/notes-during-the-lecture.md)
+* [26/07. Introduction to PowerShell](ms/26-07.-introduction-to-powershell.md)
 
 ## Networking
 
