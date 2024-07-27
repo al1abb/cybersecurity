@@ -90,7 +90,7 @@
 
 • **Physical controls** - Fences, doors, locks and fire extinguishers;&#x20;
 
-• **Administrative controls**
+• **Administrative controls** (Human factors of security)
 
 – Legal and regulatory or compliance controls - privacy laws, policies and clauses.&#x20;
 
@@ -98,3 +98,10 @@
 
 • **Technical controls** - User authentication (login) and logical access controls, antivirus software, firewalls.
 
+## Defense In Depth
+
+• Defense in depth is an information assurance (IA) concept in which multiple layers of security controls (defenses) are placed throughout an information technology (IT) system.&#x20;
+
+• **Every layer must use different strategies and mitigations.**
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
