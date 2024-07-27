@@ -7,31 +7,27 @@
 ## Linux
 
 * [Lecture Notes](linux/initial-tasks.md)
-  * [23/07 Lecture](linux/lecture-notes/23-07-lecture.md)
+  * [23/07. VM networking + start modes](linux/lecture-notes/23-07.-vm-networking-+-start-modes.md)
   * [26/07. 1.3 Linux - a first glance](linux/lecture-notes/26-07.-1.3-linux-a-first-glance.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
 ## MS
 
+* [Notes](ms/notes.md)
 * [Powershell commands to remember](ms/powershell-commands-to-remember.md)
 * [Port forwarding](ms/port-forwarding.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
-* [Lab Notes](ms/lab-notes/README.md)
-  * [Lab 1 Notes. 02.04 PowerShell Basics](ms/lab-notes/lab-1-notes.-02.04-powershell-basics.md)
-  * [02.03 Getting started with CMD](ms/lab-notes/02.03-getting-started-with-cmd.md)
-  * [Lab 3. Powershell basics](ms/lab-notes/lab-3.-powershell-basics.md)
-* [Notes during the lecture](ms/notes-during-the-lecture.md)
-* [26/07. Introduction to PowerShell](ms/26-07.-introduction-to-powershell.md)
+* [Labs](ms/labs/README.md)
+  * [Lab 1 Notes. 02.04 PowerShell Basics](ms/labs/lab-1-notes.-02.04-powershell-basics.md)
+  * [02.03 Getting started with CMD](ms/labs/02.03-getting-started-with-cmd.md)
+  * [Lab 3. Powershell basics](ms/labs/lab-3.-powershell-basics.md)
 
 ## Networking
 
-* [Introduction to Networking](networking/introduction-to-networking.md)
 * [Notes](networking/notes.md)
-* [Lecture Notes](networking/lecture-notes/README.md)
-  * [24/07 lecture](networking/lecture-notes/24-07-lecture.md)
 * [Labs](networking/lab-notes/README.md)
   * [01-01. Wireshark](networking/lab-notes/lab-01-01.md)
   * [01-02. Wireshark](networking/lab-notes/lab-01-02.md)
