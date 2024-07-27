@@ -1,4 +1,4 @@
-# Lab 1 Notes
+# Lab 1 Notes. 02.04 PowerShell Basics
 
 3\)
 
@@ -10,11 +10,9 @@ System Directory: C:\Windows\system32
 
 Motherboard: Manufacturer = Intel Corporation, Product=440BX Desktop Reference Platform
 
-
-
+{% hint style="info" %}
 You can use `Get-ComputerInfo` directly from PowerShell  to get system info
-
-
+{% endhint %}
 
 4\) System information binary and its path
 
@@ -22,11 +20,7 @@ msinfo32.exe
 
 Location: C:\Windows\System32\msinfo32.exe
 
-
-
 5\) StartMenuExperienceHost.exe has the lowest PID which is 3844
-
-
 
 6\) Usernames list:
 
@@ -38,15 +32,11 @@ SYSTEM
 
 NETWORK SERVICE
 
-
-
 7\)
 
 a) It contains 2 sub keys, 7 files
 
 b) ItemName binary is responsible for running .txt files
-
-
 
 8\)
 
@@ -60,8 +50,6 @@ Through Advanced Audit Policy Configuration, you find detailed tracking and then
 
 You can check using the Audit Events bar in detailed tracking&#x20;
 
-
-
 10\)
 
 a) Process creation event id is 4688
@@ -74,21 +62,7 @@ d)&#x20;
 
 LAB END -------
 
-Powershell notes:
 
-cmd - Opens cmd
-
-regedit - Opens registry editor
-
-mmc - Opens Microsot Management Console
-
-services -  Was not working
-
-$env:Path - ENV variables and their path.
-
-secpol - Local Security Policy
-
-eventvwr - Opens Event Viewer (Windows logs is here)
 
 
 

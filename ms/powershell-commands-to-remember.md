@@ -1,2 +1,0 @@
-# Powershell commands to remember
-

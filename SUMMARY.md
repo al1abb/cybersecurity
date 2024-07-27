@@ -7,23 +7,24 @@
 ## Linux
 
 * [Lecture Notes](linux/initial-tasks.md)
-  * [23/07. VM networking + start modes](linux/lecture-notes/23-07.-vm-networking-+-start-modes.md)
+  * [23/07. VM networking + start modes](linux/lecture-notes/23-07-lecture.md)
   * [26/07. 1.3 Linux - a first glance](linux/lecture-notes/26-07.-1.3-linux-a-first-glance.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
 ## MS
 
-* [Notes](ms/notes.md)
-* [Powershell commands to remember](ms/powershell-commands-to-remember.md)
-* [Port forwarding](ms/port-forwarding.md)
+* [Notes](ms/notes/README.md)
+  * [17/07. PowerShell Commands to remember + Port Forwarding](ms/notes/17-07.-powershell-commands-to-remember-+-port-forwarding.md)
+  * [22/07. Why free Wi-Fi and DNS is bad, Trust & Ethics](ms/notes/22-07.-why-free-wi-fi-and-dns-is-bad-trust-and-ethics.md)
+  * [26/07. Intro to PowerShell](ms/notes/26-07.-intro-to-powershell.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
-* [Labs](ms/labs/README.md)
-  * [Lab 1 Notes. 02.04 PowerShell Basics](ms/labs/lab-1-notes.-02.04-powershell-basics.md)
-  * [02.03 Getting started with CMD](ms/labs/02.03-getting-started-with-cmd.md)
-  * [Lab 3. Powershell basics](ms/labs/lab-3.-powershell-basics.md)
+* [Labs](ms/lab-notes/README.md)
+  * [Lab 1 Notes. 02.04 PowerShell Basics](ms/lab-notes/lab-1-notes.-02.04-powershell-basics.md)
+  * [02.03 Getting started with CMD](ms/lab-notes/02.03-getting-started-with-cmd.md)
+  * [Lab 3. Powershell basics](ms/lab-notes/lab-3.-powershell-basics.md)
 
 ## Networking
 
