@@ -86,7 +86,17 @@
 
 • Disaster recovery / COOP plan
 
-## Controls Classification
+## Defense In Depth
+
+• Defense in depth is an information assurance (IA) concept in which multiple layers of security controls (defenses) are placed throughout an information technology (IT) system.&#x20;
+
+• **Every layer must use different strategies and mitigations.**
+
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+### Controls Classification
+
+**Defense in depth** can be divided into three functional areas:
 
 • **Physical controls** - Fences, doors, locks and fire extinguishers;&#x20;
 
@@ -98,10 +108,67 @@
 
 • **Technical controls** - User authentication (login) and logical access controls, antivirus software, firewalls.
 
-## Defense In Depth
+## Defense
 
-• Defense in depth is an information assurance (IA) concept in which multiple layers of security controls (defenses) are placed throughout an information technology (IT) system.&#x20;
+### Network Segmentation
 
-• **Every layer must use different strategies and mitigations.**
+• Dividing a network into Segments
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+• Separating a network from Internet using Firewall
+
+### Patching
+
+• Patching refers to updating firmware, OS, or software to address performance and security issues&#x20;
+
+• Each vendor provides (or should provide) security updates for its products&#x20;
+
+• Example: Microsoft Security Update Portal
+
+### Hardening
+
+• Hardening goal is reducing the “Attack Surface” so that there are less vulnerabilities available to attackers.&#x20;
+
+• What can be hardened?&#x20;
+
+– Firmware&#x20;
+
+– Operating System&#x20;
+
+– Database&#x20;
+
+– Software
+
+### Disaster Recovery
+
+• Security managers and specialists are trying to prevent security incidents&#x20;
+
+• However, if those incidents happen, they have to be detected, and security or business processes employed to correct them as soon as possible
+
+### Blacklisting known bad stuff
+
+• Used mostly for domain filtering&#x20;
+
+• Also used in Access Control Lists (IP addresses)&#x20;
+
+• Technically, it may be used for anything (applications in cell phones, etc.)
+
+### Whitelisting good stuff
+
+• Used within restrictive access schemes&#x20;
+
+• Less often than blacklist&#x20;
+
+• Mostly used in ACLs (only this IP can access and the other cannot)
+
+### Authentication Factors (MFA)
+
+• Multi-factor authentication involves two or more different factors
+
+• Something you know - password, PIN code&#x20;
+
+• Something you have - smartcard, cell phone with authenticator app&#x20;
+
+• Something you are - biometric
+
+### Hash algorithms
+
