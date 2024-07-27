@@ -33,11 +33,12 @@
 * [Lecture Notes](networking/lecture-notes/README.md)
   * [24/07 lecture](networking/lecture-notes/24-07-lecture.md)
 * [Labs](networking/lab-notes/README.md)
-  * [01-01. Wireshark](networking/labs/01-01.-wireshark.md)
-  * [01-02. Wireshark](networking/labs/01-02.-wireshark.md)
-  * [01-03. Cisco Packet Tracer](networking/labs/01-03.-cisco-packet-tracer.md)
-  * [02-01. Cisco Packet Tracer](networking/labs/02-01.-cisco-packet-tracer.md)
-  * [02-02. Wireshark](networking/labs/02-02.-wireshark.md)
+  * [01-01. Wireshark](networking/lab-notes/lab-01-01.md)
+  * [01-02. Wireshark](networking/lab-notes/lab-01-02.md)
+  * [01-03. Cisco Packet Tracer](networking/lab-notes/lab-01-03.md)
+  * [02-01. Cisco Packet Tracer](networking/labs/02-01.md)
+  * [02-02. Wireshark](networking/labs/02-02.md)
+* [Terminology](networking/terminology.md)
 
 ## Python
 

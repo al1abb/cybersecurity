@@ -1,5 +1,37 @@
 # Notes
 
+## 18/07
+
+{% hint style="info" %}
+You never find encryption on layer 6 in OSI Model. Some old books say it
+{% endhint %}
+
+{% hint style="info" %}
+Station = L2
+
+Host = L3
+{% endhint %}
+
+{% hint style="info" %}
+Hub works in L1
+
+Switch works in L2
+
+Router in L3
+
+Firewall is minimum L4
+{% endhint %}
+
+{% hint style="info" %}
+Hubs might collide
+
+Switches handle collision. Research CAM tables
+{% endhint %}
+
+{% hint style="success" %}
+Star topology is best topology
+{% endhint %}
+
 ## 24/07
 
 ### Difference between modems and routers
@@ -7,12 +39,10 @@
 {% hint style="info" %}
 Modem transfers analog to digital and vice versa. Can be considered a router.
 
-Modems are router, but not all routers are modems
+Modems are routers, but not all routers are modems
 
 Mo-dem: Modulator - Demodulator
 {% endhint %}
-
-OSPF: Open Shortest Path First
 
 ### NIC Types
 
