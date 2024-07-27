@@ -98,13 +98,13 @@
 
 **Defense in depth** can be divided into three functional areas:
 
-• **Physical controls** - Fences, doors, locks and fire extinguishers;&#x20;
+• **Physical controls** - Fences, doors, locks, and fire extinguishers;&#x20;
 
 • **Administrative controls** (Human factors of security)
 
-– Legal and regulatory or compliance controls - privacy laws, policies and clauses.&#x20;
+– Legal and regulatory or compliance controls - privacy laws, policies, and clauses.&#x20;
 
-– Procedural controls - Incident response processes, management oversight, security awareness and training.&#x20;
+– Procedural controls - Incident response processes, management oversight, security awareness, and training.&#x20;
 
 • **Technical controls** - User authentication (login) and logical access controls, antivirus software, firewalls.
 
@@ -114,7 +114,7 @@
 
 • Dividing a network into Segments
 
-• Separating a network from Internet using Firewall
+• Separating a network from the Internet using a Firewall
 
 ### Patching
 
@@ -164,11 +164,39 @@
 
 • Multi-factor authentication involves two or more different factors
 
-• Something you know - password, PIN code&#x20;
+• Something **you know** - password, PIN code&#x20;
 
-• Something you have - smartcard, cell phone with authenticator app&#x20;
+• Something **you have** - smartcard, cell phone with authenticator app&#x20;
 
-• Something you are - biometric
+• Something **you are** - biometric
 
 ### Hash algorithms
+
+• Hashing algorithms are one-way functions that generate a fixed-length result from a given input (text or file)&#x20;
+
+• The hash value is a digest of the original data (But the original data cannot be recovered from the hash!)&#x20;
+
+• Most popular: **MD5** (Broken) and **SHA** (family) algorithms
+
+### Encryption
+
+• **Caesar Cipher**&#x20;
+
+• **Symmetric encryption**&#x20;
+
+– Uses single key to encrypt and decrypt data&#x20;
+
+• **Asymmetric encryption**,&#x20;
+
+– Also known as public-key cryptography&#x20;
+
+– Using key-pair
+
+### Digital Signatures
+
+You sign a document using your private key. Receiver verifies it using your public key
+
+The signature is valid when the **document x hash algorithm** and **document x public key** hashes match
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Digital Signatures</p></figcaption></figure>
 
