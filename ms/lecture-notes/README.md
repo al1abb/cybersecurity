@@ -2,5 +2,5 @@
 description: MS Lecture Notes
 ---
 
-# Notes
+# Lecture Notes
 

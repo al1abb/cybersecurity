@@ -14,10 +14,10 @@
 
 ## MS
 
-* [Notes](ms/notes/README.md)
-  * [17/07. PowerShell Commands to remember + Port Forwarding](ms/notes/17-07.-powershell-commands-to-remember-+-port-forwarding.md)
-  * [22/07. Why free Wi-Fi and DNS is bad, Trust & Ethics](ms/notes/22-07.-why-free-wi-fi-and-dns-is-bad-trust-and-ethics.md)
-  * [26/07. Intro to PowerShell](ms/notes/26-07.-intro-to-powershell.md)
+* [Lecture Notes](ms/lecture-notes/README.md)
+  * [17/07. PowerShell Commands to remember + Port Forwarding](ms/lecture-notes/17-07.-powershell-commands-to-remember-+-port-forwarding.md)
+  * [22/07. Why free Wi-Fi and DNS is bad, Trust & Ethics](ms/lecture-notes/22-07.-why-free-wi-fi-and-dns-is-bad-trust-and-ethics.md)
+  * [26/07. Intro to PowerShell](ms/lecture-notes/26-07.-intro-to-powershell.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
@@ -28,7 +28,9 @@
 
 ## Networking
 
-* [Notes](networking/notes.md)
+* [Lecture Notes](networking/lecture-notes/README.md)
+  * [18/07](networking/lecture-notes/18-07.md)
+  * [24/07. Modem vs Router. NIC. Duplexing. Copper Cables](networking/lecture-notes/24-07.-modem-vs-router.-nic.-duplexing.-copper-cables.md)
 * [Labs](networking/lab-notes/README.md)
   * [01-01. Wireshark](networking/lab-notes/lab-01-01.md)
   * [01-02. Wireshark](networking/lab-notes/lab-01-02.md)
