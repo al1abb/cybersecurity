@@ -29,14 +29,15 @@
 ## Networking
 
 * [Introduction to Networking](networking/introduction-to-networking.md)
+* [Notes](networking/notes.md)
 * [Lecture Notes](networking/lecture-notes/README.md)
   * [24/07 lecture](networking/lecture-notes/24-07-lecture.md)
 * [Labs](networking/lab-notes/README.md)
-  * [Lab 01-01](networking/lab-notes/lab-01-01.md)
-  * [Lab 01-02](networking/lab-notes/lab-01-02.md)
-  * [Lab 01-03](networking/lab-notes/lab-01-03.md)
-  * [02-01](networking/labs/02-01.md)
-  * [02-02](networking/labs/02-02.md)
+  * [01-01. Wireshark](networking/labs/01-01.-wireshark.md)
+  * [01-02. Wireshark](networking/labs/01-02.-wireshark.md)
+  * [01-03. Cisco Packet Tracer](networking/labs/01-03.-cisco-packet-tracer.md)
+  * [02-01. Cisco Packet Tracer](networking/labs/02-01.-cisco-packet-tracer.md)
+  * [02-02. Wireshark](networking/labs/02-02.-wireshark.md)
 
 ## Python
 
@@ -49,5 +50,5 @@
   * [1 -  Introduction to Cyberwarfare](intro-to-cyber/lectures/1-introduction-to-cyberwarfare.md)
   * [2 - Security Operations](intro-to-cyber/lectures/2-security-operations.md)
 * [Labs](intro-to-cyber/labs/README.md)
-  * [Lab 02.01 - Exercise - Assets](intro-to-cyber/labs/lab-02.01-exercise-assets.md)
+  * [Lab 02.01 - Exercise - Assets](intro-to-cyber/lab-02.01-exercise-assets.md)
 * [Terminology](intro-to-cyber/terminology.md)
