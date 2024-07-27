@@ -48,4 +48,6 @@
 * [Lectures](intro-to-cyber/lectures/README.md)
   * [1 -  Introduction to Cyberwarfare](intro-to-cyber/lectures/1-introduction-to-cyberwarfare.md)
   * [2 - Security Operations](intro-to-cyber/lectures/2-security-operations.md)
-* [Lab 02.01 - Exercise - Assets](intro-to-cyber/lab-02.01-exercise-assets.md)
+* [Labs](intro-to-cyber/labs/README.md)
+  * [Lab 02.01 - Exercise - Assets](intro-to-cyber/labs/lab-02.01-exercise-assets.md)
+* [Terminology](intro-to-cyber/terminology.md)
