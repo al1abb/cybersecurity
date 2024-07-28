@@ -136,3 +136,10 @@
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Cyber Kill Chain VS Mitre ATT&#x26;CK</p></figcaption></figure>
 
+## Carbanak
+
+Video about Carbanak Heist
+
+{% embed url="https://www.youtube.com/watch?v=GSNopHdNnKE" %}
+Carbanak Heist Documentary
+{% endembed %}
