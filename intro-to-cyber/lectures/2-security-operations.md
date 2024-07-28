@@ -1,5 +1,9 @@
 # 2 - Security Operations
 
+## 2011 RSA hack
+
+[https://www.wired.com/story/the-full-story-of-the-stunning-rsa-hack-can-finally-be-told/](https://www.wired.com/story/the-full-story-of-the-stunning-rsa-hack-can-finally-be-told/)&#x20;
+
 ## Assets
 
 • One of the main tasks of risk professionals is providing secure systems to protect the main assets of the organization&#x20;
