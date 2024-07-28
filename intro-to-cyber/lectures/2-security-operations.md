@@ -2,7 +2,13 @@
 
 ## 2011 RSA hack
 
-[https://www.wired.com/story/the-full-story-of-the-stunning-rsa-hack-can-finally-be-told/](https://www.wired.com/story/the-full-story-of-the-stunning-rsa-hack-can-finally-be-told/)&#x20;
+{% embed url="https://www.wired.com/story/the-full-story-of-the-stunning-rsa-hack-can-finally-be-told/" %}
+WIRED Blog on RSA Hack
+{% endembed %}
+
+{% embed url="https://www.youtube.com/watch?v=I6fVydTJ1cg" %}
+Kaspersky Lab on RSA hack
+{% endembed %}
 
 ## Assets
 
