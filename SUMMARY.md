@@ -18,6 +18,7 @@
   * [17/07. PowerShell Commands to remember + Port Forwarding](ms/lecture-notes/17-07.-powershell-commands-to-remember-+-port-forwarding.md)
   * [22/07. Why free Wi-Fi and DNS is bad, Trust & Ethics](ms/lecture-notes/22-07.-why-free-wi-fi-and-dns-is-bad-trust-and-ethics.md)
   * [26/07. Intro to PowerShell](ms/lecture-notes/26-07.-intro-to-powershell.md)
+  * [29/07. Servers and Domains](ms/lecture-notes/29-07.-servers-and-domains.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
