@@ -54,3 +54,4 @@
 * [Labs](intro-to-cyber/labs/README.md)
   * [Lab 02.01 - Exercise - Assets](intro-to-cyber/lab-02.01-exercise-assets.md)
 * [Terminology](intro-to-cyber/terminology.md)
+* [Midterm wrong answer](intro-to-cyber/midterm-wrong-answer.md)
