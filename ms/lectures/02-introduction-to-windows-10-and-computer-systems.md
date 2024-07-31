@@ -148,15 +148,23 @@ There are 2 types of UI: CLI and GUI
 
 #### GUI tools
 
-Settings App or Control Panel
+Settings App (Introduced in Win 8) or Control Panel (Introduced in Win 2.0)
+
+{% hint style="info" %}
+Settings app is quickest way to make configuration changes
+
+Control Panel is more advanced than Settings App
+{% endhint %}
 
 #### CLI Tools
 
 CMD - Command Prompt
 
-PowerShell
+PowerShell - designed for system administration, developed by MS
 
+{% hint style="info" %}
 PowerShell is more powerful than CMD
+{% endhint %}
 
 #### Advanced Tools
 
@@ -165,3 +173,29 @@ PowerShell is more powerful than CMD
 • Group policy&#x20;
 
 • Administrative tools
+
+## Configuring Network Connectivity
+
+**DNS (Domain Name System)** - translates names to IP addresses
+
+**NIC (Network Interface Card)** - a hardware that connects the device to a network
+
+## Configuring Devices
+
+When you install a new device, both the device and the device drivers must be installed.
+
+### Device Drivers
+
+**Drivers** - group of files (software) that enable hardware to communicate with the OS
+
+{% hint style="info" %}
+Without drivers the computer won’t be able to send/receive data to/from the hardware
+{% endhint %}
+
+{% hint style="info" %}
+Today’s OS have a lot of generic drivers that allow hardware to work on a basic level without needing drivers or software
+{% endhint %}
+
+• If the device has features unknown to the OS it will not work and you’ll have to install it&#x20;
+
+• You can download the drivers you need from the manufacturer’s website
