@@ -39,6 +39,7 @@
   * [01-03. Cisco Packet Tracer](networking/lab-notes/lab-01-03.md)
   * [02-01. Cisco Packet Tracer](networking/labs/02-01.md)
   * [02-02. Wireshark](networking/labs/02-02.md)
+  * [04-02. Wireshark Wifi cap files quality](networking/labs/04-02.-wireshark-wifi-cap-files-quality.md)
 * [Terminology](networking/terminology.md)
 
 ## Python
