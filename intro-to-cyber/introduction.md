@@ -12,3 +12,4 @@ L8 = User
 L9 = Org. management
 {% endhint %}
 
+Triage = Prioritising
