@@ -9,7 +9,8 @@
 * [Lecture Notes](linux/initial-tasks.md)
   * [23/07. VM networking + start modes](linux/lecture-notes/23-07-lecture.md)
   * [26/07. 1.3 Linux - a first glance](linux/lecture-notes/26-07.-1.3-linux-a-first-glance.md)
-  * [02/08. CLI basics](linux/lecture-notes/02-08.-cli-basics.md)
+  * [02/08. CLI basics 1](linux/lecture-notes/02-08.-cli-basics-1.md)
+  * [06/08. CLI Basics 2](linux/lecture-notes/06-08.-cli-basics-2.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
