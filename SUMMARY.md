@@ -22,6 +22,7 @@
   * [26/07. Intro to PowerShell](ms/lecture-notes/26-07.-intro-to-powershell.md)
   * [29/07. Servers and Domains](ms/lecture-notes/29-07.-servers-and-domains.md)
   * [05/08. Windows Server Installation, Active Directory](ms/lecture-notes/05-08.-windows-server-installation.md)
+  * [06/08. Active Directory 2](ms/lecture-notes/06-08.-active-directory-2.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
