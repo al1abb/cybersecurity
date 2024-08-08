@@ -38,6 +38,7 @@
   * [24/07. Modem vs Router. NIC. Duplexing. Copper Cables](networking/lecture-notes/24-07.-modem-vs-router.-nic.-duplexing.-copper-cables.md)
   * [01/08. OSI Layer 2](networking/lecture-notes/01-08..md)
   * [07/08. OSI Layer 3](networking/lecture-notes/07-08.-osi-layer-3.md)
+  * [08/08. OSI Layer 3 (Continued)](networking/lecture-notes/08-08.-osi-layer-3-continued.md)
 * [Labs](networking/lab-notes/README.md)
   * [01-01. Wireshark](networking/lab-notes/lab-01-01.md)
   * [01-02. Wireshark](networking/lab-notes/lab-01-02.md)
