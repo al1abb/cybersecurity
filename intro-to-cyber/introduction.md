@@ -13,3 +13,8 @@ L9 = Org. management
 {% endhint %}
 
 Triage = Prioritising
+
+{% hint style="info" %}
+15/08/24 exam intro to cyber
+{% endhint %}
+
