@@ -11,7 +11,7 @@
   * [26/07. 1.3 Linux - a first glance](linux/lecture-notes/26-07.-1.3-linux-a-first-glance.md)
   * [02/08. CLI basics 1](linux/lecture-notes/02-08.-cli-basics.md)
   * [06/08. CLI Basics 2](linux/lecture-notes/06-08.-cli-basics-2.md)
-  * [09/08.](linux/lecture-notes/09-08..md)
+  * [09/08. Help methods, Concatenation, File descriptors](linux/lecture-notes/09-08.-help-methods-concatenation-file-descriptors.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
