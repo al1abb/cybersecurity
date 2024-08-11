@@ -66,3 +66,7 @@
 * [Terminology](intro-to-cyber/terminology.md)
 * [Midterm wrong answer](intro-to-cyber/midterm-wrong-answer.md)
 * [Case Study. The Dark Overlord](intro-to-cyber/case-study.-the-dark-overlord.md)
+
+## Security Gateways
+
+* [Lecture Notes](security-gateways/lecture-notes.md)
