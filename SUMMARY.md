@@ -70,4 +70,5 @@
 
 ## Security Gateways
 
-* [Lecture Notes](security-gateways/lecture-notes.md)
+* [Lecture Notes](security-gateways/lecture-notes/README.md)
+  * [12/08. First lecture](security-gateways/lecture-notes/12-08.-first-lecture.md)
