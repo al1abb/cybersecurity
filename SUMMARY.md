@@ -25,6 +25,7 @@
   * [05/08. Windows Server Installation, Active Directory](ms/lecture-notes/05-08.-windows-server-installation.md)
   * [06/08. Active Directory 2](ms/lecture-notes/06-08.-active-directory-2.md)
   * [09/08. Group Policy](ms/lecture-notes/09-08.-group-policy.md)
+  * [12/08.](ms/lecture-notes/12-08..md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
