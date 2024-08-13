@@ -12,6 +12,7 @@
   * [02/08. CLI basics 1](linux/lecture-notes/02-08.-cli-basics.md)
   * [06/08. CLI Basics 2](linux/lecture-notes/06-08.-cli-basics-2.md)
   * [09/08. Help methods, Concatenation, File descriptors](linux/lecture-notes/09-08.-help-methods-concatenation-file-descriptors.md)
+  * [13/08. Archiving and Compression](linux/lecture-notes/13-08.-archiving-and-compression.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
