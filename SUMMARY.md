@@ -45,6 +45,7 @@
   * [07/08. OSI Layer 3](networking/lecture-notes/07-08.-osi-layer-3.md)
   * [08/08. OSI Layer 3 (Continued), ARP, IP Routing protocols](networking/lecture-notes/08-08.-osi-layer-3-continued-arp-ip-routing-protocols.md)
   * [14/08. ICMP](networking/lecture-notes/14-08.-icmp.md)
+  * [IPv6](networking/lecture-notes/ipv6.md)
 * [Labs](networking/lab-notes/README.md)
   * [01-01. Wireshark](networking/lab-notes/lab-01-01.md)
   * [01-02. Wireshark](networking/lab-notes/lab-01-02.md)
