@@ -134,7 +134,7 @@
 
 ### Mitre ATT\&CK Framework
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Cyber Kill Chain VS Mitre ATT&#x26;CK</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Cyber Kill Chain VS Mitre ATT&#x26;CK</p></figcaption></figure>
 
 ## Carbanak
 
