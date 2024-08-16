@@ -29,6 +29,7 @@
   * [09/08. Group Policy](ms/lecture-notes/09-08.-group-policy.md)
   * [12/08.](ms/lecture-notes/12-08..md)
   * [13/08. Files and Folders Permissions](ms/lecture-notes/13-08.-files-and-folders-permissions.md)
+  * [16/08. Windows Authentication](ms/lecture-notes/16-08.-windows-authentication.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
