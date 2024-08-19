@@ -27,7 +27,7 @@
   * [05/08. Windows Server Installation, Active Directory](ms/lecture-notes/05-08.-windows-server-installation.md)
   * [06/08. Active Directory 2](ms/lecture-notes/06-08.-active-directory-2.md)
   * [09/08. Group Policy](ms/lecture-notes/09-08.-group-policy.md)
-  * [12/08.](ms/lecture-notes/12-08..md)
+  * [12/08. Group task AD Setup](ms/lecture-notes/12-08.-group-task-ad-setup.md)
   * [13/08. Files and Folders Permissions](ms/lecture-notes/13-08.-files-and-folders-permissions.md)
   * [16/08. Windows Authentication, NTLM, Kerberos](ms/lecture-notes/16-08.-windows-authentication-ntlm-kerberos.md)
   * [19/08. Remote Administration Tools & Windows Naming Systems](ms/lecture-notes/19-08.-remote-administration-tools-and-windows-naming-systems.md)
