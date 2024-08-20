@@ -13,7 +13,7 @@
   * [06/08. CLI Basics 2](linux/lecture-notes/06-08.-cli-basics-2.md)
   * [09/08. Help methods, Concatenation, File descriptors](linux/lecture-notes/09-08.-help-methods-concatenation-file-descriptors.md)
   * [13/08. Archiving and Compression](linux/lecture-notes/13-08.-archiving-and-compression.md)
-  * [16/08. Users and Groups. 20/08.](linux/lecture-notes/16-08.-users-and-groups.-20-08..md)
+  * [16/08. Users and Groups. 20/08. User config, login.defs, groups, who command](linux/lecture-notes/16-08.-users-and-groups.-20-08.-user-config-login.defs-groups-who-command.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
