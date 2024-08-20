@@ -32,6 +32,7 @@
   * [16/08. Windows Authentication, NTLM, Kerberos](ms/lecture-notes/16-08.-windows-authentication-ntlm-kerberos.md)
   * [19/08. Remote Administration Tools & Windows Naming Systems](ms/lecture-notes/19-08.-remote-administration-tools-and-windows-naming-systems.md)
   * [20/08. Servers Hardening](ms/lecture-notes/20-08.-servers-hardening.md)
+  * [MS Exam prep](ms/lecture-notes/ms-exam-prep.md)
 * [Lectures](ms/lectures/README.md)
   * [01 - Virtualization Technologies](ms/lectures/01-virtualization-technologies.md)
   * [02 - Introduction to Windows 10 and Computer Systems](ms/lectures/02-introduction-to-windows-10-and-computer-systems.md)
