@@ -1,4 +1,4 @@
-# IPv6
+# 15/08?. IPv6
 
 IPv6 does not need DHCP
 
