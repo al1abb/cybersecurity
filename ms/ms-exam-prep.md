@@ -2,6 +2,22 @@
 
 ## 1. What is Active Directory?
 
+**Active Directory (AD)** is a **directory service** developed by Microsoft for Windows domain networks. It is a **centralized** and standardized system that automates network management of user data, security, and distributed resources, and enables interoperation with other directories.
+
+AD stores information about objects on the network, such as users, computers, printers, and groups, and makes this information easily accessible to administrators and users.&#x20;
+
+It uses a structured data store as the basis for a logical, hierarchical organization of directory information, such as a directory tree. This structure allows for efficient management of large amounts of data and resources across a network.
+
+**Key features** of Active Directory include:
+
+* **Authentication and Authorization**: AD provides secure login processes, verifying a user's identity and determining what resources they have access to.
+* **Centralized Resource Management**: Administrators can manage resources and security settings across the network from a single point of control.
+* **Group Policy**: AD allows for the configuration of settings for users and computers within the network using Group Policy Objects (GPOs).
+* **Replication**: Data in AD is replicated across multiple domain controllers to ensure availability and fault tolerance.
+* **Database**: AD relies on a database to store and organize directory information about the objects in the network, such as users, groups, computers, and security policies. This database is often referred to as the "Active Directory database" and is stored in a file called **`NTDS.dit`** (Full Path: C:\Windows\NTDS\NTDS.dit) on each domain controller.
+
+Active Directory is essential in environments where centralized management and security are required, typically in business or enterprise settings.
+
 ## 2. How would you react to a colleague's criticism about your use of Active Directory?
 
 ## 3. What are the key changes in the 2012 version of Active Directory?
