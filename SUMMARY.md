@@ -53,6 +53,7 @@
   * [14/08. ICMP](networking/lecture-notes/14-08.-icmp.md)
   * [15/08?. IPv6](networking/lecture-notes/ipv6.md)
   * [21/08. Subnetting, TCP](networking/lecture-notes/21-08.-subnetting-tcp.md)
+  * [22/08. TCP header cont.](networking/lecture-notes/22-08.-tcp-header-cont..md)
 * [Labs](networking/lab-notes/README.md)
   * [01-01. Wireshark](networking/lab-notes/lab-01-01.md)
   * [01-02. Wireshark](networking/lab-notes/lab-01-02.md)
