@@ -14,11 +14,14 @@ It uses a structured data store as the basis for a logical, hierarchical organiz
 * **Centralized Resource Management**: Administrators can manage resources and security settings across the network from a single point of control.
 * **Group Policy**: AD allows for the configuration of settings for users and computers within the network using Group Policy Objects (GPOs).
 * **Replication**: Data in AD is replicated across multiple domain controllers to ensure availability and fault tolerance.
-* **Database**: AD relies on a database to store and organize directory information about the objects in the network, such as users, groups, computers, and security policies. This database is often referred to as the "Active Directory database" and is stored in a file called **`NTDS.dit`** (Full Path: C:\Windows\NTDS\NTDS.dit) on each domain controller.
+* **Database**: AD relies on a database to store and organize directory information about the objects in the network, such as users, groups, computers, and security policies. \
+  This database is often referred to as the "Active Directory database" and is stored in a file called **`NTDS.dit`** (C:\Windows\NTDS\NTDS.dit) on **each domain controller**.
 
 Active Directory is essential in environments where centralized management and security are required, typically in business or enterprise settings.
 
 ## 2. How would you react to a colleague's criticism about your use of Active Directory?
+
+I would approach this situation professionally. Now, I know that my AD skills might not be the best in a job environment as its not my specialty per say. Next, I would try to acknowledge their perspective as long as their feedback is valid. Then, I would try to explain my perspective on the subject and collaborate on a solution
 
 ## 3. What are the key changes in the 2012 version of Active Directory?
 
