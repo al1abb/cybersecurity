@@ -37,5 +37,36 @@ If the session key matches, it trusts that the user is who the ticket says they 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>AP-REQ</p></figcaption></figure>
 
 {% hint style="info" %}
-Note that this message won’t usually be easy to see in network captures because it will be sent over whatever protocol the client communicates with the network service with (e.g HTTPS, SQL’s network protocol, or some proprietary protocol created just for this service):
+Note that this message won’t usually be easy to see in network captures because it will be sent over whatever protocol the client communicates with the network service with (e.g HTTPS, SQL’s network protocol, or some proprietary protocol created just for this service)
 {% endhint %}
+
+## Golden Ticket Attack
+
+A **golden ticket** in Active Directory grants the bearer **unlimited access**
+
+A Golden Ticket attack abuses the Kerberos protocol, which depends on the use of shared secrets to encrypt and sign messages.&#x20;
+
+One of these secrets is known only to the Key Distribution Center (KDC):  the password hash for the KRBTGT user, which is used to issue the Kerberos tickets required to access IT systems and data.&#x20;
+
+Suppose an adversary compromises the KRBTGT password hash. In that case, they possess a golden ticket — they can mint Kerberos tickets as if they were Active Directory itself, giving them the power to access any resource they choose!&#x20;
+
+Unfortunately, Golden Ticket attacks are extremely difficult to detect and respond to.
+
+### How to do it?
+
+You need to know 3 things:
+
+1\) Domain - al1abb.local
+
+2\) Domain SID (can be learned with `whoami /user`)
+
+3\) KRBTGT - You need to be domain admin to get this. After that you can get it using mimikatz
+
+{% hint style="info" %}
+Golden Ticket does not expire for many years
+{% endhint %}
+
+{% embed url="https://player.vimeo.com/video/681319062" %}
+Golden Ticket Attack Using Mimikatz
+{% endembed %}
+
