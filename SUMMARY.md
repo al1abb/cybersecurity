@@ -42,6 +42,7 @@
   * [02.03 Getting started with CMD](ms/lab-notes/02.03-getting-started-with-cmd.md)
   * [Lab 3. Powershell basics](ms/lab-notes/lab-3.-powershell-basics.md)
 * [MS Exam Prep](ms/ms-exam-prep.md)
+* [Self-study. 25/08. Kerberos](ms/self-study.-25-08.-kerberos.md)
 
 ## Networking
 
