@@ -70,3 +70,31 @@ Golden Ticket does not expire for many years
 Golden Ticket Attack Using Mimikatz
 {% endembed %}
 
+## Silver Ticket Attack
+
+Silver Ticket attack involves compromising credentials and abusing the design of the [Kerberos](https://stealthbits.com/blog/what-is-kerberos/) protocol.&#x20;
+
+A Silver Ticket only enables an attacker to forge ticket-granting service (TGS) tickets for **specific services**.&#x20;
+
+TGS tickets are encrypted with the password hash for the service; therefore, if an adversary steals the hash for a service account, they can mint TGS tickets for that service.
+
+While the scope of a Silver Ticket attack may be smaller, it is still a powerful tool in an adversary’s kit, enabling persistent and stealthy access to resources.&#x20;
+
+Since only the service account’s password hash is required, it is also significantly easier to execute than a Golden Ticket attack.&#x20;
+
+Techniques like harvesting hashes from LSASS.exe and **Kerberoasting** are common ways adversaries obtain service account password hashes.
+
+### How to do it?
+
+You need:
+
+Password of a service account. (You can use Kerberoasting for this)
+
+You take any account that has registered SPN (Service principle name) in AD and brute-force the password offline
+
+{% embed url="https://player.vimeo.com/video/681322374" %}
+Silver Ticket Attack Using Mimikatz
+{% endembed %}
+
+## Kerberoasting Attack
+
