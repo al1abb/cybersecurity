@@ -126,32 +126,70 @@ Enable it in the AD Sites and Services console to allow users to log on even whe
 
 ## 25. Can you provide examples of windows security protected files
 
+Examples include `ntoskrnl.exe`, `lsass.exe`, and the `SAM` file.
+
 ## 26. Explain what a schema is as if you were talking to a client with little IT knowledge.
+
+The schema is like a blueprint for your network directory; it defines what types of information (like user details) can be stored and how it's organized.
 
 ## 27. What is a PDC emulator?
 
+The PDC Emulator is a role in AD that ensures consistent time across the network and manages password changes and account lockouts.
+
 ## 28. List common RDN prefixes.
+
+* `CN` (Common Name)
+* `OU` (Organizational Unit)
+* `DC` (Domain Component)
 
 ## 29. What do WEB I and DSS stand for?
 
+* **WEB I**: No specific common acronym, might need clarification.
+* **DSS**: Decision Support System, typically used for making informed decisions based on data.
+
 ## 30. Describe the purpose of the Active Directory Recycle Bin.
+
+The AD Recycle Bin allows you to restore accidentally deleted objects like users or groups without needing a full restore.
 
 ## 31. Explain why a database administrator might use replication.
 
+Replication ensures that changes made to the database are copied to other servers, providing data redundancy and high availability.
+
 ## 32. What's the difference between native mode and mixed mode?
+
+* **Native Mode**: Only supports Windows 2000 or later domain controllers.
+* **Mixed Mode**: Supports both Windows 2000 and NT domain controllers.
 
 ## 33. Is clustering relevant in Active Directory?
 
+Yes, clustering can be used for high availability of certain AD services, like databases, though not directly for domain controllers.
+
 ## 34. Tell me about the similarities and differences between Active Directory's physical and logical structures.
+
+* **Physical Structure**: Refers to the actual network layout, like sites and domain controllers.
+* **Logical Structure**: Refers to how AD objects like domains and OUs are organized and managed.
 
 ## 35. How can you address lingering objects?
 
+Lingering objects can be removed using tools like `repadmin` to ensure consistency across domain controllers.
+
 ## 36. Why is it important to assign unique IDs to an object?
+
+Unique IDs, like SIDs, ensure that each object is distinct, preventing conflicts and security issues.
 
 ## 37. How does the Kerberos authentication process works?
 
+Kerberos uses tickets to verify identity without sending passwords over the network, enhancing security.
+
 ## 38. What is Prefetch Folder in Windows
+
+The Prefetch folder stores data to speed up the loading of applications, improving performance.
 
 ## 39. What does the Export-VM command do?
 
+The `Export-VM` command in PowerShell exports a virtual machine's configuration and data to a specified location.
+
 ## 40. What are Federation Services and Certificate Services in an Active Directory environment
+
+* **Federation Services**: Allow single sign-on (SSO) across different organizations or applications.
+* **Certificate Services**: Issue digital certificates to verify identities and encrypt communications within the network.
