@@ -1,4 +1,4 @@
-# MS Exam Prep
+# MS Interview Prep
 
 ## 1. What is Active Directory?
 
@@ -25,47 +25,104 @@ I would approach this situation professionally. Now, I know that my AD skills mi
 
 ## 3. What are the key changes in the 2012 version of Active Directory?
 
+Key changes include the Active Directory Recycle Bin, a simplified deployment, and dynamic access control, which improves security by allowing fine-grained access permissions.
+
 ## 4. Describe tree, forest, domain, schema and Active Directory domain controller.
+
+* **Tree**: A collection of one or more domains sharing a common namespace.
+* **Forest**: A collection of one or more trees that share a global catalog.
+* **Domain**: A logical group of network objects, like users and computers, within a tree.
+* **Schema**: The structure that defines all objects and their attributes in AD.
+* **Domain Controller (DC)**: A server that manages domain resources, authenticates users, and enforces policies.
 
 ## 5. Describe LDAP and Kerberos.
 
+* **LDAP**: A protocol for accessing and maintaining distributed directory information like user details.
+* **Kerberos**: A network authentication protocol that uses tickets to allow secure user authentication.
+
 ## 6. What is a PDC Emulator, and how can you determine if it works?
+
+The Primary Domain Controller (PDC) Emulator synchronizes time and manages password changes. You can check its status using the `netdom query fsmo` command.
 
 ## 7. What's the difference between Authoritative and Non-Authoritative restore?
 
+* **Authoritative Restore**: Recovers specific AD objects and marks them as the latest, so they overwrite others.
+* **Non-Authoritative Restore**: Restores AD data to a previous state but allows it to be updated by other domain controllers.
+
 ## 8. Describe scenarios in which you can use Authoritative or Non-Authoritative restore and justify your choices.
+
+* **Authoritative**: Use when an important object (e.g., user account) is accidentally deleted.
+* **Non-Authoritative**: Use when recovering AD after a server crash; this allows the latest changes from other servers to be replicated.
 
 ## 9. What's the difference between Enterprise and Domain Admin groups?
 
+* **Enterprise Admins**: Have full control across the entire AD forest.
+* **Domain Admins**: Have control within a specific domain.
+
 ## 10. Describe the relevance of KDC.
+
+The Key Distribution Center (KDC) in AD is crucial for Kerberos authentication, issuing tickets to verify user identities.
 
 ## 11. List a few ports in Active Directory.
 
-## 12. Explain what the gpupdate/force command does.
+Common ports include:
+
+* **LDAP**: 389 (TCP/UDP)
+* **LDAPS**: 636 (TCP)
+* **Kerberos**: 88 (TCP/UDP)
+* **Global Catalog**: 3268 (TCP)
+
+## 12. Explain what the `gpupdate /force` command does.
+
+This command forces an immediate update of Group Policy settings on a computer, overriding the normal refresh interval.
 
 ## 13. What's the SYSVOL folder, and why is it important?
 
+SYSVOL is a shared directory that stores important AD files like group policies and scripts. It's critical for consistent policy application across the domain.
+
 ## 14. Define the infrastructure master.
+
+The Infrastructure Master updates references to objects in other domains and ensures consistency of object references across domains.
 
 ## 15. Give an example of a namespace.
 
+A namespace could be something like `company.local`, which organizes resources in AD and DNS.
+
 ## 16. What does RODC stand for?
+
+Read-Only Domain Controller. It provides a way to deploy domain controllers in locations with lower security by preventing changes to AD.
 
 ## 17. Which file can a user view to identify SRV records associated with a domain controller?
 
+The `netlogon.dns` file in the `C:\Windows\System32\config` folder lists SRV records for domain controllers.
+
 ## 18. Explain the role of subnets in your work.
+
+Subnets help to organize and optimize network traffic by defining which IP addresses are within certain boundaries, critical for AD site design and replication.
 
 ## 19. Do you have any experience with unidirectional trust and bi-directional trust?
 
+Unidirectional trust allows one domain to trust another, while bi-directional trust allows both domains to trust each other. Experience in setting them up is useful for cross-domain authentication.
+
 ## 20. Discuss the importance of multiple-master replication to your work.
+
+Multiple-master replication allows any domain controller to accept changes and replicate them to others, ensuring high availability and fault tolerance.
 
 ## 21. Tell me about a scenario in which generic containers are relevant.
 
+Generic containers, like `Users` and `Computers`, are used to organize objects in AD for easier management and policy application.
+
 ## 22. When can you use an application partition?
+
+Application partitions are used to replicate data to specific domain controllers rather than the entire forest, useful for data like DNS information.
 
 ## 23. How do you check the tombstone lifetime value in your forest?
 
+You can check it using the `dsquery * “cn=Directory Service, cn=Windows NT, cn=Services, cn=Configuration, dc=domain, dc=com” –scope base –attr tombstonelifetime` command.
+
 ## 24. Describe the process for configuring Universal Group Membership Caching.
+
+Enable it in the AD Sites and Services console to allow users to log on even when the Global Catalog server is unavailable.
 
 ## 25. Can you provide examples of windows security protected files
 
