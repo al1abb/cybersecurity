@@ -87,3 +87,7 @@
 * [Lecture Notes](security-gateways/lecture-notes/README.md)
   * [12/08. First lecture](security-gateways/lecture-notes/12-08.-first-lecture.md)
   * [22/08.](security-gateways/lecture-notes/22-08..md)
+
+## Cloud
+
+* [26/08. Cloud Security](cloud/26-08.-cloud-security.md)
