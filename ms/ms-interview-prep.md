@@ -172,7 +172,7 @@ RDN (Relative Distinguished Name) prefixes are used to uniquely identify objects
 ## 29. What do WEB I and DSS stand for?
 
 * **WEB I:** This acronym typically refers to web-based interfaces or integrated web environments, but it is not a standard term in Active Directory. In some contexts, it may refer to web integration or interfaces related to directory services.
-* **DSS (Directory Service Server):** DSS refers to a server that provides directory services, such as Active Directory Domain Services (AD DS) in a Windows environment. It is responsible for storing and managing directory information and facilitating authentication and directory-related operations.
+* **DSS (Directory Synchronization Service):** DSS refers to a server that provides directory services, such as Active Directory Domain Services (AD DS) in a Windows environment. It is responsible for storing and managing directory information and facilitating authentication and directory-related operations.
 
 ## 30. Describe the purpose of the Active Directory Recycle Bin.
 
