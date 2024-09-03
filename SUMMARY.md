@@ -16,6 +16,7 @@
   * [16/08. Users and Groups. 20/08. User config, login.defs, groups, who command](linux/lecture-notes/16-08.-users-and-groups.-20-08..md)
   * [23/08. Ownership and Permissions](linux/lecture-notes/23-08.-ownership-and-permissions.md)
   * [27/08. Sudo](linux/lecture-notes/27-08.-sudo.md)
+  * [03/09. Text Processing](linux/lecture-notes/03-09.-text-processing.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
