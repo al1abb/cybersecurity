@@ -60,6 +60,7 @@
   * [22/08. TCP header cont.](networking/lecture-notes/22-08.-tcp-header-cont..md)
   * [28/08. OSI Layer 5](networking/lecture-notes/28-08.-osi-layer-5.md)
   * [29/08.](networking/lecture-notes/29-08..md)
+  * [05/09. OSI Layer 7. Application Layer](networking/lecture-notes/05-09.-osi-layer-7.-application-layer.md)
 * [Labs](networking/lab-notes/README.md)
   * [01-01. Wireshark](networking/lab-notes/lab-01-01.md)
   * [01-02. Wireshark](networking/lab-notes/lab-01-02.md)
