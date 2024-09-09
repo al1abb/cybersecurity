@@ -99,6 +99,7 @@
 
 * [26/08. Cloud Security](cloud/26-08.-cloud-security.md)
 * [03/09.](cloud/03-09..md)
+* [09/09. MS Cloud Security](cloud/09-09.-ms-cloud-security.md)
 
 ## Interview Prep
 
