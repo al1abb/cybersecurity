@@ -18,7 +18,7 @@
   * [27/08. Sudo](linux/lecture-notes/27-08.-sudo.md)
   * [03/09. Text Processing & Regex](linux/lecture-notes/03-09.-text-processing-and-regex.md)
   * [06/09. Extended Regex + Homoglyph Attack + Network Configuration](linux/lecture-notes/06-09.-extended-regex-+-homoglyph-attack-+-network-configuration.md)
-  * [10/09. Bash Scripting, Variables, Loops, Functions](linux/lecture-notes/10-09.-bash-scripting-variables-loops-functions.md)
+  * [10/09. Bash Scripting, Variables, Loops, Functions](linux/lecture-notes/10-09.-bash-scripting.md)
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
