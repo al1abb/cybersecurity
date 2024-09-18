@@ -12,37 +12,86 @@ Incident Response is a structured approach to handling and managing security inc
 
 ### 3) SOC, Security Solutions, SIEM (Low)
 
+* **SOC**: Security Operations Center, a facility where security analysts monitor and manage security threats and incidents.
+* **Security Solutions**: Tools and strategies designed to protect information systems from threats, including firewalls, antivirus software, and encryption.
+* **SIEM**: Security Information and Event Management, a system that collects, analyzes, and correlates security data across an organization to provide real-time analysis and alerting.
+
 ### 4) Digital Forensics (High)
+
+The process of collecting, preserving, analyzing, and presenting digital evidence in a way that is legally admissible. It involves investigating digital devices and data to uncover evidence related to cybercrimes.
 
 ### 5) Digital Evidence Types, Order of Volatility, Chain of Custody
 
+* **Digital Evidence Types**: Include files, logs, emails, and metadata.
+* **Order of Volatility**: Refers to the order in which evidence should be collected based on its volatility (e.g., RAM is more volatile than hard drives).
+* **Chain of Custody**: A record of who handled the evidence, ensuring its integrity and admissibility in court.
+
 ### 6) Threat Hunting (Low)
+
+The proactive process of searching for potential threats and vulnerabilities within a network or system before they can cause harm, typically using advanced analytics and threat intelligence.
 
 ### 7) Incident Detection types, IOC/BIOC, Baseline, Behaviour Based Analysis
 
+* **Incident Detection Types**: Can be signature-based, anomaly-based, or behavior-based.
+* **IOC/BIOC**: Indicators of Compromise/Behavioral Indicators of Compromise are signs that a system has been compromised or is being targeted.
+* **Baseline**: A baseline represents the normal operating conditions of a system to help identify deviations that may indicate an incident.
+* **Behavior-Based Analysis**: Analyzes the behavior of systems and users to detect suspicious activities.
+
 ### 8) Threat Intelligence (Med)
+
+Information about current and potential threats to an organization’s security. It helps in understanding the tactics, techniques, and procedures used by attackers.
 
 ### 9) Cyber Kill Chain, Case Studies (Med)
 
+**Cyber Kill Chain**: A model describing the stages of a cyber attack, including reconnaissance, weaponization, delivery, exploitation, installation, command and control, and actions on objectives.
+
+RSA Hack
+
+Carbanak
+
 ### 10) Mitre Attack, Pyramid of Pain
+
+* **Mitre ATT\&CK**: A knowledge base of adversary tactics and techniques based on real-world observations, used for threat modeling and detection.
+* **Pyramid of Pain**: A model illustrating the effectiveness of different types of indicators in defending against cyber attacks, from hashes to tactics.
 
 ### 11) Passive/Active Recon (High)
 
+* **Passive Reconnaissance**: Gathering information without directly interacting with the target, such as through public records or social media.
+* **Active Reconnaissance**: Directly interacting with the target to gather information, such as through port scans or probing.
+
 ### 12) OSINT, Dark Web (Medium)
+
+* **OSINT**: Open Source Intelligence, information collected from publicly available sources.
+* **Dark Web**: A part of the internet not indexed by traditional search engines, accessible only through specific software like Tor, often associated with illegal activities.
 
 ### 13) Social Engineering
 
+Manipulating individuals into divulging confidential information or performing actions that compromise security, such as phishing or pretexting.
+
 ### 14) Threat Actors
+
+Individuals or groups that exploit vulnerabilities and conduct attacks against organizations or individuals, including hackers, insiders, and nation-state actors.
 
 ### 15) Malware Types (High)
 
+Includes viruses, worms, trojans, ransomware, spyware, adware, and rootkits, each with different functionalities and methods of infection.
+
 ### 16) Attack Types (High)
+
+Can include denial-of-service attacks, phishing, man-in-the-middle attacks, SQL injection, cross-site scripting, and more.
 
 ### 17) Risk, Risk impacts
 
+* **Risk**: The potential for harm or loss resulting from a threat exploiting a vulnerability.
+* **Risk Impacts**: The consequences of a risk event, such as financial loss, reputation damage, or operational disruption.
+
 ### 18) Security Controls
 
+Measures implemented to protect systems and data, including preventive, detective, and corrective controls, such as firewalls, intrusion detection systems, and encryption.
+
 ### 19) Defence in Depth (Med)
+
+A security strategy that uses multiple layers of defense to protect systems and data, ensuring that if one layer fails, others will still provide protection.
 
 ### 20) Data Loss Prevention, Data Types (High)
 
