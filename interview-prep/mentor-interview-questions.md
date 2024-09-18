@@ -355,27 +355,79 @@ Read [self-study.-25-08.-kerberos.md](../ms/self-study.-25-08.-kerberos.md "ment
 
 ### 4) Kerberos Attacks, Asreproasting, Golden Ticket, Kerberoasting, Silver Ticket (Med)
 
+* **Asreproasting**: Attacks accounts without pre-authentication to retrieve password hashes.
+* **Golden Ticket**: Allows attackers to create a valid TGT for any service by compromising the **krbtgt** account.
+* **Kerberoasting**: Harvests service ticket hashes to brute-force credentials.
+* **Silver Ticket**: Allows attackers to forge service tickets by compromising a service account.
+
 ### 5) NTLM in General, NTLM Steps (Med)
+
+**NTLM** (NT LAN Manager) is an older authentication protocol. Steps:
+
+1. User sends a request to access a resource.
+2. Server challenges the user with a nonce.
+3. User responds with a hashed value of the nonce and password.
+4. Server verifies the hash.
 
 ### 6) NTLM Attacks, Responder
 
+**NTLM attacks** include **pass-the-hash** (using stolen hashes to authenticate) and **relay attacks** (relaying NTLM authentication to access resources).&#x20;
+
+**Responder** is a tool used to capture and manipulate authentication traffic (NTLM hashes) over the network.
+
 ### 7) NetBIOS, LLMNR, Name Resolution Process (ZERO)
+
+**NetBIOS** and **LLMNR** (Link-Local Multicast Name Resolution) are protocols used for resolving names to IP addresses within a local network.&#x20;
+
+These protocols can be exploited for attacks like **NBT-NS poisoning**, where attackers provide false responses to name resolution queries.
 
 ### 8) LDAP (Low)
 
+**LDAP** (Lightweight Directory Access Protocol) is used to query and modify information in AD. It's a directory service protocol that operates over TCP/IP, allowing users and applications to find and retrieve information from the AD database.
+
 ### 9) Files/Folder Permissions in NTFS
+
+In **NTFS (New Technology File System)**, permissions are assigned to files and folders to control access.&#x20;
+
+Permissions include **read**, **write**, **execute**, and **full control**, and can be applied to users or groups via **ACLs** (Access Control Lists).
 
 ### 10) Group Policy Objects (Med)
 
+**Group Policy Objects (GPOs)** are settings used to control user and computer environments in AD. They enforce security settings, software installation, and script execution across the network, ensuring centralized control and consistency.
+
 ### 11) Workgroup and Domain differences, Domain, Local, and, Enterprise Admins
+
+* **Workgroup**: Decentralized model with individual machine control.
+* **Domain**: Centralized control via AD, with centralized authentication and authorization.
+* **Local Admins**: Control individual machines.
+* **Domain Admins**: Control the domain and its resources.
+* **Enterprise Admins**: Control across multiple domains in a forest.
 
 ### 12) Global Catalog
 
+The **Global Catalog** is a distributed data repository that contains information about every object in the AD forest, used to expedite searches across domains. It stores a subset of object attributes, enabling faster lookups.
+
 ### 13) AD Services
+
+Active Directory services include&#x20;
+
+**AD DS (Directory Services)** for managing domains,&#x20;
+
+**AD FS (Federation Services)** for single sign-on,&#x20;
+
+**AD CS (Certificate Services)** for managing certificates, and&#x20;
+
+**AD RMS (Rights Management Services)** for securing sensitive data.
 
 ### 14) Role of DNS in Active Directory
 
+DNS is crucial in AD as it helps locate domain controllers and resolve domain names.&#x20;
+
+AD integrates tightly with DNS, where domain names mirror DNS names, and service records (SRV) in DNS are used for domain controller discovery.
+
 ### 15) Microsoft System Hardening
+
+System hardening involves securing Windows systems by applying best practices like disabling unnecessary services, applying patches, enforcing strong passwords, using **BitLocker** for encryption, enabling **firewalls**, and configuring **GPOs** for consistent security policies across the network.
 
 ## Security Gateways
 
