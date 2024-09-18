@@ -332,9 +332,26 @@ Protocols include **NetBIOS** and **PPTP**.&#x20;
 
 ### 1) AD Structure (Med)
 
+Active Directory (AD) is a hierarchical database system that manages users, computers, and resources.&#x20;
+
+Its structure includes **domains** (basic units), **OUs (Organizational Units)** for organizing objects, and **trees** (hierarchical domains). Multiple trees form a **forest**, the highest level of the AD hierarchy.
+
 ### 2) AD Authentication, Authorization
 
+In AD, **authentication** verifies a user's identity (via Kerberos or NTLM).&#x20;
+
+**Authorization** controls what resources a user can access, using **ACLs (Access Control Lists)** that define permissions for users and groups.
+
 ### 3) Kerberos in General, Kerberos Steps
+
+**Kerberos** is a secure network authentication protocol using tickets. Steps:
+
+1. User requests a **Ticket Granting Ticket (TGT)** from the **KDC (Key Distribution Center)**.
+2. KDC sends an encrypted TGT.
+3. User uses the TGT to request access to a specific service.
+4. KDC sends a service ticket, granting access.
+
+Read [self-study.-25-08.-kerberos.md](../ms/self-study.-25-08.-kerberos.md "mention") for detailed info
 
 ### 4) Kerberos Attacks, Asreproasting, Golden Ticket, Kerberoasting, Silver Ticket (Med)
 
