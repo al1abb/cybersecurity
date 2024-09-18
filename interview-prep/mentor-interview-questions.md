@@ -4,67 +4,71 @@
 
 ### 1) CIA Triad
 
-### 2) Incident Response
+The CIA Triad refers to Confidentiality, Integrity, and Availability, which are the core principles of information security. Confidentiality ensures unauthorized individuals do not access data, Integrity ensures data is accurate and unaltered, and Availability ensures that data and resources are accessible when needed.
 
-### 3) SOC, Security Solutions, SIEM
+### 2) Incident Response (High)
 
-### 4) Digital Forensics
+Incident Response is a structured approach to handling and managing security incidents or breaches. It involves detection, containment, eradication, recovery, and post-incident analysis to minimize the impact of security incidents.
+
+### 3) SOC, Security Solutions, SIEM (Low)
+
+### 4) Digital Forensics (High)
 
 ### 5) Digital Evidence Types, Order of Volatility, Chain of Custody
 
-### 6) Threat Hunting
+### 6) Threat Hunting (Low)
 
 ### 7) Incident Detection types, IOC/BIOC, Baseline, Behaviour Based Analysis
 
-### 8) Threat Intelligence
+### 8) Threat Intelligence (Med)
 
-### 9) Cyber Kill Chain, Case Studies
+### 9) Cyber Kill Chain, Case Studies (Med)
 
 ### 10) Mitre Attack, Pyramid of Pain
 
-### 11) Passive/Active Recon
+### 11) Passive/Active Recon (High)
 
-### 12) OSINT, Dark Web
+### 12) OSINT, Dark Web (Medium)
 
 ### 13) Social Engineering
 
 ### 14) Threat Actors
 
-### 15) Malware Types
+### 15) Malware Types (High)
 
-### 16) Attack Types
+### 16) Attack Types (High)
 
 ### 17) Risk, Risk impacts
 
 ### 18) Security Controls
 
-### 19) Defence in Depth
+### 19) Defence in Depth (Med)
 
-### 20) Data Loss Prevention, Data Types
+### 20) Data Loss Prevention, Data Types (High)
 
-### 21) Encryption and Hashing
+### 21) Encryption and Hashing (Low)
 
-### 22) Brute Force, Rainbow Table, Dictionary Attacks
+### 22) Brute Force, Rainbow Table, Dictionary Attacks (High)
 
-### 23) Digital Signatures
+### 23) Digital Signatures (Med)
 
 ### 24) GRC
 
 ## Cryptography
 
-### 1) Symmetric/asymmetric key algorithms
+### 1) Symmetric/asymmetric key algorithms (Low)
 
 ### 2) Hash Functions
 
 ### 3) PKI, Diffie Hellman
 
-### 4) Digital Signatures (Duplicate)
+### 4) Digital Signatures (Duplicate) (Low)
 
 ## Linux
 
-### 1) Kernel
+### 1) Kernel (Medium)
 
-### 2) Linux Distributions
+### 2) Linux Distributions (Medium)
 
 ### 3) CLI & GUI
 
@@ -72,21 +76,21 @@
 
 ### 5) CLI Basics, Command Structures
 
-### 6) File System Hierarchy
+### 6) File System Hierarchy (Med)
 
-### 7) Wildcards
+### 7) Wildcards (High)
 
-### 8) Hard & Symbolic Links
+### 8) Hard & Symbolic Links (Med)
 
 ### 9) Users & Groups
 
-### 10) /etc/passwd & /etc/shadow
+### 10) /etc/passwd & /etc/shadow (Med)
 
-### 11) File Ownership and Permissions
+### 11) File Ownership and Permissions (Med)
 
-### 12) Special Permissions, SUID & SGID bits, Sticky Bit
+### 12) Special Permissions, SUID & SGID bits, Sticky Bit (Med)
 
-### 13) Linux Privileges, Sudo, /etc/sudoers
+### 13) Linux Privileges, Sudo, /etc/sudoers (Med)
 
 ### 14) Regular Expressions, Extended Regex, Text Processing
 
@@ -98,21 +102,21 @@
 
 ## Network
 
-### 1) OSI & TCP/IP model, Differences
+### 1) OSI & TCP/IP model, Differences (Med)
 
-### 2) IP Addressing
+### 2) IP Addressing (Low)
 
 ### 3) Subnetting and CIDR Notation
 
 ### 4) Firewalls and Network Security
 
-### 5) DNS, DNS Attacks
+### 5) DNS, DNS Attacks (Low)
 
-### 6) DHCP, DORA Process, DHCP Attacks
+### 6) DHCP, DORA Process, DHCP Attacks (Low)
 
-### 7) Switching, Switch Port Security
+### 7) Switching, Switch Port Security (Low)
 
-### 8) VLANS, VLAN Attacks
+### 8) VLANS, VLAN Attacks (Med)
 
 ### 9) ARP Protocol, ARP Process
 
@@ -126,33 +130,33 @@
 
 ### 14) Application Layer Protocols, Ports
 
-### 15) Transport Layer Protocols, TCP 3-way Handshake
+### 15) Transport Layer Protocols, TCP 3-way Handshake (high)
 
 ### 16) MTU, Encapsulation, Fragmentation
 
-### 17) Session Layer, Protocols, SSL/TLS
+### 17) Session Layer, Protocols, SSL/TLS (ZERO)
 
 ## Microsoft
 
-### 1) AD Structure
+### 1) AD Structure (Med)
 
 ### 2) AD Authentication, Authorization
 
 ### 3) Kerberos in General, Kerberos Steps
 
-### 4) Kerberos Attacks, Asreproasting, Golden Ticket, Kerberoasting, Silver Ticket
+### 4) Kerberos Attacks, Asreproasting, Golden Ticket, Kerberoasting, Silver Ticket (Med)
 
-### 5) NTLM in General, NTLM Steps
+### 5) NTLM in General, NTLM Steps (Med)
 
 ### 6) NTLM Attacks, Responder
 
-### 7) NetBIOS, LLMNR, Name Resolution Process
+### 7) NetBIOS, LLMNR, Name Resolution Process (ZERO)
 
-### 8) LDAP
+### 8) LDAP (Low)
 
 ### 9) Files/Folder Permissions in NTFS
 
-### 10) Group Policy Objects
+### 10) Group Policy Objects (Med)
 
 ### 11) Workgroup and Domain differences, Domain, Local, and, Enterprise Admins
 
@@ -166,21 +170,21 @@
 
 ## Security Gateways
 
-### 1) Firewall Basics
+### 1) Firewall Basics (Low)
 
 ### 2) Stateless and Stateful Firewalls
 
-### 3) Next Generation Firewalls
+### 3) Next Generation Firewalls (Low)
 
 ### 4) Unified Threat Management
 
-### 5) Zero Trust
+### 5) Zero Trust (Med)
 
 ### 6) NAT, Dynamic NAT, PAT
 
-### 7) Authentication Mechanisms of Fortigate
+### 7) Authentication Mechanisms of Fortigate (Low)
 
-### 8) AAA
+### 8) AAA (Med)
 
 ### 9) Hardening
 
