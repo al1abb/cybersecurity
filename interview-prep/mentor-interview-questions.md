@@ -433,30 +433,90 @@ System hardening involves securing Windows systems by applying best practices li
 
 ### 1) Firewall Basics (Low)
 
+A **firewall** is a security device that monitors and filters incoming and outgoing network traffic based on pre-established security rules. Firewalls are used to create a barrier between trusted internal networks and untrusted external networks.
+
 ### 2) Stateless and Stateful Firewalls
+
+* **Stateless firewalls** filter traffic based on static rules, without considering the state of the connection.
+* **Stateful firewalls** track active connections and make decisions based on the connection's state, offering more advanced traffic filtering.
 
 ### 3) Next Generation Firewalls (Low)
 
+**Next-generation firewalls (NGFWs)** go beyond traditional firewalls by incorporating features like **deep packet inspection**, **intrusion prevention**, **application awareness**, and **user identity-based control**. They offer more comprehensive protection by inspecting the content of traffic, not just its headers.
+
 ### 4) Unified Threat Management
+
+**UTM** devices combine multiple security features into a single platform, including **firewalling, antivirus, intrusion detection/prevention (IDS/IPS), VPN**, and content filtering. This simplifies network security management by consolidating protection measures.
 
 ### 5) Zero Trust (Med)
 
+The **Zero Trust** model assumes that no one, either inside or outside the network, is inherently trusted. Access is granted based on the principle of **least privilege**, and verification is required at every access point. Key concepts include **identity verification, micro-segmentation**, and **continuous monitoring**.
+
 ### 6) NAT, Dynamic NAT, PAT
+
+* **NAT (Network Address Translation)**: Translates private IP addresses to a public IP for routing to external networks.
+* **Dynamic NAT**: Maps multiple internal IP addresses to a pool of public IP addresses on a first-come, first-served basis.
+* **PAT (Port Address Translation)**: Maps multiple private IP addresses to a single public IP address, using different port numbers to distinguish traffic.
 
 ### 7) Authentication Mechanisms of Fortigate (Low)
 
+FortiGate firewalls support multiple **authentication mechanisms**, including **local authentication**, **RADIUS**, **TACACS+**, and **LDAP**.&#x20;
+
+Users can authenticate via methods like **two-factor authentication (2FA)**, **certificate-based authentication**, or **SSO (Single Sign-On)**.
+
 ### 8) AAA (Med)
 
+**AAA** stands for **Authentication, Authorization, and Accounting**.
+
+* **Authentication**: Verifies user identities (e.g., via passwords, biometrics).
+* **Authorization**: Determines what resources a user can access.
+* **Accounting**: Tracks user activities, logging session details for auditing purposes.
+
 ### 9) Hardening
+
+**Hardening** refers to strengthening the security of a system by minimizing vulnerabilities. It includes:
+
+* Disabling unnecessary services and ports.
+* Regular patching.
+* Implementing strong authentication policies.
+* Configuring firewall rules, IDS/IPS.
+* Enforcing least privilege access.
 
 ## Python
 
 ### 1) Libraries
 
+In Python, **libraries** are collections of pre-written code that provide functionality to your programs. Common libraries include:
+
+* **Requests** for HTTP requests.
+* **Selenium** for web automation.
+
 ### 2) Web Automation
+
+**Web automation** involves using tools to interact with web pages automatically. In Python, this can be done using libraries like **Selenium** (for browser automation), **Requests** (for making HTTP requests), and **BeautifulSoup** (for parsing HTML). It's useful for web scraping, form filling, and automated testing.
 
 ### 3) Python for Cybersecurity
 
+Python is widely used in cybersecurity for tasks such as:
+
+* **Network scanning** (e.g., using libraries like **Scapy**).
+* **Automating security tools** (e.g., interacting with APIs for tools like **Burp Suite**).
+* **Writing exploits** or payloads.
+* **Forensic analysis** (e.g., analyzing log files or extracting metadata).
+
 ### 4) Data Types
 
+Python has several built-in **data types**, including:
+
+* **int**: Integers (e.g., 1, 100).
+* **float**: Floating-point numbers (e.g., 1.5, 2.75).
+* **str**: Strings (e.g., "hello").
+* **list**: Ordered, mutable collections (e.g., `[1, 2, 3]`).
+* **dict**: Key-value pairs (e.g., `{'key': 'value'}`).
+
 ### 5) Loops
+
+**Loops** in Python are used for iterating over sequences or repeating tasks:
+
+* **for loop**: Iterates over a sequence (e.g., a list or range).
+* **while loop**: Repeats as long as a condition is true.
