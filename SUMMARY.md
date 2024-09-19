@@ -107,3 +107,4 @@
 * [MS](interview-prep/ms.md)
 * [Network](interview-prep/network.md)
 * [Linux](interview-prep/linux.md)
+* [Security Gateways](interview-prep/security-gateways.md)
