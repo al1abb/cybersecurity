@@ -381,21 +381,335 @@ Remote networks refer to networks that are not directly connected to a local net
 * **Overhead:** TCP has higher overhead due to its reliability features (acknowledgments, flow control), whereas UDP has lower overhead due to its simplicity.
 * **Use Cases:** TCP is used for applications requiring reliable and ordered delivery (e.g., web browsing, file transfers), while UDP is used for applications where speed is crucial and occasional data loss is acceptable (e.g., streaming, online gaming).
 
-21\) How does flow control work in the Transport Layer, and why is it important for efficient data transmission?
+## 21) How does flow control work in the Transport Layer, and why is it important for efficient data transmission?
 
-22\) Explain the concept of congestion control in the Transport Layer and how it helps optimize network performance.
+Flow control is a mechanism in the transport layer of the OSI model that manages the rate at which data is sent between a sender and receiver to ensure that the receiver can handle the incoming data without becoming overwhelmed.
 
-23\) Describe 3-way and 4-way handshake and go over TCP flags and how they are used.
+Buffer Management
 
-24\) Explain the client-server and peer-to-peer models in the context of the application layer.
+Window-Based Flow Control
 
-25\) Describe DNS
+Acknowledgment-Based Flow Control
 
-26\) DNS uses both TCP and UDP for data transmission. Explain why.
+Congestion Control
 
-27\) FTP uses ports 20 and 21. Why two ports are being used and not one?
+## 22) Explain the concept of congestion control in the Transport Layer and how it helps optimize network performance.
 
-28\) Describe the difference between active and passive network attacks.
+Congestion control is a critical aspect of the transport layer in network protocols, particularly in TCP (Transmission Control Protocol). It aims to prevent network congestion and optimize network performance by managing the rate of data transmission based on current network conditions.
+
+#### **How Congestion Control Optimizes Network Performance**
+
+1. **Prevents Overload:**
+   * **Avoids Network Congestion:** By regulating data transmission rates, congestion control prevents network links and buffers from becoming overloaded, which helps maintain overall network performance and stability.
+2. **Improves Throughput:**
+   * **Efficient Utilization:** Congestion control algorithms like AIMD ensure that network resources are utilized efficiently without causing congestion, leading to improved throughput and better utilization of available bandwidth.
+3. **Minimizes Packet Loss:**
+   * **Reduces Retransmissions:** By detecting and responding to congestion early, congestion control minimizes packet loss, which reduces the need for retransmissions and improves data transmission efficiency.
+4. **Enhances Fairness:**
+   * **Equal Resource Distribution:** Congestion control mechanisms ensure that multiple flows sharing the same network resources receive a fair share of bandwidth, preventing any single flow from monopolizing the network.
+5. **Maintains Low Latency:**
+   * **Prevents Delays:** By managing congestion, the transport layer helps keep network latency low, ensuring timely delivery of data packets and enhancing user experience.
+
+## 23) Describe 3-way and 4-way handshake and go over TCP flags and how they are used.
+
+#### **3-Way Handshake**
+
+The 3-way handshake is a process used by TCP (Transmission Control Protocol) to establish a reliable connection between a client and a server. It ensures that both parties are ready to communicate and synchronizes their sequence numbers to track the data sent. Here’s how it works:
+
+1. **SYN (Synchronize) Packet:**
+   * **Initiating Connection:** The client starts the handshake by sending a SYN packet to the server. This packet indicates the client’s desire to establish a connection and includes an initial sequence number (ISN) that the client will use for the data transmission.
+   * **Flags Used:** SYN flag is set.
+2. **SYN-ACK (Synchronize-Acknowledge) Packet:**
+   * **Acknowledging Request:** The server responds with a SYN-ACK packet. This packet acknowledges the client's SYN request and includes its own ISN. The SYN-ACK packet also has an acknowledgment number set to one more than the client’s ISN, indicating that the server has received the client's request.
+   * **Flags Used:** SYN and ACK flags are set.
+3. **ACK (Acknowledge) Packet:**
+   * **Finalizing Connection:** The client responds to the server’s SYN-ACK packet with an ACK packet. This packet acknowledges the server’s SYN-ACK by setting the acknowledgment number to one more than the server’s ISN. At this point, the connection is established, and data transfer can begin.
+   * **Flags Used:** ACK flag is set.
+
+#### **4-Way Handshake**
+
+The 4-way handshake is used by TCP to terminate a connection gracefully. It ensures that both the client and server are finished with the data transfer and can close the connection properly. Here’s how it works:
+
+1. **FIN (Finish) Packet:**
+   * **Initiating Termination:** The party that wants to close the connection (let’s say the client) sends a FIN packet to the other party (the server). This packet indicates that the client has finished sending data.
+   * **Flags Used:** FIN flag is set.
+2. **ACK (Acknowledge) Packet:**
+   * **Acknowledging FIN:** The server acknowledges the client’s FIN packet by sending an ACK packet. This packet acknowledges the receipt of the client’s FIN and informs the client that the server is aware of the termination request.
+   * **Flags Used:** ACK flag is set.
+3. **FIN (Finish) Packet:**
+   * **Server’s Termination:** The server then sends its own FIN packet to the client, indicating that it has finished sending its data and is ready to close the connection.
+   * **Flags Used:** FIN flag is set.
+4. **ACK (Acknowledge) Packet:**
+   * **Final Acknowledgment:** The client responds with an ACK packet to acknowledge the server’s FIN packet. Once this packet is received, the connection is fully terminated, and both parties can close their respective connections.
+   * **Flags Used:** ACK flag is set.
+
+#### **TCP Flags and Their Uses**
+
+TCP flags are used in the TCP header to control the state of the connection and manage data transmission. Here are the key TCP flags and their functions:
+
+1. **SYN (Synchronize):**
+   * **Purpose:** Initiates a connection and establishes the initial sequence number for data transmission.
+   * **Usage:** Used in the 3-way handshake process.
+2. **ACK (Acknowledge):**
+   * **Purpose:** Acknowledges the receipt of packets. The acknowledgment number indicates the next expected byte.
+   * **Usage:** Used in connection establishment (3-way handshake) and termination (4-way handshake), as well as during data transfer.
+3. **FIN (Finish):**
+   * **Purpose:** Indicates that the sender has finished sending data and wants to close the connection.
+   * **Usage:** Used in the 4-way handshake process to gracefully terminate a connection.
+4. **RST (Reset):**
+   * **Purpose:** Resets the connection and indicates an error or invalid state. It can be used to abruptly close a connection.
+   * **Usage:** Sent if there is an error or if a connection request is received for a non-existent service.
+5. **PSH (Push):**
+   * **Purpose:** Signals the receiver to push the data to the application immediately, rather than buffering it.
+   * **Usage:** Used to ensure that data is delivered to the application layer promptly.
+6. **URG (Urgent):**
+   * **Purpose:** Indicates that the packet contains urgent data that should be processed immediately.
+   * **Usage:** Used to prioritize urgent data in the data stream.
+7. **ECE (ECN-Echo):**
+   * **Purpose:** Echoes congestion indication received from the network to inform the sender about network congestion.
+   * **Usage:** Used in conjunction with the Congestion Notification mechanism.
+8. **CWR (Congestion Window Reduced):**
+   * **Purpose:** Indicates that the sender has reduced its congestion window in response to congestion notification.
+   * **Usage:** Used to signal that the sender has adjusted its data transmission rate to alleviate congestion.
+
+#### **Summary**
+
+* The **3-way handshake** is used to establish a TCP connection, ensuring both parties are synchronized and ready for data transfer.
+* The **4-way handshake** is used to terminate a TCP connection gracefully, allowing both parties to finish any remaining data transmission and close the connection cleanly.
+* **TCP flags** control the connection state and data flow, with each flag serving a specific purpose in managing and maintaining the reliability of TCP connections.
+
+## 24) Explain the client-server and peer-to-peer models in the context of the application layer.
+
+In the context of the application layer of networking, the **client-server** and **peer-to-peer (P2P)** models represent two fundamental approaches to network communication and resource sharing. Here’s a detailed explanation of each model:
+
+#### **Client-Server Model**
+
+**Overview:**
+
+* **Client-Server Architecture:** In this model, the network is structured with dedicated servers and clients. The server provides resources or services, and the client requests and uses those resources or services.
+
+**Components:**
+
+1. **Server:**
+   * **Role:** Provides services or resources such as files, applications, databases, or web pages.
+   * **Characteristics:** Typically more powerful in terms of hardware and software, capable of handling multiple simultaneous client requests.
+   * **Examples:** Web servers (e.g., Apache, Nginx), database servers (e.g., MySQL, SQL Server), email servers (e.g., Exchange, Gmail).
+2. **Client:**
+   * **Role:** Requests services or resources from the server and uses them.
+   * **Characteristics:** Generally less powerful, designed to interact with the server to perform specific tasks or access data.
+   * **Examples:** Web browsers (e.g., Chrome, Firefox), email clients (e.g., Outlook, Thunderbird), FTP clients.
+
+**How It Works:**
+
+* **Request-Response Model:** The client initiates a request for a service or resource. The server processes the request and sends a response back to the client.
+* **Centralized Management:** Servers manage and control access to resources, making it easier to maintain and secure data.
+
+**Advantages:**
+
+* **Centralized Control:** Easier to manage and secure resources as they are centralized on the server.
+* **Scalability:** Servers can handle multiple clients simultaneously, and server resources can be scaled up as needed.
+* **Consistency:** Ensures that all clients have access to the same version of data or application.
+
+**Disadvantages:**
+
+* **Single Point of Failure:** If the server fails, clients cannot access the services or resources.
+* **Scalability Limitations:** Server performance can become a bottleneck if not properly managed or scaled.
+
+#### **Peer-to-Peer (P2P) Model**
+
+**Overview:**
+
+* **P2P Architecture:** In this model, each node (peer) in the network can act as both a client and a server. Peers share resources and services directly with each other without relying on a centralized server.
+
+**Components:**
+
+1. **Peers:**
+   * **Role:** Each peer can both provide and request resources or services. Peers are typically equal in terms of their roles and capabilities.
+   * **Characteristics:** Peers can join or leave the network dynamically. They can share files, computational resources, or other services directly with other peers.
+   * **Examples:** File-sharing networks (e.g., BitTorrent), decentralized communication platforms (e.g., Skype), distributed computing projects (e.g., SETI@home).
+
+**How It Works:**
+
+* **Decentralized Sharing:** Each peer connects directly to other peers, sharing resources or data. Peers can search for and access resources from multiple sources.
+* **Dynamic Network:** Peers can join or leave the network at any time, and the network adapts to these changes.
+
+**Advantages:**
+
+* **No Single Point of Failure:** The network is more resilient as there is no central server that can fail.
+* **Scalability:** Peers contribute resources to the network, which can scale effectively as more peers join.
+* **Resource Sharing:** Utilizes the resources of multiple peers, potentially increasing the overall network capability.
+
+**Disadvantages:**
+
+* **Security Challenges:** Ensuring the security and integrity of data can be more complex due to the lack of central control.
+* **Inconsistent Data:** Data consistency can be challenging to maintain as peers can have different versions of shared resources.
+* **Performance Variability:** Network performance can vary depending on the availability and capability of peers.
+
+#### **Summary**
+
+* **Client-Server Model:** Involves centralized servers providing resources or services to clients. It offers centralized management and scalability but can be vulnerable to server failures.
+* **Peer-to-Peer (P2P) Model:** Involves a decentralized network where each peer can act as both a client and a server. It provides resilience and scalability but faces challenges in security and data consistency.
+
+## 25) Describe DNS
+
+**Domain Name System (DNS)** is a fundamental component of the internet infrastructure that translates human-readable domain names into IP addresses. This process enables users to access websites and services using easy-to-remember domain names instead of numeric IP addresses.
+
+#### **Overview of DNS**
+
+**1. Purpose:**
+
+* **Human-Readable Names:** DNS allows users to use domain names (like `www.example.com`) rather than IP addresses (like `192.0.2.1`) to access resources on the internet.
+* **Address Resolution:** Converts domain names into IP addresses, which are necessary for routing data over the internet.
+
+#### **Key Components of DNS**
+
+**1. Domain Names:**
+
+* **Structure:** Domain names are hierarchical and are organized in a tree-like structure. For example, `www.example.com` consists of several levels:
+  * **Top-Level Domain (TLD):** `.com` (indicates the type or origin of the domain).
+  * **Second-Level Domain (SLD):** `example` (the main domain name).
+  * **Subdomain:** `www` (a specific host or service within the domain).
+
+**2. DNS Records:**
+
+* **A Record (Address Record):** Maps a domain name to an IPv4 address.
+* **AAAA Record:** Maps a domain name to an IPv6 address.
+* **CNAME Record (Canonical Name Record):** Aliases one domain name to another.
+* **MX Record (Mail Exchange Record):** Specifies the mail server responsible for receiving email for the domain.
+* **NS Record (Name Server Record):** Indicates the authoritative DNS servers for the domain.
+* **PTR Record (Pointer Record):** Used for reverse DNS lookups to map IP addresses back to domain names.
+* **SOA Record (Start of Authority Record):** Contains administrative information about the domain, including the primary DNS server and contact information.
+
+**3. DNS Servers:**
+
+* **Recursive Resolver:** Receives queries from clients and performs the necessary lookups by querying other DNS servers to resolve domain names into IP addresses.
+* **Root Name Servers:** The top-level DNS servers that maintain the root zone of the DNS hierarchy. They direct queries to the appropriate TLD name servers.
+* **TLD Name Servers:** Responsible for the TLD portion of the domain names (e.g., `.com`, `.org`). They direct queries to the authoritative name servers for specific domain names.
+* **Authoritative Name Servers:** Hold the DNS records for domain names and provide definitive answers to queries about those domains.
+
+#### **How DNS Works**
+
+1. **DNS Query Process:**
+   * **User Request:** When a user types a domain name into a web browser, the browser sends a DNS query to a DNS resolver (typically provided by the ISP or configured on the user’s device).
+   * **Recursive Query:** The DNS resolver queries the root name servers to find out which TLD name servers are authoritative for the domain.
+   * **TLD Query:** The resolver then queries the TLD name servers to get the authoritative name servers for the domain.
+   * **Authoritative Query:** Finally, the resolver queries the authoritative name servers to obtain the DNS records for the domain, such as the IP address.
+   * **Response:** The DNS resolver returns the IP address to the client, which can then use it to connect to the desired server.
+2. **Caching:**
+   * **Local Cache:** DNS resolvers and clients often cache DNS query results to improve performance and reduce the load on DNS servers. Cached results have a time-to-live (TTL) value, after which they expire and need to be re-queried.
+
+#### **Importance of DNS**
+
+1. **User Convenience:** DNS enables users to use memorable domain names instead of having to remember numeric IP addresses.
+2. **Scalability:** Supports the hierarchical and distributed nature of the internet, allowing for efficient and scalable domain name resolution.
+3. **Flexibility:** Allows domain names to be mapped to various types of records, including IP addresses, mail servers, and aliases.
+4. **Management:** Simplifies domain management by providing mechanisms to update and manage DNS records.
+
+#### **Summary**
+
+The Domain Name System (DNS) is essential for translating domain names into IP addresses, enabling users to access websites and online services using easy-to-remember names. It involves various types of DNS records and servers, including recursive resolvers, root name servers, TLD name servers, and authoritative name servers. DNS enhances user convenience, scalability, and management of internet resources.
+
+## 26) DNS uses both TCP and UDP for data transmission. Explain why.
+
+#### **UDP (User Datagram Protocol) for DNS**
+
+\*\*1. **Primary Use:**
+
+* **Query Resolution:** UDP is used for the majority of DNS queries due to its simplicity and low overhead. When a DNS resolver sends a query to a DNS server, it typically uses UDP.
+
+\*\*2. **Reasons for UDP:**
+
+* **Speed and Efficiency:** UDP is a connectionless protocol with minimal overhead, which makes it faster and more efficient for small, quick queries.
+* **Low Latency:** UDP’s lack of connection establishment and teardown processes allows for rapid transmission, which is ideal for the frequent, small DNS queries made by clients.
+* **Short Responses:** Most DNS queries and responses fit within a single UDP packet, making UDP suitable for standard DNS lookups.
+
+\*\*3. **Typical Scenario:**
+
+* **Standard DNS Queries:** When a client (such as a web browser) queries a DNS server for an IP address, the request and response are usually exchanged over UDP port 53. If the response is small enough to fit within the UDP packet size limit (typically 512 bytes), UDP is used.
+
+#### **TCP (Transmission Control Protocol) for DNS**
+
+\*\*1. **Primary Use:**
+
+* **Large Responses:** TCP is used when DNS responses exceed the size limit of a single UDP packet or when additional reliability is required.
+
+\*\*2. **Reasons for TCP:**
+
+* **Reliability:** TCP is a connection-oriented protocol that provides reliable data transmission with error checking and correction. It ensures that large DNS responses or data that cannot be fully transmitted over UDP are delivered correctly.
+* **Zone Transfers:** TCP is used for zone transfers between DNS servers (e.g., when updating or replicating DNS records). These transfers involve large amounts of data and require the reliability and order guarantees provided by TCP.
+* **Handling of Fragmented Responses:** If a DNS response is too large to fit in a single UDP packet, the DNS resolver may switch to TCP to ensure the entire response is received and reassembled correctly.
+
+\*\*3. **Typical Scenario:**
+
+* **Large DNS Responses:** If a DNS query results in a response that exceeds the UDP packet size limit (often due to a large number of records or extensive DNS data), the server will respond with a truncation flag in the UDP response, prompting the resolver to retry the query over TCP.
+
+#### **Summary**
+
+* **UDP (User Datagram Protocol):** Used for the majority of DNS queries due to its efficiency and low overhead. Suitable for quick, small queries and responses.
+* **TCP (Transmission Control Protocol):** Used for larger DNS responses, zone transfers, and scenarios requiring reliable and complete data transmission. TCP handles cases where DNS data is too large for a single UDP packet or when additional reliability is needed.
+
+By using both protocols, DNS balances the need for fast, efficient queries with the need for reliability and completeness in data transmission.
+
+## 27) FTP uses ports 20 and 21. Why two ports are being used and not one?
+
+#### **Port 21: Control Port**
+
+\*\*1. **Purpose:**
+
+* **Command and Control:** Port 21 is used for sending commands and receiving responses between the FTP client and server. This is known as the control connection.
+
+\*\*2. **Function:**
+
+* **Session Management:** The control connection establishes and manages the FTP session. Commands such as `USER`, `PASS`, `LIST`, `RETR`, and `STOR` are sent over this connection.
+* **Communication Protocol:** The control connection operates over TCP, ensuring reliable communication for sending and receiving commands and responses.
+
+#### **Port 20: Data Port**
+
+\*\*1. **Purpose:**
+
+* **Data Transfer:** Port 20 is used for transferring actual data files between the FTP client and server. This is known as the data connection.
+
+\*\*2. **Function:**
+
+* **File Transfers:** The data connection is responsible for the actual transfer of files or directory listings. It handles the bulk data traffic, separate from the control commands.
+* **Active Mode:** In FTP's active mode, the server opens a connection from port 20 to a port on the client specified in the PORT command.
+
+#### **Why Two Ports?**
+
+\*\*1. **Separation of Concerns:**
+
+* **Control vs. Data:** Using separate ports allows for a clear distinction between command/control messages and data transfer. This separation helps manage and organize network traffic more efficiently.
+
+\*\*2. **Connection Management:**
+
+* **Control Connection:** Maintains the state of the FTP session, including authentication and command execution.
+* **Data Connection:** Dedicated to transferring data files, which can be managed independently of the control connection.
+
+\*\*3. **Compatibility and Flexibility:**
+
+* **Active and Passive Modes:** FTP supports both active and passive modes for establishing the data connection. In active mode, the server uses port 20 for data transfer, while in passive mode, the client connects to a port chosen by the server. This flexibility helps navigate various network configurations and firewalls.
+
+#### **Summary**
+
+FTP uses two ports, 20 and 21, to manage the separation of control and data transfer functions:
+
+* **Port 21** is used for the control connection, handling commands and responses.
+* **Port 20** is used for the data connection, and managing file transfers.
+
+## 28) Describe the difference between active and passive network attacks.
+
+#### **Summary**
+
+* **Passive Network Attacks:**
+  * **Objective:** To gather information without altering or disrupting the system.
+  * **Characteristics:** Non-intrusive, focuses on eavesdropping and data collection.
+  * **Examples:** Packet sniffing, traffic analysis, eavesdropping.
+  * **Detection:** Harder to detect as they do not cause noticeable disruptions.
+* **Active Network Attacks:**
+  * **Objective:** To disrupt, modify, or manipulate network communications and services.
+  * **Characteristics:** Intrusive, involves direct interaction with the network or systems.
+  * **Examples:** Man-in-the-Middle attacks, Denial of Service attacks, session hijacking, spoofing.
+  * **Detection:** Easier to detect due to observable disruptions or changes in network behavior.
 
 29\) Difference DoS and DDoS?
 
