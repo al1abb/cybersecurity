@@ -166,6 +166,26 @@ The directory structure of Linux systems, including directories like `/home`, `/
 
 All directories and their purposes:
 
+* **`/`**: Root of the entire file system hierarchy.
+* **`/bin`**: Essential command-line binaries available to all users.
+* **`/boot`**: Bootloader files and the Linux kernel.
+* **`/dev`**: Device files representing hardware components.
+* **`/etc`**: System-wide configuration files and settings.
+* **`/home`**: Personal directories for user data and settings.
+* **`/lib`**: Shared libraries required by system binaries.
+* **`/media`**: Mount point for removable media devices.
+* **`/mnt`**: Temporary mount point for manually mounted file systems.
+* **`/opt`**: Optional software packages and third-party applications.
+* **`/proc`**: Virtual filesystem providing process and system information.
+* **`/root`**: Home directory of the root (superuser) account.
+* **`/run`**: Runtime data and information since the last boot.
+* **`/sbin`**: Essential system binaries for administrative tasks.
+* **`/srv`**: Data for system services like web and FTP servers.
+* **`/sys`**: Virtual filesystem providing hardware device information.
+* **`/tmp`**: Temporary files used by applications and the system.
+* **`/usr`**: User programs, libraries, and documentation.
+* **`/var`**: Variable data files, including logs and databases.
+
 ### 7) Wildcards (High)
 
 Symbols used in commands to represent multiple files or directories (e.g., `*` for any characters, `?` for a single character).
