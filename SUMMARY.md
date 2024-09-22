@@ -4,6 +4,22 @@
 
 * [Home](README.md)
 
+## 🔥 Penetration Testing
+
+* [Lecture Notes](penetration-testing/lecture-notes.md)
+
+## Powershell
+
+* [Lecture Notes](powershell/lecture-notes.md)
+
+## 🔵 Blue for Red
+
+* [Lecture Notes](blue-for-red/lecture-notes.md)
+
+## 🐍 Python for Red
+
+* [Lecture Notes](python-for-red/lecture-notes.md)
+
 ## 🐧 Linux
 
 * [Lecture Notes](linux/initial-tasks.md)
@@ -108,11 +124,3 @@
 * [Network](interview-prep/network.md)
 * [Linux](interview-prep/linux.md)
 * [Security Gateways](interview-prep/security-gateways.md)
-
-## Powershell
-
-* [Lecture Notes](powershell/lecture-notes.md)
-
-## 🔥 Penetration Testing
-
-* [Lecture Notes](penetration-testing/lecture-notes.md)
