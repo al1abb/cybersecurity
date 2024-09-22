@@ -4,7 +4,7 @@
 
 * [Home](README.md)
 
-## Linux
+## 🐧 Linux
 
 * [Lecture Notes](linux/initial-tasks.md)
   * [23/07. VM networking + start modes](linux/lecture-notes/23-07-lecture.md)
@@ -22,7 +22,7 @@
 * [Lectures](linux/intro-to-linux.md)
   * [1.1 - Introduction to Linux](linux/intro-to-linux/1.1-introduction-to-linux.md)
 
-## MS
+## 🪟 MS
 
 * [Lecture Notes](ms/lecture-notes/README.md)
   * [17/07. PowerShell Commands to remember + Port Forwarding](ms/lecture-notes/17-07.-powershell-commands-to-remember-+-port-forwarding.md)
@@ -72,11 +72,11 @@
   * [04-02. Wireshark Wifi cap files quality](networking/labs/04-02.-wireshark-wifi-cap-files-quality.md)
 * [Terminology](networking/terminology.md)
 
-## Python
+## 🐍 Python
 
 * [Page 1](python/page-1.md)
 
-## Intro to cyber
+## 🛡️ Intro to cyber
 
 * [Notes](intro-to-cyber/introduction.md)
 * [Lectures](intro-to-cyber/lectures/README.md)
@@ -88,23 +88,31 @@
 * [Terminology](intro-to-cyber/terminology.md)
 * [Midterm wrong answer](intro-to-cyber/midterm-wrong-answer.md)
 
-## Security Gateways
+## 🔐 Security Gateways
 
 * [Lecture Notes](security-gateways/lecture-notes/README.md)
   * [12/08. First lecture](security-gateways/lecture-notes/12-08.-first-lecture.md)
   * [22/08.](security-gateways/lecture-notes/22-08..md)
   * [26/08.](security-gateways/lecture-notes/26-08..md)
 
-## Cloud
+## ☁️ Cloud
 
 * [26/08. Cloud Security](cloud/26-08.-cloud-security.md)
 * [03/09.](cloud/03-09..md)
 * [09/09. MS Cloud Security](cloud/09-09.-ms-cloud-security.md)
 
-## Interview Prep
+## ❓ Interview Prep
 
 * [Mentor Interview Questions](interview-prep/mentor-interview-questions.md)
 * [MS](interview-prep/ms.md)
 * [Network](interview-prep/network.md)
 * [Linux](interview-prep/linux.md)
 * [Security Gateways](interview-prep/security-gateways.md)
+
+## Powershell
+
+* [Lecture Notes](powershell/lecture-notes.md)
+
+## 🔥 Penetration Testing
+
+* [Lecture Notes](penetration-testing/lecture-notes.md)
