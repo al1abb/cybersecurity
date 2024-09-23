@@ -10,7 +10,8 @@
 
 ## Powershell
 
-* [Lecture Notes](powershell/lecture-notes.md)
+* [Lecture Notes](powershell/lecture-notes/README.md)
+  * [09/23.](powershell/lecture-notes/09-23..md)
 
 ## 🔵 Blue for Red
 
