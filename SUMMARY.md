@@ -6,7 +6,8 @@
 
 ## 🔥 Penetration Testing
 
-* [Lecture Notes](penetration-testing/lecture-notes.md)
+* [Lecture Notes](penetration-testing/lecture-notes/README.md)
+  * [24/09. Introduction](penetration-testing/lecture-notes/24-09.-introduction.md)
 
 ## Powershell
 
