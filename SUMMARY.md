@@ -18,7 +18,8 @@
 
 ## 🔵 Blue for Red
 
-* [Lecture Notes](blue-for-red/lecture-notes.md)
+* [Lecture Notes](blue-for-red/lecture-notes/README.md)
+  * [25/09.](blue-for-red/lecture-notes/25-09..md)
 
 ## 🐍 Python for Red
 
