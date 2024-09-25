@@ -8,8 +8,8 @@
 
 * [CTF Checklist](penetration-testing/ctf-checklist.md)
 * [Lecture Notes](penetration-testing/lecture-notes/README.md)
-  * [24/09. Introduction](penetration-testing/lecture-notes/24-09.-introduction.md)
-  * [25/09.](penetration-testing/lecture-notes/25-09..md)
+  * [24/09. Introduction + Reporting](penetration-testing/lecture-notes/24-09.-introduction-+-reporting.md)
+  * [25/09. Reporting cont.](penetration-testing/lecture-notes/25-09.-reporting-cont..md)
 
 ## Powershell
 
