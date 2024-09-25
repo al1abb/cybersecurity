@@ -15,6 +15,7 @@
 
 * [Lecture Notes](powershell/lecture-notes/README.md)
   * [23/09.](powershell/lecture-notes/09-23..md)
+* [PowerShell Useful Commands](powershell/powershell-useful-commands.md)
 
 ## 🔵 Blue for Red
 
