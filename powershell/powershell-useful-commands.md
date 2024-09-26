@@ -111,3 +111,32 @@ Else{Write-Host "The path doesn't exist."}
 Invoke-WebRequest -Uri "https://example.com"
 ```
 
+## Get User Count
+
+```powershell
+(Get-LocalUser).Name.Count
+```
+
+## Get User from a specific SID
+
+```powershell
+Get-LocalUser -SID S-1-5-21-1394777289-3961777894-1791813945-501
+```
+
+## Get IP Address Info
+
+```powershell
+Get-NetIPAddress
+```
+
+## Get Ports Listed as Listening
+
+```powershell
+(Get-NetTCPConnection -State Listen).Count
+```
+
+## Get a specific port
+
+```powershell
+Get-NetTCPConnection -LocalPort 445 -State Listen
+```
