@@ -13,7 +13,7 @@
 * [Lecture Notes](penetration-testing/lecture-notes/README.md)
   * [24/09. Introduction + Reporting](penetration-testing/lecture-notes/24-09.-introduction-+-reporting.md)
   * [25/09. Reporting cont., Information Gathering and Reconnaissance, Passive Recon](penetration-testing/lecture-notes/25-09.-reporting-cont..md)
-  * [26/09. Information Gathering and Scanning, Active Recon](penetration-testing/lecture-notes/26-09.-information-gathering-and-scanning-active-recon.md)
+  * [26/09. Information Gathering and Scanning, Active Recon, fping, Nmap](penetration-testing/lecture-notes/26-09.-information-gathering-and-scanning-active-recon-fping-nmap.md)
 
 ## Powershell
 
