@@ -9,6 +9,7 @@
 * [CTF Checklist](penetration-testing/ctf-checklist/README.md)
   * [Linux PrivEsc](penetration-testing/ctf-checklist/linux-privesc.md)
   * [Shells](penetration-testing/ctf-checklist/shells.md)
+  * [Processes](penetration-testing/ctf-checklist/processes.md)
 * [Lecture Notes](penetration-testing/lecture-notes/README.md)
   * [24/09. Introduction + Reporting](penetration-testing/lecture-notes/24-09.-introduction-+-reporting.md)
   * [25/09. Reporting cont., Information Gathering and Reconnaissance, Passive Recon](penetration-testing/lecture-notes/25-09.-reporting-cont..md)
