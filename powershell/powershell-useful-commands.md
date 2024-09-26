@@ -140,3 +140,41 @@ Get-NetIPAddress
 ```powershell
 Get-NetTCPConnection -LocalPort 445 -State Listen
 ```
+
+## See patches
+
+```powershell
+Get-HotFix
+```
+
+## See patch with a specific ID
+
+```powershell
+Get-HotFix -Id KB4023834
+```
+
+## List all running processes
+
+```powershell
+Get-Process
+```
+
+## Get Scheduled Tasks
+
+Get all scheduled Tasks:
+
+```powershell
+Get-ScheduledTask
+```
+
+Get a scheduled task based on its **Taskname**
+
+```powershell
+Get-ScheduledTask | Where-Object {$_.TaskName -eq "new-sched-task"}
+```
+
+## See owner of C:\\
+
+```powershell
+(Get-Acl C:\).Owner
+```
