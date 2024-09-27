@@ -6,6 +6,7 @@
 
 ## 🔥 Penetration Testing
 
+* [Tools](penetration-testing/tools.md)
 * [CTF Checklist](penetration-testing/ctf-checklist/README.md)
   * [Linux PrivEsc](penetration-testing/ctf-checklist/linux-privesc.md)
   * [Shells](penetration-testing/ctf-checklist/shells.md)
