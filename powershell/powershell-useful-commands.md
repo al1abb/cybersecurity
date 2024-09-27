@@ -178,3 +178,9 @@ Get-ScheduledTask | Where-Object {$_.TaskName -eq "new-sched-task"}
 ```powershell
 (Get-Acl C:\).Owner
 ```
+
+
+
+Include these stuff too
+
+{% embed url="https://tryhackme.com/r/room/powershellforpentesters" %}
