@@ -6,7 +6,8 @@
 
 ## 🔴 Red Team
 
-* [Tools](penetration-testing/tools.md)
+* [Tools](red-team/tools/README.md)
+  * [Xfreerdp](red-team/tools/xfreerdp.md)
 * [Interesting Findings](penetration-testing/interesting-findings.md)
 * [CTF Checklist](penetration-testing/ctf-checklist/README.md)
   * [Linux PrivEsc](penetration-testing/ctf-checklist/linux-privesc.md)
