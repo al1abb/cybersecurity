@@ -21,6 +21,7 @@
   * [26/09. Information Gathering and Scanning, Active Recon, fping, Nmap](penetration-testing/lecture-notes/26-09.-information-gathering-and-scanning-active-recon.md)
   * [30/09. Flowchart](penetration-testing/lecture-notes/30-09.-flowchart.md)
   * [01/10. Nessus installation, NSE](penetration-testing/lecture-notes/01-10.-nessus-installation-nse.md)
+  * [02/10. Pentest Templates](penetration-testing/lecture-notes/02-10.-pentest-templates.md)
 
 ## Powershell
 
