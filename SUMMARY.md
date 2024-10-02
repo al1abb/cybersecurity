@@ -34,6 +34,7 @@
 
 * [Lecture Notes](blue-for-red/lecture-notes/README.md)
   * [25/09.](blue-for-red/lecture-notes/25-09..md)
+  * [02/10. Portfolio.js Sysmon Log Analysis](blue-for-red/lecture-notes/02-10.-portfolio.js-sysmon-log-analysis.md)
 
 ## 🐍 Python for Red
 
