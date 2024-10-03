@@ -23,6 +23,7 @@
   * [30/09. Flowchart](penetration-testing/lecture-notes/30-09.-flowchart.md)
   * [01/10. Nessus installation, NSE](penetration-testing/lecture-notes/01-10.-nessus-installation-nse.md)
   * [02/10. Pentest Templates](penetration-testing/lecture-notes/02-10.-pentest-templates.md)
+  * [03/10. Exploitation, Metasploit](penetration-testing/lecture-notes/03-10.-exploitation-metasploit.md)
 
 ## Powershell
 
