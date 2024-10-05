@@ -51,3 +51,9 @@ The recursive resolver returns the IP address to the browser.
 ## **13. Browser Connects to the Server**:&#x20;
 
 The browser uses the IP address to send a request to the web server hosting the website, and the website content is retrieved and displayed to the user.
+
+## Short Fireship Video:
+
+{% embed url="https://youtu.be/UVR9lhUGAyU" %}
+DNS | Fireship
+{% endembed %}
