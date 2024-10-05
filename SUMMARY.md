@@ -148,3 +148,4 @@
 * [Linux](interview-prep/linux.md)
 * [Security Gateways](interview-prep/security-gateways.md)
 * [Highly probable questions](interview-prep/highly-probable-questions.md)
+* [DNS Steps](interview-prep/dns-steps.md)
