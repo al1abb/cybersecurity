@@ -24,6 +24,7 @@
   * [01/10. Nessus installation, NSE](penetration-testing/lecture-notes/01-10.-nessus-installation-nse.md)
   * [02/10. Pentest Templates](penetration-testing/lecture-notes/02-10.-pentest-templates.md)
   * [03/10. Exploitation, Metasploit, John The Ripper, Hydra](penetration-testing/lecture-notes/03-10.-exploitation-metasploit-john-the-ripper-hydra.md)
+  * [07/10. MSF Workspaces](penetration-testing/lecture-notes/07-10.-msf-workspaces.md)
 
 ## Powershell
 
