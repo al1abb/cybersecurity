@@ -149,3 +149,4 @@
 * [Security Gateways](interview-prep/security-gateways.md)
 * [Highly probable questions](interview-prep/highly-probable-questions.md)
 * [DNS Steps](interview-prep/dns-steps.md)
+* [OSI Layers: Youtube Example](interview-prep/osi-layers-youtube-example.md)
