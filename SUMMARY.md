@@ -33,6 +33,7 @@
   * [23/09.](powershell/lecture-notes/09-23..md)
   * [30/09. PowerShell](powershell/lecture-notes/30-09.-powershell.md)
   * [03/10. PowerShell Functions](powershell/lecture-notes/03-10.-powershell-functions.md)
+  * [10/10. Active Directory Module](powershell/lecture-notes/10-10.-active-directory-module.md)
 * [PowerShell Useful Commands](powershell/powershell-useful-commands.md)
 
 ## 🔵 Blue for Red
