@@ -34,7 +34,7 @@
   * [30/09. PowerShell](powershell/lecture-notes/30-09.-powershell.md)
   * [03/10. PowerShell Functions](powershell/lecture-notes/03-10.-powershell-functions.md)
   * [10/10. Active Directory Module](powershell/lecture-notes/10-10.-active-directory-module.md)
-  * [11/10. PowerSploit  (PowerView)](powershell/lecture-notes/11-10.-powersploit-powerview.md)
+  * [11/10. PowerSploit  (PowerView), PowerShell Empire](powershell/lecture-notes/11-10.-powersploit-powerview-powershell-empire.md)
 * [PowerShell Useful Commands](powershell/powershell-useful-commands.md)
 
 ## 🔵 Blue for Red
