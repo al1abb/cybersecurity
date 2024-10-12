@@ -152,5 +152,6 @@
 * [Linux](interview-prep/linux.md)
 * [Security Gateways](interview-prep/security-gateways.md)
 * [Highly probable questions](interview-prep/highly-probable-questions.md)
+* [Extra questions](interview-prep/extra-questions.md)
 * [DNS Steps](interview-prep/dns-steps.md)
 * [OSI Layers: Youtube Example](interview-prep/osi-layers-youtube-example.md)

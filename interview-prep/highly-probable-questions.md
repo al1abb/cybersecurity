@@ -6,6 +6,17 @@ Interviewda verilmə ehtimalı çox olan suallar :
 * Defence in Depth
 * SİEM/SOC
 * Threat İntelligence - Threat hunting
+
+Primary goals of **Threat Hunting**:&#x20;
+
+a) To **reduce dwell time** of attackers,
+
+b) Finding **IoC's** as early as possible
+
+c) **Lower the cost** of the compromise
+
+
+
 * Encoding Encryption Hashing
 * Necə OSİNT edərsiniz?
 * Firewalls
