@@ -27,6 +27,10 @@
   * [07/10. MSF Workspaces](penetration-testing/lecture-notes/07-10.-msf-workspaces.md)
   * [08/10.](penetration-testing/lecture-notes/08-10..md)
 
+## Wireless Pentesting
+
+* [21/10.](wireless-pentesting/21-10..md)
+
 ## Powershell
 
 * [Lecture Notes](powershell/lecture-notes/README.md)
