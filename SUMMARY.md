@@ -42,6 +42,10 @@
   * [11/10. PowerSploit  (PowerView), PowerShell Empire](powershell/lecture-notes/11-10.-powersploit-powerview-powershell-empire.md)
 * [PowerShell Useful Commands](powershell/powershell-useful-commands.md)
 
+## Active Directory
+
+* [24/10.](active-directory/24-10..md)
+
 ## 🔵 Blue for Red
 
 * [Lecture Notes](blue-for-red/lecture-notes/README.md)
