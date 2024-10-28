@@ -30,7 +30,7 @@
 ## Wireless Pentesting
 
 * [21/10.](wireless-pentesting/21-10..md)
-* [28/10.](wireless-pentesting/28-10..md)
+* [28/10. WPA](wireless-pentesting/28-10.-wpa.md)
 * [Interesting Commands](wireless-pentesting/interesting-commands.md)
 
 ## Powershell
