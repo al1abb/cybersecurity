@@ -55,6 +55,7 @@
 
 ## 🐍 Python for Red
 
+* [Create Virtual Environment](python-for-red/create-virtual-environment.md)
 * [Lecture Notes](python-for-red/lecture-notes.md)
 
 ## 🐧 Linux
