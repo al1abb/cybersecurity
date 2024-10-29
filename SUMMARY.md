@@ -47,6 +47,11 @@
 
 * [24/10. Windows Local Enumeration](active-directory/24-10.-windows-local-enumeration.md)
 
+## OpSec
+
+* [Lectures](opsec/lectures/README.md)
+  * [29/10.](opsec/lectures/29-10..md)
+
 ## 🔵 Blue for Red
 
 * [Lecture Notes](blue-for-red/lecture-notes/README.md)
