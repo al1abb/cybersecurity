@@ -52,6 +52,10 @@
 * [Lectures](opsec/lectures/README.md)
   * [29/10.](opsec/lectures/29-10..md)
 
+## OSINT
+
+* [31/10.](osint/31-10..md)
+
 ## 🔵 Blue for Red
 
 * [Lecture Notes](blue-for-red/lecture-notes/README.md)
