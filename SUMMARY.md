@@ -176,3 +176,7 @@
 * [DNS Steps](interview-prep/dns-steps.md)
 * [OSI Layers: Youtube Example](interview-prep/osi-layers-youtube-example.md)
 * [Interview Questions](interview-prep/interview-questions.md)
+
+## Group 1
+
+* [05/11. Web Hacking Lecture 2](group-1/05-11.-web-hacking-lecture-2.md)
