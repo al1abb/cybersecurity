@@ -15,6 +15,8 @@
   * [Linux PrivEsc](penetration-testing/ctf-checklist/linux-privesc.md)
   * [Shells](penetration-testing/ctf-checklist/shells.md)
   * [Processes](penetration-testing/ctf-checklist/processes.md)
+* [Technologies](red-team/technologies/README.md)
+  * [Apache Tomcat](red-team/technologies/apache-tomcat.md)
 
 ## 🔥 Penetration Testing
 
