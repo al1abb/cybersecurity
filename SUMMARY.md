@@ -7,6 +7,7 @@
 ## 🔴 Red Team
 
 * [Tools](red-team/tools/README.md)
+  * [WPScan](red-team/tools/wpscan.md)
   * [Xfreerdp](red-team/tools/xfreerdp.md)
 * [Interesting Findings](penetration-testing/interesting-findings.md)
 * [CTF Checklist](penetration-testing/ctf-checklist/README.md)
