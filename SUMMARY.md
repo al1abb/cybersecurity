@@ -7,6 +7,7 @@
 ## 🔴 Red Team
 
 * [Tools](red-team/tools/README.md)
+  * [SSH keygen](red-team/tools/ssh-keygen.md)
   * [WPScan](red-team/tools/wpscan.md)
   * [Xfreerdp](red-team/tools/xfreerdp.md)
 * [Interesting Findings](penetration-testing/interesting-findings.md)
