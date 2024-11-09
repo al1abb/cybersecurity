@@ -55,6 +55,7 @@
 ## Active Directory
 
 * [24/10. Windows Local Enumeration](active-directory/24-10.-windows-local-enumeration.md)
+* [Interesting Commands](active-directory/interesting-commands.md)
 
 ## OpSec
 
