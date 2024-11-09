@@ -52,10 +52,17 @@
   * [11/10. PowerSploit  (PowerView), PowerShell Empire](powershell/lecture-notes/11-10.-powersploit-powerview-powershell-empire.md)
 * [PowerShell Useful Commands](powershell/powershell-useful-commands.md)
 
-## Active Directory
+## Active Directory / Windows
 
-* [24/10. Windows Local Enumeration](active-directory/24-10.-windows-local-enumeration.md)
-* [Interesting Commands](active-directory/interesting-commands.md)
+* [Fundamentals](active-directory-windows/fundamentals.md)
+* [Lecture Notes](active-directory-windows/lecture-notes/README.md)
+  * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
+* [Interesting Commands](active-directory-windows/interesting-commands.md)
+
+## 🐍 Python for Red
+
+* [Create Virtual Environment](python-for-red/create-virtual-environment.md)
+* [Lecture Notes](python-for-red/lecture-notes.md)
 
 ## OpSec
 
@@ -64,18 +71,14 @@
 
 ## OSINT
 
-* [31/10.](osint/31-10..md)
+* [Lectures](osint/lectures/README.md)
+  * [31/10. First class](osint/lectures/31-10.-first-class.md)
 
 ## 🔵 Blue for Red
 
 * [Lecture Notes](blue-for-red/lecture-notes/README.md)
   * [25/09.](blue-for-red/lecture-notes/25-09..md)
   * [02/10. Portfolio.js Sysmon Log Analysis](blue-for-red/lecture-notes/02-10.-portfolio.js-sysmon-log-analysis.md)
-
-## 🐍 Python for Red
-
-* [Create Virtual Environment](python-for-red/create-virtual-environment.md)
-* [Lecture Notes](python-for-red/lecture-notes.md)
 
 ## 🐧 Linux
 
