@@ -9,6 +9,3 @@ User accounts can be one of two types on a typical local Windows system:&#x20;
 ## Local User and Group Management (lusrmgr.msc)
 
 You can view local users and groups from here!
-
-## UAC
-
