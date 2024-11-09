@@ -38,8 +38,9 @@
 
 ## Wireless Pentesting
 
-* [21/10.](wireless-pentesting/21-10..md)
-* [28/10. WPA](wireless-pentesting/28-10.-wpa.md)
+* [Lectures Notes](wireless-pentesting/lectures-notes/README.md)
+  * [21/10.](wireless-pentesting/lectures-notes/21-10..md)
+  * [28/10. WPA](wireless-pentesting/lectures-notes/28-10.-wpa.md)
 * [Interesting Commands](wireless-pentesting/interesting-commands.md)
 
 ## Powershell
@@ -54,7 +55,8 @@
 
 ## Active Directory / Windows
 
-* [Fundamentals](active-directory-windows/fundamentals.md)
+* [THM](active-directory-windows/thm/README.md)
+  * [Windows Fundamentals](active-directory-windows/thm/windows-fundamentals.md)
 * [Lecture Notes](active-directory-windows/lecture-notes/README.md)
   * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
 * [Interesting Commands](active-directory-windows/interesting-commands.md)
@@ -66,13 +68,13 @@
 
 ## OpSec
 
-* [Lectures](opsec/lectures/README.md)
-  * [29/10.](opsec/lectures/29-10..md)
+* [Lecture Notes](opsec/lecture-notes/README.md)
+  * [29/10.](opsec/lecture-notes/29-10..md)
 
 ## OSINT
 
-* [Lectures](osint/lectures/README.md)
-  * [31/10. First class](osint/lectures/31-10.-first-class.md)
+* [Lecture Notes](osint/lecture-notes/README.md)
+  * [31/10. First class](osint/lecture-notes/31-10.-first-class.md)
 
 ## 🔵 Blue for Red
 
