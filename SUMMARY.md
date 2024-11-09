@@ -18,6 +18,11 @@
 * [Technologies](red-team/technologies/README.md)
   * [Apache Tomcat](red-team/technologies/apache-tomcat.md)
 
+## Web App Hacking
+
+* [Lecture Notes](web-app-hacking/lecture-notes/README.md)
+  * [05/11. Web Hacking Lecture 2](web-app-hacking/lecture-notes/05-11.-web-hacking-lecture-2.md)
+
 ## 🔥 Penetration Testing
 
 * [Lecture Notes](penetration-testing/lecture-notes/README.md)
@@ -180,7 +185,3 @@
 * [DNS Steps](interview-prep/dns-steps.md)
 * [OSI Layers: Youtube Example](interview-prep/osi-layers-youtube-example.md)
 * [Interview Questions](interview-prep/interview-questions.md)
-
-## Group 1
-
-* [05/11. Web Hacking Lecture 2](group-1/05-11.-web-hacking-lecture-2.md)
