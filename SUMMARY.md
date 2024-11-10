@@ -10,7 +10,7 @@
   * [SSH keygen](red-team/tools/ssh-keygen.md)
   * [WPScan](red-team/tools/wpscan.md)
   * [Xfreerdp](red-team/tools/xfreerdp.md)
-* [Interesting Findings](penetration-testing/interesting-findings.md)
+* [Interesting PrivEsc Findings](red-team/interesting-privesc-findings.md)
 * [CTF Checklist](penetration-testing/ctf-checklist/README.md)
   * [Linux PrivEsc](penetration-testing/ctf-checklist/linux-privesc.md)
   * [Shells](penetration-testing/ctf-checklist/shells.md)
