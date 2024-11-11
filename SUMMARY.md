@@ -58,7 +58,7 @@
 ## Active Directory / Windows
 
 * [THM](active-directory-windows/thm/README.md)
-  * [Windows Fundamentals](active-directory-windows/thm/windows-fundamentals.md)
+  * [Windows Utilities & Processes](active-directory-windows/thm/windows-utilities-and-processes.md)
 * [Lecture Notes](active-directory-windows/lecture-notes/README.md)
   * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
 * [Interesting Commands](active-directory-windows/interesting-commands.md)
