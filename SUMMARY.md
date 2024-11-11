@@ -22,8 +22,8 @@
 
 * [Lecture Notes](web-app-hacking/lecture-notes/README.md)
   * [05/11. Web Hacking Lecture 2](web-app-hacking/lecture-notes/05-11.-web-hacking-lecture-2.md)
-* [Web Vulnerabilities](web-app-hacking/web-vulnerabilities.md)
-* [LFI](web-app-hacking/lfi.md)
+* [Web Vulnerabilities](web-app-hacking/web-vulnerabilities/README.md)
+  * [LFI](web-app-hacking/web-vulnerabilities/lfi.md)
 
 ## 🔥 Penetration Testing
 
