@@ -16,4 +16,7 @@
 * Service Control Manager (SCM) (**services.exe**). Its primary responsibility is to handle system services: loading services, interacting with services, and starting or ending services. It maintains a database that can be queried using a Windows built-in utility, `sc.exe`
 * Service Host (Host Process for Windows Services) (**svchost.exe**), is responsible for hosting and managing Windows services.
 * Local Security Authority Subsystem Service (LSASS) (**lsass.exe**) is a process in Microsoft Windows operating systems that is responsible for enforcing the security policy on the system. It verifies users logging on to a Windows computer or server, handles password changes, and creates access tokens. It also writes to the Windows Security Log
+*   Windows Logon (**winlogon.exe**), is responsible for handling the Secure Attention Sequence (SAS). It is the ALT+CTRL+DELETE key combination users press to enter their username & password.
+
+    This process also loads the user profile. It loads the user's NTUSER.DAT into HKCU, and userinit.exe loads the user's shell.
 
