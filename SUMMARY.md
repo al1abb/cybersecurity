@@ -62,8 +62,9 @@
 
 ## Active Directory / Windows
 
-* [THM](active-directory-windows/thm/README.md)
-  * [Windows Utilities & Processes](active-directory-windows/thm/windows-utilities-and-processes.md)
+* [Windows Utilities & Processes](active-directory-windows/windows-utilities-and-processes.md)
+* [Attacks](active-directory-windows/attacks/README.md)
+  * [ASREPRoasting](active-directory-windows/attacks/asreproasting.md)
 * [Lecture Notes](active-directory-windows/lecture-notes/README.md)
   * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
 * [Interesting Commands](active-directory-windows/interesting-commands.md)
