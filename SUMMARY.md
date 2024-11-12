@@ -7,7 +7,9 @@
 ## 🔴 Red Team
 
 * [Tools](red-team/tools/README.md)
+  * [Enum4linux](red-team/tools/enum4linux.md)
   * [Chisel](red-team/tools/chisel.md)
+  * [ldapsearch](red-team/tools/ldapsearch.md)
   * [SSH keygen](red-team/tools/ssh-keygen.md)
   * [WPScan](red-team/tools/wpscan.md)
   * [Xfreerdp](red-team/tools/xfreerdp.md)
