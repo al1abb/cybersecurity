@@ -10,6 +10,7 @@
   * [Enum4linux](red-team/tools/enum4linux.md)
   * [Chisel](red-team/tools/chisel.md)
   * [ldapsearch](red-team/tools/ldapsearch.md)
+  * [kerbrute](red-team/tools/kerbrute.md)
   * [SSH keygen](red-team/tools/ssh-keygen.md)
   * [WPScan](red-team/tools/wpscan.md)
   * [Xfreerdp](red-team/tools/xfreerdp.md)
