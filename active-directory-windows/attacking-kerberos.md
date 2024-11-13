@@ -77,3 +77,16 @@ If the service account is not a domain admin you can use it to log into other sy
 
 ## AS-REP Roasting w/ Rubeus
 
+Look for vulnerable users and then dump found vulnerable user hashes:
+
+```powershell
+Rubeus.exe asreproast
+```
+
+Next, crack it with tools such as hashcat
+
+### AS-REP Roasting Mitigations
+
+* Have a strong password policy. With a strong password, the hashes will take longer to crack making this attack less effective
+* Don't turn off Kerberos Pre-Authentication unless it's necessary there's almost no other way to completely mitigate this attack other than keeping Pre-Authentication on.
+
