@@ -46,12 +46,16 @@
   * [07/10. MSF Workspaces](penetration-testing/lecture-notes/07-10.-msf-workspaces.md)
   * [08/10.](penetration-testing/lecture-notes/08-10..md)
 
-## Wireless Pentesting
+## Active Directory / Windows
 
-* [Lectures Notes](wireless-pentesting/lectures-notes/README.md)
-  * [21/10.](wireless-pentesting/lectures-notes/21-10..md)
-  * [28/10. WPA](wireless-pentesting/lectures-notes/28-10.-wpa.md)
-* [Interesting Commands](wireless-pentesting/interesting-commands.md)
+* [Windows Utilities & Processes](active-directory-windows/windows-utilities-and-processes.md)
+* [Attacking Kerberos](active-directory-windows/attacking-kerberos.md)
+* [Attacks](active-directory-windows/attacks/README.md)
+  * [ASREPRoasting](active-directory-windows/attacks/asreproasting.md)
+* [Lecture Notes](active-directory-windows/lecture-notes/README.md)
+  * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
+* [Interesting Commands](active-directory-windows/interesting-commands.md)
+* [Terminology](active-directory-windows/terminology.md)
 
 ## Powershell
 
@@ -63,14 +67,12 @@
   * [11/10. PowerSploit  (PowerView), PowerShell Empire](powershell/lecture-notes/11-10.-powersploit-powerview-powershell-empire.md)
 * [PowerShell Useful Commands](powershell/powershell-useful-commands.md)
 
-## Active Directory / Windows
+## Wireless Pentesting
 
-* [Windows Utilities & Processes](active-directory-windows/windows-utilities-and-processes.md)
-* [Attacks](active-directory-windows/attacks/README.md)
-  * [ASREPRoasting](active-directory-windows/attacks/asreproasting.md)
-* [Lecture Notes](active-directory-windows/lecture-notes/README.md)
-  * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
-* [Interesting Commands](active-directory-windows/interesting-commands.md)
+* [Lectures Notes](wireless-pentesting/lectures-notes/README.md)
+  * [21/10.](wireless-pentesting/lectures-notes/21-10..md)
+  * [28/10. WPA](wireless-pentesting/lectures-notes/28-10.-wpa.md)
+* [Interesting Commands](wireless-pentesting/interesting-commands.md)
 
 ## 🐍 Python for Red
 
