@@ -14,6 +14,7 @@
   * [impacket](red-team/tools/impacket.md)
   * [ldapsearch](red-team/tools/ldapsearch.md)
   * [kerbrute](red-team/tools/kerbrute.md)
+  * [rubeus](red-team/tools/rubeus.md)
   * [SSH keygen](red-team/tools/ssh-keygen.md)
   * [WPScan](red-team/tools/wpscan.md)
   * [Xfreerdp](red-team/tools/xfreerdp.md)
