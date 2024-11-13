@@ -41,3 +41,6 @@ This returns .kirbi ticket (TGT)
 {% hint style="warning" %}
 Be mindful of how you use this attack as it may lock you out of the network depending on the account lockout policies.
 {% endhint %}
+
+## Kerberoasting w/ Rubeus & Impacket
+
