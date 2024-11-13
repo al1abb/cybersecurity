@@ -53,7 +53,7 @@
 * [Attacking Kerberos](active-directory-windows/attacking-kerberos.md)
 * [Attacks](active-directory-windows/attacks/README.md)
   * [Kerberoasting](active-directory-windows/attacks/kerberoasting.md)
-  * [ASREPRoasting](active-directory-windows/attacks/asreproasting.md)
+  * [ASREP Roasting](active-directory-windows/attacks/asrep-roasting.md)
 * [Lecture Notes](active-directory-windows/lecture-notes/README.md)
   * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
 * [Interesting Commands](active-directory-windows/interesting-commands.md)
