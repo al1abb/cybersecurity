@@ -11,6 +11,7 @@
   * [Enum4linux](red-team/tools/enum4linux.md)
   * [smbclient](red-team/tools/smbclient.md)
   * [evil-winrm](red-team/tools/evil-winrm.md)
+  * [scp](red-team/tools/scp.md)
   * [impacket](red-team/tools/impacket.md)
   * [ldapsearch](red-team/tools/ldapsearch.md)
   * [kerbrute](red-team/tools/kerbrute.md)
