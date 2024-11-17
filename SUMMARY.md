@@ -51,6 +51,7 @@
 
 * [Windows Utilities & Processes](active-directory-windows/windows-utilities-and-processes.md)
 * [Attacking Kerberos](active-directory-windows/attacking-kerberos.md)
+* [Post Exploitation](active-directory-windows/post-exploitation.md)
 * [Attacks](active-directory-windows/attacks/README.md)
   * [Kerberoasting](active-directory-windows/attacks/kerberoasting.md)
   * [ASREP Roasting](active-directory-windows/attacks/asrep-roasting.md)
