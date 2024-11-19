@@ -34,6 +34,7 @@
 * [Web Vulnerabilities](web-app-hacking/web-vulnerabilities/README.md)
   * [LFI](web-app-hacking/web-vulnerabilities/lfi.md)
   * [Command Injection](web-app-hacking/web-vulnerabilities/command-injection.md)
+* [James's favourite XSS Payload](web-app-hacking/jamess-favourite-xss-payload.md)
 
 ## 🔥 Penetration Testing
 
