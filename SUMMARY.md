@@ -62,8 +62,9 @@
 * [Lecture Notes](active-directory-windows/lecture-notes/README.md)
   * [24/10. Windows Local Enumeration](active-directory-windows/lecture-notes/24-10.-windows-local-enumeration.md)
 * [Labs](active-directory-windows/labs/README.md)
-  * [AD Enumeration 1](active-directory-windows/labs/ad-enumeration-1.md)
+  * [AD Lab 1](active-directory-windows/labs/ad-lab-1.md)
   * [AD Lab 2](active-directory-windows/labs/ad-lab-2.md)
+  * [AD Enumeration 3](active-directory-windows/labs/ad-enumeration-3.md)
 * [Interesting Commands](active-directory-windows/interesting-commands.md)
 * [Terminology](active-directory-windows/terminology.md)
 
