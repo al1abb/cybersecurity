@@ -64,7 +64,9 @@
 * [Labs](active-directory-windows/labs/README.md)
   * [AD Lab 1](active-directory-windows/labs/ad-lab-1.md)
   * [AD Lab 2](active-directory-windows/labs/ad-lab-2.md)
-  * [AD Enumeration 3](active-directory-windows/labs/ad-enumeration-3.md)
+  * [AD Enumeration 3](active-directory-windows/labs/ad-enumeration-1.md)
+  * [AD LDAP 4](active-directory-windows/labs/ad-ldap-4.md)
+  * [AD Lab 5](active-directory-windows/labs/ad-lab-5.md)
 * [Interesting Commands](active-directory-windows/interesting-commands.md)
 * [Terminology](active-directory-windows/terminology.md)
 
