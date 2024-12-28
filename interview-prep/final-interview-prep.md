@@ -1,3 +1,7 @@
+---
+description: 'Nice resource: https://www.thehacker.recipes/'
+---
+
 # FINAL INTERVIEW PREP
 
 ## AD
@@ -56,4 +60,19 @@ In short, DNS is essential in Active Directory environments, whereas NBT-NS is m
 * `464/TCP` and `445/UDP` for Kerberos password change
 * `3268/TCP` for LDAP Global Catalog
 * `3269/TCP` for LDAP Global Catalog over TLS/SSL
+
+### RID vs SID
+
+| Feature               | **SID**                                                       | **RID**                                         |
+| --------------------- | ------------------------------------------------------------- | ----------------------------------------------- |
+| **Purpose**           | Globally unique identifier for security principals            | Unique identifier for objects within a domain   |
+| **Structure**         | Domain identifier + RID                                       | The last part of the SID (individual object ID) |
+| **Scope**             | Unique across the entire domain or forest                     | Unique within a single domain                   |
+| **Use Case**          | Used in permissions, ACLs, authentication, and access control | Used to uniquely identify objects in a domain   |
+| **Global Uniqueness** | Yes, it is globally unique in a forest                        | No, it is only unique within the domain         |
+
+#### Summary:
+
+* **SID** is a **global identifier** for an object in the Active Directory environment, used for security and access control across the entire domain or forest.
+* **RID** is a **local identifier** within a domain, part of the SID, and uniquely identifies an object (like a user or group) within that domain. It is used to distinguish between objects in the same domain.
 
