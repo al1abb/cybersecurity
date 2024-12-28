@@ -42,3 +42,18 @@ In short, DNS is essential in Active Directory environments, whereas NBT-NS is m
 
 
 
+### Important ports in AD environment
+
+* `53/TCP` and `53/UDP` for DNS
+* `88/TCP` for Kerberos authentication
+* `135/TCP` and `135/UDP` MS-RPC epmapper (EndPoint Mapper)
+* `137/TCP` and `137/UDP` for NBT-NS
+* `138/UDP` for NetBIOS datagram service
+* `139/TCP` for NetBIOS session service
+* `389/TCP` for LDAP
+* `636/TCP` for LDAPS (LDAP over TLS/SSL)
+* `445/TCP` and `445/UDP` for SMB
+* `464/TCP` and `445/UDP` for Kerberos password change
+* `3268/TCP` for LDAP Global Catalog
+* `3269/TCP` for LDAP Global Catalog over TLS/SSL
+
