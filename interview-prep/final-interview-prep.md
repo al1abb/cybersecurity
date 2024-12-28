@@ -76,3 +76,50 @@ In short, DNS is essential in Active Directory environments, whereas NBT-NS is m
 * **SID** is a **global identifier** for an object in the Active Directory environment, used for security and access control across the entire domain or forest.
 * **RID** is a **local identifier** within a domain, part of the SID, and uniquely identifies an object (like a user or group) within that domain. It is used to distinguish between objects in the same domain.
 
+### DCSync
+
+#### **What is DCSync?**
+
+DCSync is a **post-exploitation technique** used in Active Directory (AD) environments to impersonate a Domain Controller (DC) and request sensitive data, including user password hashes. Essentially, it leverages the **Directory Replication Service (DRS)** protocol to pull data from the AD database.
+
+Attackers use this technique to extract **password hashes**, **Kerberos keys**, and other critical secrets from the Domain Controller without needing direct access to it.
+
+***
+
+#### **How Does DCSync Work?**
+
+1. **Active Directory Replication Basics:**
+   * In AD, Domain Controllers replicate changes to each other using the **Directory Replication Service (DRS)**.
+   * This service uses the **DSGetNCChanges()** function to synchronize data between DCs. It allows one DC to request information (e.g., password hashes) from another DC.
+   * Only privileged accounts (e.g., Domain Admins, Enterprise Admins) or accounts with **replication permissions** can request this data.
+2. **Abusing Replication Permissions:**
+   * Attackers with **Domain Admin privileges** (or any account with replication rights) can abuse the DRS protocol to:
+     * Pull **NTLM password hashes**.
+     * Extract **Kerberos keys** (krbtgt account hash used to forge Golden Tickets).
+     * Gather other sensitive user attributes.
+   * This is done by simulating the behavior of a legitimate Domain Controller using tools like **Mimikatz**.
+3. **Tools Used for DCSync:**
+   * **Mimikatz**: Popular tool for executing DCSync. The `lsadump::dcsync` command allows attackers to fetch NTLM password hashes and Kerberos keys.
+   * **Impacket**: Tools like `secretsdump.py` in Impacket can also perform DCSync attacks.
+
+***
+
+#### **Steps in a DCSync Attack:**
+
+1. **Obtain Privileged Access:**
+   * The attacker compromises an account with replication privileges (e.g., Domain Admin or an account explicitly delegated replication permissions).
+   * Alternatively, escalate privileges to obtain such access.
+2. **Execute the Attack:**
+   * Use tools like Mimikatz or Impacket to simulate a Domain Controller and send replication requests.
+   * The attacker requests specific data, such as:
+     * NTLM password hashes for users.
+     * The Kerberos **krbtgt** account hash.
+     * Other sensitive AD attributes.
+3.  **Utilize the Extracted Data:**
+
+    * Use password hashes for **Pass-the-Hash (PtH)** attacks.
+    * Forge **Golden Tickets** using the `krbtgt` hash for long-term AD persistence.
+    * Move laterally and escalate privileges further in the network.
+
+
+
