@@ -123,3 +123,7 @@ Attackers use this technique to extract **password hashes**, **Kerberos keys**, 
 
 
 
+### Potatoes
+
+Learn more: [https://jlajara.gitlab.io/Potatoes\_Windows\_Privesc](https://jlajara.gitlab.io/Potatoes_Windows_Privesc)
+
