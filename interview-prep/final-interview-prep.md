@@ -319,6 +319,23 @@ To determine which services are running with elevated privileges, examine their 
 * **Privileges:** Services that can interact with the desktop or load drivers are particularly dangerous.
 * **Startup Type:** Automatically started services are more likely to be exploitable for persistence.
 
+### Automated Enumeration
+
+#### **a. Popular Tools and Frameworks for Automated Enumeration in Privilege Escalation Attacks**
+
+1. **Windows-Specific Tools:**
+   * **WinPEAS (Privilege Escalation Awesome Scripts):** A comprehensive script for Windows privilege escalation that automates the discovery of vulnerabilities like misconfigured services, weak permissions, or sensitive files.
+   * **PowerUp (PowerSploit):** A PowerShell module designed to automate privilege escalation checks on Windows systems, such as vulnerable services or improperly configured permissions.
+   * **Seatbelt:** A C# enumeration tool for assessing the security posture of Windows systems, identifying misconfigurations, credentials, and more.
+2. **Cross-Platform Tools:**
+   * **Metasploit Framework:** Offers modules like `post/windows/gather/enum_services` for automated enumeration of services, credentials, and vulnerabilities.
+   * **BloodHound:** Primarily for Active Directory environments, it maps out attack paths by analyzing user and group relationships.
+   * **SharpUp:** A C# tool that automates privilege escalation checks on Windows systems.
+3. **Others:**
+   * **Empire (PowerShell Empire):** A post-exploitation framework that includes automated enumeration modules.
+   * **PowerShell Scripts:** Tools like Nishang and PrivescCheck automate privilege escalation enumeration.
+   * **Custom Python Scripts:** Attackers often use custom Python scripts tailored to specific environments.
+
 ## AD
 
 ### NBT-NS vs DNS
