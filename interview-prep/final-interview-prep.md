@@ -4,6 +4,60 @@ description: 'Nice resource: https://www.thehacker.recipes/'
 
 # FINAL INTERVIEW PREP
 
+## Windows
+
+### **Local Enumeration: Overview and Functionality**
+
+**Local enumeration** refers to the process of gathering information about a system's configuration, settings, users, groups, installed software, and other resources from a local perspective. It is often used by administrators for auditing purposes or by attackers to discover vulnerabilities.
+
+**How It Functions:**
+
+1. **Information Gathering:** Tools and commands are used to extract details about the system's configuration, accounts, permissions, and installed software.
+2. **Analysis:** The collected data is analyzed to identify misconfigurations, weaknesses, or potential vulnerabilities.
+
+**How to Perform Local Enumeration on a Windows System:**
+
+Here are some examples of commands and techniques used for local enumeration:
+
+1. **Enumerate Users and Groups:**
+   * `net user` (Lists all local users)
+   * `net localgroup` (Lists all local groups and their members)
+2. **Check Privileges and Security Policies:**
+   * `whoami /priv` (Shows privileges of the current user)
+   * `secedit /export /cfg C:\securityconfig.txt` (Exports security policies)
+3. **Identify Running Services:**
+   * `sc query` (Lists all running and stopped services)
+   * `tasklist` (Lists all active processes)
+4. **Check Installed Software:**
+   * `wmic product get name,version` (Displays installed programs and versions)
+5. **Network Information:**
+   * `ipconfig /all` (Displays network configuration)
+   * `netstat -ano` (Lists active network connections with associated processes)
+6. **Filesystem Information:**
+   * `dir /s` (Displays directory structure and contents)
+   * `icacls` (Checks file and folder permissions)
+
+### **How Attackers Use Local Enumeration for Privilege Escalation**
+
+Once attackers gain local access to a Windows system, they use local enumeration to identify weaknesses they can exploit to elevate privileges or compromise the system further.
+
+**Potential Attack Scenarios:**
+
+1. **Discovering Weak Passwords:**
+   * Attackers may check for accounts with weak or blank passwords using `net user`.
+2. **Identifying Privileged Accounts:**
+   * Using `net localgroup administrators` to list accounts with administrative privileges, attackers can target these accounts for privilege escalation.
+3. **Finding Misconfigurations:**
+   * Attackers can exploit misconfigured services, such as services running with SYSTEM privileges but accessible to low-privileged users (`sc qc [service-name]`).
+4. **Abusing Privileges:**
+   * If attackers identify sensitive privileges like `SeImpersonatePrivilege` or `SeAssignPrimaryTokenPrivilege` using `whoami /priv`, they may exploit techniques like **Token Impersonation** or **Named Pipe Impersonation** to escalate privileges.
+5. **Leveraging Vulnerable Software:**
+   * Enumeration of installed software using `wmic product get name,version` can help attackers identify outdated or vulnerable applications to exploit.
+6. **File Permission Vulnerabilities:**
+   * Attackers can identify files or folders with weak permissions using `icacls`. For example, writable directories in `C:\Program Files` might allow attackers to replace executables used by privileged users.
+7. **Accessing Stored Credentials:**
+   * Tools like `mimikatz` can extract stored credentials from memory, allowing attackers to impersonate other users or administrators.
+
 ## AD
 
 ### NBT-NS vs DNS
