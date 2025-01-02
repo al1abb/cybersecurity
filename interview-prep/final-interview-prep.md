@@ -186,6 +186,139 @@ If you have admin privileges and can create a new user, you could establish pers
 
 By employing these methods, attackers can ensure long-term access while minimizing the likelihood of detection. However, implementing strong security measures and monitoring can help mitigate these risks.
 
+### Service Enumeration
+
+#### **a. Enumerating Services on a Compromised Windows System**
+
+To enumerate services on a compromised Windows system, you can use a variety of built-in commands, PowerShell cmdlets, or third-party tools to gather detailed information about running and stopped services, including their configuration, permissions, and associated accounts.
+
+**Commands and Tools for Enumerating Services:**
+
+1. **Using Built-in Commands:**
+   *   **List All Services:**
+
+       ```cmd
+       sc query
+       ```
+
+       (Displays the status of all services: running, stopped, or paused)
+   *   **Detailed Service Information:**
+
+       ```cmd
+       sc qc [service-name]
+       ```
+
+       (Shows service configuration, including binary path, startup type, and the account it's running under)
+   *   **List Only Running Services:**
+
+       ```cmd
+       tasklist /svc
+       ```
+
+       (Shows running processes and the services associated with them)
+   *   **Export Service Configurations:**
+
+       ```cmd
+       sc query > services.txt
+       ```
+2. **Using PowerShell:**
+   *   **List All Services:**
+
+       ```powershell
+       Get-Service
+       ```
+
+       (Shows a simple list of services and their statuses)
+   *   **Detailed Information:**
+
+       ```powershell
+       Get-WmiObject -Class Win32_Service | Select-Object Name, StartMode, State, PathName, StartName
+       ```
+3. **Third-Party Tools:**
+   * **PowerUp (PowerSploit module):** Used for automated enumeration of services and identification of misconfigurations.
+   * **WinPEAS:** A comprehensive enumeration tool that scans for privilege escalation vectors, including service misconfigurations.
+
+***
+
+#### **b. Identifying and Exploiting Misconfigured Services**
+
+Misconfigured services can often be exploited for privilege escalation, especially when they run with SYSTEM or administrative privileges but are improperly secured.
+
+**Steps to Identify Misconfigurations:**
+
+1. **Check Service Permissions:**
+   * Use the `sc sdshow [service-name]` command to view the security descriptor of a service. Look for weak permissions like "Everyone" or "Authenticated Users" having `WRITE` or `CHANGE_CONFIG` access.
+2. **Analyze Service Binary Path:**
+   *   Check the `PathName` of the service using:
+
+       ```cmd
+       sc qc [service-name]
+       ```
+
+       Look for:
+
+       * Unquoted service paths (e.g., `C:\Program Files\My Service\service.exe` instead of `"C:\Program Files\My Service\service.exe"`)
+       * Writable directories in the service path.
+3. **Verify User Context:**
+   * Check the account under which the service is running using the `StartName` field from `sc qc` or `Get-WmiObject`.
+4. **Startup Type:**
+   * Identify services with `Auto` or `Delayed` startup that can be triggered upon reboot.
+5. **Writable Service Binaries:**
+   *   Check if the service binary file is writable using:
+
+       ```cmd
+       icacls "C:\path\to\service.exe"
+       ```
+
+**Exploitable Misconfigurations:**
+
+1. **Unquoted Service Path Vulnerability:**
+   * If a service binary path is unquoted and contains spaces, an attacker can place a malicious executable in a higher-precedence directory. For example:
+     * `C:\Program Files\My Service\service.exe` → Place a malicious `My.exe` in `C:\Program Files\`.
+2. **Weak Service Permissions:**
+   *   If an attacker can modify the service configuration (e.g., `ChangeConfig` permissions), they can change the service's binary to their payload:
+
+       ```cmd
+       sc config [service-name] binpath= "C:\path\to\payload.exe"
+       sc start [service-name]
+       ```
+3. **Writable Service Binaries:**
+   * If the binary file is writable, replace it with a malicious executable. The next time the service starts, the attacker's code runs with the service's privileges.
+4. **Startup Scripts:**
+   * Exploit startup scripts or executables associated with a service.
+
+***
+
+#### **c. Identifying Services Running with SYSTEM or Administrative Privileges**
+
+To determine which services are running with elevated privileges, examine their `StartName` attribute, which specifies the user account under which the service runs.
+
+**Steps to Identify Privileged Services:**
+
+1. **Check Service Account:**
+   * Use the `sc qc [service-name]` or `Get-WmiObject` commands to inspect the `StartName` field:
+     * `LocalSystem` or `NT AUTHORITY\SYSTEM`: The service has SYSTEM privileges.
+     * `LocalService` or `NetworkService`: Limited built-in accounts with fewer privileges.
+     * Domain Administrator or other privileged accounts: Indicates potential for privilege escalation.
+2. **Filter Services by Privileges:**
+   *   PowerShell example:
+
+       ```powershell
+       Get-WmiObject -Class Win32_Service | Where-Object { $_.StartName -eq "LocalSystem" }
+       ```
+3. **Look for Sensitive Services:**
+   * Pay special attention to services critical to the OS, like:
+     * **Windows Management Instrumentation (WMI)**
+     * **Windows Defender**
+     * **Remote Desktop Services**
+     * Any custom services running as SYSTEM.
+
+**Indicators of Privileged Services:**
+
+* **StartName:** `LocalSystem`, `NT AUTHORITY\SYSTEM`, or `Administrator`
+* **Privileges:** Services that can interact with the desktop or load drivers are particularly dangerous.
+* **Startup Type:** Automatically started services are more likely to be exploitable for persistence.
+
 ## AD
 
 ### NBT-NS vs DNS
