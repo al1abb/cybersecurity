@@ -336,6 +336,33 @@ To determine which services are running with elevated privileges, examine their 
    * **PowerShell Scripts:** Tools like Nishang and PrivescCheck automate privilege escalation enumeration.
    * **Custom Python Scripts:** Attackers often use custom Python scripts tailored to specific environments.
 
+### DLL Hijacking
+
+{% embed url="https://medium.com/@zapbroob9/dll-hijacking-basics-ea60b0f2a1d8" %}
+
+### DLL Hijacking vs DLL Injection
+
+#### **Key Differences**
+
+| Feature     | DLL Hijacking                         | DLL Injection                             |
+| ----------- | ------------------------------------- | ----------------------------------------- |
+| **Focus**   | Exploits the DLL search order.        | Injects a DLL into a running process.     |
+| **Trigger** | Happens during application startup.   | Requires runtime access to the process.   |
+| **Target**  | Legitimate application loading a DLL. | Specific process in memory.               |
+| **Method**  | Replacing or planting a fake DLL.     | Using Windows API or memory manipulation. |
+| **Usage**   | Usually malicious.                    | Can be malicious or legitimate.           |
+
+***
+
+#### **Real-World Examples**
+
+* **DLL Hijacking**:
+  * Exploiting Microsoft Office or other programs vulnerable to improper DLL search order.
+  * Placing a malicious DLL in a writable directory (e.g., `Downloads` or `Temp`).
+* **DLL Injection**:
+  * Tools like **Mimikatz** use DLL injection to extract credentials.
+  * Malware injecting keylogging functionality into browsers.
+
 ## AD
 
 ### NBT-NS vs DNS
