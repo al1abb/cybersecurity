@@ -1004,3 +1004,55 @@ Credential dumping involves extracting credentials from memory or storage on com
 1. **Use Tools**: Use tools like Mimikatz, LaZagne, or Windows Credential Editor to extract password hashes or plaintext credentials.
 2. **Exfiltrate**: Once obtained, I would securely exfiltrate the credentials to my attack infrastructure.
 3. **Escalate**: Use the dumped credentials to perform lateral movement, escalate privileges, and maintain access to the network.
+
+## AD Case-Based Questions
+
+1. **Enumerating the Active Directory Environment and Identifying Privilege Escalation Paths**:
+   * **Tools**: I would start by using tools like `net user`, `net group`, `whoami`, and `nltest` to gather information about the domain environment.
+   * **Enumerating Domain Information**: Use tools like `net group /domain` or `PowerView` to identify domain groups and their members, particularly looking for administrative or privileged groups.
+   * **Identify High-Privilege Accounts**: Look for accounts that belong to privileged groups such as Domain Admins, Enterprise Admins, and Administrators.
+   * **Search for Misconfigurations**: Check for weak permissions on Active Directory objects, misconfigured trusts, or vulnerable service accounts.
+   * **Identify Privilege Escalation Paths**: Use the information from enumeration to identify paths like weak group memberships, misconfigured delegation, or the ability to escalate privileges through tools like Kerberos tickets.
+2. **Intercepting and Extracting Credentials from Network Traffic**:
+   * **Tools**: Tools like **Wireshark**, **tcpdump**, or **Mitmproxy** can capture network traffic. I would also use **Responder** for SMB and NetBIOS poisoning.
+   * **Man-in-the-Middle Attack**: Tools like **Ettercap** or **MITMProxy** can intercept and manipulate traffic between the client and server to capture credentials.
+   * **NTLM Relay**: After capturing the NTLM hash, I can use it for NTLM relay attacks using tools like **Impacket** to forward NTLM authentication requests to a target system.
+3. **Searching for Stored Credentials on a Windows System**:
+   * **SAM File**: The **SAM (Security Account Manager)** file stores password hashes for local accounts. It's located in `C:\Windows\System32\config`.
+   * **LSA Secrets**: These are stored in the **LSA (Local Security Authority)** and can be found in the registry under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa`.
+   * **Windows Credentials Store**: The **Windows Vault** stores user credentials, which can be accessed via the **Credential Manager**.
+   * **Keychain**: In case of a system running an application that uses secure storage, I’d also examine browsers and other apps that might store credentials.
+4. **Tools to Dump Credentials from a Compromised Windows Machine**:
+   * **Mimikatz**: This tool can extract clear-text passwords, password hashes, and Kerberos tickets from memory.
+   * **LaZagne**: Useful for dumping credentials from a variety of Windows applications.
+   * **Windows Credential Editor (WCE)**: This tool can dump password hashes and clear-text passwords from the SAM and LSA.
+   * **Impacket’s `secretsdump.py`**: This tool is used for dumping credentials directly from the machine's SAM file and LSA secrets.
+5. **Credential Dumping on a Machine with Local Administrative Privileges**:
+   * **Tools**: I would use **Mimikatz**, **LaZagne**, and **Impacket’s secretsdump.py** for credential extraction.
+   * **Locations to Search**: I would first look for hashes stored in the **SAM** file and **LSA secrets**.
+   * **Extracting NTLM Hashes**: Mimikatz's `lsadump::sam` module can be used to extract NTLM hashes, as well as clear-text passwords from memory.
+   * **AD-related Information**: The goal is to extract any hashes or Kerberos tickets that could be used for lateral movement or escalation, particularly from privileged accounts.
+6. **Using NTLM Hashes to Access Resources**:
+   * **Pass-the-Hash (PTH)**: Use the obtained NTLM hash to authenticate to remote systems without needing the plaintext password.
+   * **Impacket’s `psexec.py`**: This tool can be used to perform lateral movement using the NTLM hash for authentication.
+   * **NTLM Relay Attack**: Use **Impacket's `ntlmrelayx.py`** to relay NTLM authentication requests to other systems or services.
+   * **Escalating Privileges**: Depending on the resources, I might use the NTLM hash to access high-privileged resources like domain controllers or administrator shares.
+7. **Lateral Movement to a High-Value Target**:
+   * **Identifying Targets**: I would identify systems with administrative access to critical infrastructure (e.g., domain controllers, file servers).
+   * **Tools for Lateral Movement**: Use **Impacket’s psexec.py**, **wmiexec.py**, or **PowerShell Remoting** to move laterally to higher-value targets.
+   * **Credential Reuse**: If I have valid credentials from the user, I would attempt to use them for further escalation or lateral movement.
+   * **Remote Execution**: I would also look for any misconfigurations or exposed remote administration services (like RDP or SMB) that could be exploited.
+8. **Creating a Mechanism for Persistent Administrative Access**:
+   * **Golden Ticket Attack**: Using Mimikatz, I would create a **Golden Ticket** to impersonate a domain administrator by forging a Kerberos ticket.
+   * **Backdoor Accounts**: I would create a new admin account or modify an existing one, ensuring it has persistence across reboots.
+   * **Service Account Modifications**: If possible, I would modify service accounts to include my access, allowing me to maintain persistence through service restarts.
+9. **Using a Service Account Hash to Access a Critical Service**:
+   * **Hash Use**: I would leverage the service account hash to authenticate to the service using tools like **Impacket's smbclient.py** or **psexec.py**.
+   * **Escalation**: If the service account is highly privileged, I could use it to access sensitive data or systems and escalate privileges.
+   * **Limitations**: This method is limited to the permissions and scope of the service account. Additionally, service account hashes may be more difficult to exfiltrate and could trigger alerts if not handled properly.
+10. **Maintaining Persistence After Administrative Access**:
+
+* **System Tasks/Services**: I would create a scheduled task or modify existing services to execute a payload at boot time or on a regular schedule.
+* **Registry Key Persistence**: Modify the registry to ensure that my malicious program is launched at login.
+* **Backdoors**: I could deploy web shells or reverse shells in the compromised environment for remote access.
+* **Detection Risks**: These methods are effective, but they increase the risk of detection, especially if monitoring tools are looking for unusual registry keys, scheduled tasks, or network traffic anomalies. Maintaining low and slow persistence or using legitimate services to create backdoors could help evade detection.
