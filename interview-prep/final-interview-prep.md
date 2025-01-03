@@ -868,3 +868,139 @@ Attackers use this technique to extract **password hashes**, **Kerberos keys**, 
 
 Learn more: [https://jlajara.gitlab.io/Potatoes\_Windows\_Privesc](https://jlajara.gitlab.io/Potatoes_Windows_Privesc)
 
+## AD Pentesting Questions
+
+QUESTIONS:&#x20;
+
+#### Easy
+
+**1. What is Active Directory (AD), and why is it important to secure it?**
+
+Active Directory (AD) is a centralized directory service used by Microsoft Windows to manage and organize network resources, such as users, computers, and services. It stores data on objects like users, groups, and devices and helps manage access control and authentication across the network. Securing AD is critical because it holds sensitive information about users, permissions, and system access. A compromise of AD can lead to unauthorized access, privilege escalation, data breaches, and loss of control over the network infrastructure.
+
+**2. As a red teamer, how would you identify and exploit vulnerabilities in Active Directory to gain unauthorized access to sensitive resources?**
+
+As a red teamer, I would start with reconnaissance to gather information on the AD environment. This includes identifying domain controllers, user accounts, and group memberships. Once I have gathered details, I would attempt to exploit vulnerabilities such as weak password policies, unpatched systems, or misconfigured access control lists. Techniques like Kerberos ticket manipulation, Pass-the-Hash, and exploiting exposed services or ports would be used to escalate privileges and gain unauthorized access to sensitive resources.
+
+**3. What enumeration tools and modules would you use to conduct reconnaissance and vulnerability assessment in an AD environment?**
+
+* **Nmap**: For port scanning and discovering open services in the network.
+* **BloodHound**: For identifying attack paths and privilege escalation vectors in AD.
+* **PowerView**: A PowerShell tool used to gather information on AD domains, trusts, and users.
+* **LDAP Enumeration**: Using tools like `ldapsearch` to query AD for information about users and groups.
+* **Rubeus**: A tool for Kerberos ticket manipulation and Kerberos-based attacks.
+
+**4. What is NTLM in terms of authentication protocols, and how does it relate to Active Directory? Explain the steps taken in NTLM authentication.**
+
+NTLM (NT LAN Manager) is a Microsoft authentication protocol used in older Windows environments and still used for legacy applications. It relies on a challenge-response mechanism where the client sends a hash of the password to authenticate to the server. NTLM is used in Active Directory for authentication when Kerberos cannot be used or in backward-compatible environments. Steps in NTLM authentication:
+
+1. The client sends a request to the server for authentication.
+2. The server responds with a challenge (random value).
+3. The client hashes the challenge with its password and sends the result back to the server.
+4. The server compares the response with the expected value to authenticate the user.
+
+**5. What is Kerberos in terms of authentication protocols, and how does it relate to Active Directory? Explain the steps taken in Kerberos authentication.**
+
+Kerberos is a secure authentication protocol used by Active Directory to authenticate users and services. It uses symmetric key cryptography to provide mutual authentication between clients and servers. Steps in Kerberos authentication:
+
+1. The client requests a Ticket Granting Ticket (TGT) from the Key Distribution Center (KDC).
+2. The KDC validates the user's credentials and issues a TGT.
+3. The client requests a service ticket from the KDC for a specific service using the TGT.
+4. The KDC issues a service ticket, which is then used by the client to authenticate with the service.
+
+**6. What is the role of organizational units in Active Directory, and how can they be used to enhance security?**
+
+Organizational Units (OUs) are containers in AD that help organize objects such as users, computers, and groups. OUs allow for easier management of permissions, group policies, and delegation of administrative tasks. By using OUs, organizations can apply specific group policies to subsets of users and computers, reducing the attack surface and ensuring more granular control over resources. Properly structuring OUs can also limit the scope of administrative access and improve security.
+
+**7. What is Group Policy, and how does it contribute to Active Directory security?**
+
+Group Policy is a feature in Active Directory that allows administrators to define security settings and configurations for users and computers within an AD domain. Group Policies can enforce password policies, restrict user actions, manage software installation, and more. It contributes to AD security by ensuring consistency across the network, applying security measures to all machines, and preventing unauthorized changes to critical configurations.
+
+***
+
+#### Medium
+
+**8. Can you discuss common types of Active Directory attacks and how they are executed?**
+
+* **Pass-the-Hash (PtH)**: Attackers use stolen NTLM hashes to authenticate as the victim without needing the actual password. This can be executed by dumping hashes from memory using tools like Mimikatz.
+* **Overpass-the-Hash (Pass-the-Ticket)**: An attacker uses an NTLM hash to request a Kerberos service ticket, which they can use to access services. This is often exploited with tools like Rubeus.
+* **Pass-the-Ticket**: Similar to Pass-the-Hash, but involves stealing valid Kerberos tickets from memory or network traffic and using them to authenticate to other services without the need for user credentials.
+
+**9. Could you explain what a Golden Ticket attack in Active Directory is?**
+
+A Golden Ticket attack is a Kerberos-based attack where an attacker forges a Kerberos Ticket Granting Ticket (TGT) to gain unlimited access to services within a domain. This is typically done after compromising the domain controller's KRBTGT account hash. The attacker can create valid service tickets for any service in the domain, granting them administrator-level access.
+
+**10. Could you explain what a Silver Ticket attack in Active Directory is?**
+
+A Silver Ticket attack is similar to the Golden Ticket attack, but instead of forging a TGT, the attacker forges service tickets for specific services (e.g., SMB, HTTP). This allows the attacker to access specific resources or services within the domain without needing domain-wide privileges. The attack is useful for lateral movement within the network.
+
+**11. Could you explain what a Diamond Ticket attack in Active Directory is?**
+
+A Diamond Ticket attack is a rare variant of a Kerberos attack where the attacker can use a combination of Silver and Golden Ticket techniques to elevate their privileges and move across domains, often targeting trusts between domains. This technique leverages misconfigurations or vulnerabilities in trust relationships between Active Directory domains.
+
+***
+
+#### Hard
+
+**12. What are the risks and security considerations associated with replication in Active Directory? What attack vectors could occur from insecure AD replication?**
+
+Replication in Active Directory ensures that changes made to one domain controller are propagated to other domain controllers. However, insecure replication can expose sensitive information such as passwords, user data, and group memberships. Attackers can exploit weak replication security to impersonate domain controllers, obtain sensitive data, or manipulate AD information. Properly securing replication with encryption and using secure channels is crucial to preventing such attacks.
+
+**13. What is lateral movement in the context of Active Directory attacks? What paths and tactics would you use to perform lateral movement in AD?**
+
+Lateral movement refers to the process of moving through the network after initial access to escalate privileges or gain access to other resources. In AD, lateral movement could involve techniques like Pass-the-Hash, Pass-the-Ticket, or exploiting unpatched systems. A red team would look for weak or compromised accounts, weak access controls, or misconfigured service accounts to exploit. Tools like Mimikatz and BloodHound are useful for identifying opportunities for lateral movement.
+
+**14. What tactics would you employ as a red teamer to compromise domain controllers and establish control over an organization's Active Directory infrastructure?**
+
+As a red teamer, I would look for misconfigurations in DNS, Kerberos, or NTLM settings. I would attempt to exploit weak administrative credentials, perform lateral movement, and escalate privileges through techniques like Kerberos ticket manipulation or Golden Ticket attacks. Once I’ve gained sufficient access to the domain controller, I could escalate to domain admin privileges and establish persistent access through the use of backdoors, such as creating hidden accounts with high privileges or compromising service accounts.
+
+**15. Explain your strategy for executing a Golden Ticket attack as part of a red team operation, including the steps you would take to maintain access to the compromised network.**
+
+To execute a Golden Ticket attack:
+
+1. **Initial Access**: Obtain privileged access to the domain controller or a system that can dump the NTDS.dit database (via tools like Mimikatz).
+2. **Extract the KRBTGT Hash**: Extract the KRBTGT account hash, which is used to sign Kerberos tickets.
+3. **Forge the TGT**: Use tools like Mimikatz or Rubeus to generate a forged TGT for any user or service.
+4. **Use the Golden Ticket**: Authenticate to various services in the domain using the forged TGT.
+5. **Persistence**: To maintain access, I would create a backdoor by adding a persistent service or account with administrative privileges.
+
+**16. What tools would you use during an AD pentest in the situations and attack vectors mentioned above?**
+
+* **Mimikatz**: For credential dumping and Kerberos ticket manipulation.
+* **BloodHound**: For identifying privilege escalation paths and attack vectors.
+* **Rubeus**: For Kerberos ticket exploitation and manipulation.
+* **PowerView**: For Active Directory enumeration and information gathering.
+* **Impacket**: For SMB and LDAP-based attacks, including credential harvesting.
+
+***
+
+#### Expert
+
+**17. How would you leverage the Overpass-the-Hash technique to escalate privileges and establish persistence within an Active Directory environment during a red team assessment?**
+
+To use the Overpass-the-Hash technique:
+
+1. **Obtain NTLM Hash**: First, I would need to extract the NTLM hash of a privileged user account.
+2. **Request a Ticket**: Using the NTLM hash, I would request a Kerberos service ticket for a service (e.g., Domain Controller).
+3. **Access Resources**: Once the ticket is obtained, I can access services that require Kerberos authentication.
+4. **Persistence**: I could establish persistence by creating new accounts or modifying group memberships.
+
+**18. As a red teamer, how would you leverage the DC Sync attack technique to compromise sensitive credentials and escalate privileges within the target network? Describe your approach, including the tools and tactics you would employ to execute the attack.**
+
+The DC Sync attack allows an attacker to replicate the domain controller's database (NTDS.dit) and extract sensitive credentials like password hashes.
+
+1. **Pre-requisite**: Gain Domain Admin privileges or the ability to replicate from the domain controller.
+2. **Execute DC Sync**: Use tools like Mimikatz (`mimikatz.exe dcsync`) or Impacket's `GetNPUsers.py` to request the password hashes of all domain users.
+3. **Escalate Privileges**: Use the obtained hashes to perform Pass-the-Hash or Golden Ticket attacks to escalate privileges.
+
+**19. As a red teamer, how would you leverage the Golden Ticket attack technique to compromise the organization's domain controller and gain persistent access to critical resources?**
+
+I would follow the steps outlined in question 15. After executing the attack, I would maintain persistent access by creating backdoor accounts or modifying system configurations to allow me to reconnect after the initial compromise. Regularly monitoring the network for signs of detection and utilizing techniques like Silver Tickets or Overpass-the-Hash would also help maintain control.
+
+**20. As a red teamer, how would you leverage credential dumping techniques to extract and exfiltrate stored credentials from compromised workstations?**
+
+Credential dumping involves extracting credentials from memory or storage on compromised systems.
+
+1. **Use Tools**: Use tools like Mimikatz, LaZagne, or Windows Credential Editor to extract password hashes or plaintext credentials.
+2. **Exfiltrate**: Once obtained, I would securely exfiltrate the credentials to my attack infrastructure.
+3. **Escalate**: Use the dumped credentials to perform lateral movement, escalate privileges, and maintain access to the network.
