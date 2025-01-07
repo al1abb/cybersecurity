@@ -747,6 +747,26 @@ By successfully bypassing UAC, the attacker can fully compromise the target syst
 
 ## AD
 
+### Kerberos Steps:
+
+**Kerberos Authentication Steps:**
+
+1. **Initial Authentication (AS Exchange):**
+   * The client sends a request to the KDC's Authentication Server (AS), including their username.
+   * The AS verifies the client in the database and responds with:
+     * A **Ticket-Granting Ticket (TGT)** encrypted with the KDC's key.
+     * A session key encrypted with the client’s secret (derived from their password).
+   * The client decrypts the session key using their password and stores the TGT securely.
+2. **Ticket Request (TGS Exchange):**
+   * When the client wants to access a service, it sends the TGT to the Ticket Granting Server (TGS) along with the service request.
+   * The TGS validates the TGT and responds with:
+     * A **Service Ticket** encrypted with the service’s secret key.
+     * A session key for the client and service.
+3. **Service Access (Client/Server Exchange):**
+   * The client presents the Service Ticket to the target service.
+   * The service validates the ticket using its secret key and establishes a session with the client.
+   * Once authenticated, the client gains access to the requested resource.
+
 ### NBT-NS vs DNS
 
 * **NBT-NS** is primarily used for legacy support and local name resolution (via NetBIOS), whereas **DNS** is the modern and essential service used for global and domain name resolution in Active Directory.
@@ -756,7 +776,7 @@ By successfully bypassing UAC, the attacker can fully compromise the target syst
 
 In short, DNS is essential in Active Directory environments, whereas NBT-NS is more of a legacy protocol with limited use in modern AD deployments.
 
-## LLMNR vs NBT-NS vs DNS
+### LLMNR vs NBT-NS vs DNS
 
 | Feature | **LLMNR** | **NBT-NS** | **DNS** |
 | ------- | --------- | ---------- | ------- |
