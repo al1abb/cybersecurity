@@ -1076,3 +1076,124 @@ Credential dumping involves extracting credentials from memory or storage on com
 * **Registry Key Persistence**: Modify the registry to ensure that my malicious program is launched at login.
 * **Backdoors**: I could deploy web shells or reverse shells in the compromised environment for remote access.
 * **Detection Risks**: These methods are effective, but they increase the risk of detection, especially if monitoring tools are looking for unusual registry keys, scheduled tasks, or network traffic anomalies. Maintaining low and slow persistence or using legitimate services to create backdoors could help evade detection.
+
+## Web
+
+### SOP vs CORS vs CSP
+
+#### 1. **SOP (Same-Origin Policy)**
+
+**Definition**:\
+The **Same-Origin Policy** is a fundamental security mechanism enforced by web browsers to restrict how resources on a web page are accessed by scripts. It ensures that a web page can only interact with resources (e.g., cookies, DOM, or AJAX requests) from the **same origin**.
+
+**What is an "origin"?**
+
+An origin is defined as the combination of:
+
+* **Protocol** (e.g., `http://` or `https://`)
+* **Domain** (e.g., `example.com`)
+* **Port** (e.g., `:80`, `:443`)
+
+For two resources to have the same origin, all three components must match exactly.
+
+**Purpose:**
+
+SOP prevents malicious scripts from one website from accessing sensitive data on another website (cross-site attacks). For example:
+
+* A page on `https://example.com` **cannot** make an AJAX request to `https://another.com` or `http://example.com:8080`.
+
+**Limitations:**
+
+SOP is overly restrictive for modern web applications where legitimate cross-origin requests (e.g., accessing APIs) are common. This is where **CORS** comes in.
+
+***
+
+#### 2. **CORS (Cross-Origin Resource Sharing)**
+
+**Definition**:\
+**CORS** is a mechanism that allows restricted resources (like APIs, fonts, or images) on a web server to be accessed by a web page from a different origin. It effectively relaxes the SOP under specific conditions.
+
+**How CORS Works:**
+
+1. When a browser detects a **cross-origin request**, it sends a **preflight request** (OPTIONS method) to check if the server allows the request.
+2. The server responds with specific **CORS headers** to indicate whether the request is allowed. Common headers include:
+   * **Access-Control-Allow-Origin**: Specifies the allowed origin(s).
+   * **Access-Control-Allow-Methods**: Lists allowed HTTP methods (e.g., GET, POST).
+   * **Access-Control-Allow-Headers**: Specifies allowed custom headers.
+
+**Example:**
+
+```http
+Response Headers from Server:
+Access-Control-Allow-Origin: https://example.com
+Access-Control-Allow-Methods: GET, POST
+```
+
+This response tells the browser that requests from `https://example.com` are permitted.
+
+**Purpose:**
+
+CORS enables safe communication between origins, which is critical for modern web apps using APIs, CDNs, or third-party resources.
+
+**Misconfiguration Risks:**
+
+* Setting `Access-Control-Allow-Origin: *` without proper validation can expose APIs to attacks like **Cross-Site Request Forgery (CSRF)**.
+
+***
+
+#### 3. **CSP (Content Security Policy)**
+
+**Definition**:\
+**CSP** is a security feature that helps prevent **Cross-Site Scripting (XSS)**, **clickjacking**, and other code injection attacks by specifying which resources a browser is allowed to load for a web page.
+
+**How CSP Works:**
+
+A CSP is defined using a `Content-Security-Policy` HTTP header or a `<meta>` tag in the HTML document. It tells the browser where resources like scripts, styles, and images are permitted to load from.
+
+**Example:**
+
+```http
+Content-Security-Policy: 
+    default-src 'self'; 
+    script-src 'self' https://apis.google.com;
+    style-src 'self' 'unsafe-inline';
+```
+
+This policy means:
+
+* Default resources (`default-src`) can only load from the same origin (`'self'`).
+* JavaScript (`script-src`) can load from the same origin or `https://apis.google.com`.
+* Inline styles are allowed (`'unsafe-inline'`).
+
+**Features:**
+
+* CSP helps mitigate XSS by blocking inline scripts unless explicitly allowed.
+* Prevents attackers from loading malicious resources.
+
+**Limitations:**
+
+* Requires proper configuration.
+* Misconfigured policies can break legitimate functionality.
+
+***
+
+#### Comparison:
+
+| Feature                    | **SOP**                                 | **CORS**                                 | **CSP**                                          |
+| -------------------------- | --------------------------------------- | ---------------------------------------- | ------------------------------------------------ |
+| **Purpose**                | Restricts interactions between origins. | Allows controlled cross-origin requests. | Mitigates XSS, clickjacking, and code injection. |
+| **Default Behavior**       | Blocks all cross-origin requests.       | Blocks by default; allows via headers.   | Blocks resources unless explicitly allowed.      |
+| **Configuration**          | Built-in browser policy, no config.     | Configured via server headers.           | Configured via headers or meta tags.             |
+| **Scope**                  | Applied to all resource types.          | Focused on cross-origin HTTP requests.   | Covers scripts, styles, images, etc.             |
+| **Example Use Case**       | Protecting sensitive cookies.           | Accessing APIs on another origin.        | Preventing malicious script execution.           |
+| **Misconfiguration Risks** | N/A                                     | Open APIs can expose sensitive data.     | Overly strict policies may break functionality.  |
+
+***
+
+#### Summary:
+
+* **SOP** is the foundational security policy that isolates web origins.
+* **CORS** extends SOP by allowing safe cross-origin requests with explicit server permissions.
+* **CSP** focuses on securing a web page from unauthorized resources, like scripts or styles, and prevents code injection attacks.
+
+Together, these mechanisms ensure both security and flexibility for modern web applications.
