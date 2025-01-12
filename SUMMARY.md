@@ -222,5 +222,7 @@
 
 ## Hack The Box
 
-* [Cheat Sheets](hack-the-box/cheat-sheets.md)
-* [Shells (Reverse, Bind, Web)](hack-the-box/shells-reverse-bind-web.md)
+* [Getting Started](hack-the-box/getting-started/README.md)
+  * [Cheat Sheets](hack-the-box/getting-started/cheat-sheets.md)
+  * [Shells (Reverse, Bind, Web)](hack-the-box/getting-started/shells-reverse-bind-web.md)
+  * [Transferring Files](hack-the-box/getting-started/transferring-files.md)
