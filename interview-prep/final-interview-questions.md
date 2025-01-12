@@ -11,7 +11,7 @@ Deserialization
 
 SSTI
 
-Write 2 SQL queries. One unsafe (vulnerable to SQLi), the other safe (using prepared statement)
+Write 2 SQL queries. One unsafe (vulnerable to SQLi), the other safe (using prepared statement) :exploding\_head:
 
 JWT Token
 
