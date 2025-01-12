@@ -229,3 +229,4 @@
   * [Shells (Reverse, Bind, Web)](hack-the-box/getting-started/shells-reverse-bind-web.md)
   * [Transferring Files](hack-the-box/getting-started/transferring-files.md)
 * [Penetration Testing Process](hack-the-box/penetration-testing-process.md)
+* [Network Enumeration with Nmap](hack-the-box/network-enumeration-with-nmap.md)
