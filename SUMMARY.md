@@ -223,3 +223,4 @@
 ## Hack The Box
 
 * [Cheat Sheets](hack-the-box/cheat-sheets.md)
+* [Shells (Reverse, Bind, Web)](hack-the-box/shells-reverse-bind-web.md)
