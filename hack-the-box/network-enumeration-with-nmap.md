@@ -55,6 +55,14 @@ Displays the reason for specific result.
 
 Shows all packets sent and received
 
+## --stats-every=5s
+
+Shows the progress of the scan every 5 seconds.
+
+## -v
+
+Increases the verbosity of the scan, which displays more detailed information.
+
 {% hint style="info" %}
 Why is UDP scan slower than TCP Scan?
 
@@ -78,3 +86,23 @@ With the XML output, we can easily create HTML reports that are easy to read, ev
 xsltproc target.xml -o target.html
 ```
 
+## Nmap Scripting Engine (NSE)
+
+Script Categories:
+
+| **Category** | **Description**                                                                                                                         |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `auth`       | Determination of authentication credentials.                                                                                            |
+| `broadcast`  | Scripts, which are used for host discovery by broadcasting and the discovered hosts, can be automatically added to the remaining scans. |
+| `brute`      | Executes scripts that try to log in to the respective service by brute-forcing with credentials.                                        |
+| `default`    | Default scripts executed by using the `-sC` option.                                                                                     |
+| `discovery`  | Evaluation of accessible services.                                                                                                      |
+| `dos`        | These scripts are used to check services for denial of service vulnerabilities and are used less as it harms the services.              |
+| `exploit`    | This category of scripts tries to exploit known vulnerabilities for the scanned port.                                                   |
+| `external`   | Scripts that use external services for further processing.                                                                              |
+| `fuzzer`     | This uses scripts to identify vulnerabilities and unexpected packet handling by sending different fields, which can take much time.     |
+| `intrusive`  | Intrusive scripts that could negatively affect the target system.                                                                       |
+| `malware`    | Checks if some malware infects the target system.                                                                                       |
+| `safe`       | Defensive scripts that do not perform intrusive and destructive access.                                                                 |
+| `version`    | Extension for service detection.                                                                                                        |
+| `vuln`       | Identification of specific vulnerabilities.                                                                                             |
