@@ -23,6 +23,14 @@ Triggers logs. Can be caught by IDS/IPS systems. But is more accurate
 * If the target responds with an `RST` flagged packet, it is an indicator that the port is `closed`.
 * If Nmap does not receive a packet back, it will display it as `filtered`. Depending on the firewall configuration, certain packets may be dropped or ignored by the firewall.
 
+## -sU (UDP Scan)
+
+Performs a UDP scan.
+
+## -sV (Version Scan)
+
+This method can identify versions, service names, and details about our target.
+
 ## --top-ports=10
 
 Scans the specified top ports that have been defined as most frequent.
