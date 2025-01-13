@@ -137,3 +137,36 @@ sudo nmap <target> --script <category>
 sudo nmap <target> --script <script-name>,<script-name>,...
 ```
 
+## Performance
+
+### -T<0-5>
+
+* `-T 0` / `-T paranoid`
+* `-T 1` / `-T sneaky`
+* `-T 2` / `-T polite`
+* `-T 3` / `-T normal`
+* `-T 4` / `-T aggressive`
+* `-T 5` / `-T insane`
+
+### --min-parallelism \<number>
+
+With which frequency to go
+
+### --max-rtt-timeout
+
+Sets the specified time value as maximum RTT timeout.
+
+{% hint style="info" %}
+Generally, `Nmap` starts with a high timeout (`--min-RTT-timeout`) of 100ms
+{% endhint %}
+
+### --min-rate \<number>
+
+Sets the minimum number of packets to be sent per second.
+
+### --max-retries \<number>
+
+Sets the number of retries that will be performed during the scan.
+
+Default is 10
+
