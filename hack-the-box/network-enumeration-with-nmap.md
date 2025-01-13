@@ -46,3 +46,12 @@ Displays the reason for specific result.
 ## --packet-trace
 
 Shows all packets sent and received
+
+{% hint style="info" %}
+Why is UDP scan slower than TCP Scan?
+
+Since `UDP` is a `stateless protocol` and does not require a three-way handshake like TCP we do not receive any acknowledgment.&#x20;
+
+Consequently, the timeout is much longer, making the whole `UDP scan` (`-sU`) much slower than the `TCP scan` (`-sS`).
+{% endhint %}
+
