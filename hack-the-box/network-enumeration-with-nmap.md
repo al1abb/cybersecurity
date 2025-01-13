@@ -27,9 +27,25 @@ Triggers logs. Can be caught by IDS/IPS systems. But is more accurate
 
 Performs a UDP scan.
 
+{% hint style="info" %}
+Why is UDP scan slower than TCP Scan?
+
+Since `UDP` is a `stateless protocol` and does not require a three-way handshake like TCP we do not receive any acknowledgment.&#x20;
+
+Consequently, the timeout is much longer, making the whole `UDP scan` (`-sU`) much slower than the `TCP scan` (`-sS`).
+{% endhint %}
+
 ## -sV (Version Scan)
 
 This method can identify versions, service names, and details about our target.
+
+## -A (Aggressive Scan)
+
+Performs service detection, OS detection, traceroute and uses defaults scripts to scan the target.
+
+## -O (OS Detection)
+
+## --traceroute
 
 ## --top-ports=10
 
@@ -63,13 +79,9 @@ Shows the progress of the scan every 5 seconds.
 
 Increases the verbosity of the scan, which displays more detailed information.
 
-{% hint style="info" %}
-Why is UDP scan slower than TCP Scan?
+## --script \<example>
 
-Since `UDP` is a `stateless protocol` and does not require a three-way handshake like TCP we do not receive any acknowledgment.&#x20;
-
-Consequently, the timeout is much longer, making the whole `UDP scan` (`-sU`) much slower than the `TCP scan` (`-sS`).
-{% endhint %}
+Uses all related scripts from specified category.
 
 ## Saving the Results
 
@@ -106,3 +118,22 @@ Script Categories:
 | `safe`       | Defensive scripts that do not perform intrusive and destructive access.                                                                 |
 | `version`    | Extension for service detection.                                                                                                        |
 | `vuln`       | Identification of specific vulnerabilities.                                                                                             |
+
+### Default Scripts
+
+```bash
+sudo nmap <target> -sC
+```
+
+### Specific Scripts Category
+
+```bash
+sudo nmap <target> --script <category>
+```
+
+### Defined Scripts
+
+```bash
+sudo nmap <target> --script <script-name>,<script-name>,...
+```
+
