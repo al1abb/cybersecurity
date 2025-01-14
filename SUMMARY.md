@@ -237,3 +237,4 @@
     * [Staff](hack-the-box/footprinting/infrastructure-based-enumeration/staff.md)
   * [Host Based Enumeration](hack-the-box/footprinting/host-based-enumeration/README.md)
     * [FTP](hack-the-box/footprinting/host-based-enumeration/ftp.md)
+    * [SMB](hack-the-box/footprinting/host-based-enumeration/smb.md)
