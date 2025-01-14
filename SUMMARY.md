@@ -230,4 +230,6 @@
   * [Transferring Files](hack-the-box/getting-started/transferring-files.md)
 * [Penetration Testing Process](hack-the-box/penetration-testing-process.md)
 * [Network Enumeration with Nmap](hack-the-box/network-enumeration-with-nmap.md)
-* [Footprinting](hack-the-box/footprinting.md)
+* [Footprinting](hack-the-box/footprinting/README.md)
+  * [Infrastructure Based Enumeration](hack-the-box/footprinting/infrastructure-based-enumeration.md)
+  * [Host Based Enumeration](hack-the-box/footprinting/host-based-enumeration.md)
