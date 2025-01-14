@@ -233,4 +233,5 @@
 * [Footprinting](hack-the-box/footprinting/README.md)
   * [Infrastructure Based Enumeration](hack-the-box/footprinting/infrastructure-based-enumeration/README.md)
     * [Domain Information](hack-the-box/footprinting/infrastructure-based-enumeration/domain-information.md)
+    * [Cloud Resources](hack-the-box/footprinting/infrastructure-based-enumeration/cloud-resources.md)
   * [Host Based Enumeration](hack-the-box/footprinting/host-based-enumeration.md)
