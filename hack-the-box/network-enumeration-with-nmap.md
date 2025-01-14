@@ -1,5 +1,15 @@
 # Network Enumeration with Nmap
 
+{% hint style="info" %}
+Update Nmap scripts:
+
+```bash
+sudo nmap --script-updatedb
+```
+{% endhint %}
+
+
+
 ## Port States
 
 | **State**          | **Description**                                                                                                                                                                                         |

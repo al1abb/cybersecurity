@@ -171,3 +171,219 @@ drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Employees
 -rw-rw-r--    1 1002     1002           41 Sep 14 16:45 Important Notes.txt
 226 Directory send OK.
 ```
+
+| **Setting**               | **Description**                                                                  |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| `dirmessage_enable=YES`   | Show a message when they first enter a new directory?                            |
+| `chown_uploads=YES`       | Change ownership of anonymously uploaded files?                                  |
+| `chown_username=username` | User who is given ownership of anonymously uploaded files.                       |
+| `local_enable=YES`        | Enable local users to login?                                                     |
+| `chroot_local_user=YES`   | Place local users into their home directory?                                     |
+| `chroot_list_enable=YES`  | Use a list of local users that will be placed in their home directory?           |
+| `hide_ids=YES`            | All user and group information in directory listings will be displayed as "ftp". |
+| `ls_recurse_enable=YES`   | Allows the use of recurse listings.                                              |
+
+## Hiding IDs - Yes
+
+In the following example, we can see that if the `hide_ids=YES` setting is present, the UID and GUID representation of the service will be overwritten, making it more difficult for us to identify with which rights these files are written and uploaded.
+
+```bash
+ftp> ls
+
+---> TYPE A
+200 Switching to ASCII mode.
+ftp: setsockopt (ignored): Permission denied
+---> PORT 10,10,14,4,223,101
+200 PORT command successful. Consider using PASV.
+---> LIST
+150 Here comes the directory listing.
+-rw-rw-r--    1 ftp     ftp      8138592 Sep 14 16:54 Calender.pptx
+drwxrwxr-x    2 ftp     ftp         4096 Sep 14 17:03 Clients
+drwxrwxr-x    2 ftp     ftp         4096 Sep 14 16:50 Documents
+drwxrwxr-x    2 ftp     ftp         4096 Sep 14 16:50 Employees
+-rw-rw-r--    1 ftp     ftp           41 Sep 14 16:45 Important Notes.txt
+-rw-------    1 ftp     ftp            0 Sep 15 14:57 testupload.txt
+226 Directory send OK.
+```
+
+This setting is a security feature to prevent local usernames from being revealed. With the usernames, we could attack the services like FTP and SSH and many others with a brute-force attack in theory. However, in reality, [fail2ban](https://en.wikipedia.org/wiki/Fail2ban) solutions are now a standard implementation of any infrastructure that logs the IP address and blocks all access to the infrastructure after a certain number of failed login attempts.
+
+## **Recursive Listing**
+
+Another helpful setting we can use for our purposes is the `ls_recurse_enable=YES`. This is often set on the vsFTPd server to have a better overview of the FTP directory structure, as it allows us to see all the visible content at once.
+
+```bash
+ftp> ls -R
+
+---> PORT 10,10,14,4,222,149
+200 PORT command successful. Consider using PASV.
+---> LIST -R
+150 Here comes the directory listing.
+.:
+-rw-rw-r--    1 ftp      ftp      8138592 Sep 14 16:54 Calender.pptx
+drwxrwxr-x    2 ftp      ftp         4096 Sep 14 17:03 Clients
+drwxrwxr-x    2 ftp      ftp         4096 Sep 14 16:50 Documents
+drwxrwxr-x    2 ftp      ftp         4096 Sep 14 16:50 Employees
+-rw-rw-r--    1 ftp      ftp           41 Sep 14 16:45 Important Notes.txt
+-rw-------    1 ftp      ftp            0 Sep 15 14:57 testupload.txt
+
+./Clients:
+drwx------    2 ftp      ftp          4096 Sep 16 18:04 HackTheBox
+drwxrwxrwx    2 ftp      ftp          4096 Sep 16 18:00 Inlanefreight
+
+./Clients/HackTheBox:
+-rw-r--r--    1 ftp      ftp         34872 Sep 16 18:04 appointments.xlsx
+-rw-r--r--    1 ftp      ftp        498123 Sep 16 18:04 contract.docx
+-rw-r--r--    1 ftp      ftp        478237 Sep 16 18:04 contract.pdf
+-rw-r--r--    1 ftp      ftp           348 Sep 16 18:04 meetings.txt
+
+./Clients/Inlanefreight:
+-rw-r--r--    1 ftp      ftp         14211 Sep 16 18:00 appointments.xlsx
+-rw-r--r--    1 ftp      ftp         37882 Sep 16 17:58 contract.docx
+-rw-r--r--    1 ftp      ftp            89 Sep 16 17:58 meetings.txt
+-rw-r--r--    1 ftp      ftp        483293 Sep 16 17:59 proposal.pptx
+
+./Documents:
+-rw-r--r--    1 ftp      ftp         23211 Sep 16 18:05 appointments-template.xlsx
+-rw-r--r--    1 ftp      ftp         32521 Sep 16 18:05 contract-template.docx
+-rw-r--r--    1 ftp      ftp        453312 Sep 16 18:05 contract-template.pdf
+
+./Employees:
+226 Directory send OK.
+```
+
+## Download a File
+
+`Downloading` files from such an FTP server is one of the main features, as well as `uploading` files created by us. This allows us, for example, to use LFI vulnerabilities to make the host execute system commands. Apart from the files, we can view, download and inspect. Attacks are also possible with the FTP logs, leading to `Remote Command Execution` (`RCE`). This applies to the FTP services and all those we can detect during our enumeration phase.
+
+You download files using `get` command
+
+## Download All Available Files
+
+We also can download all the files and folders we have access to at once. This is especially useful if the FTP server has many different files in a larger folder structure. However, this can cause alarms because no one from the company usually wants to download all files and content all at once.
+
+```bash
+al1abb@htb[/htb]$ wget -m --no-passive ftp://anonymous:anonymous@10.129.14.136
+
+--2021-09-19 14:45:58--  ftp://anonymous:*password*@10.129.14.136/                                         
+           => ‘10.129.14.136/.listing’                                                                     
+Connecting to 10.129.14.136:21... connected.                                                               
+Logging in as anonymous ... Logged in!
+==> SYST ... done.    ==> PWD ... done.
+==> TYPE I ... done.  ==> CWD not needed.
+==> PORT ... done.    ==> LIST ... done.                                                                 
+12.12.1.136/.listing           [ <=>                                  ]     466  --.-KB/s    in 0s       
+                                                                                                         
+2021-09-19 14:45:58 (65,8 MB/s) - ‘10.129.14.136/.listing’ saved [466]                                     
+--2021-09-19 14:45:58--  ftp://anonymous:*password*@10.129.14.136/Calendar.pptx   
+           => ‘10.129.14.136/Calendar.pptx’                                       
+==> CWD not required.                                                           
+==> SIZE Calendar.pptx ... done.                                                                                                                            
+==> PORT ... done.    ==> RETR Calendar.pptx ... done.       
+
+...SNIP...
+
+2021-09-19 14:45:58 (48,3 MB/s) - ‘10.129.14.136/Employees/.listing’ saved [119]
+
+FINISHED --2021-09-19 14:45:58--
+Total wall clock time: 0,03s
+Downloaded: 15 files, 1,7K in 0,001s (3,02 MB/s)
+```
+
+Once we have downloaded all the files, `wget` will create a directory with the name of the IP address of our target. All downloaded files are stored there, which we can then inspect locally.
+
+```bash
+al1abb@htb[/htb]$ tree .
+
+.
+└── 10.129.14.136
+    ├── Calendar.pptx
+    ├── Clients
+    │   └── Inlanefreight
+    │       ├── appointments.xlsx
+    │       ├── contract.docx
+    │       ├── meetings.txt
+    │       └── proposal.pptx
+    ├── Documents
+    │   ├── appointments-template.xlsx
+    │   ├── contract-template.docx
+    │   └── contract-template.pdf
+    ├── Employees
+    └── Important Notes.txt
+
+5 directories, 9 files
+```
+
+## Upload a File
+
+With the `PUT` command, we can upload files in the current folder to the FTP server.
+
+```bash
+ftp> put testupload.txt 
+
+local: testupload.txt remote: testupload.txt
+---> PORT 10,10,14,4,184,33
+200 PORT command successful. Consider using PASV.
+---> STOR testupload.txt
+150 Ok to send data.
+226 Transfer complete.
+
+
+ftp> ls
+
+---> TYPE A
+200 Switching to ASCII mode.
+---> PORT 10,10,14,4,223,101
+200 PORT command successful. Consider using PASV.
+---> LIST
+150 Here comes the directory listing.
+-rw-rw-r--    1 1002     1002      8138592 Sep 14 16:54 Calender.pptx
+drwxrwxr-x    2 1002     1002         4096 Sep 14 17:03 Clients
+drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Documents
+drwxrwxr-x    2 1002     1002         4096 Sep 14 16:50 Employees
+-rw-rw-r--    1 1002     1002           41 Sep 14 16:45 Important Notes.txt
+-rw-------    1 1002     133             0 Sep 15 14:57 testupload.txt
+226 Directory send OK.
+```
+
+## Service Interaction
+
+```bash
+al1abb@htb[/htb]$ nc -nv 10.129.14.136 21
+```
+
+```bash
+al1abb@htb[/htb]$ telnet 10.129.14.136 21
+```
+
+It looks slightly different if the FTP server runs with TLS/SSL encryption. Because then we need a client that can handle TLS/SSL. For this, we can use the client `openssl` and communicate with the FTP server. The good thing about using `openssl` is that we can see the SSL certificate, which can also be helpful.
+
+### Communication with FTP using openssl client
+
+```bash
+al1abb@htb[/htb]$ openssl s_client -connect 10.129.14.136:21 -starttls ftp
+
+CONNECTED(00000003)                                                                                      
+Can't use SSL_get_servername                        
+depth=0 C = US, ST = California, L = Sacramento, O = Inlanefreight, OU = Dev, CN = master.inlanefreight.htb, emailAddress = admin@inlanefreight.htb
+verify error:num=18:self signed certificate
+verify return:1
+
+depth=0 C = US, ST = California, L = Sacramento, O = Inlanefreight, OU = Dev, CN = master.inlanefreight.htb, emailAddress = admin@inlanefreight.htb
+verify return:1
+---                                                 
+Certificate chain
+ 0 s:C = US, ST = California, L = Sacramento, O = Inlanefreight, OU = Dev, CN = master.inlanefreight.htb, emailAddress = admin@inlanefreight.htb
+ 
+ i:C = US, ST = California, L = Sacramento, O = Inlanefreight, OU = Dev, CN = master.inlanefreight.htb, emailAddress = admin@inlanefreight.htb
+---
+ 
+Server certificate
+
+-----BEGIN CERTIFICATE-----
+
+MIIENTCCAx2gAwIBAgIUD+SlFZAWzX5yLs2q3ZcfdsRQqMYwDQYJKoZIhvcNAQEL
+...SNIP...
+```
+
+This is because the SSL certificate allows us to recognize the `hostname`, for example, and in most cases also an `email address` for the organization or company. In addition, if the company has several locations worldwide, certificates can also be created for specific locations, which can also be identified using the SSL certificate.
