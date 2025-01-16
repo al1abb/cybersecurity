@@ -173,3 +173,219 @@ There are many ways in which a DNS server can be attacked. For example, a list o
 Some of the settings we can see below lead to these vulnerabilities, among others. Because DNS can get very complicated and it is very easy for errors to creep into this service, forcing an administrator to work around the problem until they find an exact solution. This often leads to elements being released so that parts of the infrastructure function as planned and desired. In such cases, functionality has a higher priority than security, which leads to misconfigurations and vulnerabilities.
 
 <table data-header-hidden><thead><tr><th width="223"></th><th></th></tr></thead><tbody><tr><td><strong>Option</strong></td><td><strong>Description</strong></td></tr><tr><td><code>allow-query</code></td><td>Defines which hosts are allowed to send requests to the DNS server.</td></tr><tr><td><code>allow-recursion</code></td><td>Defines which hosts are allowed to send recursive requests to the DNS server.</td></tr><tr><td><code>allow-transfer</code></td><td>Defines which hosts are allowed to receive zone transfers from the DNS server.</td></tr><tr><td><code>zone-statistics</code></td><td>Collects statistical data of zones.</td></tr></tbody></table>
+
+## Footprinting the Service
+
+The footprinting at DNS servers is done as a result of the requests we send. So, first of all, the DNS server can be queried as to which other name servers are known. We do this using the NS record and the specification of the DNS server we want to query using the `@` character. This is because if there are other DNS servers, we can also use them and query the records. However, other DNS servers may be configured differently and, in addition, may be permanent for other zones.
+
+### dig - NS Query
+
+```shell-session
+[!bash!]$ dig ns inlanefreight.htb @10.129.14.128
+
+; <<>> DiG 9.16.1-Ubuntu <<>> ns inlanefreight.htb @10.129.14.128
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 45010
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: ce4d8681b32abaea0100000061475f73842c401c391690c7 (good)
+;; QUESTION SECTION:
+;inlanefreight.htb.             IN      NS
+
+;; ANSWER SECTION:
+inlanefreight.htb.      604800  IN      NS      ns.inlanefreight.htb.
+
+;; ADDITIONAL SECTION:
+ns.inlanefreight.htb.   604800  IN      A       10.129.34.136
+
+;; Query time: 0 msec
+;; SERVER: 10.129.14.128#53(10.129.14.128)
+;; WHEN: So Sep 19 18:04:03 CEST 2021
+;; MSG SIZE  rcvd: 107
+```
+
+### dig - Version Query
+
+Sometimes it is also possible to query a DNS server's version using a class CHAOS query and type TXT. However, this entry must exist on the DNS server. For this, we could use the following command:
+
+```shell-session
+[!bash!]$ dig CH TXT version.bind 10.129.120.85
+
+; <<>> DiG 9.10.6 <<>> CH TXT version.bind
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 47786
+;; flags: qr aa rd; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; ANSWER SECTION:
+version.bind.       0       CH      TXT     "9.10.6-P1"
+
+;; ADDITIONAL SECTION:
+version.bind.       0       CH      TXT     "9.10.6-P1-Debian"
+
+;; Query time: 2 msec
+;; SERVER: 10.129.120.85#53(10.129.120.85)
+;; WHEN: Wed Jan 05 20:23:14 UTC 2023
+;; MSG SIZE  rcvd: 101
+```
+
+### dig - ANY Query
+
+We can use the option `ANY` to view all available records. This will cause the server to show us all available entries that it is willing to disclose. It is important to note that not all entries from the zones will be shown.
+
+```shell-session
+[!bash!]$ dig any inlanefreight.htb @10.129.14.128
+
+; <<>> DiG 9.16.1-Ubuntu <<>> any inlanefreight.htb @10.129.14.128
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 7649
+;; flags: qr aa rd ra; QUERY: 1, ANSWER: 5, AUTHORITY: 0, ADDITIONAL: 2
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+; COOKIE: 064b7e1f091b95120100000061476865a6026d01f87d10ca (good)
+;; QUESTION SECTION:
+;inlanefreight.htb.             IN      ANY
+
+;; ANSWER SECTION:
+inlanefreight.htb.      604800  IN      TXT     "v=spf1 include:mailgun.org include:_spf.google.com include:spf.protection.outlook.com include:_spf.atlassian.net ip4:10.129.124.8 ip4:10.129.127.2 ip4:10.129.42.106 ~all"
+inlanefreight.htb.      604800  IN      TXT     "atlassian-domain-verification=t1rKCy68JFszSdCKVpw64A1QksWdXuYFUeSXKU"
+inlanefreight.htb.      604800  IN      TXT     "MS=ms97310371"
+inlanefreight.htb.      604800  IN      SOA     inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800
+inlanefreight.htb.      604800  IN      NS      ns.inlanefreight.htb.
+
+;; ADDITIONAL SECTION:
+ns.inlanefreight.htb.   604800  IN      A       10.129.34.136
+
+;; Query time: 0 msec
+;; SERVER: 10.129.14.128#53(10.129.14.128)
+;; WHEN: So Sep 19 18:42:13 CEST 2021
+;; MSG SIZE  rcvd: 437
+```
+
+### dig - **AXFR Zone Transfer (Zone Transfer explained)**
+
+`Zone transfer` refers to the transfer of zones to another server in DNS, which generally happens over TCP port 53. This procedure is abbreviated `Asynchronous Full Transfer Zone` (`AXFR`). Since a DNS failure usually has severe consequences for a company, the zone file is almost invariably kept identical on several name servers. When changes are made, it must be ensured that all servers have the same data. Synchronization between the servers involved is realized by zone transfer. Using a secret key `rndc-key`, which we have seen initially in the default configuration, the servers make sure that they communicate with their own master or slave. Zone transfer involves the mere transfer of files or records and the detection of discrepancies in the data sets of the servers involved.
+
+The original data of a zone is located on a DNS server, which is called the `primary` name server for this zone. However, to increase the reliability, realize a simple load distribution, or protect the primary from attacks, one or more additional servers are installed in practice in almost all cases, which are called `secondary` name servers for this zone. For some `Top-Level Domains` (`TLDs`), making zone files for the `Second Level Domains` accessible on at least two servers is mandatory.
+
+DNS entries are generally only created, modified, or deleted on the primary. This can be done by manually editing the relevant zone file or automatically by a dynamic update from a database. A DNS server that serves as a direct source for synchronizing a zone file is called a master. A DNS server that obtains zone data from a master is called a slave. A primary is always a master, while a secondary can be both a slave and a master.
+
+The slave fetches the `SOA` record of the relevant zone from the master at certain intervals, the so-called refresh time, usually one hour, and compares the serial numbers. If the serial number of the SOA record of the master is greater than that of the slave, the data sets no longer match.
+
+```shell-session
+[!bash!]$ dig axfr inlanefreight.htb @10.129.14.128
+
+; <<>> DiG 9.16.1-Ubuntu <<>> axfr inlanefreight.htb @10.129.14.128
+;; global options: +cmd
+inlanefreight.htb.      604800  IN      SOA     inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800
+inlanefreight.htb.      604800  IN      TXT     "MS=ms97310371"
+inlanefreight.htb.      604800  IN      TXT     "atlassian-domain-verification=t1rKCy68JFszSdCKVpw64A1QksWdXuYFUeSXKU"
+inlanefreight.htb.      604800  IN      TXT     "v=spf1 include:mailgun.org include:_spf.google.com include:spf.protection.outlook.com include:_spf.atlassian.net ip4:10.129.124.8 ip4:10.129.127.2 ip4:10.129.42.106 ~all"
+inlanefreight.htb.      604800  IN      NS      ns.inlanefreight.htb.
+app.inlanefreight.htb.  604800  IN      A       10.129.18.15
+internal.inlanefreight.htb. 604800 IN   A       10.129.1.6
+mail1.inlanefreight.htb. 604800 IN      A       10.129.18.201
+ns.inlanefreight.htb.   604800  IN      A       10.129.34.136
+inlanefreight.htb.      604800  IN      SOA     inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800
+;; Query time: 4 msec
+;; SERVER: 10.129.14.128#53(10.129.14.128)
+;; WHEN: So Sep 19 18:51:19 CEST 2021
+;; XFR size: 9 records (messages 1, bytes 520)
+```
+
+### dig - **AXFR Zone Transfer - Internal**
+
+If the administrator used a subnet for the `allow-transfer` option for testing purposes or as a workaround solution or set it to `any`, everyone would query the entire zone file at the DNS server. In addition, other zones can be queried, which may even show internal IP addresses and hostnames.
+
+```shell-session
+[!bash!]$ dig axfr internal.inlanefreight.htb @10.129.14.128
+
+; <<>> DiG 9.16.1-Ubuntu <<>> axfr internal.inlanefreight.htb @10.129.14.128
+;; global options: +cmd
+internal.inlanefreight.htb. 604800 IN   SOA     inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800
+internal.inlanefreight.htb. 604800 IN   TXT     "MS=ms97310371"
+internal.inlanefreight.htb. 604800 IN   TXT     "atlassian-domain-verification=t1rKCy68JFszSdCKVpw64A1QksWdXuYFUeSXKU"
+internal.inlanefreight.htb. 604800 IN   TXT     "v=spf1 include:mailgun.org include:_spf.google.com include:spf.protection.outlook.com include:_spf.atlassian.net ip4:10.129.124.8 ip4:10.129.127.2 ip4:10.129.42.106 ~all"
+internal.inlanefreight.htb. 604800 IN   NS      ns.inlanefreight.htb.
+dc1.internal.inlanefreight.htb. 604800 IN A     10.129.34.16
+dc2.internal.inlanefreight.htb. 604800 IN A     10.129.34.11
+mail1.internal.inlanefreight.htb. 604800 IN A   10.129.18.200
+ns.internal.inlanefreight.htb. 604800 IN A      10.129.34.136
+vpn.internal.inlanefreight.htb. 604800 IN A     10.129.1.6
+ws1.internal.inlanefreight.htb. 604800 IN A     10.129.1.34
+ws2.internal.inlanefreight.htb. 604800 IN A     10.129.1.35
+wsus.internal.inlanefreight.htb. 604800 IN A    10.129.18.2
+internal.inlanefreight.htb. 604800 IN   SOA     inlanefreight.htb. root.inlanefreight.htb. 2 604800 86400 2419200 604800
+;; Query time: 0 msec
+;; SERVER: 10.129.14.128#53(10.129.14.128)
+;; WHEN: So Sep 19 18:53:11 CEST 2021
+;; XFR size: 15 records (messages 1, bytes 664)
+```
+
+### **Subdomain Brute Forcing**
+
+The individual `A` records with the hostnames can also be found out with the help of a brute-force attack. To do this, we need a list of possible hostnames, which we use to send the requests in order. Such lists are provided, for example, by [SecLists](https://github.com/danielmiessler/SecLists/blob/master/Discovery/DNS/subdomains-top1million-5000.txt).
+
+An option would be to execute a `for-loop` in Bash that lists these entries and sends the corresponding query to the desired DNS server.
+
+```shell-session
+[!bash!]$ for sub in $(cat /opt/useful/seclists/Discovery/DNS/subdomains-top1million-110000.txt);do dig $sub.inlanefreight.htb @10.129.14.128 | grep -v ';\|SOA' | sed -r '/^\s*$/d' | grep $sub | tee -a subdomains.txt;done
+
+ns.inlanefreight.htb.   604800  IN      A       10.129.34.136
+mail1.inlanefreight.htb. 604800 IN      A       10.129.18.201
+app.inlanefreight.htb.  604800  IN      A       10.129.18.15
+```
+
+### dnsenum
+
+Many different tools can be used for this, and most of them work in the same way. One of these tools is, for example [DNSenum](https://github.com/fwaeytens/dnsenum).
+
+```shell-session
+[!bash!]$ dnsenum --dnsserver 10.129.14.128 --enum -p 0 -s 0 -o subdomains.txt -f /opt/useful/seclists/Discovery/DNS/subdomains-top1million-110000.txt inlanefreight.htb
+
+dnsenum VERSION:1.2.6
+
+-----   inlanefreight.htb   -----
+
+
+Host's addresses:
+__________________
+
+
+
+Name Servers:
+______________
+
+ns.inlanefreight.htb.                    604800   IN    A        10.129.34.136
+
+
+Mail (MX) Servers:
+___________________
+
+
+
+Trying Zone Transfers and getting Bind Versions:
+_________________________________________________
+
+unresolvable name: ns.inlanefreight.htb at /usr/bin/dnsenum line 900 thread 1.
+
+Trying Zone Transfer for inlanefreight.htb on ns.inlanefreight.htb ...
+AXFR record query failed: no nameservers
+
+
+Brute forcing with /home/cry0l1t3/Pentesting/SecLists/Discovery/DNS/subdomains-top1million-110000.txt:
+_______________________________________________________________________________________________________
+
+ns.inlanefreight.htb.                    604800   IN    A        10.129.34.136
+mail1.inlanefreight.htb.                 604800   IN    A        10.129.18.201
+app.inlanefreight.htb.                   604800   IN    A        10.129.18.15
+ns.inlanefreight.htb.                    604800   IN    A        10.129.34.136
+
+...SNIP...
+done.
+```
