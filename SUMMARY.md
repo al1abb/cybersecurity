@@ -240,3 +240,4 @@
     * [SMB](hack-the-box/footprinting/host-based-enumeration/smb.md)
     * [NFS](hack-the-box/footprinting/host-based-enumeration/nfs.md)
     * [DNS](hack-the-box/footprinting/host-based-enumeration/dns.md)
+    * [SMTP](hack-the-box/footprinting/host-based-enumeration/smtp.md)
