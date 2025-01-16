@@ -20,7 +20,7 @@ To relieve the MTA, it is occasionally preceded by a `Mail Submission Agent` (`M
 
 On arrival at the destination SMTP server, the data packets are reassembled to form a complete e-mail. From there, the `Mail delivery agent` (`MDA`) transfers it to the recipient's mailbox.
 
-<table data-header-hidden data-full-width="true"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Client (<code>MUA</code>)</td><td><code>➞</code></td><td>Submission Agent (<code>MSA</code>)</td><td><code>➞</code></td><td>Open Relay (<code>MTA</code>)</td><td><code>➞</code></td><td>Mail Delivery Agent (<code>MDA</code>)</td><td><code>➞</code></td><td>Mailbox (<code>POP3</code>/<code>IMAP</code>)</td></tr></tbody></table>
+<table data-header-hidden data-full-width="false"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Client (<code>MUA</code>)</td><td><code>➞</code></td><td>Submission Agent (<code>MSA</code>)</td><td><code>➞</code></td><td>Open Relay (<code>MTA</code>)</td><td><code>➞</code></td><td>Mail Delivery Agent (<code>MDA</code>)</td><td><code>➞</code></td><td>Mailbox (<code>POP3</code>/<code>IMAP</code>)</td></tr></tbody></table>
 
 ## SMTP Disadvantages, DKIM, SPF
 
