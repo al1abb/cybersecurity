@@ -242,3 +242,4 @@
     * [DNS](hack-the-box/footprinting/host-based-enumeration/dns.md)
     * [SMTP](hack-the-box/footprinting/host-based-enumeration/smtp.md)
     * [IMAP/POP3](hack-the-box/footprinting/host-based-enumeration/imap-pop3.md)
+    * [SNMP](hack-the-box/footprinting/host-based-enumeration/snmp.md)
