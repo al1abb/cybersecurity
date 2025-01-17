@@ -244,3 +244,4 @@
     * [IMAP/POP3](hack-the-box/footprinting/host-based-enumeration/imap-pop3.md)
     * [SNMP](hack-the-box/footprinting/host-based-enumeration/snmp.md)
     * [MySQL](hack-the-box/footprinting/host-based-enumeration/mysql.md)
+    * [MSSQL](hack-the-box/footprinting/host-based-enumeration/mssql.md)
