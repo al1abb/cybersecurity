@@ -247,3 +247,6 @@
     * [MSSQL](hack-the-box/footprinting/host-based-enumeration/mssql.md)
     * [Oracle TNS](hack-the-box/footprinting/host-based-enumeration/oracle-tns.md)
     * [IPMI](hack-the-box/footprinting/host-based-enumeration/ipmi.md)
+  * [Remote Management Protocols](hack-the-box/footprinting/remote-management-protocols/README.md)
+    * [Linux Remote Management Protocols](hack-the-box/footprinting/remote-management-protocols/linux-remote-management-protocols.md)
+    * [Windows Remote Management Protocols](hack-the-box/footprinting/remote-management-protocols/windows-remote-management-protocols.md)
