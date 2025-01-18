@@ -246,3 +246,4 @@
     * [MySQL](hack-the-box/footprinting/host-based-enumeration/mysql.md)
     * [MSSQL](hack-the-box/footprinting/host-based-enumeration/mssql.md)
     * [Oracle TNS](hack-the-box/footprinting/host-based-enumeration/oracle-tns.md)
+    * [IPMI](hack-the-box/footprinting/host-based-enumeration/ipmi.md)
