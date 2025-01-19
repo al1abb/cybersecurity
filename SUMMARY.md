@@ -252,3 +252,4 @@
     * [Windows Remote Management Protocols](hack-the-box/footprinting/remote-management-protocols/windows-remote-management-protocols.md)
 * [Information Gathering - Web Edition](hack-the-box/information-gathering-web-edition/README.md)
   * [Introduction](hack-the-box/information-gathering-web-edition/introduction.md)
+  * [whois](hack-the-box/information-gathering-web-edition/whois.md)
