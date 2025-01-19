@@ -250,3 +250,5 @@
   * [Remote Management Protocols](hack-the-box/footprinting/remote-management-protocols/README.md)
     * [Linux Remote Management Protocols](hack-the-box/footprinting/remote-management-protocols/linux-remote-management-protocols.md)
     * [Windows Remote Management Protocols](hack-the-box/footprinting/remote-management-protocols/windows-remote-management-protocols.md)
+* [Information Gathering - Web Edition](hack-the-box/information-gathering-web-edition/README.md)
+  * [Introduction](hack-the-box/information-gathering-web-edition/introduction.md)
