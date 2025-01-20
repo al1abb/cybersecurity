@@ -253,3 +253,6 @@
 * [Information Gathering - Web Edition](hack-the-box/information-gathering-web-edition/README.md)
   * [Introduction](hack-the-box/information-gathering-web-edition/introduction.md)
   * [whois](hack-the-box/information-gathering-web-edition/whois.md)
+  * [DNS & Subdomains](hack-the-box/information-gathering-web-edition/dns-and-subdomains/README.md)
+    * [DNS](hack-the-box/information-gathering-web-edition/dns-and-subdomains/dns.md)
+    * [Digging DNS](hack-the-box/information-gathering-web-edition/dns-and-subdomains/digging-dns.md)
