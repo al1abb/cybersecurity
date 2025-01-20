@@ -257,3 +257,4 @@
     * [DNS](hack-the-box/information-gathering-web-edition/dns-and-subdomains/dns.md)
     * [Digging DNS](hack-the-box/information-gathering-web-edition/dns-and-subdomains/digging-dns.md)
     * [Subdomains](hack-the-box/information-gathering-web-edition/dns-and-subdomains/subdomains.md)
+    * [Subdomain Bruteforcing](hack-the-box/information-gathering-web-edition/dns-and-subdomains/subdomain-bruteforcing.md)
