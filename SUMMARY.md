@@ -270,3 +270,4 @@
   * [Search Engine Discovery](hack-the-box/information-gathering-web-edition/search-engine-discovery.md)
   * [Web Archives](hack-the-box/information-gathering-web-edition/web-archives.md)
   * [Automating Recon](hack-the-box/information-gathering-web-edition/automating-recon.md)
+* [Vulnerability Assessment](hack-the-box/vulnerability-assessment.md)
