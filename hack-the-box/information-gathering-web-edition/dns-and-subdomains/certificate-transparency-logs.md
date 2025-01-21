@@ -36,7 +36,29 @@ To ensure CT logs' integrity and tamper-proof nature, they employ a Merkle tree 
 
 Let's visualise this with a hypothetical Merkle tree for `inlanefreight.com`:
 
-![](<../../../.gitbook/assets/image (76).png>)
+[https://academy.hackthebox.com/storage/modules/144/diagram-001.png](https://academy.hackthebox.com/storage/modules/144/diagram-001.png)
+
+In this hypothetical tree:
+
+* `Root Hash`: The topmost node, a single hash representing the entire log's state.
+* `Hash 1 & Hash 2`: Intermediate nodes, each a hash of two child nodes (either certificates or other hashes).
+* `Cert 1 - Cert 4`: Leaf nodes representing individual SSL/TLS certificates for different subdomains of `inlanefreight.com`.
+
+This structure allows for efficient verification of any certificate in the log. By providing the Merkle path (a series of hashes) for a particular certificate, anyone can verify that it is included in the log without downloading the entire log. For instance, to verify `Cert 2 (blog.inlanefreight.com)`, you would need:
+
+1. `Cert 2's hash`: This directly verifies the certificate itself.
+2. `Hash 1`: Verifies that Cert 2's hash is correctly paired with Cert 1's hash.
+3. `Root Hash`: Confirms that Hash 1 is a valid part of the overall log structure.
+
+This process ensures that even if a single bit of data in a certificate or the log itself is altered, the root hash will change, immediately signaling tampering. This makes CT logs an invaluable tool for maintaining the integrity and trustworthiness of SSL/TLS certificates, ultimately enhancing internet security.
 
 </details>
+
+## CT Logs and Web Recon
+
+Certificate Transparency logs offer a unique advantage in subdomain enumeration compared to other methods. Unlike brute-forcing or wordlist-based approaches, which rely on guessing or predicting subdomain names, CT logs provide a definitive record of certificates issued for a domain and its subdomains. This means you're not limited by the scope of your wordlist or the effectiveness of your brute-forcing algorithm. Instead, you gain access to a historical and comprehensive view of a domain's subdomains, including those that might not be actively used or easily guessable.
+
+Furthermore, CT logs can unveil subdomains associated with old or expired certificates. These subdomains might host outdated software or configurations, making them potentially vulnerable to exploitation.
+
+In essence, CT logs provide a reliable and efficient way to discover subdomains without the need for exhaustive brute-forcing or relying on the completeness of wordlists. They offer a unique window into a domain's history and can reveal subdomains that might otherwise remain hidden, significantly enhancing your reconnaissance capabilities.
 
