@@ -62,3 +62,31 @@ Furthermore, CT logs can unveil subdomains associated with old or expired certif
 
 In essence, CT logs provide a reliable and efficient way to discover subdomains without the need for exhaustive brute-forcing or relying on the completeness of wordlists. They offer a unique window into a domain's history and can reveal subdomains that might otherwise remain hidden, significantly enhancing your reconnaissance capabilities.
 
+## Searching CT Logs
+
+There are two popular options for searching CT logs:
+
+<table><thead><tr><th width="92">Tool</th><th width="197">Key Features</th><th width="198">Use Cases</th><th>Pros</th><th>Cons</th></tr></thead><tbody><tr><td><a href="https://crt.sh/">crt.sh</a></td><td>User-friendly web interface, simple search by domain, displays certificate details, SAN entries.</td><td>Quick and easy searches, identifying subdomains, checking certificate issuance history.</td><td>Free, easy to use, no registration required.</td><td>Limited filtering and analysis options.</td></tr><tr><td><a href="https://search.censys.io/">Censys</a></td><td>Powerful search engine for internet-connected devices, advanced filtering by domain, IP, certificate attributes.</td><td>In-depth analysis of certificates, identifying misconfigurations, finding related certificates and hosts.</td><td>Extensive data and filtering options, API access.</td><td>Requires registration (free tier available).</td></tr></tbody></table>
+
+### crt.sh lookup
+
+While `crt.sh` offers a convenient web interface, you can also leverage its API for automated searches directly from your terminal. Let's see how to find all 'dev' subdomains on `facebook.com` using `curl` and `jq`:
+
+```shell-session
+al1abb@htb[/htb]$ curl -s "https://crt.sh/?q=facebook.com&output=json" | jq -r '.[]
+ | select(.name_value | contains("dev")) | .name_value' | sort -u
+ 
+*.dev.facebook.com
+*.newdev.facebook.com
+*.secure.dev.facebook.com
+dev.facebook.com
+devvm1958.ftw3.facebook.com
+facebook-amex-dev.facebook.com
+facebook-amex-sign-enc-dev.facebook.com
+newdev.facebook.com
+secure.dev.facebook.com
+```
+
+* `curl -s "https://crt.sh/?q=facebook.com&output=json"`: This command fetches the JSON output from crt.sh for certificates matching the domain `facebook.com`.
+* `jq -r '.[] | select(.name_value | contains("dev")) | .name_value'`: This part filters the JSON results, selecting only entries where the `name_value` field (which contains the domain or subdomain) includes the string "`dev`". The `-r` flag tells `jq` to output raw strings.
+* `sort -u`: This sorts the results alphabetically and removes duplicates.
