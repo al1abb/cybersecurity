@@ -262,3 +262,4 @@
     * [Virtual Hosts](hack-the-box/information-gathering-web-edition/dns-and-subdomains/virtual-hosts.md)
     * [Certificate Transparency Logs](hack-the-box/information-gathering-web-edition/dns-and-subdomains/certificate-transparency-logs.md)
   * [Fingerprinting](hack-the-box/information-gathering-web-edition/fingerprinting.md)
+  * [Crawling](hack-the-box/information-gathering-web-edition/crawling.md)
