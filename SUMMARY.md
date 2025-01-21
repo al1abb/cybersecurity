@@ -262,4 +262,7 @@
     * [Virtual Hosts](hack-the-box/information-gathering-web-edition/dns-and-subdomains/virtual-hosts.md)
     * [Certificate Transparency Logs](hack-the-box/information-gathering-web-edition/dns-and-subdomains/certificate-transparency-logs.md)
   * [Fingerprinting](hack-the-box/information-gathering-web-edition/fingerprinting.md)
-  * [Crawling](hack-the-box/information-gathering-web-edition/crawling.md)
+  * [Crawling](hack-the-box/information-gathering-web-edition/crawling/README.md)
+    * [Crawling](hack-the-box/information-gathering-web-edition/crawling/crawling.md)
+    * [robots.txt](hack-the-box/information-gathering-web-edition/crawling/robots.txt.md)
+    * [Well-Known URIs](hack-the-box/information-gathering-web-edition/crawling/well-known-uris.md)
