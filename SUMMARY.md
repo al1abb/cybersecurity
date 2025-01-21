@@ -266,3 +266,4 @@
     * [Crawling](hack-the-box/information-gathering-web-edition/crawling/crawling.md)
     * [robots.txt](hack-the-box/information-gathering-web-edition/crawling/robots.txt.md)
     * [Well-Known URIs](hack-the-box/information-gathering-web-edition/crawling/well-known-uris.md)
+    * [Creepy Crawlies](hack-the-box/information-gathering-web-edition/crawling/creepy-crawlies.md)
