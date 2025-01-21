@@ -268,3 +268,4 @@
     * [Well-Known URIs](hack-the-box/information-gathering-web-edition/crawling/well-known-uris.md)
     * [Creepy Crawlies](hack-the-box/information-gathering-web-edition/crawling/creepy-crawlies.md)
   * [Search Engine Discovery](hack-the-box/information-gathering-web-edition/search-engine-discovery.md)
+  * [Web Archives](hack-the-box/information-gathering-web-edition/web-archives.md)
