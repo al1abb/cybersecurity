@@ -273,3 +273,4 @@
 * [Vulnerability Assessment](hack-the-box/vulnerability-assessment/README.md)
   * [Security Assessments](hack-the-box/vulnerability-assessment/security-assessments.md)
   * [Vulnerability Assessment](hack-the-box/vulnerability-assessment/vulnerability-assessment.md)
+  * [Assessment Standards (Compliance + Pentest)](hack-the-box/vulnerability-assessment/assessment-standards-compliance-+-pentest.md)
