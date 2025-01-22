@@ -277,3 +277,4 @@
     * [Assessment Standards (Compliance + Pentest)](hack-the-box/vulnerability-assessment/security-assessments/assessment-standards-compliance-+-pentest.md)
   * [Vulnerability Scoring and Reporting](hack-the-box/vulnerability-assessment/vulnerability-scoring-and-reporting/README.md)
     * [Common Vulnerability Scoring System (CVSS)](hack-the-box/vulnerability-assessment/vulnerability-scoring-and-reporting/common-vulnerability-scoring-system-cvss.md)
+    * [Common Vulnerabilities and Exposures (CVE)](hack-the-box/vulnerability-assessment/vulnerability-scoring-and-reporting/common-vulnerabilities-and-exposures-cve.md)
