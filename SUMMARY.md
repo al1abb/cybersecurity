@@ -285,3 +285,8 @@
     * [Advanced Settings](hack-the-box/vulnerability-assessment/nessus/advanced-settings.md)
     * [Working with Nessus Scan Output](hack-the-box/vulnerability-assessment/nessus/working-with-nessus-scan-output.md)
     * [Scanning Issues](hack-the-box/vulnerability-assessment/nessus/scanning-issues.md)
+  * [OpenVAS](hack-the-box/vulnerability-assessment/openvas/README.md)
+    * [Getting Started with OpenVAS](hack-the-box/vulnerability-assessment/openvas/getting-started-with-openvas.md)
+    * [OpenVAS Scan](hack-the-box/vulnerability-assessment/openvas/openvas-scan.md)
+    * [Exporting The Results](hack-the-box/vulnerability-assessment/openvas/exporting-the-results.md)
+  * [Reporting](hack-the-box/vulnerability-assessment/reporting.md)
