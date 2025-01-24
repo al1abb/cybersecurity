@@ -281,3 +281,4 @@
   * [Nessus](hack-the-box/vulnerability-assessment/nessus/README.md)
     * [Vulnerability Scanning Overview](hack-the-box/vulnerability-assessment/nessus/vulnerability-scanning-overview.md)
     * [Getting Started with Nessus](hack-the-box/vulnerability-assessment/nessus/getting-started-with-nessus.md)
+    * [Nessus Scan](hack-the-box/vulnerability-assessment/nessus/nessus-scan.md)

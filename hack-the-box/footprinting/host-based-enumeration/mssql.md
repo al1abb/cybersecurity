@@ -8,7 +8,7 @@
 
 [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) (`SSMS`) comes as a feature that can be installed with the MSSQL install package or can be downloaded & installed separately. It is commonly installed on the server for initial configuration and long-term management of databases by admins. Keep in mind that since SSMS is a client-side application, it can be installed and used on any system an admin or developer is planning to manage the database from. It doesn't only exist on the server hosting the database. This means we could come across a vulnerable system with SSMS with saved credentials that allow us to connect to the database. The image below shows SSMS in action.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>SQL Server Management Studio</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>SQL Server Management Studio</p></figcaption></figure>
 
 Many other clients can be used to access a database running on MSSQL. Including but not limited to:
 
