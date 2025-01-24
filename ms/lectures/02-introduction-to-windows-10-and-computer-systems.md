@@ -110,7 +110,7 @@ There are 2 types of UI: CLI and GUI
 
 ### Windows 10 Editions
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Edition               | Description                                                                       | Consumer                                             | Availability                                     |
 | --------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------ |
@@ -122,7 +122,7 @@ There are 2 types of UI: CLI and GUI
 
 ### 32-bit vs 64-bit
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Hardware requirements
 
