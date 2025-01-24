@@ -282,3 +282,6 @@
     * [Vulnerability Scanning Overview](hack-the-box/vulnerability-assessment/nessus/vulnerability-scanning-overview.md)
     * [Getting Started with Nessus](hack-the-box/vulnerability-assessment/nessus/getting-started-with-nessus.md)
     * [Nessus Scan](hack-the-box/vulnerability-assessment/nessus/nessus-scan.md)
+    * [Advanced Settings](hack-the-box/vulnerability-assessment/nessus/advanced-settings.md)
+    * [Working with Nessus Scan Output](hack-the-box/vulnerability-assessment/nessus/working-with-nessus-scan-output.md)
+    * [Scanning Issues](hack-the-box/vulnerability-assessment/nessus/scanning-issues.md)
