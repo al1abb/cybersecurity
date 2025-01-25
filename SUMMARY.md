@@ -295,3 +295,5 @@
     * [File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/README.md)
       * [Windows File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/windows-file-transfer-methods.md)
       * [Linux File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/linux-file-transfer-methods.md)
+      * [Transferring Files with Code](hack-the-box/pentester-path/file-transfers/file-transfer-methods/transferring-files-with-code.md)
+      * [Miscellaneous File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/miscellaneous-file-transfer-methods.md)
