@@ -291,6 +291,6 @@
       * [OpenVAS Scan](hack-the-box/pentester-path/vulnerability-assessment/openvas/openvas-scan.md)
       * [Exporting The Results](hack-the-box/pentester-path/vulnerability-assessment/openvas/exporting-the-results.md)
     * [Reporting](hack-the-box/pentester-path/vulnerability-assessment/reporting.md)
-  * [File Transfers](hack-the-box/pentester-path/file-transfers/README.md)
+  * [File Transfers](hack-the-box/pentester-path/file-transfers.md)
     * [File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/README.md)
       * [Windows File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/windows-file-transfer-methods.md)
