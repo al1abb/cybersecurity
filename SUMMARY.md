@@ -298,3 +298,5 @@
       * [Transferring Files with Code](hack-the-box/pentester-path/file-transfers/file-transfer-methods/transferring-files-with-code.md)
       * [Miscellaneous File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/miscellaneous-file-transfer-methods.md)
       * [Protected File Transfers](hack-the-box/pentester-path/file-transfers/file-transfer-methods/protected-file-transfers.md)
+      * [Catching Files over HTTP/S](hack-the-box/pentester-path/file-transfers/file-transfer-methods/catching-files-over-http-s.md)
+      * [Living off The Land](hack-the-box/pentester-path/file-transfers/file-transfer-methods/living-off-the-land.md)
