@@ -304,3 +304,4 @@
     * [Detect or Be Detected](hack-the-box/pentester-path/file-transfers/detect-or-be-detected/README.md)
       * [Detection](hack-the-box/pentester-path/file-transfers/detect-or-be-detected/detection.md)
       * [Evading Detection](hack-the-box/pentester-path/file-transfers/detect-or-be-detected/evading-detection.md)
+  * [Shells & Payloads](hack-the-box/pentester-path/shells-and-payloads.md)
