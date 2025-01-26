@@ -297,3 +297,4 @@
       * [Linux File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/linux-file-transfer-methods.md)
       * [Transferring Files with Code](hack-the-box/pentester-path/file-transfers/file-transfer-methods/transferring-files-with-code.md)
       * [Miscellaneous File Transfer Methods](hack-the-box/pentester-path/file-transfers/file-transfer-methods/miscellaneous-file-transfer-methods.md)
+      * [Protected File Transfers](hack-the-box/pentester-path/file-transfers/file-transfer-methods/protected-file-transfers.md)
