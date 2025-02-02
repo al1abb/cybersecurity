@@ -311,3 +311,5 @@
       * [Anatomy of a Shell](hack-the-box/pentester-path/shells-and-payloads/shell-basics/anatomy-of-a-shell.md)
       * [Bind Shells](hack-the-box/pentester-path/shells-and-payloads/shell-basics/bind-shells.md)
       * [Reverse Shells](hack-the-box/pentester-path/shells-and-payloads/shell-basics/reverse-shells.md)
+    * [Payloads](hack-the-box/pentester-path/shells-and-payloads/payloads/README.md)
+      * [Introduction to Payloads](hack-the-box/pentester-path/shells-and-payloads/payloads/introduction-to-payloads.md)
