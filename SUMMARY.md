@@ -313,3 +313,4 @@
       * [Reverse Shells](hack-the-box/pentester-path/shells-and-payloads/shell-basics/reverse-shells.md)
     * [Payloads](hack-the-box/pentester-path/shells-and-payloads/payloads/README.md)
       * [Introduction to Payloads](hack-the-box/pentester-path/shells-and-payloads/payloads/introduction-to-payloads.md)
+      * [Automating Payloads & Delivery with Metasploit](hack-the-box/pentester-path/shells-and-payloads/payloads/automating-payloads-and-delivery-with-metasploit.md)
