@@ -317,3 +317,5 @@
       * [Crafting Payloads with MSFvenom](hack-the-box/pentester-path/shells-and-payloads/payloads/crafting-payloads-with-msfvenom.md)
     * [Windows Shells](hack-the-box/pentester-path/shells-and-payloads/windows-shells/README.md)
       * [Infiltrating Windows](hack-the-box/pentester-path/shells-and-payloads/windows-shells/infiltrating-windows.md)
+    * [NIX Shells](hack-the-box/pentester-path/shells-and-payloads/nix-shells/README.md)
+      * [Infiltrating Unix/Linux](hack-the-box/pentester-path/shells-and-payloads/nix-shells/infiltrating-unix-linux.md)
