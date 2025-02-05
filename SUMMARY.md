@@ -319,3 +319,4 @@
       * [Infiltrating Windows](hack-the-box/pentester-path/shells-and-payloads/windows-shells/infiltrating-windows.md)
     * [NIX Shells](hack-the-box/pentester-path/shells-and-payloads/nix-shells/README.md)
       * [Infiltrating Unix/Linux](hack-the-box/pentester-path/shells-and-payloads/nix-shells/infiltrating-unix-linux.md)
+      * [Spawning Interactive Shells](hack-the-box/pentester-path/shells-and-payloads/nix-shells/spawning-interactive-shells.md)
