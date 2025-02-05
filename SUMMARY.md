@@ -320,3 +320,6 @@
     * [NIX Shells](hack-the-box/pentester-path/shells-and-payloads/nix-shells/README.md)
       * [Infiltrating Unix/Linux](hack-the-box/pentester-path/shells-and-payloads/nix-shells/infiltrating-unix-linux.md)
       * [Spawning Interactive Shells](hack-the-box/pentester-path/shells-and-payloads/nix-shells/spawning-interactive-shells.md)
+    * [Web Shells](hack-the-box/pentester-path/shells-and-payloads/web-shells/README.md)
+      * [Introduction to Web Shells](hack-the-box/pentester-path/shells-and-payloads/web-shells/introduction-to-web-shells.md)
+      * [Laudanum, One Webshell to Rule Them All](hack-the-box/pentester-path/shells-and-payloads/web-shells/laudanum-one-webshell-to-rule-them-all.md)
