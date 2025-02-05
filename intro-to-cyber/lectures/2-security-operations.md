@@ -208,5 +208,5 @@ You sign a document using your private key. Receiver verifies it using your publ
 
 The signature is valid when the **document x hash algorithm** and **document x public key** hashes match
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Digital Signatures</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Digital Signatures</p></figcaption></figure>
 

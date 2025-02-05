@@ -324,3 +324,4 @@
       * [Introduction to Web Shells](hack-the-box/pentester-path/shells-and-payloads/web-shells/introduction-to-web-shells.md)
       * [Laudanum, One Webshell to Rule Them All](hack-the-box/pentester-path/shells-and-payloads/web-shells/laudanum-one-webshell-to-rule-them-all.md)
       * [Antak Webshell](hack-the-box/pentester-path/shells-and-payloads/web-shells/antak-webshell.md)
+      * [PHP Web Shells](hack-the-box/pentester-path/shells-and-payloads/web-shells/php-web-shells.md)
