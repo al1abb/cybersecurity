@@ -326,4 +326,7 @@
       * [Antak Webshell](hack-the-box/pentester-path/shells-and-payloads/web-shells/antak-webshell.md)
       * [PHP Web Shells](hack-the-box/pentester-path/shells-and-payloads/web-shells/php-web-shells.md)
     * [Detection & Prevention](hack-the-box/pentester-path/shells-and-payloads/detection-and-prevention.md)
-  * [Metasploit Framework](hack-the-box/pentester-path/metasploit-framework.md)
+  * [Metasploit Framework](hack-the-box/pentester-path/metasploit-framework/README.md)
+    * [Introduction](hack-the-box/pentester-path/metasploit-framework/introduction/README.md)
+      * [Introduction to Metasploit](hack-the-box/pentester-path/metasploit-framework/introduction/introduction-to-metasploit.md)
+      * [Introduction to MSFconsole](hack-the-box/pentester-path/metasploit-framework/introduction/introduction-to-msfconsole.md)
