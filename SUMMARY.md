@@ -330,3 +330,5 @@
     * [Introduction](hack-the-box/pentester-path/metasploit-framework/introduction/README.md)
       * [Introduction to Metasploit](hack-the-box/pentester-path/metasploit-framework/introduction/introduction-to-metasploit.md)
       * [Introduction to MSFconsole](hack-the-box/pentester-path/metasploit-framework/introduction/introduction-to-msfconsole.md)
+    * [MSF Components](hack-the-box/pentester-path/metasploit-framework/msf-components/README.md)
+      * [Modules](hack-the-box/pentester-path/metasploit-framework/msf-components/modules.md)
