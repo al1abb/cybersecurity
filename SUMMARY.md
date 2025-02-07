@@ -340,3 +340,5 @@
     * [MSF Sessions](hack-the-box/pentester-path/metasploit-framework/msf-sessions/README.md)
       * [Sessions & Jobs](hack-the-box/pentester-path/metasploit-framework/msf-sessions/sessions-and-jobs.md)
       * [Meterpreter](hack-the-box/pentester-path/metasploit-framework/msf-sessions/meterpreter.md)
+    * [Additional Features](hack-the-box/pentester-path/metasploit-framework/additional-features/README.md)
+      * [Writing and Importing Modules](hack-the-box/pentester-path/metasploit-framework/additional-features/writing-and-importing-modules.md)
