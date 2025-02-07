@@ -334,3 +334,4 @@
       * [Modules](hack-the-box/pentester-path/metasploit-framework/msf-components/modules.md)
       * [Targets](hack-the-box/pentester-path/metasploit-framework/msf-components/targets.md)
       * [Payloads](hack-the-box/pentester-path/metasploit-framework/msf-components/payloads.md)
+      * [Encoders](hack-the-box/pentester-path/metasploit-framework/msf-components/encoders.md)
