@@ -342,3 +342,4 @@
       * [Meterpreter](hack-the-box/pentester-path/metasploit-framework/msf-sessions/meterpreter.md)
     * [Additional Features](hack-the-box/pentester-path/metasploit-framework/additional-features/README.md)
       * [Writing and Importing Modules](hack-the-box/pentester-path/metasploit-framework/additional-features/writing-and-importing-modules.md)
+      * [Introduction to MSFVenom](hack-the-box/pentester-path/metasploit-framework/additional-features/introduction-to-msfvenom.md)
