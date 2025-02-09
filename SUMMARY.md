@@ -343,3 +343,4 @@
     * [Additional Features](hack-the-box/pentester-path/metasploit-framework/additional-features/README.md)
       * [Writing and Importing Modules](hack-the-box/pentester-path/metasploit-framework/additional-features/writing-and-importing-modules.md)
       * [Introduction to MSFVenom](hack-the-box/pentester-path/metasploit-framework/additional-features/introduction-to-msfvenom.md)
+      * [Firewall and IDS/IPS Evasion](hack-the-box/pentester-path/metasploit-framework/additional-features/firewall-and-ids-ips-evasion.md)
