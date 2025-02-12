@@ -346,5 +346,6 @@
       * [Firewall and IDS/IPS Evasion](hack-the-box/pentester-path/metasploit-framework/additional-features/firewall-and-ids-ips-evasion.md)
       * [Metasploit-Framework Updates - August 2020](hack-the-box/pentester-path/metasploit-framework/additional-features/metasploit-framework-updates-august-2020.md)
   * [Password Attacks](hack-the-box/pentester-path/password-attacks/README.md)
-    * [Introduction](hack-the-box/pentester-path/password-attacks/introduction/README.md)
+    * [Introduction](hack-the-box/pentester-path/password-attacks/introduction.md)
       * [Theory of Protection](hack-the-box/pentester-path/password-attacks/introduction/theory-of-protection.md)
+      * [Credential Storage](hack-the-box/pentester-path/password-attacks/introduction/credential-storage.md)
