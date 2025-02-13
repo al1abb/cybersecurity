@@ -352,3 +352,4 @@
       * [John The Ripper](hack-the-box/pentester-path/password-attacks/introduction/john-the-ripper.md)
     * [Remote Password Attacks](hack-the-box/pentester-path/password-attacks/remote-password-attacks/README.md)
       * [Network Services](hack-the-box/pentester-path/password-attacks/remote-password-attacks/network-services.md)
+      * [Password Mutations](hack-the-box/pentester-path/password-attacks/remote-password-attacks/password-mutations.md)
