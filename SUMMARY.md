@@ -350,3 +350,5 @@
       * [Theory of Protection](hack-the-box/pentester-path/password-attacks/introduction/theory-of-protection.md)
       * [Credential Storage](hack-the-box/pentester-path/password-attacks/introduction/credential-storage.md)
       * [John The Ripper](hack-the-box/pentester-path/password-attacks/introduction/john-the-ripper.md)
+    * [Remote Password Attacks](hack-the-box/pentester-path/password-attacks/remote-password-attacks/README.md)
+      * [Network Services](hack-the-box/pentester-path/password-attacks/remote-password-attacks/network-services.md)
