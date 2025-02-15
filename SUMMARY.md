@@ -357,3 +357,4 @@
     * [Windows Local Password Attacks](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/README.md)
       * [Attacking SAM](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/attacking-sam.md)
       * [Attacking LSASS](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/attacking-lsass.md)
+      * [Attacking Active Directory & NTDS.dit](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/attacking-active-directory-and-ntds.dit.md)
