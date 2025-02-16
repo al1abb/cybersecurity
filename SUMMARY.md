@@ -359,3 +359,5 @@
       * [Attacking LSASS](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/attacking-lsass.md)
       * [Attacking Active Directory & NTDS.dit](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/attacking-active-directory-and-ntds.dit.md)
       * [Credential Hunting in Windows](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/credential-hunting-in-windows.md)
+    * [Linux Local Password Attacks](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/README.md)
+      * [Credential Hunting in Linux](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/credential-hunting-in-linux.md)
