@@ -362,3 +362,5 @@
     * [Linux Local Password Attacks](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/README.md)
       * [Credential Hunting in Linux](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/credential-hunting-in-linux.md)
       * [Passwd, Shadow & Opasswd](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/passwd-shadow-and-opasswd.md)
+    * [Windows Lateral Movement](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/README.md)
+      * [Pass the Hash (PtH)](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-hash-pth.md)
