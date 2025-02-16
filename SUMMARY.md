@@ -361,3 +361,4 @@
       * [Credential Hunting in Windows](hack-the-box/pentester-path/password-attacks/windows-local-password-attacks/credential-hunting-in-windows.md)
     * [Linux Local Password Attacks](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/README.md)
       * [Credential Hunting in Linux](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/credential-hunting-in-linux.md)
+      * [Passwd, Shadow & Opasswd](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/passwd-shadow-and-opasswd.md)
