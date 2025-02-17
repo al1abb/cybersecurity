@@ -364,3 +364,4 @@
       * [Passwd, Shadow & Opasswd](hack-the-box/pentester-path/password-attacks/linux-local-password-attacks/passwd-shadow-and-opasswd.md)
     * [Windows Lateral Movement](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/README.md)
       * [Pass the Hash (PtH)](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-hash-pth.md)
+      * [Pass the Ticket (PtT) from Windows](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-ticket-ptt-from-windows.md)
