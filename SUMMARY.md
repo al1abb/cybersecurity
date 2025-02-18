@@ -370,3 +370,4 @@
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
     * [Operating System Structure](hack-the-box/windows-fundamentals/core-of-the-operating-system/operating-system-structure.md)
     * [File System](hack-the-box/windows-fundamentals/core-of-the-operating-system/file-system.md)
+    * [NTFS vs Share Permissions](hack-the-box/windows-fundamentals/core-of-the-operating-system/ntfs-vs-share-permissions.md)
