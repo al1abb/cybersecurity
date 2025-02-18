@@ -367,3 +367,6 @@
       * [Pass the Ticket (PtT) from Windows](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-ticket-ptt-from-windows.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
+  * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
+    * [Operating System Structure](hack-the-box/windows-fundamentals/core-of-the-operating-system/operating-system-structure.md)
+    * [File System](hack-the-box/windows-fundamentals/core-of-the-operating-system/file-system.md)
