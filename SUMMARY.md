@@ -377,3 +377,4 @@
   * [Interacting with Windows](hack-the-box/windows-fundamentals/interacting-with-windows/README.md)
     * [Windows Sessions](hack-the-box/windows-fundamentals/interacting-with-windows/windows-sessions.md)
     * [Interacting with the Windows Operating System](hack-the-box/windows-fundamentals/interacting-with-windows/interacting-with-the-windows-operating-system.md)
+    * [Windows Management Instrumentation (WMI)](hack-the-box/windows-fundamentals/interacting-with-windows/windows-management-instrumentation-wmi.md)
