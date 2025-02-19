@@ -373,3 +373,6 @@
     * [NTFS vs Share Permissions](hack-the-box/windows-fundamentals/core-of-the-operating-system/ntfs-vs-share-permissions.md)
   * [Working with Services & Processes](hack-the-box/windows-fundamentals/working-with-services-and-processes/README.md)
     * [Windows Services & Processes](hack-the-box/windows-fundamentals/working-with-services-and-processes/windows-services-and-processes.md)
+    * [Service Permissions](hack-the-box/windows-fundamentals/working-with-services-and-processes/service-permissions.md)
+  * [Interacting with Windows](hack-the-box/windows-fundamentals/interacting-with-windows/README.md)
+    * [Windows Sessions](hack-the-box/windows-fundamentals/interacting-with-windows/windows-sessions.md)
