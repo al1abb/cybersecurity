@@ -384,3 +384,6 @@
   * [Diving Deeper & Close Out](hack-the-box/windows-fundamentals/diving-deeper-and-close-out/README.md)
     * [Desktop Experience vs. Server Core](hack-the-box/windows-fundamentals/diving-deeper-and-close-out/desktop-experience-vs.-server-core.md)
     * [Windows Security](hack-the-box/windows-fundamentals/diving-deeper-and-close-out/windows-security.md)
+* [Introduction to Active Directory](hack-the-box/introduction-to-active-directory/README.md)
+  * [Active Directory Overview](hack-the-box/introduction-to-active-directory/active-directory-overview/README.md)
+    * [Why Active Directory?](hack-the-box/introduction-to-active-directory/active-directory-overview/why-active-directory.md)
