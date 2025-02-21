@@ -387,3 +387,4 @@
 * [Introduction to Active Directory](hack-the-box/introduction-to-active-directory/README.md)
   * [Active Directory Overview](hack-the-box/introduction-to-active-directory/active-directory-overview/README.md)
     * [Why Active Directory?](hack-the-box/introduction-to-active-directory/active-directory-overview/why-active-directory.md)
+    * [Active Directory Research Over the Years](hack-the-box/introduction-to-active-directory/active-directory-overview/active-directory-research-over-the-years.md)
