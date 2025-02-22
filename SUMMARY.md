@@ -391,3 +391,4 @@
   * [Active Directory Fundamentals](hack-the-box/introduction-to-active-directory/active-directory-fundamentals/README.md)
     * [AD Structure](hack-the-box/introduction-to-active-directory/active-directory-fundamentals/ad-structure.md)
     * [AD Terminology](hack-the-box/introduction-to-active-directory/active-directory-fundamentals/ad-terminology.md)
+    * [Active Directory Objects](hack-the-box/introduction-to-active-directory/active-directory-fundamentals/active-directory-objects.md)
