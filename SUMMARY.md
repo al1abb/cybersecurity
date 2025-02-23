@@ -395,3 +395,4 @@
     * [Active Directory Functionality](hack-the-box/introduction-to-active-directory/active-directory-fundamentals/active-directory-functionality.md)
   * [Active Directory Protocols](hack-the-box/introduction-to-active-directory/active-directory-protocols/README.md)
     * [Kerberos, DNS, LDAP, MSRPC](hack-the-box/introduction-to-active-directory/active-directory-protocols/kerberos-dns-ldap-msrpc.md)
+    * [NTLM Authentication](hack-the-box/introduction-to-active-directory/active-directory-protocols/ntlm-authentication.md)
