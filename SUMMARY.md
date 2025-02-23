@@ -398,3 +398,4 @@
     * [NTLM Authentication](hack-the-box/introduction-to-active-directory/active-directory-protocols/ntlm-authentication.md)
   * [All About Users](hack-the-box/introduction-to-active-directory/all-about-users/README.md)
     * [User and Machine Accounts](hack-the-box/introduction-to-active-directory/all-about-users/user-and-machine-accounts.md)
+    * [Active Directory Groups](hack-the-box/introduction-to-active-directory/all-about-users/active-directory-groups.md)
