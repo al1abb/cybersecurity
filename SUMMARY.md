@@ -402,3 +402,4 @@
     * [Active Directory Rights and Privileges](hack-the-box/introduction-to-active-directory/all-about-users/active-directory-rights-and-privileges.md)
   * [Digging in Deeper](hack-the-box/introduction-to-active-directory/digging-in-deeper/README.md)
     * [Security in Active Directory](hack-the-box/introduction-to-active-directory/digging-in-deeper/security-in-active-directory.md)
+    * [Examining Group Policy](hack-the-box/introduction-to-active-directory/digging-in-deeper/examining-group-policy.md)
