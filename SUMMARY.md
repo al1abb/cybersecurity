@@ -400,3 +400,5 @@
     * [User and Machine Accounts](hack-the-box/introduction-to-active-directory/all-about-users/user-and-machine-accounts.md)
     * [Active Directory Groups](hack-the-box/introduction-to-active-directory/all-about-users/active-directory-groups.md)
     * [Active Directory Rights and Privileges](hack-the-box/introduction-to-active-directory/all-about-users/active-directory-rights-and-privileges.md)
+  * [Digging in Deeper](hack-the-box/introduction-to-active-directory/digging-in-deeper/README.md)
+    * [Security in Active Directory](hack-the-box/introduction-to-active-directory/digging-in-deeper/security-in-active-directory.md)
