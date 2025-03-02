@@ -366,6 +366,8 @@
       * [Pass the Hash (PtH)](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-hash-pth.md)
       * [Pass the Ticket (PtT) from Windows](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-ticket-ptt-from-windows.md)
       * [Pass the Ticket (PtT) from Linux](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-ticket-ptt-from-linux.md)
+    * [Cracking Files](hack-the-box/pentester-path/password-attacks/cracking-files/README.md)
+      * [Protected Files](hack-the-box/pentester-path/password-attacks/cracking-files/protected-files.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
