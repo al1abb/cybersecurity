@@ -374,6 +374,8 @@
       * [Password Managers](hack-the-box/pentester-path/password-attacks/password-management/password-managers.md)
   * [Attacking Common Services](hack-the-box/pentester-path/attacking-common-services/README.md)
     * [Interacting with Common Services](hack-the-box/pentester-path/attacking-common-services/interacting-with-common-services.md)
+    * [Protocol Specific Attacks](hack-the-box/pentester-path/attacking-common-services/protocol-specific-attacks/README.md)
+      * [The Concept of Attacks](hack-the-box/pentester-path/attacking-common-services/protocol-specific-attacks/the-concept-of-attacks.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
