@@ -381,6 +381,8 @@
     * [FTP](hack-the-box/pentester-path/attacking-common-services/ftp/README.md)
       * [Attacking FTP](hack-the-box/pentester-path/attacking-common-services/ftp/attacking-ftp.md)
       * [Latest FTP Vulnerabilities](hack-the-box/pentester-path/attacking-common-services/ftp/latest-ftp-vulnerabilities.md)
+    * [SMB](hack-the-box/pentester-path/attacking-common-services/smb/README.md)
+      * [Attacking SMB](hack-the-box/pentester-path/attacking-common-services/smb/attacking-smb.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
