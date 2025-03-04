@@ -386,6 +386,7 @@
       * [Latest SMB Vulnerabilities](hack-the-box/pentester-path/attacking-common-services/smb/latest-smb-vulnerabilities.md)
     * [SQL Databases](hack-the-box/pentester-path/attacking-common-services/sql-databases/README.md)
       * [Attacking SQL Databases](hack-the-box/pentester-path/attacking-common-services/sql-databases/attacking-sql-databases.md)
+      * [Latest SQL Vulnerabilities](hack-the-box/pentester-path/attacking-common-services/sql-databases/latest-sql-vulnerabilities.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
