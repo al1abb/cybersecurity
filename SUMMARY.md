@@ -389,6 +389,7 @@
       * [Latest SQL Vulnerabilities](hack-the-box/pentester-path/attacking-common-services/sql-databases/latest-sql-vulnerabilities.md)
     * [RDP](hack-the-box/pentester-path/attacking-common-services/rdp/README.md)
       * [Attacking RDP](hack-the-box/pentester-path/attacking-common-services/rdp/attacking-rdp.md)
+      * [Latest RDP Vulnerabilities](hack-the-box/pentester-path/attacking-common-services/rdp/latest-rdp-vulnerabilities.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
