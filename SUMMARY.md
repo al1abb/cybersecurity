@@ -395,6 +395,7 @@
       * [Latest DNS Vulnerabilities](hack-the-box/pentester-path/attacking-common-services/dns/latest-dns-vulnerabilities.md)
     * [SMTP](hack-the-box/pentester-path/attacking-common-services/smtp/README.md)
       * [Attacking Email Services](hack-the-box/pentester-path/attacking-common-services/smtp/attacking-email-services.md)
+      * [Latest Email Service Vulnerabilities](hack-the-box/pentester-path/attacking-common-services/smtp/latest-email-service-vulnerabilities.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
