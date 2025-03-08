@@ -400,6 +400,8 @@
     * [Introduction](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/introduction/README.md)
       * [Introduction to Pivoting, Tunneling, and Port Forwarding](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/introduction/introduction-to-pivoting-tunneling-and-port-forwarding.md)
       * [The Networking Behind Pivoting](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/introduction/the-networking-behind-pivoting.md)
+    * [Choosing The Dig Site & Starting Our Tunnels](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/choosing-the-dig-site-and-starting-our-tunnels/README.md)
+      * [Dynamic Port Forwarding with SSH and SOCKS Tunneling](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/choosing-the-dig-site-and-starting-our-tunnels/dynamic-port-forwarding-with-ssh-and-socks-tunneling.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
