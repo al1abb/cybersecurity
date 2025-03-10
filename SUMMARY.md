@@ -406,6 +406,7 @@
       * [Meterpreter Tunneling & Port Forwarding](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/choosing-the-dig-site-and-starting-our-tunnels/meterpreter-tunneling-and-port-forwarding.md)
     * [Playing Pong with Socat](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/playing-pong-with-socat/README.md)
       * [Socat Redirection with a Reverse Shell](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/playing-pong-with-socat/socat-redirection-with-a-reverse-shell.md)
+      * [Socat Redirection with a Bind Shell](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/playing-pong-with-socat/socat-redirection-with-a-bind-shell.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
