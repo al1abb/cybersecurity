@@ -411,6 +411,7 @@
       * [SSH for Windows: plink.exe](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/pivoting-around-obstacles/ssh-for-windows-plink.exe.md)
       * [SSH Pivoting with Sshuttle](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/pivoting-around-obstacles/ssh-pivoting-with-sshuttle.md)
       * [Web Server Pivoting with Rpivot](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/pivoting-around-obstacles/web-server-pivoting-with-rpivot.md)
+      * [Port Forwarding with Windows Netsh](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/pivoting-around-obstacles/port-forwarding-with-windows-netsh.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
