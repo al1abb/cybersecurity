@@ -409,6 +409,7 @@
       * [Socat Redirection with a Bind Shell](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/playing-pong-with-socat/socat-redirection-with-a-bind-shell.md)
     * [Pivoting Around Obstacles](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/pivoting-around-obstacles/README.md)
       * [SSH for Windows: plink.exe](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/pivoting-around-obstacles/ssh-for-windows-plink.exe.md)
+      * [SSH Pivoting with Sshuttle](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/pivoting-around-obstacles/ssh-pivoting-with-sshuttle.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
