@@ -415,6 +415,7 @@
     * [Branching Out Our Tunnels](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/branching-out-our-tunnels/README.md)
       * [DNS Tunneling with Dnscat2](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/branching-out-our-tunnels/dns-tunneling-with-dnscat2.md)
       * [SOCKS5 Tunneling with Chisel](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/branching-out-our-tunnels/socks5-tunneling-with-chisel.md)
+      * [ICMP Tunneling with SOCKS](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/branching-out-our-tunnels/icmp-tunneling-with-socks.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
