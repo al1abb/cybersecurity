@@ -418,6 +418,8 @@
       * [ICMP Tunneling with SOCKS](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/branching-out-our-tunnels/icmp-tunneling-with-socks.md)
     * [Double Pivots](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/double-pivots/README.md)
       * [RDP and SOCKS Tunneling with SocksOverRDP](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/double-pivots/rdp-and-socks-tunneling-with-socksoverrdp.md)
+    * [Additional Considerations](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/additional-considerations/README.md)
+      * [Detection & Prevention](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/additional-considerations/detection-and-prevention.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
