@@ -420,6 +420,7 @@
       * [RDP and SOCKS Tunneling with SocksOverRDP](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/double-pivots/rdp-and-socks-tunneling-with-socksoverrdp.md)
     * [Additional Considerations](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/additional-considerations/README.md)
       * [Detection & Prevention](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/additional-considerations/detection-and-prevention.md)
+      * [Beyond this Module](hack-the-box/pentester-path/pivoting-tunneling-and-port-forwarding/additional-considerations/beyond-this-module.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
