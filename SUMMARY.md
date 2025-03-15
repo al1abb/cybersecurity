@@ -428,6 +428,7 @@
       * [Scenario](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/setting-the-stage/scenario.md)
     * [Initial Enumeration](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/initial-enumeration/README.md)
       * [External Recon and Enumeration Principles](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/initial-enumeration/external-recon-and-enumeration-principles.md)
+      * [Initial Enumeration of the Domain](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/initial-enumeration/initial-enumeration-of-the-domain.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
