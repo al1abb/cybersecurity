@@ -424,6 +424,7 @@
   * [Active Directory Enumeration & Attacks](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/README.md)
     * [Setting The Stage](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/setting-the-stage/README.md)
       * [Introduction to Active Directory Enumeration & Attacks](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/setting-the-stage/introduction-to-active-directory-enumeration-and-attacks.md)
+      * [Tools of the Trade](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/setting-the-stage/tools-of-the-trade.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
