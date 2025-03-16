@@ -431,6 +431,7 @@
       * [Initial Enumeration of the Domain](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/initial-enumeration/initial-enumeration-of-the-domain.md)
     * [Sniffing out a Foothold](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/sniffing-out-a-foothold/README.md)
       * [LLMNR/NBT-NS Poisoning - from Linux](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/sniffing-out-a-foothold/llmnr-nbt-ns-poisoning-from-linux.md)
+      * [LLMNR/NBT-NS Poisoning - from Windows](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/sniffing-out-a-foothold/llmnr-nbt-ns-poisoning-from-windows.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
