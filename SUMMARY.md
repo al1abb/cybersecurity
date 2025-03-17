@@ -438,6 +438,7 @@
       * [Password Spraying - Making a Target User List](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/sighting-in-hunting-for-a-user/password-spraying-making-a-target-user-list.md)
     * [Spray Responsibly](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/spray-responsibly/README.md)
       * [Internal Password Spraying - from Linux](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/spray-responsibly/internal-password-spraying-from-linux.md)
+      * [Internal Password Spraying - from Windows](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/spray-responsibly/internal-password-spraying-from-windows.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
