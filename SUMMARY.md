@@ -439,6 +439,8 @@
     * [Spray Responsibly](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/spray-responsibly/README.md)
       * [Internal Password Spraying - from Linux](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/spray-responsibly/internal-password-spraying-from-linux.md)
       * [Internal Password Spraying - from Windows](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/spray-responsibly/internal-password-spraying-from-windows.md)
+    * [Deeper Down the Rabbit Hole](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/deeper-down-the-rabbit-hole/README.md)
+      * [Enumerating Security Controls](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/deeper-down-the-rabbit-hole/enumerating-security-controls.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
