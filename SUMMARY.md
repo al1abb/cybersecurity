@@ -446,6 +446,7 @@
       * [Living Off the Land](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/deeper-down-the-rabbit-hole/living-off-the-land.md)
     * [Cooking with Fire](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/cooking-with-fire/README.md)
       * [Kerberoasting - from Linux](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/cooking-with-fire/kerberoasting-from-linux.md)
+      * [Kerberoasting - from Windows](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/cooking-with-fire/kerberoasting-from-windows.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
