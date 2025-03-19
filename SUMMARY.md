@@ -447,6 +447,8 @@
     * [Cooking with Fire](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/cooking-with-fire/README.md)
       * [Kerberoasting - from Linux](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/cooking-with-fire/kerberoasting-from-linux.md)
       * [Kerberoasting - from Windows](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/cooking-with-fire/kerberoasting-from-windows.md)
+    * [An ACE in the Hole](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/an-ace-in-the-hole/README.md)
+      * [Access Control List (ACL) Abuse Primer](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/an-ace-in-the-hole/access-control-list-acl-abuse-primer.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
