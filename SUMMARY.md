@@ -456,6 +456,7 @@
       * [Privileged Access](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/stacking-the-deck/privileged-access.md)
       * [Kerberos "Double Hop" Problem](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/stacking-the-deck/kerberos-double-hop-problem.md)
       * [Bleeding Edge Vulnerabilities](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/stacking-the-deck/bleeding-edge-vulnerabilities.md)
+      * [Miscellaneous Misconfigurations](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/stacking-the-deck/miscellaneous-misconfigurations.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
