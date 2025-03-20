@@ -452,6 +452,8 @@
       * [ACL Enumeration](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/an-ace-in-the-hole/acl-enumeration.md)
       * [ACL Abuse Tactics](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/an-ace-in-the-hole/acl-abuse-tactics.md)
       * [DCSync](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/an-ace-in-the-hole/dcsync.md)
+    * [Stacking The Deck](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/stacking-the-deck/README.md)
+      * [Privileged Access](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/stacking-the-deck/privileged-access.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
