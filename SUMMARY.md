@@ -466,6 +466,7 @@
       * [Attacking Domain Trusts - Cross-Forest Trust Abuse - from Linux](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/breaking-down-boundaries/attacking-domain-trusts-cross-forest-trust-abuse-from-linux.md)
     * [Defensive Considerations](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/defensive-considerations/README.md)
       * [Hardening Active Directory](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/defensive-considerations/hardening-active-directory.md)
+      * [Additional AD Auditing Techniques](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/defensive-considerations/additional-ad-auditing-techniques.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
