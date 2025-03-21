@@ -460,6 +460,7 @@
     * [Why So Trusting?](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/why-so-trusting/README.md)
       * [Domain Trusts Primer](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/why-so-trusting/domain-trusts-primer.md)
       * [Attacking Domain Trusts - Child -> Parent Trusts - from Windows](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/why-so-trusting/attacking-domain-trusts-child-greater-than-parent-trusts-from-windows.md)
+      * [Attacking Domain Trusts - Child -> Parent Trusts - from Linux](hack-the-box/pentester-path/active-directory-enumeration-and-attacks/why-so-trusting/attacking-domain-trusts-child-greater-than-parent-trusts-from-linux.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
