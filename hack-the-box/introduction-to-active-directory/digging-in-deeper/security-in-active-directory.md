@@ -4,7 +4,7 @@ As we have progressed through this module, we have looked at the many features a
 
 ### **CIA Triad**
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can help balance the scales by utilizing Microsoft's built-in features that can be enabled/tweaked to harden AD against common attacks. The list below is not exhaustive. Many other general security hardening principles must be in place within an organization to ensure a proper `defense-in-depth` approach (having an accurate asset inventory, vulnerability patches, configuration management, endpoint protection, security awareness training, network segmentation, etc.). This section can be considered the bare minimum general AD security best practices that any organization will benefit from. We will deep dive into Active Directory Defense in a later module. Let's dive in and start with a few general hardening measures for AD.
 
@@ -32,7 +32,7 @@ As mentioned earlier in the module, Group Policy Objects (GPOs) are virtual coll
 
 ### **Advanced Audit Policy**
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Update Management (SCCM/WSUS)**
 
@@ -48,7 +48,7 @@ Security groups offer an easy way to assign access to network resources. They ca
 
 ### **Built-in AD Security Groups**
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### **Account Separation**
 
