@@ -471,6 +471,8 @@
   * [Using Web Proxies](hack-the-box/pentester-path/using-web-proxies/README.md)
     * [Intro to Web Proxies](hack-the-box/pentester-path/using-web-proxies/intro-to-web-proxies.md)
     * [Setting Up](hack-the-box/pentester-path/using-web-proxies/setting-up.md)
+    * [Web Proxy](hack-the-box/pentester-path/using-web-proxies/web-proxy/README.md)
+      * [Proxy Setup](hack-the-box/pentester-path/using-web-proxies/web-proxy/proxy-setup.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
