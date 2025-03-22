@@ -478,6 +478,7 @@
       * [Automatic Modification](hack-the-box/pentester-path/using-web-proxies/web-proxy/automatic-modification.md)
       * [Repeating Requests](hack-the-box/pentester-path/using-web-proxies/web-proxy/repeating-requests.md)
       * [Encoding/Decoding](hack-the-box/pentester-path/using-web-proxies/web-proxy/encoding-decoding.md)
+      * [Proxying Tools](hack-the-box/pentester-path/using-web-proxies/web-proxy/proxying-tools.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
