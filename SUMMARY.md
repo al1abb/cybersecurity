@@ -490,6 +490,7 @@
     * [Web Fuzzing](hack-the-box/pentester-path/attacking-web-applications-with-ffuf/web-fuzzing.md)
     * [Basic Fuzzing](hack-the-box/pentester-path/attacking-web-applications-with-ffuf/basic-fuzzing/README.md)
       * [Directory Fuzzing](hack-the-box/pentester-path/attacking-web-applications-with-ffuf/basic-fuzzing/directory-fuzzing.md)
+      * [Page Fuzzing](hack-the-box/pentester-path/attacking-web-applications-with-ffuf/basic-fuzzing/page-fuzzing.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
