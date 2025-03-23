@@ -485,6 +485,7 @@
     * [Web Scanner](hack-the-box/pentester-path/using-web-proxies/web-scanner/README.md)
       * [Burp Scanner](hack-the-box/pentester-path/using-web-proxies/web-scanner/burp-scanner.md)
       * [ZAP Scanner](hack-the-box/pentester-path/using-web-proxies/web-scanner/zap-scanner.md)
+      * [Extensions](hack-the-box/pentester-path/using-web-proxies/web-scanner/extensions.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
