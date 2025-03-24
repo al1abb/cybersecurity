@@ -515,6 +515,7 @@
     * [Medusa](hack-the-box/pentester-path/login-brute-forcing/medusa/README.md)
       * [Medusa](hack-the-box/pentester-path/login-brute-forcing/medusa/medusa.md)
       * [Web Services](hack-the-box/pentester-path/login-brute-forcing/medusa/web-services.md)
+    * [Custom Wordlists, CUPP](hack-the-box/pentester-path/login-brute-forcing/custom-wordlists-cupp.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
