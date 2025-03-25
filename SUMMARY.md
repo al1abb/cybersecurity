@@ -536,6 +536,7 @@
       * [Database Enumeration](hack-the-box/pentester-path/sql-injection-fundamentals/exploitation/database-enumeration.md)
       * [Reading Files](hack-the-box/pentester-path/sql-injection-fundamentals/exploitation/reading-files.md)
       * [Writing Files](hack-the-box/pentester-path/sql-injection-fundamentals/exploitation/writing-files.md)
+    * [Mitigating SQL Injection](hack-the-box/pentester-path/sql-injection-fundamentals/mitigating-sql-injection.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
