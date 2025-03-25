@@ -528,6 +528,8 @@
       * [SQL Operators](hack-the-box/pentester-path/sql-injection-fundamentals/mysql/sql-operators.md)
     * [SQL Injections](hack-the-box/pentester-path/sql-injection-fundamentals/sql-injections/README.md)
       * [Intro to SQL Injections](hack-the-box/pentester-path/sql-injection-fundamentals/sql-injections/intro-to-sql-injections.md)
+      * [Subverting Query Logic](hack-the-box/pentester-path/sql-injection-fundamentals/sql-injections/subverting-query-logic.md)
+      * [Using Comments](hack-the-box/pentester-path/sql-injection-fundamentals/sql-injections/using-comments.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
