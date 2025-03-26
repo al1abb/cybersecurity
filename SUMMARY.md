@@ -540,6 +540,8 @@
   * [SQLMap Essentials](hack-the-box/pentester-path/sqlmap-essentials/README.md)
     * [Getting Started](hack-the-box/pentester-path/sqlmap-essentials/getting-started/README.md)
       * [SQLMap Overview](hack-the-box/pentester-path/sqlmap-essentials/getting-started/sqlmap-overview.md)
+      * [Getting Started with SQLMap](hack-the-box/pentester-path/sqlmap-essentials/getting-started/getting-started-with-sqlmap.md)
+      * [SQLMap Output Description](hack-the-box/pentester-path/sqlmap-essentials/getting-started/sqlmap-output-description.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
