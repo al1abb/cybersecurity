@@ -544,6 +544,8 @@
       * [SQLMap Output Description](hack-the-box/pentester-path/sqlmap-essentials/getting-started/sqlmap-output-description.md)
     * [Building Attacks](hack-the-box/pentester-path/sqlmap-essentials/building-attacks/README.md)
       * [Running SQLMap on an HTTP Request](hack-the-box/pentester-path/sqlmap-essentials/building-attacks/running-sqlmap-on-an-http-request.md)
+      * [Handling SQLMap Errors](hack-the-box/pentester-path/sqlmap-essentials/building-attacks/handling-sqlmap-errors.md)
+      * [Attack Tuning](hack-the-box/pentester-path/sqlmap-essentials/building-attacks/attack-tuning.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
