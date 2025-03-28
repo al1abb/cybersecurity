@@ -2,7 +2,7 @@
 
 ## Sudo CVE
 
-<figure><img src="../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption><p>sudo <a href="https://access.redhat.com/security/cve/cve-2019-14287">CVE-2019-14287</a></p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption><p>sudo <a href="https://access.redhat.com/security/cve/cve-2019-14287">CVE-2019-14287</a></p></figcaption></figure>
 
 Read more: [https://www.mend.io/blog/new-vulnerability-in-sudo-cve-2019-14287/](https://www.mend.io/blog/new-vulnerability-in-sudo-cve-2019-14287/)
 
