@@ -551,6 +551,7 @@
       * [Advanced Database Enumeration](hack-the-box/pentester-path/sqlmap-essentials/database-enumeration/advanced-database-enumeration.md)
     * [Advanced SQLMap Usage](hack-the-box/pentester-path/sqlmap-essentials/advanced-sqlmap-usage/README.md)
       * [Bypassing Web Application Protections](hack-the-box/pentester-path/sqlmap-essentials/advanced-sqlmap-usage/bypassing-web-application-protections.md)
+      * [OS Exploitation](hack-the-box/pentester-path/sqlmap-essentials/advanced-sqlmap-usage/os-exploitation.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
