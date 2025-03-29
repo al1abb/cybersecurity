@@ -563,6 +563,7 @@
       * [Defacing](hack-the-box/pentester-path/cross-site-scripting-xss/other-xss-attacks/defacing.md)
       * [Phishing](hack-the-box/pentester-path/cross-site-scripting-xss/other-xss-attacks/phishing.md)
       * [Session Hijacking](hack-the-box/pentester-path/cross-site-scripting-xss/other-xss-attacks/session-hijacking.md)
+    * [XSS Prevention](hack-the-box/pentester-path/cross-site-scripting-xss/xss-prevention.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
