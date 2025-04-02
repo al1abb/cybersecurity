@@ -566,6 +566,8 @@
     * [XSS Prevention](hack-the-box/pentester-path/cross-site-scripting-xss/xss-prevention.md)
   * [File Inclusions](hack-the-box/pentester-path/file-inclusions/README.md)
     * [Intro to File Inclusions](hack-the-box/pentester-path/file-inclusions/intro-to-file-inclusions.md)
+    * [File Disclosure](hack-the-box/pentester-path/file-inclusions/file-disclosure/README.md)
+      * [Local File Inclusion (LFI)](hack-the-box/pentester-path/file-inclusions/file-disclosure/local-file-inclusion-lfi.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
