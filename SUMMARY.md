@@ -564,6 +564,8 @@
       * [Phishing](hack-the-box/pentester-path/cross-site-scripting-xss/other-xss-attacks/phishing.md)
       * [Session Hijacking](hack-the-box/pentester-path/cross-site-scripting-xss/other-xss-attacks/session-hijacking.md)
     * [XSS Prevention](hack-the-box/pentester-path/cross-site-scripting-xss/xss-prevention.md)
+  * [File Inclusions](hack-the-box/pentester-path/file-inclusions/README.md)
+    * [Intro to File Inclusions](hack-the-box/pentester-path/file-inclusions/intro-to-file-inclusions.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
