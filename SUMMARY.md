@@ -569,6 +569,7 @@
     * [File Disclosure](hack-the-box/pentester-path/file-inclusions/file-disclosure/README.md)
       * [Local File Inclusion (LFI)](hack-the-box/pentester-path/file-inclusions/file-disclosure/local-file-inclusion-lfi.md)
       * [Basic Bypasses](hack-the-box/pentester-path/file-inclusions/file-disclosure/basic-bypasses.md)
+      * [PHP Filters](hack-the-box/pentester-path/file-inclusions/file-disclosure/php-filters.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
