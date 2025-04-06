@@ -574,6 +574,7 @@
       * [PHP Wrappers](hack-the-box/pentester-path/file-inclusions/remote-code-execution/php-wrappers.md)
       * [Remote File Inclusion (RFI)](hack-the-box/pentester-path/file-inclusions/remote-code-execution/remote-file-inclusion-rfi.md)
       * [LFI and File Uploads](hack-the-box/pentester-path/file-inclusions/remote-code-execution/lfi-and-file-uploads.md)
+      * [Log Poisoning](hack-the-box/pentester-path/file-inclusions/remote-code-execution/log-poisoning.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
