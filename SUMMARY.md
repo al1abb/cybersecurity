@@ -583,6 +583,8 @@
     * [Basic Exploitation](hack-the-box/pentester-path/file-upload-attacks/basic-exploitation/README.md)
       * [Absent Validation](hack-the-box/pentester-path/file-upload-attacks/basic-exploitation/absent-validation.md)
       * [Upload Exploitation](hack-the-box/pentester-path/file-upload-attacks/basic-exploitation/upload-exploitation.md)
+    * [Bypassing Filters](hack-the-box/pentester-path/file-upload-attacks/bypassing-filters/README.md)
+      * [Client-Side Validation](hack-the-box/pentester-path/file-upload-attacks/bypassing-filters/client-side-validation.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
