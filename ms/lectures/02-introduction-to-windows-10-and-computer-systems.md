@@ -86,7 +86,7 @@ BIOS is a firmware. Firmware is combination of hardware and software
 
 • UEFI is designed to eventually make BIOS obsolete
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>BIOS vs UEFI</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>BIOS vs UEFI</p></figcaption></figure>
 
 ## Operating Systems
 
@@ -110,7 +110,7 @@ There are 2 types of UI: CLI and GUI
 
 ### Windows 10 Editions
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Edition               | Description                                                                       | Consumer                                             | Availability                                     |
 | --------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------ |
