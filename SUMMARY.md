@@ -592,6 +592,8 @@
       * [Limited File Uploads](hack-the-box/pentester-path/file-upload-attacks/other-upload-attacks/limited-file-uploads.md)
       * [Other Upload Attacks](hack-the-box/pentester-path/file-upload-attacks/other-upload-attacks/other-upload-attacks.md)
     * [Preventing File Upload Vulnerabilities](hack-the-box/pentester-path/file-upload-attacks/preventing-file-upload-vulnerabilities.md)
+  * [Command Injections](hack-the-box/pentester-path/command-injections/README.md)
+    * [Intro to Command Injections](hack-the-box/pentester-path/command-injections/intro-to-command-injections.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
