@@ -596,6 +596,8 @@
     * [Intro to Command Injections](hack-the-box/pentester-path/command-injections/intro-to-command-injections.md)
     * [Exploitation](hack-the-box/pentester-path/command-injections/exploitation/README.md)
       * [Detection](hack-the-box/pentester-path/command-injections/exploitation/detection.md)
+      * [Injecting Commands](hack-the-box/pentester-path/command-injections/exploitation/injecting-commands.md)
+      * [Other Injection Operators](hack-the-box/pentester-path/command-injections/exploitation/other-injection-operators.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
