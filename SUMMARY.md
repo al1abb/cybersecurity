@@ -601,6 +601,7 @@
     * [Filter Evasion](hack-the-box/pentester-path/command-injections/filter-evasion/README.md)
       * [Identifying Filters](hack-the-box/pentester-path/command-injections/filter-evasion/identifying-filters.md)
       * [Bypassing Space Filters](hack-the-box/pentester-path/command-injections/filter-evasion/bypassing-space-filters.md)
+      * [Bypassing Other Blacklisted Characters](hack-the-box/pentester-path/command-injections/filter-evasion/bypassing-other-blacklisted-characters.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
