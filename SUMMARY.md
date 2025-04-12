@@ -605,6 +605,7 @@
       * [Bypassing Blacklisted Commands](hack-the-box/pentester-path/command-injections/filter-evasion/bypassing-blacklisted-commands.md)
       * [Advanced Command Obfuscation](hack-the-box/pentester-path/command-injections/filter-evasion/advanced-command-obfuscation.md)
       * [Evasion Tools](hack-the-box/pentester-path/command-injections/filter-evasion/evasion-tools.md)
+    * [Command Injection Prevention](hack-the-box/pentester-path/command-injections/command-injection-prevention.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
