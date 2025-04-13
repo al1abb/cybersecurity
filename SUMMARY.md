@@ -625,6 +625,7 @@
       * [Intro to XXE](hack-the-box/pentester-path/web-attacks/xml-external-entity-xxe-injection/intro-to-xxe.md)
       * [Local File Disclosure](hack-the-box/pentester-path/web-attacks/xml-external-entity-xxe-injection/local-file-disclosure.md)
       * [Advanced File Disclosure](hack-the-box/pentester-path/web-attacks/xml-external-entity-xxe-injection/advanced-file-disclosure.md)
+      * [Blind Data Exfiltration](hack-the-box/pentester-path/web-attacks/xml-external-entity-xxe-injection/blind-data-exfiltration.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
