@@ -611,6 +611,8 @@
     * [HTTP Verb Tampering](hack-the-box/pentester-path/web-attacks/http-verb-tampering/README.md)
       * [Intro to HTTP Verb Tampering](hack-the-box/pentester-path/web-attacks/http-verb-tampering/intro-to-http-verb-tampering.md)
       * [Bypassing Basic Authentication](hack-the-box/pentester-path/web-attacks/http-verb-tampering/bypassing-basic-authentication.md)
+      * [Bypassing Security Filters](hack-the-box/pentester-path/web-attacks/http-verb-tampering/bypassing-security-filters.md)
+      * [Verb Tampering Prevention](hack-the-box/pentester-path/web-attacks/http-verb-tampering/verb-tampering-prevention.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
