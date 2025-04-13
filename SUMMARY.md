@@ -617,6 +617,7 @@
       * [Intro to IDOR](hack-the-box/pentester-path/web-attacks/insecure-direct-object-references-idor/intro-to-idor.md)
       * [Identifying IDORs](hack-the-box/pentester-path/web-attacks/insecure-direct-object-references-idor/identifying-idors.md)
       * [Mass IDOR Enumeration](hack-the-box/pentester-path/web-attacks/insecure-direct-object-references-idor/mass-idor-enumeration.md)
+      * [Bypassing Encoded References](hack-the-box/pentester-path/web-attacks/insecure-direct-object-references-idor/bypassing-encoded-references.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
