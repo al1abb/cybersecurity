@@ -634,6 +634,7 @@
     * [Content Management Systems (CMS)](hack-the-box/pentester-path/attacking-common-applications/content-management-systems-cms/README.md)
       * [WordPress - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/content-management-systems-cms/wordpress-discovery-and-enumeration.md)
       * [Attacking WordPress](hack-the-box/pentester-path/attacking-common-applications/content-management-systems-cms/attacking-wordpress.md)
+      * [Joomla - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/content-management-systems-cms/joomla-discovery-and-enumeration.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
