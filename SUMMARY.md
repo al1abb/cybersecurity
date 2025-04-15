@@ -638,6 +638,8 @@
       * [Attacking Joomla](hack-the-box/pentester-path/attacking-common-applications/content-management-systems-cms/attacking-joomla.md)
       * [Drupal - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/content-management-systems-cms/drupal-discovery-and-enumeration.md)
       * [Attacking Drupal](hack-the-box/pentester-path/attacking-common-applications/content-management-systems-cms/attacking-drupal.md)
+    * [Servlet Containers/Software Development](hack-the-box/pentester-path/attacking-common-applications/servlet-containers-software-development/README.md)
+      * [Tomcat - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/servlet-containers-software-development/tomcat-discovery-and-enumeration.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
