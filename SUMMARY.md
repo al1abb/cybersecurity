@@ -642,6 +642,7 @@
       * [Tomcat - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/servlet-containers-software-development/tomcat-discovery-and-enumeration.md)
       * [Attacking Tomcat](hack-the-box/pentester-path/attacking-common-applications/servlet-containers-software-development/attacking-tomcat.md)
       * [Jenkins - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/servlet-containers-software-development/jenkins-discovery-and-enumeration.md)
+      * [Attacking Jenkins](hack-the-box/pentester-path/attacking-common-applications/servlet-containers-software-development/attacking-jenkins.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
