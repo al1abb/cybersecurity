@@ -646,6 +646,7 @@
     * [Infrastructure/Network Monitoring Tools](hack-the-box/pentester-path/attacking-common-applications/infrastructure-network-monitoring-tools/README.md)
       * [Splunk - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/infrastructure-network-monitoring-tools/splunk-discovery-and-enumeration.md)
       * [Attacking Splunk](hack-the-box/pentester-path/attacking-common-applications/infrastructure-network-monitoring-tools/attacking-splunk.md)
+      * [PRTG Network Monitor](hack-the-box/pentester-path/attacking-common-applications/infrastructure-network-monitoring-tools/prtg-network-monitor.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
