@@ -647,6 +647,8 @@
       * [Splunk - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/infrastructure-network-monitoring-tools/splunk-discovery-and-enumeration.md)
       * [Attacking Splunk](hack-the-box/pentester-path/attacking-common-applications/infrastructure-network-monitoring-tools/attacking-splunk.md)
       * [PRTG Network Monitor](hack-the-box/pentester-path/attacking-common-applications/infrastructure-network-monitoring-tools/prtg-network-monitor.md)
+    * [Customer Service Mgmt & Configuration Management](hack-the-box/pentester-path/attacking-common-applications/customer-service-mgmt-and-configuration-management/README.md)
+      * [osTicket](hack-the-box/pentester-path/attacking-common-applications/customer-service-mgmt-and-configuration-management/osticket.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
