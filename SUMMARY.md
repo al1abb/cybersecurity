@@ -650,6 +650,7 @@
     * [Customer Service Mgmt & Configuration Management](hack-the-box/pentester-path/attacking-common-applications/customer-service-mgmt-and-configuration-management/README.md)
       * [osTicket](hack-the-box/pentester-path/attacking-common-applications/customer-service-mgmt-and-configuration-management/osticket.md)
       * [Gitlab - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/customer-service-mgmt-and-configuration-management/gitlab-discovery-and-enumeration.md)
+      * [Attacking GitLab](hack-the-box/pentester-path/attacking-common-applications/customer-service-mgmt-and-configuration-management/attacking-gitlab.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
