@@ -656,6 +656,7 @@
       * [Attacking Common Gateway Interface (CGI) Applications - Shellshock](hack-the-box/pentester-path/attacking-common-applications/common-gateway-interfaces/attacking-common-gateway-interface-cgi-applications-shellshock.md)
     * [Thick Client Applications](hack-the-box/pentester-path/attacking-common-applications/thick-client-applications/README.md)
       * [Attacking Thick Client Applications](hack-the-box/pentester-path/attacking-common-applications/thick-client-applications/attacking-thick-client-applications.md)
+      * [Exploiting Web Vulnerabilities in Thick-Client Applications](hack-the-box/pentester-path/attacking-common-applications/thick-client-applications/exploiting-web-vulnerabilities-in-thick-client-applications.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
