@@ -661,6 +661,7 @@
       * [ColdFusion - Discovery & Enumeration](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/coldfusion-discovery-and-enumeration.md)
       * [Attacking ColdFusion](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/attacking-coldfusion.md)
       * [IIS Tilde Enumeration](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/iis-tilde-enumeration.md)
+      * [Attacking LDAP](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/attacking-ldap.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
