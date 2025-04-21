@@ -664,6 +664,7 @@
       * [Attacking LDAP](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/attacking-ldap.md)
       * [Web Mass Assignment Vulnerabilities](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/web-mass-assignment-vulnerabilities.md)
       * [Attacking Applications Connecting to Services](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/attacking-applications-connecting-to-services.md)
+      * [Other Notable Applications](hack-the-box/pentester-path/attacking-common-applications/miscellaneous-applications/other-notable-applications.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
