@@ -671,6 +671,7 @@
     * [Information Gathering](hack-the-box/pentester-path/linux-privilege-escalation/information-gathering/README.md)
       * [Environment Enumeration](hack-the-box/pentester-path/linux-privilege-escalation/information-gathering/environment-enumeration.md)
       * [Linux Services & Internals Enumeration](hack-the-box/pentester-path/linux-privilege-escalation/information-gathering/linux-services-and-internals-enumeration.md)
+      * [Credential Hunting](hack-the-box/pentester-path/linux-privilege-escalation/information-gathering/credential-hunting.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
