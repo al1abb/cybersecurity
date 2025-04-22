@@ -668,6 +668,8 @@
     * [Application Hardening](hack-the-box/pentester-path/attacking-common-applications/application-hardening.md)
   * [Linux Privilege Escalation](hack-the-box/pentester-path/linux-privilege-escalation/README.md)
     * [Introduction to Linux Privilege Escalation](hack-the-box/pentester-path/linux-privilege-escalation/introduction-to-linux-privilege-escalation.md)
+    * [Information Gathering](hack-the-box/pentester-path/linux-privilege-escalation/information-gathering/README.md)
+      * [Environment Enumeration](hack-the-box/pentester-path/linux-privilege-escalation/information-gathering/environment-enumeration.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
