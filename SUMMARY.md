@@ -684,6 +684,7 @@
     * [Service-based Privilege Escalation](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/README.md)
       * [Vulnerable Services](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/vulnerable-services.md)
       * [Cron Job Abuse](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/cron-job-abuse.md)
+      * [Containers / LXD](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/containers-lxd.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
