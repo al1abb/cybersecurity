@@ -681,6 +681,8 @@
       * [Sudo Rights Abuse](hack-the-box/pentester-path/linux-privilege-escalation/permissions-based-privilege-escalation/sudo-rights-abuse.md)
       * [Privileged Groups](hack-the-box/pentester-path/linux-privilege-escalation/permissions-based-privilege-escalation/privileged-groups.md)
       * [Capabilities](hack-the-box/pentester-path/linux-privilege-escalation/permissions-based-privilege-escalation/capabilities.md)
+    * [Service-based Privilege Escalation](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/README.md)
+      * [Vulnerable Services](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/vulnerable-services.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
