@@ -676,6 +676,8 @@
       * [Path Abuse](hack-the-box/pentester-path/linux-privilege-escalation/environment-based-privilege-escalation/path-abuse.md)
       * [Wildcard Abuse](hack-the-box/pentester-path/linux-privilege-escalation/environment-based-privilege-escalation/wildcard-abuse.md)
       * [Escaping Restricted Shells](hack-the-box/pentester-path/linux-privilege-escalation/environment-based-privilege-escalation/escaping-restricted-shells.md)
+    * [Permissions-based Privilege Escalation](hack-the-box/pentester-path/linux-privilege-escalation/permissions-based-privilege-escalation/README.md)
+      * [Special Permissions](hack-the-box/pentester-path/linux-privilege-escalation/permissions-based-privilege-escalation/special-permissions.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
