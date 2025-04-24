@@ -692,6 +692,7 @@
     * [Linux Internals-based Privilege Escalation](hack-the-box/pentester-path/linux-privilege-escalation/linux-internals-based-privilege-escalation/README.md)
       * [Kernel Exploits](hack-the-box/pentester-path/linux-privilege-escalation/linux-internals-based-privilege-escalation/kernel-exploits.md)
       * [Shared Libraries](hack-the-box/pentester-path/linux-privilege-escalation/linux-internals-based-privilege-escalation/shared-libraries.md)
+      * [Shared Object Hijacking](hack-the-box/pentester-path/linux-privilege-escalation/linux-internals-based-privilege-escalation/shared-object-hijacking.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
