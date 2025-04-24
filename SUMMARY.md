@@ -687,6 +687,7 @@
       * [Containers / LXD](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/containers-lxd.md)
       * [Docker](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/docker.md)
       * [Kubernetes](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/kubernetes.md)
+      * [Logrotate](hack-the-box/pentester-path/linux-privilege-escalation/service-based-privilege-escalation/logrotate.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
