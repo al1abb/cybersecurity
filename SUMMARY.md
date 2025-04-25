@@ -700,6 +700,8 @@
       * [Dirty Pipe](hack-the-box/pentester-path/linux-privilege-escalation/recent-0-days/dirty-pipe.md)
       * [Netfilter](hack-the-box/pentester-path/linux-privilege-escalation/recent-0-days/netfilter.md)
     * [Linux Hardening](hack-the-box/pentester-path/linux-privilege-escalation/linux-hardening.md)
+  * [Windows Privilege Escalation](hack-the-box/pentester-path/windows-privilege-escalation/README.md)
+    * [Introduction to Windows Privilege Escalation](hack-the-box/pentester-path/windows-privilege-escalation/introduction-to-windows-privilege-escalation.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
