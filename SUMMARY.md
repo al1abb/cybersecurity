@@ -703,6 +703,8 @@
   * [Windows Privilege Escalation](hack-the-box/pentester-path/windows-privilege-escalation/README.md)
     * [Introduction to Windows Privilege Escalation](hack-the-box/pentester-path/windows-privilege-escalation/introduction-to-windows-privilege-escalation.md)
     * [Useful Tools](hack-the-box/pentester-path/windows-privilege-escalation/useful-tools.md)
+    * [Getting the Lay of the Land](hack-the-box/pentester-path/windows-privilege-escalation/getting-the-lay-of-the-land/README.md)
+      * [Situational Awareness](hack-the-box/pentester-path/windows-privilege-escalation/getting-the-lay-of-the-land/situational-awareness.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
