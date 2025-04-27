@@ -710,6 +710,7 @@
     * [Windows User Privileges](hack-the-box/pentester-path/windows-privilege-escalation/windows-user-privileges/README.md)
       * [Windows Privileges Overview](hack-the-box/pentester-path/windows-privilege-escalation/windows-user-privileges/windows-privileges-overview.md)
       * [SeImpersonate and SeAssignPrimaryToken](hack-the-box/pentester-path/windows-privilege-escalation/windows-user-privileges/seimpersonate-and-seassignprimarytoken.md)
+      * [SeDebugPrivilege](hack-the-box/pentester-path/windows-privilege-escalation/windows-user-privileges/sedebugprivilege.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
