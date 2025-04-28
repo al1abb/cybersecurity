@@ -714,6 +714,7 @@
       * [SeTakeOwnershipPrivilege](hack-the-box/pentester-path/windows-privilege-escalation/windows-user-privileges/setakeownershipprivilege.md)
     * [Windows Group Privileges](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/README.md)
       * [Windows Built-in Groups](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/windows-built-in-groups.md)
+      * [Event Log Readers](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/event-log-readers.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
