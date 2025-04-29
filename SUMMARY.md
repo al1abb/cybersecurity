@@ -717,6 +717,7 @@
       * [Event Log Readers](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/event-log-readers.md)
       * [DnsAdmins](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/dnsadmins.md)
       * [Hyper-V Administrators](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/hyper-v-administrators.md)
+      * [Print Operators](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/print-operators.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
