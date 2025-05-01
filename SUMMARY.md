@@ -721,6 +721,7 @@
       * [Server Operators](hack-the-box/pentester-path/windows-privilege-escalation/windows-group-privileges/server-operators.md)
     * [Attacking the OS](hack-the-box/pentester-path/windows-privilege-escalation/attacking-the-os/README.md)
       * [User Account Control](hack-the-box/pentester-path/windows-privilege-escalation/attacking-the-os/user-account-control.md)
+      * [Weak Permissions](hack-the-box/pentester-path/windows-privilege-escalation/attacking-the-os/weak-permissions.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
