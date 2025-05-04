@@ -725,6 +725,8 @@
       * [Kernel Exploits](hack-the-box/pentester-path/windows-privilege-escalation/attacking-the-os/kernel-exploits.md)
       * [Vulnerable Services](hack-the-box/pentester-path/windows-privilege-escalation/attacking-the-os/vulnerable-services.md)
       * [DLL Injection](hack-the-box/pentester-path/windows-privilege-escalation/attacking-the-os/dll-injection.md)
+    * [Credential Theft](hack-the-box/pentester-path/windows-privilege-escalation/credential-theft/README.md)
+      * [Credential Hunting](hack-the-box/pentester-path/windows-privilege-escalation/credential-theft/credential-hunting.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
