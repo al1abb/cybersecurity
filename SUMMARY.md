@@ -729,6 +729,7 @@
       * [Credential Hunting](hack-the-box/pentester-path/windows-privilege-escalation/credential-theft/credential-hunting.md)
       * [Other Files](hack-the-box/pentester-path/windows-privilege-escalation/credential-theft/other-files.md)
       * [Further Credential Theft](hack-the-box/pentester-path/windows-privilege-escalation/credential-theft/further-credential-theft.md)
+    * [Citrix Breakout](hack-the-box/pentester-path/windows-privilege-escalation/citrix-breakout.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
