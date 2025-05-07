@@ -733,6 +733,7 @@
     * [Additional Techniques](hack-the-box/pentester-path/windows-privilege-escalation/additional-techniques/README.md)
       * [Interacting with Users](hack-the-box/pentester-path/windows-privilege-escalation/additional-techniques/interacting-with-users.md)
       * [Pillaging](hack-the-box/pentester-path/windows-privilege-escalation/additional-techniques/pillaging.md)
+      * [Miscellaneous Techniques](hack-the-box/pentester-path/windows-privilege-escalation/additional-techniques/miscellaneous-techniques.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
