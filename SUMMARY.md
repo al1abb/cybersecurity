@@ -734,6 +734,8 @@
       * [Interacting with Users](hack-the-box/pentester-path/windows-privilege-escalation/additional-techniques/interacting-with-users.md)
       * [Pillaging](hack-the-box/pentester-path/windows-privilege-escalation/additional-techniques/pillaging.md)
       * [Miscellaneous Techniques](hack-the-box/pentester-path/windows-privilege-escalation/additional-techniques/miscellaneous-techniques.md)
+    * [Dealing with End of Life Systems](hack-the-box/pentester-path/windows-privilege-escalation/dealing-with-end-of-life-systems/README.md)
+      * [Legacy Operating Systems](hack-the-box/pentester-path/windows-privilege-escalation/dealing-with-end-of-life-systems/legacy-operating-systems.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
