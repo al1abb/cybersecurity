@@ -739,6 +739,8 @@
       * [Windows Server](hack-the-box/pentester-path/windows-privilege-escalation/dealing-with-end-of-life-systems/windows-server.md)
       * [Windows Desktop Versions](hack-the-box/pentester-path/windows-privilege-escalation/dealing-with-end-of-life-systems/windows-desktop-versions.md)
     * [Windows Hardening](hack-the-box/pentester-path/windows-privilege-escalation/windows-hardening.md)
+  * [Documentation & Reporting](hack-the-box/pentester-path/documentation-and-reporting/README.md)
+    * [Introduction to Documentation and Reporting](hack-the-box/pentester-path/documentation-and-reporting/introduction-to-documentation-and-reporting.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
