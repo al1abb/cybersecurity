@@ -741,6 +741,8 @@
     * [Windows Hardening](hack-the-box/pentester-path/windows-privilege-escalation/windows-hardening.md)
   * [Documentation & Reporting](hack-the-box/pentester-path/documentation-and-reporting/README.md)
     * [Introduction to Documentation and Reporting](hack-the-box/pentester-path/documentation-and-reporting/introduction-to-documentation-and-reporting.md)
+    * [Preparation](hack-the-box/pentester-path/documentation-and-reporting/preparation/README.md)
+      * [Notetaking & Organization](hack-the-box/pentester-path/documentation-and-reporting/preparation/notetaking-and-organization.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
