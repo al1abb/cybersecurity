@@ -748,6 +748,7 @@
     * [Reporting](hack-the-box/pentester-path/documentation-and-reporting/reporting/README.md)
       * [How to Write Up a Finding](hack-the-box/pentester-path/documentation-and-reporting/reporting/how-to-write-up-a-finding.md)
       * [Reporting Tips and Tricks](hack-the-box/pentester-path/documentation-and-reporting/reporting/reporting-tips-and-tricks.md)
+    * [Beyond this Module - Documentation & Reporting](hack-the-box/pentester-path/documentation-and-reporting/beyond-this-module-documentation-and-reporting.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
