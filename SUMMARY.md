@@ -752,6 +752,8 @@
   * [Attacking Enterprise Networks](hack-the-box/pentester-path/attacking-enterprise-networks/README.md)
     * [Intro to Attacking Enterprise Networks](hack-the-box/pentester-path/attacking-enterprise-networks/intro-to-attacking-enterprise-networks.md)
     * [Scenario & Kickoff](hack-the-box/pentester-path/attacking-enterprise-networks/scenario-and-kickoff.md)
+    * [External Testing](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/README.md)
+      * [External Information Gathering](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/external-information-gathering.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
