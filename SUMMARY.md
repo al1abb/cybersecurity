@@ -754,6 +754,7 @@
     * [Scenario & Kickoff](hack-the-box/pentester-path/attacking-enterprise-networks/scenario-and-kickoff.md)
     * [External Testing](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/README.md)
       * [External Information Gathering](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/external-information-gathering.md)
+      * [Service Enumeration & Exploitation](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/service-enumeration-and-exploitation.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
