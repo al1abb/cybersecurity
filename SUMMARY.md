@@ -757,6 +757,8 @@
       * [Service Enumeration & Exploitation](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/service-enumeration-and-exploitation.md)
       * [Web Enumeration & Exploitation](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/web-enumeration-and-exploitation.md)
       * [Initial Access](hack-the-box/pentester-path/attacking-enterprise-networks/external-testing/initial-access.md)
+    * [Internal Testing](hack-the-box/pentester-path/attacking-enterprise-networks/internal-testing/README.md)
+      * [Post-Exploitation Persistence](hack-the-box/pentester-path/attacking-enterprise-networks/internal-testing/post-exploitation-persistence.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
