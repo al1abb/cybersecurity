@@ -761,6 +761,8 @@
       * [Post-Exploitation Persistence](hack-the-box/pentester-path/attacking-enterprise-networks/internal-testing/post-exploitation-persistence.md)
       * [Internal Information Gathering](hack-the-box/pentester-path/attacking-enterprise-networks/internal-testing/internal-information-gathering.md)
       * [Exploitation & Privilege Escalation](hack-the-box/pentester-path/attacking-enterprise-networks/internal-testing/exploitation-and-privilege-escalation.md)
+    * [Lateral Movement & Privilege Escalation](hack-the-box/pentester-path/attacking-enterprise-networks/lateral-movement-and-privilege-escalation/README.md)
+      * [Lateral Movement](hack-the-box/pentester-path/attacking-enterprise-networks/lateral-movement-and-privilege-escalation/lateral-movement.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
