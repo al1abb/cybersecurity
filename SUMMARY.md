@@ -764,6 +764,7 @@
     * [Lateral Movement & Privilege Escalation](hack-the-box/pentester-path/attacking-enterprise-networks/lateral-movement-and-privilege-escalation/README.md)
       * [Lateral Movement](hack-the-box/pentester-path/attacking-enterprise-networks/lateral-movement-and-privilege-escalation/lateral-movement.md)
       * [Active Directory Compromise](hack-the-box/pentester-path/attacking-enterprise-networks/lateral-movement-and-privilege-escalation/active-directory-compromise.md)
+      * [Post-Exploitation](hack-the-box/pentester-path/attacking-enterprise-networks/lateral-movement-and-privilege-escalation/post-exploitation.md)
 * [Windows Fundamentals](hack-the-box/windows-fundamentals/README.md)
   * [Introduction to Windows](hack-the-box/windows-fundamentals/introduction-to-windows.md)
   * [Core of the Operating System](hack-the-box/windows-fundamentals/core-of-the-operating-system/README.md)
