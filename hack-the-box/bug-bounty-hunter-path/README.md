@@ -1,0 +1,2 @@
+# Bug Bounty Hunter Path
+
