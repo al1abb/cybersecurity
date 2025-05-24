@@ -772,6 +772,8 @@
   * [Web Requests](hack-the-box/bug-bounty-hunter-path/web-requests/README.md)
     * [HTTP Fundamentals](hack-the-box/bug-bounty-hunter-path/web-requests/http-fundamentals/README.md)
       * [HyperText Transfer Protocol (HTTP)](hack-the-box/bug-bounty-hunter-path/web-requests/http-fundamentals/hypertext-transfer-protocol-http.md)
+      * [Hypertext Transfer Protocol Secure (HTTPS)](hack-the-box/bug-bounty-hunter-path/web-requests/http-fundamentals/hypertext-transfer-protocol-secure-https.md)
+      * [HTTP Requests and Responses](hack-the-box/bug-bounty-hunter-path/web-requests/http-fundamentals/http-requests-and-responses.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
