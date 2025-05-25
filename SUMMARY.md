@@ -777,6 +777,8 @@
       * [HTTP Headers](hack-the-box/bug-bounty-hunter-path/web-requests/http-fundamentals/http-headers.md)
     * [HTTP Methods](hack-the-box/bug-bounty-hunter-path/web-requests/http-methods/README.md)
       * [HTTP Methods and Codes](hack-the-box/bug-bounty-hunter-path/web-requests/http-methods/http-methods-and-codes.md)
+      * [GET](hack-the-box/bug-bounty-hunter-path/web-requests/http-methods/get.md)
+      * [POST](hack-the-box/bug-bounty-hunter-path/web-requests/http-methods/post.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
