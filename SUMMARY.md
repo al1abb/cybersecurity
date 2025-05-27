@@ -783,6 +783,7 @@
   * [Introduction to Web Applications](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/README.md)
     * [Intro](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/intro/README.md)
       * [Introduction](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/intro/introduction.md)
+      * [Web Application Layout](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/intro/web-application-layout.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
