@@ -797,6 +797,8 @@
     * [Back End Components](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-components/README.md)
       * [Back End Servers](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-components/back-end-servers.md)
       * [Web Servers](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-components/web-servers.md)
+      * [Databases](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-components/databases.md)
+      * [Development Frameworks & APIs](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-components/development-frameworks-and-apis.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
