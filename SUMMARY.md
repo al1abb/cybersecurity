@@ -791,6 +791,7 @@
       * [JavaScript](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/front-end-components/javascript.md)
     * [Front End Vulnerabilities](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/front-end-vulnerabilities/README.md)
       * [Sensitive Data Exposure](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/front-end-vulnerabilities/sensitive-data-exposure.md)
+      * [HTML Injection](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/front-end-vulnerabilities/html-injection.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
