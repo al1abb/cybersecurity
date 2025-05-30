@@ -802,6 +802,7 @@
     * [Back End Vulnerabilities](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-vulnerabilities/README.md)
       * [Common Web Vulnerabilities](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-vulnerabilities/common-web-vulnerabilities.md)
       * [Public Vulnerabilities](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/back-end-vulnerabilities/public-vulnerabilities.md)
+    * [Next Steps](hack-the-box/bug-bounty-hunter-path/introduction-to-web-applications/next-steps.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
