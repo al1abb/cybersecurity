@@ -823,7 +823,7 @@
   * [SQLMap Essentials](https://ali-10.gitbook.io/cybersecurity/hack-the-box/pentester-path/sqlmap-essentials)
   * [Command Injections](https://ali-10.gitbook.io/cybersecurity/hack-the-box/pentester-path/command-injections)
   * [File Upload Attacks](https://ali-10.gitbook.io/cybersecurity/hack-the-box/pentester-path/file-upload-attacks)
-  * [Server-side Attacks](hack-the-box/bug-bounty-hunter-path/server-side-attacks/README.md)
+  * [Server-side Attacks](hack-the-box/bug-bounty-hunter-path/server-side-attacks.md)
     * [Introduction to Server-side Attacks](hack-the-box/bug-bounty-hunter-path/server-side-attacks/introduction-to-server-side-attacks.md)
     * [SSRF](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssrf/README.md)
       * [Introduction to SSRF](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssrf/introduction-to-ssrf.md)

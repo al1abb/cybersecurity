@@ -8,7 +8,7 @@ So far, we have been able to make our code obfuscated and more difficult to read
 
 Let's visit [https://obfuscator.io](https://obfuscator.io/). Before we click `obfuscate`, we will change `String Array Encoding` to `Base64`, as seen below:
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 Now, we can paste our code and click `obfuscate`:
 
@@ -36,7 +36,7 @@ Now we should have a clear idea of how code obfuscation works. There are still m
 
 We can still run this code, and it would still perform its original function:
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The above code was snipped as the full code is too long, but the full code should successfully run.
