@@ -828,6 +828,7 @@
     * [SSRF](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssrf/README.md)
       * [Introduction to SSRF](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssrf/introduction-to-ssrf.md)
       * [Identifying SSRF](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssrf/identifying-ssrf.md)
+      * [Exploiting SSRF](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssrf/exploiting-ssrf.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
