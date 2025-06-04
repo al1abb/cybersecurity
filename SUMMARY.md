@@ -835,6 +835,7 @@
       * [Template Engines](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssti/template-engines.md)
       * [Introduction to SSTI](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssti/introduction-to-ssti.md)
       * [Identifying SSTI](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssti/identifying-ssti.md)
+      * [Exploiting SSTI - Jinja2](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssti/exploiting-ssti-jinja2.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
