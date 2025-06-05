@@ -838,6 +838,8 @@
       * [Exploiting SSTI - Jinja2](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssti/exploiting-ssti-jinja2.md)
       * [Exploiting SSTI - Twig](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssti/exploiting-ssti-twig.md)
       * [SSTI Tools of the Trade & Preventing SSTI](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssti/ssti-tools-of-the-trade-and-preventing-ssti.md)
+    * [SSI Injection](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssi-injection/README.md)
+      * [Introduction to SSI Injection](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssi-injection/introduction-to-ssi-injection.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
