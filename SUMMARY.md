@@ -844,6 +844,7 @@
       * [Preventing SSI Injection](hack-the-box/bug-bounty-hunter-path/server-side-attacks/ssi-injection/preventing-ssi-injection.md)
     * [XSLT Injection](hack-the-box/bug-bounty-hunter-path/server-side-attacks/xslt-injection/README.md)
       * [Intro to XSLT Injection](hack-the-box/bug-bounty-hunter-path/server-side-attacks/xslt-injection/intro-to-xslt-injection.md)
+      * [Exploiting XSLT Injection](hack-the-box/bug-bounty-hunter-path/server-side-attacks/xslt-injection/exploiting-xslt-injection.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
