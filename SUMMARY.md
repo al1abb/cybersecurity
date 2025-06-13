@@ -217,6 +217,7 @@
 * [Extra questions](interview-prep/extra-questions.md)
 * [DNS Steps](interview-prep/dns-steps.md)
 * [OSI Layers: Youtube Example](interview-prep/osi-layers-youtube-example.md)
+* [SPF, DKIM, DMARC](interview-prep/spf-dkim-dmarc.md)
 * [Interview Questions](interview-prep/interview-questions.md)
 * [FINAL INTERVIEW PREP](interview-prep/final-interview-prep.md)
 * [FINAL INTERVIEW QUESTIONS](interview-prep/final-interview-questions.md)
