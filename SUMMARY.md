@@ -859,6 +859,7 @@
       * [Weak Brute-Force Protection](hack-the-box/bug-bounty-hunter-path/broken-authentication/brute-force-attacks/weak-brute-force-protection.md)
     * [Password Attacks](hack-the-box/bug-bounty-hunter-path/broken-authentication/password-attacks/README.md)
       * [Default Credentials](hack-the-box/bug-bounty-hunter-path/broken-authentication/password-attacks/default-credentials.md)
+      * [Vulnerable Password Reset](hack-the-box/bug-bounty-hunter-path/broken-authentication/password-attacks/vulnerable-password-reset.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
