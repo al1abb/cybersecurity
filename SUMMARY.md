@@ -872,6 +872,7 @@
     * [Introduction to Sessions](hack-the-box/bug-bounty-hunter-path/session-security/introduction-to-sessions.md)
     * [Session Attacks](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/README.md)
       * [Session Hijacking](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/session-hijacking.md)
+      * [Session Fixation](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/session-fixation.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
