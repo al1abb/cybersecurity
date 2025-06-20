@@ -865,6 +865,7 @@
       * [Authentication Bypass via Parameter Modification](hack-the-box/bug-bounty-hunter-path/broken-authentication/authentication-bypasses/authentication-bypass-via-parameter-modification.md)
     * [Session Attacks](hack-the-box/bug-bounty-hunter-path/broken-authentication/session-attacks/README.md)
       * [Attacking Session Tokens](hack-the-box/bug-bounty-hunter-path/broken-authentication/session-attacks/attacking-session-tokens.md)
+      * [Further Session Attacks](hack-the-box/bug-bounty-hunter-path/broken-authentication/session-attacks/further-session-attacks.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
