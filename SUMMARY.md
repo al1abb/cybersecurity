@@ -875,6 +875,7 @@
       * [Session Fixation](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/session-fixation.md)
       * [Obtaining Session Identifiers without User Interaction](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/obtaining-session-identifiers-without-user-interaction.md)
       * [Cross-Site Scripting (XSS)](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/cross-site-scripting-xss.md)
+      * [Cross-Site Request Forgery (CSRF or XSRF)](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/cross-site-request-forgery-csrf-or-xsrf.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
