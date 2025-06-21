@@ -892,6 +892,7 @@
       * [Attacking WordPress 'xmlrpc.php'](hack-the-box/bug-bounty-hunter-path/web-service-and-api-attacks/web-service-attacks/attacking-wordpress-xmlrpc.php.md)
     * [API Attacks](hack-the-box/bug-bounty-hunter-path/web-service-and-api-attacks/api-attacks/README.md)
       * [Information Disclosure (with a twist of SQLi)](hack-the-box/bug-bounty-hunter-path/web-service-and-api-attacks/api-attacks/information-disclosure-with-a-twist-of-sqli.md)
+      * [Arbitrary File Upload](hack-the-box/bug-bounty-hunter-path/web-service-and-api-attacks/api-attacks/arbitrary-file-upload.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
