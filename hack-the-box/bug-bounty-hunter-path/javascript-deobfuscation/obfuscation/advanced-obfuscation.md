@@ -36,7 +36,7 @@ Now we should have a clear idea of how code obfuscation works. There are still m
 
 We can still run this code, and it would still perform its original function:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Note:** The above code was snipped as the full code is too long, but the full code should successfully run.
