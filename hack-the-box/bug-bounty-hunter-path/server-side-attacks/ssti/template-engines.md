@@ -25,11 +25,9 @@ As we can see, the template engine simply replaces the variable in the template 
 While the above is a simplistic example, many modern template engines support more complex operations typically provided by programming languages, such as conditions and loops. For instance, consider the following template string:
 
 ```jinja2
-{% raw %}
 {% for name in names %}
 Hello {{ name }}!
 {% endfor %}
-{% endraw %}
 ```
 
 The template contains a `for-loop` that loops over all elements in a variable `names`. As such, we need to provide the rendering function with an object in the `names` variable that it can iterate over. For instance, if we pass the function with a list such as `names=["vautia", "21y4d", "Pedant"]`, the template engine will generate the following string:
