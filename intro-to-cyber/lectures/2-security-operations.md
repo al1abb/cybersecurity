@@ -48,7 +48,7 @@ Kaspersky Lab on RSA hack
 
 • In other words, what is there to lose?
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Asset Criticality</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Asset Criticality</p></figcaption></figure>
 
 ## CIA Triad
 
@@ -102,7 +102,7 @@ Kaspersky Lab on RSA hack
 
 • **Every layer must use different strategies and mitigations.**
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Controls Classification
 
