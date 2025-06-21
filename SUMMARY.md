@@ -901,6 +901,7 @@
   * [Hacking WordPress](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/README.md)
     * [Intro](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/intro.md)
     * [WordPress Structure](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/wordpress-structure.md)
+    * [WordPress User Roles](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/wordpress-user-roles.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
