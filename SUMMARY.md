@@ -879,6 +879,8 @@
       * [Cross-Site Request Forgery (GET-based)](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/cross-site-request-forgery-get-based.md)
       * [Cross-Site Request Forgery (POST-based)](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/cross-site-request-forgery-post-based.md)
       * [XSS & CSRF Chaining](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/xss-and-csrf-chaining.md)
+      * [Exploiting Weak CSRF Tokens](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/exploiting-weak-csrf-tokens.md)
+      * [Additional CSRF Protection Bypasses](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/additional-csrf-protection-bypasses.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
