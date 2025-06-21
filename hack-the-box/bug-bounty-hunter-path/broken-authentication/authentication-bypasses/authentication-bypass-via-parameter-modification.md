@@ -10,7 +10,7 @@ This type of vulnerability is closely related to authorization issues such as `I
 
 Let us take a look at our target web application. This time, we are provided with credentials for the user `htb-stdnt`. After logging in, we are redirected to `/admin.php?user_id=183`:
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In our web browser, we can see that we seem to be lacking privileges, as we can only see a part of the available data:
 

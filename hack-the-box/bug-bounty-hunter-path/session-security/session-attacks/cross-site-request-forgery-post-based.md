@@ -15,7 +15,7 @@ After authenticating as a user, you'll notice that you can delete your account. 
 
 Click on the "Delete" button. You will get redirected to `/app/delete/<your-email>`
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Notice that the email is reflected on the page. Let us try inputting some HTML into the _email_ value, such as:
 
@@ -23,7 +23,7 @@ Notice that the email is reflected on the page. Let us try inputting some HTML i
 <h1>h1<u>underline<%2fu><%2fh1>
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you inspect the source (`Ctrl+U`), you will notice that our injection happens before a `single quote`. We can abuse this to leak the CSRF-Token.
 
