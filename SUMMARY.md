@@ -883,6 +883,8 @@
       * [Additional CSRF Protection Bypasses](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/additional-csrf-protection-bypasses.md)
       * [Open Redirect](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/open-redirect.md)
       * [Remediation Advice](hack-the-box/bug-bounty-hunter-path/session-security/session-attacks/remediation-advice.md)
+  * [Web Service & API Attacks](hack-the-box/bug-bounty-hunter-path/web-service-and-api-attacks/README.md)
+    * [Introduction to Web Services and APIs](hack-the-box/bug-bounty-hunter-path/web-service-and-api-attacks/introduction-to-web-services-and-apis.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
