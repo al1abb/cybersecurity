@@ -8,7 +8,7 @@ Suppose we are having a better look at the API of the previous section, `http://
 
 Let us first interact with it through the browser by requesting the below.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption><p>http://TARGET_IP:3000/api/download/test_value</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>http://TARGET_IP:3000/api/download/test_value</p></figcaption></figure>
 
 `test_value` is reflected in the response.
 
