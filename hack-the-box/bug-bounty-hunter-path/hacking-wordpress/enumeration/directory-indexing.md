@@ -8,7 +8,7 @@ The following example shows a disabled plugin.
 
 If we browse to the plugins directory, we can see that we still have access to the `Mail Masta` plugin.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>http:///wp-content/plugins/mail-masta/</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>http:///wp-content/plugins/mail-masta/</p></figcaption></figure>
 
 We can also view the directory listing using cURL and convert the HTML output to a nice readable format using `html2text`.
 
