@@ -18,7 +18,7 @@ Navigate to `http://xss.htb.net` and log in to the application using the credent
 
 This is an account that we created to look at the application's functionality. It looks like we can edit the input fields to update our email, phone number, and country.
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 In such cases, it is best to use payloads with event handlers like `onload` or `onerror` since they fire up automatically and also prove the highest impact on stored XSS cases. Of course, if they're blocked, you'll have to use something else like `onmouseover`.
 

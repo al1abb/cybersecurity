@@ -26,7 +26,7 @@ Let us now see how we can use the [CVSS v3.1 Calculator](https://www.first.org/c
 
 We will focus on the `Base Score` area only.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### **Attack Vector**
 
