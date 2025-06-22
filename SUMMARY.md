@@ -915,6 +915,7 @@
       * [Attacking WordPress Users](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/exploitation/attacking-wordpress-users.md)
       * [Remote Code Execution (RCE) via the Theme Editor](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/exploitation/remote-code-execution-rce-via-the-theme-editor.md)
       * [Attacking WordPress with Metasploit](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/exploitation/attacking-wordpress-with-metasploit.md)
+    * [WordPress Hardening](hack-the-box/bug-bounty-hunter-path/hacking-wordpress/wordpress-hardening.md)
 * [Extra Modules](hack-the-box/extra-modules/README.md)
   * [Windows Fundamentals](hack-the-box/extra-modules/windows-fundamentals/README.md)
     * [Introduction to Windows](hack-the-box/extra-modules/windows-fundamentals/introduction-to-windows.md)
