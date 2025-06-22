@@ -4,7 +4,7 @@ Active plugins should not be our only area of focus when assessing a WordPress w
 
 The following example shows a disabled plugin.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 If we browse to the plugins directory, we can see that we still have access to the `Mail Masta` plugin.
 

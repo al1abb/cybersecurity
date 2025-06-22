@@ -10,7 +10,7 @@ Suppose a session token does not provide sufficient randomness and is cryptograp
 
 For instance, consider the following web application that assigns a four-character session token:
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 As we have seen in previous sections, a four-character string can easily be brute-forced. Thus, we can use the techniques and commands discussed in the `Brute-Force Attacks` sections to brute-force all possible session tokens and hijack all active sessions.
 
@@ -52,7 +52,7 @@ In a more realistic scenario, the session token does provide sufficient randomne
 
 The simplest form of predictable session tokens contains encoded data we can tamper with. For instance, consider the following session token:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 While this session token might seem random at first, a simple analysis reveals that it is base64-encoded data:
 
@@ -72,7 +72,7 @@ dXNlcj1odGItc3RkbnQ7cm9sZT1hZG1pbg==
 
 We can send this cookie to the web application to obtain administrative access:
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The same exploit works for cookies containing differently encoded data. We should also keep an eye out for data in hex-encoding or URL-encoding. For instance, a session token containing hex-encoded data might look like this:
 

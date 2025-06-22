@@ -8,7 +8,7 @@ Suppose we are having a better look at the API of the previous section, `http://
 
 Let us first interact with it through the browser by requesting the below.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>http://TARGET_IP:3000/api/download/test_value</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>http://TARGET_IP:3000/api/download/test_value</p></figcaption></figure>
 
 `test_value` is reflected in the response.
 
@@ -18,7 +18,7 @@ Let us see what happens when we enter a payload such as the below (instead of _t
 <script>alert(document.domain)</script>
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 It looks like the application is encoding the submitted payload. We can try URL-encoding our payload once and submitting it again, as follows.
 
@@ -26,6 +26,6 @@ It looks like the application is encoding the submitted payload. We can try URL-
 %3Cscript%3Ealert%28document.domain%29%3C%2Fscript%3E
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now our submitted JavaScript payload is evaluated successfully. The API endpoint is vulnerable to XSS!
