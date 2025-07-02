@@ -26,7 +26,7 @@ To obtain a list of valid users, an attacker typically requires a wordlist of us
 
 When we attempt to log in to the lab with an invalid username such as `abc`, we can see the following error message:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 On the other hand, when we attempt to log in with a registered user such as `htb-stdnt` and an invalid password, we can see a different error:
 

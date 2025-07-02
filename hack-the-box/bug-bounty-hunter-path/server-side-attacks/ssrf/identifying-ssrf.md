@@ -8,7 +8,7 @@ After discussing the basics of SSRF vulnerabilities, let us jump right into an e
 
 Looking at the web application, we are greeted with some generic text as well as functionality to schedule appointments:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 After checking the availability of a date, we can observe the following request in Burp:
 

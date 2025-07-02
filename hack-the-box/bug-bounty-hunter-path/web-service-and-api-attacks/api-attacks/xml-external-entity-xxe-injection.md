@@ -20,7 +20,7 @@ Activate burp suite's proxy (_Intercept On_) and configure your browser to go th
 
 Now let us try authenticating. We should see the below inside Burp Suite's proxy.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ```http
 POST /api/login/ HTTP/1.1

@@ -52,7 +52,7 @@ In a more realistic scenario, the session token does provide sufficient randomne
 
 The simplest form of predictable session tokens contains encoded data we can tamper with. For instance, consider the following session token:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 While this session token might seem random at first, a simple analysis reveals that it is base64-encoded data:
 
