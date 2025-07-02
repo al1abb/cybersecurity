@@ -21,7 +21,7 @@ Activate burp suite's proxy (_Intercept On_) and configure your browser to go th
 
 You should see the below.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The CSRF token is included in the GET request.
 
