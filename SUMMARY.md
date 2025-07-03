@@ -178,6 +178,8 @@
     * [Extracting Passwords from Linux Systems](hack-the-box/pentester-path/password-attacks/extracting-passwords-from-linux-systems/README.md)
       * [Passwd, Shadow & Opasswd. Linux Authentication Process](hack-the-box/pentester-path/password-attacks/extracting-passwords-from-linux-systems/passwd-shadow-and-opasswd.-linux-authentication-process.md)
       * [Credential Hunting in Linux](hack-the-box/pentester-path/password-attacks/extracting-passwords-from-linux-systems/credential-hunting-in-linux.md)
+    * [Extracting Passwords from the Network](hack-the-box/pentester-path/password-attacks/extracting-passwords-from-the-network/README.md)
+      * [Credential Hunting in Network Traffic](hack-the-box/pentester-path/password-attacks/extracting-passwords-from-the-network/credential-hunting-in-network-traffic.md)
     * [Windows Lateral Movement](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/README.md)
       * [Pass the Hash (PtH)](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-hash-pth.md)
       * [Pass the Ticket (PtT) from Windows](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-ticket-ptt-from-windows.md)
