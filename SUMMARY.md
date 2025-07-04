@@ -185,6 +185,7 @@
       * [Pass the Hash (PtH)](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-hash-pth.md)
       * [Pass the Ticket (PtT) from Windows](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-ticket-ptt-from-windows.md)
       * [Pass the Ticket (PtT) from Linux](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-ticket-ptt-from-linux.md)
+      * [Pass the Certificate](hack-the-box/pentester-path/password-attacks/windows-lateral-movement/pass-the-certificate.md)
     * [Password Management](hack-the-box/pentester-path/password-attacks/password-management/README.md)
       * [Password Policies](hack-the-box/pentester-path/password-attacks/password-management/password-policies.md)
       * [Password Managers](hack-the-box/pentester-path/password-attacks/password-management/password-managers.md)
