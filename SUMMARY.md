@@ -7,6 +7,7 @@
 ## 🔴 Red Team
 
 * [Tools](red-team/tools/README.md)
+  * [ligolo-ng](red-team/tools/ligolo-ng.md)
   * [ADD THESE](red-team/tools/add-these.md)
   * [Chisel](red-team/tools/chisel.md)
   * [Enum4linux](red-team/tools/enum4linux.md)
