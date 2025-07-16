@@ -48,3 +48,9 @@ Start the tunnel:
 [Agent : root@dmz01] » start
 INFO[0018] Starting tunnel to root@dmz01 (005056942701)
 ```
+
+Extra resources in case you are stuck:
+
+{% embed url="https://software-sinner.medium.com/how-to-tunnel-and-pivot-networks-using-ligolo-ng-cf828e59e740" %}
+
+{% embed url="https://www.youtube.com/watch?v=DM1B8S80EvQ&pp=0gcJCfwAo7VqN5tD" %}
