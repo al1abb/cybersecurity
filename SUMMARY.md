@@ -791,6 +791,8 @@
       * [Exploiting NULL/Anonymous Sessions](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/exploiting-null-anonymous-sessions.md)
       * [Password Spraying](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/password-spraying.md)
       * [Finding ASREPRoastable Accounts](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/finding-asreproastable-accounts.md)
+    * [Gathering Information with an Account](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/README.md)
+      * [Searching for Accounts in Group Policy Objects](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/searching-for-accounts-in-group-policy-objects.md)
 
 ## Web App Hacking
 
