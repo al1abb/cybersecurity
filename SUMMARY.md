@@ -790,6 +790,7 @@
       * [Basic SMB Reconnaissance](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/basic-smb-reconnaissance.md)
       * [Exploiting NULL/Anonymous Sessions](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/exploiting-null-anonymous-sessions.md)
       * [Password Spraying](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/password-spraying.md)
+      * [Finding ASREPRoastable Accounts](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/finding-asreproastable-accounts.md)
 
 ## Web App Hacking
 
