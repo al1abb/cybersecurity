@@ -793,6 +793,7 @@
       * [Finding ASREPRoastable Accounts](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/finding-asreproastable-accounts.md)
     * [Gathering Information with an Account](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/README.md)
       * [Searching for Accounts in Group Policy Objects](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/searching-for-accounts-in-group-policy-objects.md)
+      * [Working with Modules](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/working-with-modules.md)
 
 ## Web App Hacking
 
