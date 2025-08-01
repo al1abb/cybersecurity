@@ -780,6 +780,9 @@
       * [Security in Active Directory](hack-the-box/extra-modules/introduction-to-active-directory/digging-in-deeper/security-in-active-directory.md)
       * [Examining Group Policy](hack-the-box/extra-modules/introduction-to-active-directory/digging-in-deeper/examining-group-policy.md)
     * [Wrapping It Up](hack-the-box/extra-modules/introduction-to-active-directory/wrapping-it-up.md)
+  * [Using CrackMapExec](hack-the-box/extra-modules/using-crackmapexec/README.md)
+    * [Info](hack-the-box/extra-modules/using-crackmapexec/info.md)
+    * [WinRm](hack-the-box/extra-modules/using-crackmapexec/winrm.md)
 
 ## Web App Hacking
 
