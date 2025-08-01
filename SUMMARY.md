@@ -782,7 +782,10 @@
     * [Wrapping It Up](hack-the-box/extra-modules/introduction-to-active-directory/wrapping-it-up.md)
   * [Using CrackMapExec](hack-the-box/extra-modules/using-crackmapexec/README.md)
     * [Info](hack-the-box/extra-modules/using-crackmapexec/info.md)
+    * [SMB](hack-the-box/extra-modules/using-crackmapexec/smb.md)
     * [WinRm](hack-the-box/extra-modules/using-crackmapexec/winrm.md)
+    * [Gathering Information Anonymously](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/README.md)
+      * [Exploiting NULL/Anonymous Sessions](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/exploiting-null-anonymous-sessions.md)
 
 ## Web App Hacking
 
