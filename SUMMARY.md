@@ -784,8 +784,12 @@
     * [Info](hack-the-box/extra-modules/using-crackmapexec/info.md)
     * [SMB](hack-the-box/extra-modules/using-crackmapexec/smb.md)
     * [WinRm](hack-the-box/extra-modules/using-crackmapexec/winrm.md)
+    * [Intro](hack-the-box/extra-modules/using-crackmapexec/intro/README.md)
+      * [Targets and Protocols](hack-the-box/extra-modules/using-crackmapexec/intro/targets-and-protocols.md)
     * [Gathering Information Anonymously](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/README.md)
+      * [Basic SMB Reconnaissance](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/basic-smb-reconnaissance.md)
       * [Exploiting NULL/Anonymous Sessions](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/exploiting-null-anonymous-sessions.md)
+      * [Password Spraying](hack-the-box/extra-modules/using-crackmapexec/gathering-information-anonymously/password-spraying.md)
 
 ## Web App Hacking
 
