@@ -795,6 +795,8 @@
       * [Searching for Accounts in Group Policy Objects](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/searching-for-accounts-in-group-policy-objects.md)
       * [Working with Modules](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/working-with-modules.md)
       * [MSSQL Enumeration and Attacks](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/mssql-enumeration-and-attacks.md)
+      * [Finding Kerberoastable Accounts](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/finding-kerberoastable-accounts.md)
+      * [Spidering and Finding Juicy Information in an SMB Share](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/spidering-and-finding-juicy-information-in-an-smb-share.md)
 
 ## Web App Hacking
 
