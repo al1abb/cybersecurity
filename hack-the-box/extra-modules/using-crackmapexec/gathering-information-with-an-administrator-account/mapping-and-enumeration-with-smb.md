@@ -140,3 +140,91 @@ The `--rid-brute` option can be used to retrieve user names and other Active Dir
 ## Enumerate Disks
 
 An important piece that we sometimes need to remember to check is the additional disks that may exist on a server. CrackMapExec has an option `--disks` that allows us to check the disks that exist in the server.
+
+### **Enumerating Disks**
+
+```shell-session
+$ crackmapexec smb 10.129.203.121 -u robert -p Inlanefreight01! --disks
+
+SMB         10.129.203.121  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:inlanefreight.htb) (signing:True) (SMBv1:False)
+SMB         10.129.203.121  445    DC01             [+] inlanefreight.htb\robert:Inlanefreight01! 
+SMB         10.129.203.121  445    DC01             [+] Enumerated disks
+SMB         10.129.203.121  445    DC01             C:
+SMB         10.129.203.121  445    DC01             D:
+```
+
+***
+
+## Enumerating Local and Domain Groups
+
+We can enumerate local groups with `--local-groups` or domain groups with `--groups`.
+
+### **Enumerating Local Groups**
+
+```shell-session
+$ crackmapexec smb 10.129.203.121 -u robert -p Inlanefreight01! --local-groups
+
+SMB         10.129.203.121  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:inlanefreight.htb) (signing:True) (SMBv1:False)
+SMB         10.129.203.121  445    DC01             [+] inlanefreight.htb\robert:Inlanefreight01! 
+SMB         10.129.203.121  445    DC01             [+] Enumerated local groups
+SMB         10.129.203.121  445    DC01             Cert Publishers                          membercount: 0
+SMB         10.129.203.121  445    DC01             RAS and IAS Servers                      membercount: 0
+SMB         10.129.203.121  445    DC01             Allowed RODC Password Replication Group  membercount: 0
+SMB         10.129.203.121  445    DC01             Denied RODC Password Replication Group   membercount: 8
+SMB         10.129.203.121  445    DC01             DnsAdmins                                membercount: 0
+SMB         10.129.203.121  445    DC01             SQLServer2005SQLBrowserUser$DC01         membercount: 0
+SMB         10.129.203.121  445    DC01             Server Operators                         membercount: 5
+
+<SNIP>
+
+SMB         10.129.203.121  445    DC01             Remote Management Users                  membercount: 3
+SMB         10.129.203.121  445    DC01             Storage Replica Administrators           membercount: 0
+```
+
+### **Enumerating Domain Groups**
+
+```shell-session
+$ crackmapexec smb 10.129.203.121 -u robert -p Inlanefreight01! --groups                         
+      
+SMB         10.129.203.121  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:inlanefreight.htb) (signing:True) (SMBv1:False)
+SMB         10.129.203.121  445    DC01             [+] inlanefreight.htb\robert:Inlanefreight01!          
+SMB         10.129.203.121  445    DC01             [+] Enumerated domain group(s)                                                                                                            
+SMB         10.129.203.121  445    DC01             LAPS_PCAdmin                             membercount: 1
+SMB         10.129.203.121  445    DC01             LAPS_DCAdmin                             membercount: 0
+SMB         10.129.203.121  445    DC01             SQLServer2005SQLBrowserUser$DC01         membercount: 0
+SMB         10.129.203.121  445    DC01             Help Desk 2                              membercount: 0
+SMB         10.129.203.121  445    DC01             Help Desk                                membercount: 0
+SMB         10.129.203.121  445    DC01             Linux Admins                             membercount: 3
+
+<SNIP>
+
+SMB         10.129.203.121  445    DC01             Guests                                   membercount: 2
+SMB         10.129.203.121  445    DC01             Users                                    membercount: 3
+SMB         10.129.203.121  445    DC01             Administrators                           membercount: 5
+```
+
+If we want to get the group members, we can use `--groups [GROUP NAME]`.
+
+### **Group Members**
+
+```shell-session
+$ crackmapexec smb 10.129.203.121 -u robert -p Inlanefreight01! --groups Administrators
+
+SMB         10.129.203.121  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:inlanefreight.htb) (signing:True) (SMBv1:False)
+SMB         10.129.203.121  445    DC01             [+] inlanefreight.htb\robert:Inlanefreight01! 
+SMB         10.129.203.121  445    DC01             [+] Enumerated members of domain group
+SMB         10.129.203.121  445    DC01             inlanefreight.htb\htb
+SMB         10.129.203.121  445    DC01             inlanefreight.htb\plaintext
+SMB         10.129.203.121  445    DC01             inlanefreight.htb\Domain Admins
+SMB         10.129.203.121  445    DC01             inlanefreight.htb\Enterprise Admins
+SMB         10.129.203.121  445    DC01             inlanefreight.htb\Administrator
+```
+
+{% hint style="info" %}
+**Note:** At the time of writing `--local-group` only works against a Domain Controller, and querying a group using the group name doesn't work.
+{% endhint %}
+
+***
+
+## Querying WMI
+
