@@ -799,6 +799,8 @@
       * [Spidering and Finding Juicy Information in an SMB Share](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/spidering-and-finding-juicy-information-in-an-smb-share.md)
       * [Proxychains with CME](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/proxychains-with-cme.md)
       * [Stealing Hashes](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-account/stealing-hashes.md)
+    * [Gathering Information with an Administrator Account](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-administrator-account/README.md)
+      * [Mapping and Enumeration with SMB](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-administrator-account/mapping-and-enumeration-with-smb.md)
 
 ## Web App Hacking
 
