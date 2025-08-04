@@ -228,3 +228,59 @@ SMB         10.129.203.121  445    DC01             inlanefreight.htb\Administra
 
 ## Querying WMI
 
+[Windows Management Instrumentation (WMI)](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page) is used for administrative operations on Windows operating systems. We can write WMI scripts or applications to automate administrative tasks on remote computers. WMI provides management data to other parts of the operating system and products, for example, System Center Operations Manager (formerly Microsoft Operations Manager (MOM)) or Windows Remote Management (WinRM).
+
+One of the primary use of Windows Management Instrumentation (WMI) is the ability to query the WMI repository for class and instance information. For example, we can request that WMI return all the objects representing shut-down events from a remote or local system.
+
+WMI uses TCP port 135 and a range of dynamic ports: 49152-65535 (RPC dynamic ports – Windows Vista, 2008 and above), TCP 1024-65535 (RPC dynamic ports – Windows NT4, Windows 2000, Windows 2003), or we can set up WMI to use a custom range of ports.
+
+Let's use, for example, WMI to query if a remote computer has the [Sysmon](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon) application running and to display the Caption and ProcessId, the WMI query we will use is `SELECT Caption,ProcessId FROM Win32_Process WHERE Caption LIKE '%sysmon%'`:
+
+### **Using WMI to Query if Sysmon is Running**
+
+```shell-session
+$ crackmapexec smb 10.129.203.121 -u robert -p Inlanefreight01! --wmi "SELECT Caption,ProcessId FROM Win32_Process WHERE Caption LIKE '%sysmon%'"
+
+SMB         10.129.203.121  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:inlanefreight.htb) (signing:True) (SMBv1:False)
+SMB         10.129.203.121  445    DC01             [+] inlanefreight.htb\robert:Inlanefreight01! 
+SMB         10.129.203.121  445    DC01             Caption => Sysmon64.exe
+SMB         10.129.203.121  445    DC01             ProcessId => 3220
+```
+
+WMI organizes its classes in a hierarchical namespace. To perform a query, we must know the Class Name and the Namespace in which it is located. In the above example, query the class `Win32_Process` in the namespace `root\cimv2`. We didn't specify the namespace because, by default, CME use `root\cimv2` (we can see that information in the --help menu).
+
+To query another namespace, we need to specify it. Let's, for example, query `MSPower_DeviceEnable` class, which is within the namespace `root\WMI`. This class holds information about devices that should dynamically power on and off while the system works. To learn more about how to find WMI classes that are related to a specific topic, we can use [Microsoft](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_wmi?view=powershell-5.1#finding-wmi-classes) and 3rd party documentation from [wutils.com](https://wutils.com/wmi/).
+
+### **Quering root\WMI Namespace**
+
+```shell-session
+$ crackmapexec smb 10.129.203.121 -u robert -p Inlanefreight01! --wmi "SELECT * FROM MSPower_DeviceEnable" --wmi-namespace "root\WMI" 
+
+SMB         10.129.203.121  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:inlanefreight.htb) (signing:True) (SMBv1:False)
+SMB         10.129.203.121  445    DC01             [+] inlanefreight.htb\robert:Inlanefreight01! 
+SMB         10.129.203.121  445    DC01             InstanceName => PCI\VEN_15AD&DEV_0779&SUBSYS_077915AD&REV_00\4&23f707fc&0&00B8_0
+SMB         10.129.203.121  445    DC01             Active => True
+SMB         10.129.203.121  445    DC01             Enable => True
+SMB         10.129.203.121  445    DC01             
+SMB         10.129.203.121  445    DC01             InstanceName => PCI\VEN_8086&DEV_10D3&SUBSYS_07D015AD&REV_00\005056FFFFB9E8F200_0
+SMB         10.129.203.121  445    DC01             Active => True
+SMB         10.129.203.121  445    DC01             Enable => True
+SMB         10.129.203.121  445    DC01             
+SMB         10.129.203.121  445    DC01             InstanceName => USB\ROOT_HUB30\5&da8887e&0&0_0
+SMB         10.129.203.121  445    DC01             Active => True
+SMB         10.129.203.121  445    DC01             Enable => True
+SMB         10.129.203.121  445    DC01             
+SMB         10.129.203.121  445    DC01             InstanceName => USB\VID_0E0F&PID_0003&MI_00\7&2a0405e8&0&0000_0
+SMB         10.129.203.121  445    DC01             Active => True
+SMB         10.129.203.121  445    DC01             Enable => True
+SMB         10.129.203.121  445    DC01             
+SMB         10.129.203.121  445    DC01             InstanceName => USB\VID_0E0F&PID_0003&MI_01\7&2a0405e8&0&0001_0
+SMB         10.129.203.121  445    DC01             Active => True
+SMB         10.129.203.121  445    DC01             Enable => True
+```
+
+{% hint style="info" %}
+**Note:** Commonly, to query WMI, we will need to have administrative privileges, but an administrator can configure a non-administrator account to query WMI. If that's the case, we can use a non-administrator account to perform WMI queries.
+{% endhint %}
+
+To learn more about WMI Query Language (WQL), we can read [Microsoft's Documentation](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wql-sql-for-wmi).
