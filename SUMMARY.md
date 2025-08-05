@@ -803,6 +803,7 @@
       * [Mapping and Enumeration with SMB](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-administrator-account/mapping-and-enumeration-with-smb.md)
       * [LDAP and RDP Enumeration](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-administrator-account/ldap-and-rdp-enumeration.md)
       * [Command Execution](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-administrator-account/command-execution.md)
+      * [Finding Secrets and Using Them](hack-the-box/extra-modules/using-crackmapexec/gathering-information-with-an-administrator-account/finding-secrets-and-using-them.md)
 
 ## Web App Hacking
 
