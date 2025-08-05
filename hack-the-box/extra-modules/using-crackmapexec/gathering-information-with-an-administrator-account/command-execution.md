@@ -229,3 +229,100 @@ SMB         10.129.204.133  445    MS01             SerializationVersion        
 
 We can also execute commands with WinRM protocol. By default, WinRM listens on HTTP TCP port 5985 and HTTPS TCP port 5986. One particular thing about this protocol is that it does not require a user to be an administrator to execute commands. We can use the WinRM protocol if we are members of the Administrators group, if we are members of the Remote Management Users group or if we have explicit PowerShell Remoting permissions in the session configuration.
 
+### **Command Execution using WinRM**
+
+```shell-session
+$ crackmapexec winrm 10.129.204.133 -u robert -p 'Inlanefreight01!' -x whoami
+
+SMB         10.129.204.133  5985   MS01             [*] Windows 10.0 Build 17763 (name:MS01) (domain:inlanefreight.htb)
+HTTP        10.129.204.133  5985   MS01             [*] http://10.129.204.133:5985/wsman
+WINRM       10.129.204.133  5985   MS01             [+] inlanefreight.htb\robert:Inlanefreight01! (Pwn3d!)
+WINRM       10.129.204.133  5985   MS01             [+] Executed command
+WINRM       10.129.204.133  5985   MS01             inlanefreight\robert
+```
+
+### **PowerShell Command Execution via WinRM**
+
+```shell-session
+$ crackmapexec winrm 10.129.204.133 -u robert -p 'Inlanefreight01!' -X '$PSVersionTable'
+
+SMB         10.129.204.133  5985   MS01             [*] Windows 10.0 Build 17763 (name:MS01) (domain:inlanefreight.htb)
+HTTP        10.129.204.133  5985   MS01             [*] http://10.129.204.133:5985/wsman
+WINRM       10.129.204.133  5985   MS01             [+] inlanefreight.htb\robert:Inlanefreight01! (Pwn3d!)
+WINRM       10.129.204.133  5985   MS01             [+] Executed command
+WINRM       10.129.204.133  5985   MS01             
+Name                           Value                                                                                    
+----                           -----                                                                                    
+PSVersion                      5.1.17763.2268                                                                           
+PSEdition                      Desktop                                                                                  
+PSCompatibleVersions           {1.0, 2.0, 3.0, 4.0...}                                                                  
+BuildVersion                   10.0.17763.2268                                                                          
+CLRVersion                     4.0.30319.42000                                                                          
+WSManStackVersion              3.0                                                                                      
+PSRemotingProtocolVersion      2.3                                                                                      
+SerializationVersion           1.1.0.1
+```
+
+### Other PowerShell Options
+
+There are several options we can use with WinRM command execution. Let's see some of them:
+
+<table><thead><tr><th width="183.09088134765625"></th><th></th></tr></thead><tbody><tr><td><code>--port PORT</code></td><td>To select a custom port for WinRM connection</td></tr><tr><td><code>--ssl</code></td><td>To connect to SSL Enabled WinRM</td></tr><tr><td><code>--ignore-ssl-cert</code></td><td>To ignore certificate verification when connecting to SSL</td></tr></tbody></table>
+
+{% hint style="info" %}
+**Note:** The WinRM protocol does not support different execution methods.
+{% endhint %}
+
+***
+
+## SSH Command Execution
+
+We can also use the SSH protocol to execute commands on Linux or Windows using CrackMapExec.
+
+### **Command Execution with SSH**
+
+```shell-session
+$ crackmapexec ssh 10.129.204.133 -u robert -p 'Inlanefreight01!' -x ipconfig
+
+SSH         10.129.204.133  22     10.129.204.133   [*] SSH-2.0-OpenSSH_for_Windows_7.7
+SSH         10.129.204.133  22     10.129.204.133   [+] robert:Inlanefreight01! 
+SSH         10.129.204.133  22     10.129.204.133   [+] Executed command
+SSH         10.129.204.133  22     10.129.204.133   
+SSH         10.129.204.133  22     10.129.204.133   Windows IP Configuration
+SSH         10.129.204.133  22     10.129.204.133   
+SSH         10.129.204.133  22     10.129.204.133   
+SSH         10.129.204.133  22     10.129.204.133   Ethernet adapter Ethernet1:
+SSH         10.129.204.133  22     10.129.204.133   
+SSH         10.129.204.133  22     10.129.204.133   Connection-specific DNS Suffix  . :
+SSH         10.129.204.133  22     10.129.204.133   IPv4 Address. . . . . . . . . . . : 172.16.1.5
+SSH         10.129.204.133  22     10.129.204.133   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+SSH         10.129.204.133  22     10.129.204.133   Default Gateway . . . . . . . . . :
+SSH         10.129.204.133  22     10.129.204.133   
+SSH         10.129.204.133  22     10.129.204.133   Ethernet adapter Ethernet0 2:
+SSH         10.129.204.133  22     10.129.204.133   
+SSH         10.129.204.133  22     10.129.204.133   Connection-specific DNS Suffix  . : .htb
+SSH         10.129.204.133  22     10.129.204.133   IPv6 Address. . . . . . . . . . . : dead:beef::1e2
+SSH         10.129.204.133  22     10.129.204.133   IPv6 Address. . . . . . . . . . . : dead:beef::8c8a:5209:5876:537d
+SSH         10.129.204.133  22     10.129.204.133   Link-local IPv6 Address . . . . . : fe80::8c8a:5209:5876:537d%20
+SSH         10.129.204.133  22     10.129.204.133   IPv4 Address. . . . . . . . . . . : 10.129.204.133
+SSH         10.129.204.133  22     10.129.204.133   Subnet Mask . . . . . . . . . . . : 255.255.0.0
+SSH         10.129.204.133  22     10.129.204.133   Default Gateway . . . . . . . . . : fe80::250:56ff:feb9:b9fc%20
+SSH         10.129.204.133  22     10.129.204.133   10.129.0.1
+```
+
+Another common way to interact with an SSH server is using public and private keys. CrackMapExec supports using private keys with the option `--key-file`. The key needs to be in `OPENSSH` format to work.
+
+### **Command Execution with SSH Using a Private Key**
+
+```shell-session
+$ crackmapexec ssh 10.129.204.133 -u julio --key-file id_ed25519 -p "" -x whoami
+
+SSH         10.129.204.133  22     10.129.204.133   [*] SSH-2.0-OpenSSH_for_Windows_7.7
+SSH         10.129.204.133  22     10.129.204.133   [+] julio: (keyfile: id_ed25519) 
+SSH         10.129.204.133  22     10.129.204.133   [+] Executed command
+SSH         10.129.204.133  22     10.129.204.133   inlanefreight\julio
+```
+
+{% hint style="info" %}
+**Note:** If no passphrase is configured, we must set the option -p to blank (""), or we will get an error.
+{% endhint %}
