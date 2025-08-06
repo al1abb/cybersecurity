@@ -811,6 +811,8 @@
       * [Popular Modules](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/popular-modules.md)
       * [Vulnerability Scan Modules](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/vulnerability-scan-modules.md)
       * [Creating Our Own CME Module](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/creating-our-own-cme-module.md)
+    * [Miscellaneous](hack-the-box/extra-modules/using-crackmapexec/miscellaneous/README.md)
+      * [Additional CME Functionality](hack-the-box/extra-modules/using-crackmapexec/miscellaneous/additional-cme-functionality.md)
 
 ## Web App Hacking
 
