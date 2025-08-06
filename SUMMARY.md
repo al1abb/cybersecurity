@@ -809,6 +809,7 @@
       * [Bloodhound Integration](hack-the-box/extra-modules/using-crackmapexec/getting-a-remote-shell/bloodhound-integration.md)
     * [CrackMapExec Modules](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/README.md)
       * [Popular Modules](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/popular-modules.md)
+      * [Vulnerability Scan Modules](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/vulnerability-scan-modules.md)
 
 ## Web App Hacking
 
