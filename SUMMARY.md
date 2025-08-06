@@ -807,6 +807,8 @@
     * [Getting a Remote Shell](hack-the-box/extra-modules/using-crackmapexec/getting-a-remote-shell/README.md)
       * [Getting Sessions in a C2 Framework](hack-the-box/extra-modules/using-crackmapexec/getting-a-remote-shell/getting-sessions-in-a-c2-framework.md)
       * [Bloodhound Integration](hack-the-box/extra-modules/using-crackmapexec/getting-a-remote-shell/bloodhound-integration.md)
+    * [CrackMapExec Modules](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/README.md)
+      * [Popular Modules](hack-the-box/extra-modules/using-crackmapexec/crackmapexec-modules/popular-modules.md)
 
 ## Web App Hacking
 
