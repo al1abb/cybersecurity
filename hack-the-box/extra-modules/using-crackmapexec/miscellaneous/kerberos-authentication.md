@@ -166,3 +166,39 @@ LDAP        10.129.203.121  389    DC01             [+] inlanefreight.htb\robert
 ```
 
 To use Kerberos Authentication with the MSSQL protocol, we need to specify the computer name or FQDN as a target instead of the IP address. This is because, behind the scenes, the `MSSQL` protocol doesn't convert the IP to the FQDN, but the `SMB` and `LDAP` protocols do.
+
+### **Using ccache File with the MSSQL Protocol**
+
+```shell-session
+$ crackmapexec mssql dc01 --use-kcache
+
+MSSQL       dc01.inlanefreight.htb 1433   DC01             [*] Windows 10.0 Build 17763 (name:DC01) (domain:inlanefreight.htb)
+MSSQL       dc01.inlanefreight.htb 1433   DC01             [+] inlanefreight.htb\robert from ccache (Pwn3d!)
+```
+
+We can execute any module or option with Kerberos authentication as we did with usernames and passwords.
+
+### **Listing Shares with Kerberos Authentication**
+
+```shell-session
+$ crackmapexec smb 10.129.203.121 --use-kcache --shares
+
+SMB         10.129.203.121  445    DC01             [*] Windows 10.0 Build 17763 x64 (name:DC01) (domain:inlanefreight.htb) (signing:True) (SMBv1:False)
+SMB         10.129.203.121  445    DC01             [+] inlanefreight.htb\robert from ccache 
+SMB         10.129.203.121  445    DC01             [+] Enumerated shares
+SMB         10.129.203.121  445    DC01             Share           Permissions     Remark
+SMB         10.129.203.121  445    DC01             -----           -----------     ------
+SMB         10.129.203.121  445    DC01             ADMIN$          READ            Remote Admin
+SMB         10.129.203.121  445    DC01             C$              READ,WRITE      Default share
+SMB         10.129.203.121  445    DC01             carlos                          
+SMB         10.129.203.121  445    DC01             D$              READ,WRITE      Default share
+SMB         10.129.203.121  445    DC01             david                           
+SMB         10.129.203.121  445    DC01             IPC$            READ            Remote IPC
+SMB         10.129.203.121  445    DC01             IT              READ,WRITE      
+SMB         10.129.203.121  445    DC01             john                            
+SMB         10.129.203.121  445    DC01             julio                           
+SMB         10.129.203.121  445    DC01             linux01         READ,WRITE      
+SMB         10.129.203.121  445    DC01             NETLOGON        READ            Logon server share 
+SMB         10.129.203.121  445    DC01             svc_workstations                 
+SMB         10.129.203.121  445    DC01             SYSVOL          READ            Logon server share
+```
