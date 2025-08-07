@@ -814,6 +814,7 @@
     * [Miscellaneous](hack-the-box/extra-modules/using-crackmapexec/miscellaneous/README.md)
       * [Additional CME Functionality](hack-the-box/extra-modules/using-crackmapexec/miscellaneous/additional-cme-functionality.md)
       * [Kerberos Authentication](hack-the-box/extra-modules/using-crackmapexec/miscellaneous/kerberos-authentication.md)
+    * [Mastering the CMEDB](hack-the-box/extra-modules/using-crackmapexec/mastering-the-cmedb.md)
 
 ## Web App Hacking
 
